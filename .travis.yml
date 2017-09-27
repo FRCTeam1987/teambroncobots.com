@@ -12,7 +12,7 @@ before_script:
  - chmod u+x ./scripts/deploy
 # path to our build script. 
 # Travis will run `bundle install` by default before running our script
-script: ./scripts/cibuild
+#script: ./scripts/cibuild
 exclude: [vendor]
 sudo: false
 addons:
