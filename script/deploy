@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "Inside of the deployment script."
+
+# skip if build is triggered by pull request
+if [ $TRAVIS_PULL_REQUEST == "true" ]; then
+  echo "this is PR, exiting"
+  exit 0
+fi
+
+# enable error reporting to the consoles
+set -e
+
+echo "Check which branch to deploy"
+
+if [ "$TRAVIS_BRANCH" = "master" ]; then
+  echo "DEPLOYING: PRODUCTION"
+  rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ broncobots_travis@teambroncobots.com:/home/broncobots_travis/prod.teambroncobots.com/
+fi
+
+if [ "$TRAVIS_BRANCH" = "qa" ]; then
+  echo "DEPLOYING: QA"
+  rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ broncobots_travis@teambroncobots.com:/home/broncobots_travis/qa.teambroncobots.com/
+fi
