@@ -1,0 +1,25 @@
+- thumbnail: images/@stock/member-1.jpg
+  title: 2017 Season
+  folder: 2017_season
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- thumbnail: images/@stock/member-2.jpg
+  title: 2016 Season
+  folder: 2016_season
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- thumbnail: images/@stock/member-3.jpg
+  title: 2015 Season
+  folder: 2015_season
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- thumbnail: images/@stock/member-3.jpg
+  title: 2014 Season
+  folder: 2014_season
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+- thumbnail: images/@stock/member-4.jpg
+  title: Summer Camps
+  folder: camps
+  desc:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
