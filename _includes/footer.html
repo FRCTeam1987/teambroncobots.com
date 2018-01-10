@@ -3,7 +3,7 @@
   <div class='row'>
     <div class='large-3 medium-3 columns'>
       <h1>
-        <a href='index.html'>
+        <a href='{{site.url}}/index.html'>
           <img alt="" src="{{site.url}}/images/logo-header.png" />
         </a>
       </h1>
@@ -41,31 +41,13 @@
       <div class='spacing'></div>
       <h4>Connect with us</h4>
       <ul class='socials'>
+        {% for contact in site.data.contacts %}
         <li>
-          <a href="http://www.facebook.com/pages/The-Broncobots-Team-1987/140870239300622" target="_blank">
-            <i class='fa fa-facebook'></i>
+          <a href="{{contact.link}}" target="_blank">
+            <i class="fa {{contact.logo}}"></i>
           </a>
         </li>
-        <li>
-          <a href="http://www.twitter.com/Broncobots1987" target="_blank">
-            <i class='fa fa-twitter'></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:broncobots@gmail.com">
-            <i class='fa fa-envelope'></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/broncobots1987/" target="_blank">
-            <i class='fa fa-instagram'></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.youtube.com/user/Broncobots1987" target="_blank">
-            <i class='fa fa-youtube'></i>
-          </a>
-        </li>
+        {% endfor %}
       </ul>
       <div class='spacing'></div>
     </div>
