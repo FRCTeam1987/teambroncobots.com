@@ -1,12 +1,12 @@
-- logo: images/sponsors/8020.jpg
-  name: 80/20 Inc.
+- name: 80/20 Inc.
+  logo: images/sponsors/8020.jpg
   desc:
-    80/20 is a T-Slot aluminum building system company that you can use to construct virtually anything.
-- logo: images/sponsors/aps.gif
-  name: Allied Plastics
+    <a href="https://www.8020.net/" target="_blank">80/20</a> is a T-Slot aluminum building system company that you can use to construct virtually anything.
+- name: Allied Plastics
+  logo: images/sponsors/aps.gif
   desc:
-    Founded in 1981, Allied Plastic Supply, LLC. is graphical, medical and industrial plastic sheet, rod, tube, and film distributor with nationwide shipping capabilities.
-- logo: images/sponsors/bestbuy.png
-  name: Best Buy
+    Founded in 1981, <a href="http://www.alliedplastic.org/" target="_blank">Allied Plastic Supply, LLC</a>. is graphical, medical and industrial plastic sheet, rod, tube, and film distributor with nationwide shipping capabilities.
+- name: Best Buy
+  logo: images/sponsors/bestbuy.png
   desc:
-    Best Buy is a leading provider of technology products, services and solutions. The company offers expert service at an unbeatable price more than 1.5 billion times a year to the consumers, small business owners and educators who visit our stores, engage with Geek Squad Agents or use BestBuy.com or the Best Buy app.
+    Best Buy is a leading provider of technology products, services and solutions. The company offers expert service at an unbeatable price more than 1.5 billion times a year to the consumers, small business owners and educators who visit our stores, engage with Geek Squad Agents or use <a href="http://www.bestbuy.com/" target="_blank">BestBuy.com</a> or the Best Buy app.
