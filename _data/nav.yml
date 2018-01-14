@@ -9,6 +9,8 @@
       path: first.html
     - name: The Broncobots
       path: about-broncobots.html
+    - name: Our Awards
+      path: our-awards.html
     - name: R7 Alliance
       path: r7-alliance.html
 - name: Our Robots
@@ -35,3 +37,5 @@
   path: media.html
 - name: Sponsors
   path: sponsors.html
+- name: Resources
+  path: resources.html
