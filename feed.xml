@@ -5,9 +5,24 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Jan 2018 03:52:15 +0000</pubDate>
-    <lastBuildDate>Wed, 10 Jan 2018 03:52:15 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Jan 2018 04:14:40 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Jan 2018 04:14:40 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Week One Summary</title>
+        <description>&lt;p&gt;We learned our new game challenge this week!  After studying the game rules, we decided on a strategy and started prototyping robot systems.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jan 2018 14:05:02 +0000</pubDate>
+        <link>/build/journal/2018/01/12/week-one-summary.html</link>
+        <guid isPermaLink="true">/build/journal/2018/01/12/week-one-summary.html</guid>
+        
+        
+        <category>build</category>
+        
+        <category>journal</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
