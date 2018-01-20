@@ -6,7 +6,7 @@
   section_id: about_us
   children:
     - name: FIRST Robotics
-      path: https://www.firstinspires.org/
+      external: https://www.firstinspires.org
     - name: The Broncobots
       path: about-broncobots.html
     - name: Our Awards
