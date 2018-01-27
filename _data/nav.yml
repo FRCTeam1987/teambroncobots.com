@@ -6,7 +6,7 @@
   section_id: about_us
   children:
     - name: FIRST Robotics
-      path: first.html
+      external: https://www.firstinspires.org
     - name: The Broncobots
       path: about-broncobots.html
     - name: Our Awards
@@ -18,21 +18,15 @@
   section_id: our_robots
   children:
     - name: 2017 Robot
-      path: 2017_robot.html
+      path: 2017-robot.html
     - name: 2016 Robot
-      path: 2016_robot.html
+      path: 2016-robot.html
     - name: 2015 Robot
-      path: 2015_robot.html
+      path: 2015-robot.html
     - name: Previous Robots
-      path: previous_robot.html
+      path: previous-robot.html
 - name: Summer Camps
   path: camps.html
-  section_id: camps
-  children:
-    - name: Camp Information
-      path: camp-info.html
-    - name: Camp Registration
-      path: camp-registration.html
 - name: Media
   path: media.html
 - name: Sponsors

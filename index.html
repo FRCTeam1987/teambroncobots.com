@@ -25,7 +25,6 @@ slides:
       text: Engineering Inspiration
 
 
-
 works:
   - image: images/home/Robots.jpg
     title: Our Robots
@@ -68,20 +67,6 @@ works:
     klass: graphi-design
     desc: Helpful Information
 
-
-services:
-  - icon: trophy
-    title: Web Design
-    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-  - icon: cogs
-    title: Web Development
-    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-  - icon: pagelines
-    title: Branding
-    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
-  - icon: lock
-    title: Security
-    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
 
 milestones:
   - icon: line-chart
@@ -204,7 +189,36 @@ milestones:
     </ul>
   </div>
 </div>
+<!--<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+      </div>
 
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for work in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+-->
+  <div class='four spacing'></div>
+</div>
 <div class="four spacing"></div>
 
 <div class="row">
@@ -386,6 +400,8 @@ milestones:
 
 </div>
 
-
+<!--
 {% include our-customers.html %}
+-->
+
 
