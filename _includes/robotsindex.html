@@ -1,0 +1,30 @@
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+      </div>
+
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for works in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.robot }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class='four spacing'></div>
+</div>
