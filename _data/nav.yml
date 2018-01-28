@@ -7,8 +7,6 @@
   children:
     - name: FIRST Robotics
       external: https://www.firstinspires.org
-    - name: The Broncobots
-      path: about-broncobots.html
     - name: Our Awards
       path: our-awards.html
     - name: R7 Alliance
