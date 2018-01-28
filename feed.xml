@@ -5,9 +5,71 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Jan 2018 23:24:14 +0000</pubDate>
-    <lastBuildDate>Sat, 27 Jan 2018 23:24:14 +0000</lastBuildDate>
+    <pubDate>Sun, 28 Jan 2018 02:03:44 +0000</pubDate>
+    <lastBuildDate>Sun, 28 Jan 2018 02:03:44 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>2017 Season Summary</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;We had a fantastic season last year! Here's a quick summary of the 2017 season.&lt;/p&gt;
+
+&lt;h5&gt;Greater Kansas City&lt;/h5&gt;
+
+&lt;p&gt;-Captian of Winning Alliance (with &lt;a href=&quot;http://team624.org/&quot; target=&quot;_blank&quot;&gt;Team 624&lt;/a&gt; and &lt;a href=&quot;http://ctcinspire.org/&quot; target=&quot;_blank&quot;&gt;Team 5801&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;-FIRST Dean’s List Finalist Award (Levi Madden)&lt;/p&gt;
+
+&lt;p&gt;-Excellence in Engineering Award sponsored by Delphi&lt;/p&gt;
+
+&lt;h5&gt;Iowa Regional&lt;/h5&gt;
+
+&lt;p&gt;-Rank 2 in Quals&lt;/p&gt;
+
+&lt;p&gt;-Semifinalist (6 matches)&lt;/p&gt;
+
+&lt;p&gt;-Engineering Inspiration Award&lt;/p&gt;
+
+&lt;p&gt;-Safety Award sponsored by Underwriters Laboratories&lt;/p&gt;
+
+&lt;h5&gt;Archimedes Division&lt;/h5&gt;
+
+&lt;p&gt;-Quarterfinalist&lt;/p&gt;
+
+&lt;h5&gt;Missouri State Championships&lt;/h5&gt;
+
+&lt;p&gt;-Captian of Winning Alliance (with Team 1986, Team 6744, and Team 4600)&lt;/p&gt;
+
+&lt;h5&gt;Indiana Robotics Invitational&lt;/h5&gt;
+
+&lt;p&gt;-Rank 21&lt;/p&gt;
+
+&lt;h5&gt;Cow Town ThrowDown&lt;/h5&gt;
+
+&lt;p&gt;-Quarterfinalist&lt;/p&gt;
+
+&lt;h5&gt;Kansas Cup&lt;/h5&gt;
+
+&lt;p&gt;We brought two robots to the competition so all our students could experience being on drive team.&lt;/p&gt;
+
+&lt;h6&gt;Competition Bot&lt;/h6&gt;
+
+&lt;p&gt;-Competition Winner (with Team 1986 &amp;amp; Team 1984 B Robot)&lt;/p&gt;
+
+&lt;h6&gt;&quot;The Cheese Balls&quot; Second Robot&lt;/h6&gt;
+
+&lt;p&gt;We rebuilt our practice bot for this event and decided to put 6 CIMs on our gearbox. Not only did that make the bot extremely fast, but we could climb in about 1.5 seconds!&lt;/p&gt;
+
+&lt;p&gt;Thanks to all of our sponsors for the fantastic season!&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 27 Jan 2018 16:23:02 +0000</pubDate>
+        <link>/season-summary/2018/01/27/2017-summary.html</link>
+        <guid isPermaLink="true">/season-summary/2018/01/27/2017-summary.html</guid>
+        
+        
+        <category>season-summary</category>
+        
+      </item>
     
       <item>
         <title>Week One Summary</title>
@@ -25,12 +87,19 @@
       </item>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+        <title>Welcome To Jekyll</title>
+        <description>&lt;h2&gt;&amp;lt;!–&lt;/h2&gt;
+&lt;p&gt;layout: post
+title:  “Welcome to Jekyll!”
+date:   2017-09-28 09:05:02 -0500
+categories: jekyll update
+—
+You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.
+&amp;lt;!–
+To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+&amp;lt;—
+Jekyll also offers powerful support for code snippets:
+&amp;lt;!–&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
@@ -38,128 +107,17 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;&amp;lt;!–
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+&amp;lt;!–
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/&lt;/p&gt;
 </description>
-        <pubDate>Thu, 28 Sep 2017 14:05:02 +0000</pubDate>
-        <link>/jekyll/update/2017/09/28/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/jekyll/update/2017/09/28/welcome-to-jekyll.html</guid>
+        <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+        <link>/2017/09/28/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/2017/09/28/welcome-to-jekyll.html</guid>
         
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Make some sketches</title>
-        <description>&lt;p&gt;Et sed ut quo maiores praesentium consequatur ipsum fuga aliquid corporis vel. exercitationem saepe vel aut consectetur vitae sed. necessitatibus est voluptatem nihil officiis nam debitis et perferendis exercitationem animi qui impedit modi recusandae. sapiente molestiae excepturi maxime. eum sequi nisi et itaque sunt nesciunt nulla vel sit ratione animi&lt;/p&gt;
-
-&lt;p&gt;Deleniti laboriosam soluta animi non corrupti. labore est quasi omnis ducimus. facere pariatur molestiae eum vel dignissimos debitis quam et id&lt;/p&gt;
-
-&lt;p&gt;Esse labore voluptate &lt;a href=&quot;#&quot;&gt;nam dolorum veniam&lt;/a&gt; numquam et reiciendis qui itaque voluptas odit dicta et. est ullam et omnis repellat qui aliquam delectus quod aperiam quam tenetur odit illo voluptatem. optio tenetur occaecati autem vel occaecati voluptas iste sunt libero quo est ex eum. aut molestiae ea est inventore aut quia ab voluptatem hic iste&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Provident nihil sint ducimus quasi dignissimos vero esse quisquam Asperiores beatae facere eos corrupti ut autem natus quis cumque dolor.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;this-is-a-sub-heading&quot;&gt;This is a sub-heading&lt;/h4&gt;
-
-&lt;p&gt;Aut ea rem repudiandae tempore perferendis. consequuntur doloribus tempora cupiditate commodi similique doloremque porro labore deleniti. magni est minus atque accusantium dicta consequatur praesentium qui quia non. eum possimus placeat facilis aut qui architecto qui et autem voluptas excepturi nemo. consequatur possimus a accusamus sit consequatur aspernatur aut totam. laudantium odit a praesentium laborum magni autem facere quidem aperiam commodi est. dolore debitis doloremque ea impedit&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tempora commodi quia deserunt porro excepturi&lt;/li&gt;
-  &lt;li&gt;Placeat in quae tempore pariatur sit aut qui nemo&lt;/li&gt;
-  &lt;li&gt;Rem quod sequi nobis possimus sequi dolorem est ab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;this-is-a-small-title&quot;&gt;This is a small title&lt;/h5&gt;
-
-&lt;p&gt;Dolorem laudantium possimus esse tenetur voluptates nam. corrupti pariatur commodi est omnis excepturi dignissimos. commodi qui cum tempora ipsa porro quasi quis labore ea cum quod sapiente debitis asperiores. ut qui est ipsa enim numquam odit mollitia. velit earum unde qui animi quod earum repellendus facere aperiam nemo. ipsa praesentium aut quam aperiam qui voluptate&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Apr 2015 10:58:12 +0000</pubDate>
-        <link>/logo/development/2015/04/14/make-some-sketches.html</link>
-        <guid isPermaLink="true">/logo/development/2015/04/14/make-some-sketches.html</guid>
-        
-        
-        <category>Logo</category>
-        
-        <category>Development</category>
-        
-      </item>
-    
-      <item>
-        <title>A cup of coffee for you</title>
-        <description>&lt;p&gt;Et sed ut quo maiores praesentium consequatur ipsum fuga aliquid corporis vel. exercitationem saepe vel aut consectetur vitae sed. necessitatibus est voluptatem nihil officiis nam debitis et perferendis exercitationem animi qui impedit modi recusandae. sapiente molestiae excepturi maxime. eum sequi nisi et itaque sunt nesciunt nulla vel sit ratione animi&lt;/p&gt;
-
-&lt;p&gt;Deleniti laboriosam soluta animi non corrupti. labore est quasi omnis ducimus. facere pariatur molestiae eum vel dignissimos debitis quam et id&lt;/p&gt;
-
-&lt;p&gt;Esse labore voluptate &lt;a href=&quot;#&quot;&gt;nam dolorum veniam&lt;/a&gt; numquam et reiciendis qui itaque voluptas odit dicta et. est ullam et omnis repellat qui aliquam delectus quod aperiam quam tenetur odit illo voluptatem. optio tenetur occaecati autem vel occaecati voluptas iste sunt libero quo est ex eum. aut molestiae ea est inventore aut quia ab voluptatem hic iste&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Provident nihil sint ducimus quasi dignissimos vero esse quisquam Asperiores beatae facere eos corrupti ut autem natus quis cumque dolor.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;this-is-a-sub-heading&quot;&gt;This is a sub-heading&lt;/h4&gt;
-
-&lt;p&gt;Aut ea rem repudiandae tempore perferendis. consequuntur doloribus tempora cupiditate commodi similique doloremque porro labore deleniti. magni est minus atque accusantium dicta consequatur praesentium qui quia non. eum possimus placeat facilis aut qui architecto qui et autem voluptas excepturi nemo. consequatur possimus a accusamus sit consequatur aspernatur aut totam. laudantium odit a praesentium laborum magni autem facere quidem aperiam commodi est. dolore debitis doloremque ea impedit&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tempora commodi quia deserunt porro excepturi&lt;/li&gt;
-  &lt;li&gt;Placeat in quae tempore pariatur sit aut qui nemo&lt;/li&gt;
-  &lt;li&gt;Rem quod sequi nobis possimus sequi dolorem est ab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;this-is-a-small-title&quot;&gt;This is a small title&lt;/h5&gt;
-
-&lt;p&gt;Dolorem laudantium possimus esse tenetur voluptates nam. corrupti pariatur commodi est omnis excepturi dignissimos. commodi qui cum tempora ipsa porro quasi quis labore ea cum quod sapiente debitis asperiores. ut qui est ipsa enim numquam odit mollitia. velit earum unde qui animi quod earum repellendus facere aperiam nemo. ipsa praesentium aut quam aperiam qui voluptate&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Apr 2015 10:57:12 +0000</pubDate>
-        <link>/design/bussiness/2015/04/14/a-cup-of-coffee-for-you.html</link>
-        <guid isPermaLink="true">/design/bussiness/2015/04/14/a-cup-of-coffee-for-you.html</guid>
-        
-        
-        <category>Design</category>
-        
-        <category>Bussiness</category>
-        
-      </item>
-    
-      <item>
-        <title>Look what we have done</title>
-        <description>&lt;p&gt;Et sed ut quo maiores praesentium consequatur ipsum fuga aliquid corporis vel. exercitationem saepe vel aut consectetur vitae sed. necessitatibus est voluptatem nihil officiis nam debitis et perferendis exercitationem animi qui impedit modi recusandae. sapiente molestiae excepturi maxime. eum sequi nisi et itaque sunt nesciunt nulla vel sit ratione animi&lt;/p&gt;
-
-&lt;p&gt;Deleniti laboriosam soluta animi non corrupti. labore est quasi omnis ducimus. facere pariatur molestiae eum vel dignissimos debitis quam et id&lt;/p&gt;
-
-&lt;p&gt;Esse labore voluptate &lt;a href=&quot;#&quot;&gt;nam dolorum veniam&lt;/a&gt; numquam et reiciendis qui itaque voluptas odit dicta et. est ullam et omnis repellat qui aliquam delectus quod aperiam quam tenetur odit illo voluptatem. optio tenetur occaecati autem vel occaecati voluptas iste sunt libero quo est ex eum. aut molestiae ea est inventore aut quia ab voluptatem hic iste&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Provident nihil sint ducimus quasi dignissimos vero esse quisquam Asperiores beatae facere eos corrupti ut autem natus quis cumque dolor.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;this-is-a-sub-heading&quot;&gt;This is a sub-heading&lt;/h4&gt;
-
-&lt;p&gt;Aut ea rem repudiandae tempore perferendis. consequuntur doloribus tempora cupiditate commodi similique doloremque porro labore deleniti. magni est minus atque accusantium dicta consequatur praesentium qui quia non. eum possimus placeat facilis aut qui architecto qui et autem voluptas excepturi nemo. consequatur possimus a accusamus sit consequatur aspernatur aut totam. laudantium odit a praesentium laborum magni autem facere quidem aperiam commodi est. dolore debitis doloremque ea impedit&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tempora commodi quia deserunt porro excepturi&lt;/li&gt;
-  &lt;li&gt;Placeat in quae tempore pariatur sit aut qui nemo&lt;/li&gt;
-  &lt;li&gt;Rem quod sequi nobis possimus sequi dolorem est ab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;this-is-a-small-title&quot;&gt;This is a small title&lt;/h5&gt;
-
-&lt;p&gt;Dolorem laudantium possimus esse tenetur voluptates nam. corrupti pariatur commodi est omnis excepturi dignissimos. commodi qui cum tempora ipsa porro quasi quis labore ea cum quod sapiente debitis asperiores. ut qui est ipsa enim numquam odit mollitia. velit earum unde qui animi quod earum repellendus facere aperiam nemo. ipsa praesentium aut quam aperiam qui voluptate&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Apr 2015 10:52:12 +0000</pubDate>
-        <link>/design/development/2015/04/14/look-what-we-have-done.html</link>
-        <guid isPermaLink="true">/design/development/2015/04/14/look-what-we-have-done.html</guid>
-        
-        
-        <category>Design</category>
-        
-        <category>Development</category>
         
       </item>
     
