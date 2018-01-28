@@ -2,27 +2,6 @@
 layout: default
 title: Robots
 section_id: portfolio
-works:
-  - image: images/robots/2017robot.jpg
-    title: Perseus
-    klass: graphic-design
-    link_to: 2017-robot.html
-    desc: 2017 FIRST STEAMWORKS 
-  - image: images/robots/2016robot.jpg
-    title: Knight Mare
-    klass: graphic-design
-    link_to: 2016-robot.html
-    desc: 2016 FIRST STRONGHOLD
-  - image: images/robots/2015robot.jpg
-    title: Darth Conveydor
-    klass: graphic-design
-    link_to: 2015-robot.html
-    desc: 2015 FIRST RECYCLE RUSH
-  - image: images/robots/2008robot.jpg
-    title: Previous Robots
-    klass: graphic-design
-    link_to: previous-robots.html
-    desc: Back to the Past
 ---
 
 <div class='full parallax' style='background-image: url(images/robots/robots-header.jpg); color: #fff;'>
@@ -43,14 +22,14 @@ works:
 
       <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
 
-        {% for work in page.works %}
-          <li class="{{ work.klass }}">
-            <a href='{{ work.link_to }}'>
-              <img alt="" src="{{ work.image }}" />
+        {% for robot in site.data.robots %}
+          <li class="{{ robot.klass }}">
+            <a href='{{ robot.link_to }}'>
+              <img alt="" src="{{ robot.image }}" />
               <div class='overlay'>
                 <div class='thumb-info'>
-                  <h3>{{ work.title }}</h3>
-                  <p>{{ work.desc }}</p>
+                  <h3>{{ robot.title }}</h3>
+                  <p>{{ robot.desc }}</p>
                 </div>
               </div>
             </a>
