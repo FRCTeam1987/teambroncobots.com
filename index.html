@@ -239,9 +239,39 @@ milestones:
     </div>
   </div>
 -->
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+      </div>
+
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for robot in site.data.robots %}
+        <li class="{{ robot.klass }}">
+          <a href='{{ robot.link_to }}'>
+            <img alt="" src="{{ robot.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ robot.title }}</h3>
+                <p>{{ robot.desc }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+
+  <hr/>
   <div class='four spacing'></div>
 </div>
-<div class="four spacing"></div>
 
 <div class="row">
   <div class="medium-3 large-3 columns">
@@ -320,8 +350,6 @@ milestones:
   </div>
   <div class='two spacing'></div>
 </div>
-
-<!--{% include robotsindex.html %}-->
 
 <!--<div class='full'>
   <div class='row'>
