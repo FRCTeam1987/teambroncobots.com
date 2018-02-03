@@ -21,8 +21,8 @@
       path: 2016-robot.html
     - name: 2015 Robot
       path: 2015-robot.html
-    - name: Previous Robots
-      path: previous-robot.html
+    - name: All Robots
+      path: robots.html
 - name: Summer Camps
   path: camps.html
 - name: Media

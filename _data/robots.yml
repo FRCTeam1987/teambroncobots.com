@@ -8,7 +8,7 @@
   klass: graphic-design
   link_to: 2016-robot.html
   desc: 2016 FIRST STRONGHOLD
-- image: images/robots/2015robot.jpg
+- image: images/robots/2015robot.JPG
   title: Darth Conveydor
   klass: graphic-design
   link_to: 2015-robot.html
@@ -16,5 +16,5 @@
 - image: images/robots/2008robot.jpg
   title: Previous Robots
   klass: graphic-design
-  link_to: previous-robots.html
+  link_to: robots.html
   desc: Back to the Past
