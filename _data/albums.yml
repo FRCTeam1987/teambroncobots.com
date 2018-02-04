@@ -1,0 +1,21 @@
+- thumbnail: images/@stock/member-1.jpg
+  title: 2017 Season
+  tag: 2017_season
+  desc:
+    Check out some of the best pictures from our 2017 season!
+  images:
+    - image: images/2017/slide1.jpg
+      thumbnail: images/2017/thumb1.jpg
+      title: Pancake Breakfast
+    - image: images/2017/slide2.jpg
+      thumbnail: images/2017/thumb2.jpg
+      title: Pancake Breakfast
+    - image: images/2017/slide3.jpg
+      thumbnail: images/2017/thumb3.jpg
+      title: Studying the New Game
+    - image: images/2017/slide4.jpg
+      thumbnail: images/2017/thumb4.jpg
+      title: Group Presentation
+    - image: images/2017/slide5.jpg
+      thumbnail: images/2017/thumb5.jpg
+      title: More Studying

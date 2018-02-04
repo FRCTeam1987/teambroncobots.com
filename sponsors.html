@@ -1,0 +1,24 @@
+---
+layout: default
+title: Sponsors
+section_id: about
+---
+
+<div class='full parallax' style='background-image: url(images/sponsors.jpg); color: #fff;'>
+    <div class='row'>
+        <div class='twelve columns'>
+            {% include section-header.html title="Sponsors" color="#fff" tagline="We Thank Our Generous Sponsors" class="big" %}
+        </div>
+    </div>
+    <div class='four spacing'></div>
+</div>
+
+<div class="full">
+    <div class="row">
+        {% for sponsor in site.data.sponsors %}
+            <h3>{{sponsor.name}}</h3>
+            <img src="{{sponsor.logo}}" alt="{{sponsor.name}}"/>
+            <p>{{sponsor.desc}}</p>
+        {% endfor %}
+    </div>
+</div>
