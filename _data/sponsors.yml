@@ -6,23 +6,19 @@
   logo: images/sponsors/aps.gif
   desc:
     Founded in 1981, <a href="http://www.alliedplastic.org/" target="_blank">Allied Plastic Supply, LLC</a>. is graphical, medical and industrial plastic sheet, rod, tube, and film distributor with nationwide shipping capabilities.
-- name: Best Buy
-  logo: images/sponsors/bestbuy.png
-  desc:
-    Best Buy is a leading provider of technology products, services and solutions. The company offers expert service at an unbeatable price more than 1.5 billion times a year to the consumers, small business owners and educators who visit our stores, engage with Geek Squad Agents or use <a href="http://www.bestbuy.com/" target="_blank">BestBuy.com</a> or the Best Buy app.
 - name: Brunson
   logo: images/sponsors/brunson.png
   desc:
     <a href="http://www.brunson.us/" target="_blank">Brunson Instruments</a> live in a specialized world of industrial measurement. They deal with measurement problems faced by people who build, inspect, or maintain fairly large machines – machines like aircraft, paper mills, satellites, ships, machine tools, particle accelerators, and automobiles, to name a very few. 
+- name: Bledsoe Rentals
+  logo: images/sponsors/bledsoe.png
+  desc:
+    <a href="https://bledsoerentals.com/" target="_blank">Bledsoe Rentals</a>
 - name: Citizens of Lee's Summit
   logo: images/sponsors/lees_summit.jpg
   desc:
     Personal Sponsor
-- name: Compi Distributors Inc. 
-  logo: images/sponsors/cdi.png
-  desc:
-    Wholesaler that is dedicated to cabinet and fixture industry.Their mission at <a href="http://www.compidistributors.com/" target="_blank">Compi Distributors</a> to have a unique team of dedicated professionals that will provided exemplary customer service to our customers.
-- name: Cox Air Systems, Inc. 
+- name: Cox Air Systems, Inc.
   logo: images/sponsors/blank.jpg
   desc:   
     Personal Sponsor
@@ -30,10 +26,6 @@
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: EMJ Metals
-  logo: images/sponsors/emj.png
-  desc:
-    <a href="http://www.emjmetals.com/" target="_blank">EMJ Metals</a> is a leading supplier of Steel and Aluminum Bar, Tubing, and Plate to manufacturing companies in North America and around the world.
 - name: Fastenal
   logo: images/sponsors/fastenal.png
   desc:
@@ -46,26 +38,18 @@
   logo: images/sponsors/grider.jpg
   desc:
    The <a href="https://griderorthodontics.com/" target="_blank">Grider Orthodontics'</a> team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
-- name: Helen Settle
-  logo: images/sponsors/blank.jpg
+- name: Haimer USA
+  logo: images/sponsors/haimer_en.svg
   desc:
-    Personal Sponsor
-- name: Jake's Performance Fabrication
-  logo: images/sponsors/jakes.jpeg
-  desc:
-    Personal Sponsor
+   <a href="https://www.haimer-usa.com/" target="_blank">Haimer USA</a>
 - name: Jon Plaas
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor in memory of Adam Stevens
-- name: Jonathon Smith
+- name: Jonathan Smith
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: Kastle Grinding
-  logo: images/sponsors/kastle.jpg
-  desc:
-     <a href="http://www.kastlegrinding.net/" target="_blank">Kastle Grinding</a> is state-of-the-art machines along with an experienced staff give us the advantage over our competition in sharpening and precision grinding.
 - name: KC Stem Alliance
   logo: images/sponsors/kcstem.jpg
   desc:
@@ -86,18 +70,18 @@
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: Optimist Club of Lake Lotawana
-  logo: images/sponsors/optimist.png
+- name: Maruka USA
+  logo: images/sponsors/maruka.jpg
   desc:
-    Personal Sponsor
+    <a href="http://www.marukausa.com" target="_blank">Maruka USA</a>
+- name: New Mill Capital
+  logo: images/sponsors/nmc_logo.png
+  desc:
+    <a href="http://www.newmillcapital.com/" target="_blank">New Mill Capital</a>
 - name: Painted With Powder
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: IQVIA
-  logo: images/sponsors/iqvia.png
-  desc:
-     <a href="https://www.iqvia.com/" target="_blank">IQVIA</a> applies the breadth and depth of our service offerings along with extensive therapeutic, scientific and analytics expertise to help our customers navigate an increasingly complex healthcare enviroment.
 - name: R &amp; D Leverage
   logo: images/sponsors/leverage.jpg
   desc:
@@ -106,6 +90,10 @@
   logo: images/sponsors/reiman.png
   desc:
     <a href="http://www.reimanfoundation.org/" target="_blank">The Reiman Foundation</a> continues to provide significant support to hundreds of nonprofit, charitable and civic initiatives.
+- name: Royal Products
+  logo: images/sponsors/royal_products.png
+  desc:
+    <a href="http://www.royalproducts.com/" target="_blank">Royal Products</a>
 - name: Sean and Michelle Ahern
   logo: images/sponsors/blank.jpg
   desc:
@@ -115,17 +103,13 @@
   desc:
     <a href="https://www.staples.com/" target="_blank">Staples Foundation</a> awards grants through our 2 Million & Change program. This program allows associates to nominate organizations with a focus on education or job skills that they personally care about and support. We encourage non-profits to reach out to Staples® associates to learn more.
 - name: Stonehaus Winery
-  logo: images/sponsors/stonehaus.jpg
+  logo: images/sponsors/stonehaus.png
   desc:
      <a href="http://www.stonehausfarms.com/" target="_blank">Stonehaus Winery</a> was founded and contiunes to grow as a family owned and operated buisness since 1996. With the art of wine making contiuned in their family's passion through the years.
 - name: Team 1987 Mentors
   logo: images/logo-original.png
   desc:
     Personal Sponsor
-- name: Walmart
-  logo: images/sponsors/walmart.png
-  desc:
-    <a href="http://www.walmart.com/" target="_blank">Walmart</a> has all the savings in electronics, jewelry, home, furniture, video games, baby, clothings, toys, gifts and more!
 - name: Wentworth Technolog Solutions
   logo: images/sponsors/wentworth.png
   desc:
@@ -134,20 +118,7 @@
   logo: images/sponsors/ace.jpeg
   desc:
     <a href="https://www.westlakehardware.com/" target="_blank">ACE</a> is the place with the helpful hardware folks ;)
-     
-
-    
-    
-
-    
-    
-     
-
-    
-    
-    
-
-
-    
-    
-
+- name: WM. F. Hurst
+  logo: images/sponsors/wm_hurst.jpg
+  desc:
+    <a href="http://www.wmhurst.com/" target="_blank">WM. F. Hurst</a> Industrial Supplies
