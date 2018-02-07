@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 18:11:25 +0000</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 18:11:25 +0000</lastBuildDate>
+    <pubDate>Wed, 07 Feb 2018 00:02:58 +0000</pubDate>
+    <lastBuildDate>Wed, 07 Feb 2018 00:02:58 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -73,7 +73,19 @@
     
       <item>
         <title>Week One Summary</title>
-        <description>&lt;p&gt;We learned our new game challenge this week!  After studying the game rules, we decided on a strategy and started prototyping robot systems.&lt;/p&gt;
+        <description>&lt;p&gt;Before the game reveal, the Broncobots host an annual pancake breakfast to celebrate the dawn of the build season. All three R7 Alliance teams show up to support our team.&lt;/p&gt;
+
+&lt;p&gt;After our pancake breakfast, all three R7 Alliance teams take a seat in the Performing Arts Center to watch the kickoff livestream.&lt;/p&gt;
+
+&lt;p&gt;Here’s the Reveal:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/HZbdwYiCY74&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We started brainstorming about strategy and robot design immediately after the game reveal. Strategy has won us competitions before, so we decided to spend a considerable amount of time discussing ways to win the game.&lt;/p&gt;
+
+&lt;p&gt;On Monday, we finally made it into our shop. We began prototyping different types of cube manipulators and elevators.&lt;/p&gt;
+
+&lt;p&gt;We spent the rest of the week starting the CAD for the chasiss and using our CNC router and CNC mill to cut out prototypes quick and accurate.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 14:05:02 +0000</pubDate>
         <link>/build/journal/2018/01/12/week-one-summary.html</link>
