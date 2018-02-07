@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Feb 2018 00:07:31 +0000</pubDate>
-    <lastBuildDate>Wed, 07 Feb 2018 00:07:31 +0000</lastBuildDate>
+    <pubDate>Wed, 07 Feb 2018 02:34:20 +0000</pubDate>
+    <lastBuildDate>Wed, 07 Feb 2018 02:34:20 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -85,7 +85,7 @@
 
 &lt;p&gt;On Monday, we finally made it into our shop. We began prototyping different types of cube manipulators and elevators.&lt;/p&gt;
 
-&lt;p&gt;We spent the rest of the week starting the CAD for the chasiss and using our CNC router and CNC mill to cut out prototypes quick and accurate.&lt;/p&gt;
+&lt;p&gt;We spent the rest of the week starting the CAD for the chassis and using our CNC router and CNC mill to cut out prototypes quick and accurate.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 14:05:02 +0000</pubDate>
         <link>/build/journal/2018/01/12/week-one-summary.html</link>
