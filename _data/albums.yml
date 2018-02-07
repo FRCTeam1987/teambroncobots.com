@@ -1,42 +1,42 @@
-- thumbnail: images/@stock/member-1.jpg
+- thumbnail: images/@stock/member-1.JPG
   title: 2017 Season
   tag: 2017_season
   desc:
     Check out some of the best pictures from our 2017 season!
   images:
     - image: images/2017/slide1.jpg
-      thumbnail: images/2017/thumb1.jpg
+      thumbnail: images/2017/thumb1.JPG
       title: Pancake Breakfast
     - image: images/2017/slide2.jpg
-      thumbnail: images/2017/thumb2.jpg
+      thumbnail: images/2017/thumb2.JPG
       title: Pancake Breakfast
     - image: images/2017/slide3.jpg
-      thumbnail: images/2017/thumb3.jpg
+      thumbnail: images/2017/thumb3.JPG
       title: Studying the New Game
     - image: images/2017/slide4.jpg
-      thumbnail: images/2017/thumb4.jpg
+      thumbnail: images/2017/thumb4.JPG
       title: Group Presentation
     - image: images/2017/slide5.jpg
-      thumbnail: images/2017/thumb5.jpg
+      thumbnail: images/2017/thumb5.JPG
       title: More Studying
 
-- thumbnail: images/@stock/member-1.jpg
+- thumbnail: images/@stock/member-1.JPG
   title: 2018 Build Season Week 1
   tag: 2018_week_1
   desc:
     Week 1 was filled with strategy discussions and understanding the game. Check out some of the pictures taken!
   images:
     - image: images/2018_Season/Week_1/pic_1.jpg
-      thumbnail: images/2018_Season/Week_1/pic_1_thumbnail.jpg
+      thumbnail: images/2018_Season/Week_1/pic_1_thumbnail.JPG
       title: Broncobots work on understanding the game
     - image: images/2018_Season/Week_1/pic_2.jpg
-      thumbnail: images/2018_Season/Week_1/pic_2_thumbnail.jpg
+      thumbnail: images/2018_Season/Week_1/pic_2_thumbnail.JPG
       title: Understanding cube manipulation
     - image: images/2018_Season/Week_1/pic_3.jpg
-      thumbnail: images/2018_Season/Week_1/pic_3_thumbnail.jpg
+      thumbnail: images/2018_Season/Week_1/pic_3_thumbnail.JPG
       title: Cutting prototypes
     - image: images/2018_Season/Week_1/pic_4.jpg
-      thumbnail: images/2018_Season/Week_1/pic_4_thumbnail.jpg
+      thumbnail: images/2018_Season/Week_1/pic_4_thumbnail.JPG
       title: Cube manipulator ideas
     
     

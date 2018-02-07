@@ -23,4 +23,4 @@ We started brainstorming about strategy and robot design immediately after the g
 
 On Monday, we finally made it into our shop. We began prototyping different types of cube manipulators and elevators.
 
-We spent the rest of the week starting the CAD for the chasiss and using our CNC router and CNC mill to cut out prototypes quick and accurate.
+We spent the rest of the week starting the CAD for the chassis and using our CNC router and CNC mill to cut out prototypes quick and accurate.
