@@ -19,3 +19,24 @@
     - image: images/2017/slide5.jpg
       thumbnail: images/2017/thumb5.jpg
       title: More Studying
+
+- thumbnail: images/@stock/member-1.jpg
+  title: 2018 Build Season Week 1
+  tag: 2018_week_1
+  desc:
+    Week 1 was filled with strategy discussions and understanding the game. Check out some of the pictures taken!
+  images:
+    - image: images/2018_Season/Week_1/pic_1.jpg
+      thumbnail: images/2018_Season/Week_1/pic_1_thumbnail.jpg
+      title: Broncobots work on understanding the game
+    - image: images/2018_Season/Week_1/pic_2.jpg
+      thumbnail: images/2018_Season/Week_1/pic_2_thumbnail.jpg
+      title: Understanding cube manipulation
+    - image: images/2018_Season/Week_1/pic_3.jpg
+      thumbnail: images/2018_Season/Week_1/pic_3_thumbnail.jpg
+      title: Cutting prototypes
+    - image: images/2018_Season/Week_1/pic_4.jpg
+      thumbnail: images/2018_Season/Week_1/pic_4_thumbnail.jpg
+      title: Cube manipulator ideas
+    
+    
