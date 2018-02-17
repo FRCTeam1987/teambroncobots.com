@@ -34,6 +34,10 @@
   logo: images/sponsors/github.png
   desc:
      <a href="https://github.com/" target="_blank">Github</a> is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
+- name: Green Law Office
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: Grider Orthodontics
   logo: images/sponsors/grider.jpg
   desc:
