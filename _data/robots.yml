@@ -1,3 +1,8 @@
+- image: images/robots/2018robot.JPG
+  title: Sidious
+  klass: graphic-design
+  link_to: 2018-robot.html
+  desc: 2018 FIRST POWER UP
 - image: images/robots/2017robot.jpg
   title: Perseus
   klass: graphic-design
@@ -8,11 +13,6 @@
   klass: graphic-design
   link_to: 2016-robot.html
   desc: 2016 FIRST STRONGHOLD
-- image: images/robots/2015robot.JPG
-  title: Darth Conveydor
-  klass: graphic-design
-  link_to: 2015-robot.html
-  desc: 2015 FIRST RECYCLE RUSH
 - image: images/robots/2008robot.jpg
   title: Previous Robots
   klass: graphic-design
