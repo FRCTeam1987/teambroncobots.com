@@ -15,12 +15,12 @@
   path: robots.html
   section_id: our_robots
   children:
+    - name: 2018 Robot
+      path: 2018-robot.html
     - name: 2017 Robot
       path: 2017-robot.html
     - name: 2016 Robot
       path: 2016-robot.html
-    - name: 2015 Robot
-      path: 2015-robot.html
     - name: All Robots
       path: robots.html
 - name: Summer Camps
