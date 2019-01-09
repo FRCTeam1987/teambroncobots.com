@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Broncobots FRC Team 1987</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <description>Broncobots Website</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Apr 2018 23:07:25 +0000</pubDate>
-    <lastBuildDate>Tue, 24 Apr 2018 23:07:25 +0000</lastBuildDate>
+    <pubDate>Wed, 09 Jan 2019 00:52:00 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Jan 2019 00:52:00 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
