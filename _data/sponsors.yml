@@ -1,19 +1,14 @@
-- name: 80/20 Inc.
-  logo: images/sponsors/8020.jpg
-  desc:
-    <a href="https://www.8020.net/" target="_blank">80/20</a> is a T-Slot aluminum building system company that you can use to construct virtually anything.
 - name: Allied Plastics
   logo: images/sponsors/aps.gif
   desc:
     Founded in 1981, <a href="http://www.alliedplastic.org/" target="_blank">Allied Plastic Supply, LLC</a>. is graphical, medical and industrial plastic sheet, rod, tube, and film distributor with nationwide shipping capabilities.
+- name: Best Buy
+  logo: images/sponsors/BestBuy.png
+  desc: Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech.
 - name: Brunson
   logo: images/sponsors/brunson.png
   desc:
     <a href="http://www.brunson.us/" target="_blank">Brunson Instruments</a> live in a specialized world of industrial measurement. They deal with measurement problems faced by people who build, inspect, or maintain fairly large machines – machines like aircraft, paper mills, satellites, ships, machine tools, particle accelerators, and automobiles, to name a very few. 
-- name: Bledsoe Rentals
-  logo: images/sponsors/bledsoe.png
-  desc:
-    <a href="https://bledsoerentals.com/" target="_blank">Bledsoe Rentals</a>
 - name: Citizens of Lee's Summit
   logo: images/sponsors/lees_summit.jpg
   desc:
@@ -70,10 +65,6 @@
   logo: images/sponsors/tribune.jpg
   desc:
     The Lee's Summit Tribune is dedicated to providing you the most current and accurate news and events in Lee's Summit.
-- name: Matt and Beth Settle
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
 - name: Maruka USA
   logo: images/sponsors/maruka.jpg
   desc:
@@ -102,10 +93,6 @@
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: Staples Foundation
-  logo: images/sponsors/staples.png
-  desc:
-    <a href="https://www.staples.com/" target="_blank">Staples Foundation</a> awards grants through our 2 Million & Change program. This program allows associates to nominate organizations with a focus on education or job skills that they personally care about and support. We encourage non-profits to reach out to Staples® associates to learn more.
 - name: Stonehaus Winery
   logo: images/sponsors/stonehaus.png
   desc:
