@@ -23,6 +23,8 @@
       path: 2016-robot.html
     - name: All Robots
       path: robots.html
+- name: Calendar
+  path: calendar.html
 - name: Summer Camps
   path: camps.html
 - name: Media
