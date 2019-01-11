@@ -3,7 +3,7 @@ layout: post
 title:  "Week One Summary"
 date:   2018-01-12 09:05:02 -0500
 categories: build journal
-images: images/blog/week-1.JPG
+images: images/blog/week-1.jpg
 ---
 
 Before the game reveal, the Broncobots host an annual pancake breakfast to celebrate the dawn of the build season. All three R7 Alliance teams show up to support our team.
