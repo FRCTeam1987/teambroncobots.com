@@ -3826,3 +3826,7 @@ body {
     display: none;
   }
 }
+
+.middle {
+    text-align:center;
+}

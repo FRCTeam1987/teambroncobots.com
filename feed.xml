@@ -5,9 +5,34 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Jan 2019 22:36:39 +0000</pubDate>
-    <lastBuildDate>Fri, 11 Jan 2019 22:36:39 +0000</lastBuildDate>
+    <pubDate>Wed, 16 Jan 2019 00:52:48 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Jan 2019 00:52:48 +0000</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Build Season : Week One Summary</title>
+        <description>&lt;p&gt;We start off our prototyping and brainstorming for the Destination : Deep Space game!&lt;/p&gt;
+
+&lt;p&gt;Week One started off with our Destination : Deep Space game reveal, and Two day collaboration period. We have a blog post about that on our website that you should go check out.&lt;/p&gt;
+
+&lt;p&gt;After we got settled in the shop, we went off brainstorming prototypes for the game piece collection. This went into separate groups for each game piece. We make our prototypes out of materials around the shop, which is a great learning experience for learning to brainstorm ideas and using our tools around the shop. We take these prototypes to the mentors and other team members to critique the ideas and decide on some final strategy ideas that reflect our chassis, collection of game pieces, and speed of our robot.&lt;/p&gt;
+
+&lt;p&gt;After we decide our final robot design ideas, we head to the CAD programs and start prototyping parts of our robot. This process brought us into Week Two, where we plan to take those CAD prototypes into reality, and start piecing together our robot!&lt;/p&gt;
+
+&lt;p&gt;The weekend had some blizzard conditions, but we pushed through and worked through the snowstorm. After some power difficulties, we called it a night on Saturday.&lt;/p&gt;
+
+&lt;p&gt;Most of the fine details are being left out until we are ready to reveal our robot.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+        <link>/build/journal/2019/01/14/2019-Week-One-Summary.html</link>
+        <guid isPermaLink="true">/build/journal/2019/01/14/2019-Week-One-Summary.html</guid>
+        
+        
+        <category>build</category>
+        
+        <category>journal</category>
+        
+      </item>
     
       <item>
         <title>Broncobots Kickoff, Destination : DEEP SPACE</title>
