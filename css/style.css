@@ -3828,5 +3828,6 @@ body {
 }
 
 .middle {
-    text-align:center;
+    display: block;
+    margin: 0;
 }
