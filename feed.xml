@@ -5,9 +5,31 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Jan 2019 02:16:46 +0000</pubDate>
-    <lastBuildDate>Sun, 27 Jan 2019 02:16:46 +0000</lastBuildDate>
+    <pubDate>Sat, 02 Feb 2019 17:32:32 +0000</pubDate>
+    <lastBuildDate>Sat, 02 Feb 2019 17:32:32 +0000</lastBuildDate>
     <generator>Jekyll v3.6.3</generator>
+    
+      <item>
+        <title>Broncobots : Open House</title>
+        <description>&lt;p&gt;The Lee’s Summit Robotics Open House will be Sunday, Febuary 10th, opening our shop to all of Lee’s Summit!&lt;/p&gt;
+
+&lt;p&gt;Our Shop is at 7th and Browning, in “Robotics 2”, behind the building inside of the parking lot. It is the first shop next to the Athletics Building.&lt;/p&gt;
+
+&lt;p&gt;The other shops will be marked so you can see the other Lee’s Summit teams shops too!&lt;/p&gt;
+
+&lt;p&gt;The Open House will run from 2-4pm, and you can get a good look at our progress on the season!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 28 Jan 2019 14:05:02 +0000</pubDate>
+        <link>/build/journal/2019/01/28/2019-Open-House.html</link>
+        <guid isPermaLink="true">/build/journal/2019/01/28/2019-Open-House.html</guid>
+        
+        
+        <category>build</category>
+        
+        <category>journal</category>
+        
+      </item>
     
       <item>
         <title>Build Season : Week One Summary</title>
@@ -54,68 +76,6 @@
         <category>build</category>
         
         <category>journal</category>
-        
-      </item>
-    
-      <item>
-        <title>2017 Season Summary</title>
-        <description>&lt;p class=&quot;lead&quot;&gt;We had a fantastic season last year! Here's a quick summary of the 2017 season.&lt;/p&gt;
-
-&lt;h5&gt;Greater Kansas City&lt;/h5&gt;
-
-&lt;p&gt;-Captian of Winning Alliance (with &lt;a href=&quot;http://team624.org/&quot; target=&quot;_blank&quot;&gt;Team 624&lt;/a&gt; and &lt;a href=&quot;http://ctcinspire.org/&quot; target=&quot;_blank&quot;&gt;Team 5801&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;-FIRST Dean’s List Finalist Award (Levi Madden)&lt;/p&gt;
-
-&lt;p&gt;-Excellence in Engineering Award sponsored by Delphi&lt;/p&gt;
-
-&lt;h5&gt;Iowa Regional&lt;/h5&gt;
-
-&lt;p&gt;-Rank 2 in Quals&lt;/p&gt;
-
-&lt;p&gt;-Semifinalist (6 matches)&lt;/p&gt;
-
-&lt;p&gt;-Engineering Inspiration Award&lt;/p&gt;
-
-&lt;p&gt;-Safety Award sponsored by Underwriters Laboratories&lt;/p&gt;
-
-&lt;h5&gt;Archimedes Division&lt;/h5&gt;
-
-&lt;p&gt;-Quarterfinalist&lt;/p&gt;
-
-&lt;h5&gt;Missouri State Championships&lt;/h5&gt;
-
-&lt;p&gt;-Captian of Winning Alliance (with Team 1986, Team 6744, and Team 4600)&lt;/p&gt;
-
-&lt;h5&gt;Indiana Robotics Invitational&lt;/h5&gt;
-
-&lt;p&gt;-Rank 21&lt;/p&gt;
-
-&lt;h5&gt;Cow Town ThrowDown&lt;/h5&gt;
-
-&lt;p&gt;-Quarterfinalist&lt;/p&gt;
-
-&lt;h5&gt;Kansas Cup&lt;/h5&gt;
-
-&lt;p&gt;We brought two robots to the competition so all our students could experience being on drive team.&lt;/p&gt;
-
-&lt;h6&gt;Competition Bot&lt;/h6&gt;
-
-&lt;p&gt;-Competition Winner (with Team 1986 &amp;amp; Team 1984 B Robot)&lt;/p&gt;
-
-&lt;h6&gt;&quot;The Cheese Balls&quot; Second Robot&lt;/h6&gt;
-
-&lt;p&gt;We rebuilt our practice bot for this event and decided to put 6 CIMs on our gearbox. Not only did that make the bot extremely fast, but we could climb in about 1.5 seconds!&lt;/p&gt;
-
-&lt;p&gt;Thanks to all of our sponsors for the fantastic season!&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 27 Jan 2018 16:23:02 +0000</pubDate>
-        <link>/season-summary/2018/01/27/2017-summary.html</link>
-        <guid isPermaLink="true">/season-summary/2018/01/27/2017-summary.html</guid>
-        
-        
-        <category>season-summary</category>
         
       </item>
     
