@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Broncobots : Open House"
+date:   2019-02-02 09:05:02 -0500
+categories: build journal
+images: images/2019/open/OpenHouse.png
+author: JJ Keen
+---
+
+The Lee's Summit Robotics Open House will be Sunday, Febuary 10th, opening our shop to all of Lee's Summit! 
+
+Our Shop is at 7th and Browning, in "Robotics 2", behind the building inside of the parking lot. It is the first shop next to the Athletics Building. 
+
+The other shops will be marked so you can see the other Lee's Summit teams shops too!
+
+The Open House will run from 2-4pm, and you can get a good look at our progress on the season!
+
