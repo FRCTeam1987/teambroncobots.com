@@ -1,7 +1,3 @@
-- name: Allied Plastics
-  logo: images/sponsors/aps.gif
-  desc:
-    Founded in 1981, <a href="http://www.alliedplastic.org/" target="_blank">Allied Plastic Supply, LLC</a>. is graphical, medical and industrial plastic sheet, rod, tube, and film distributor with nationwide shipping capabilities.
 - name: Best Buy
   logo: images/sponsors/BestBuy.png
   desc: Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech.
@@ -13,14 +9,6 @@
   logo: images/sponsors/lees_summit.jpg
   desc:
     Personal Sponsor
-- name: Cox Air Systems, Inc.
-  logo: images/sponsors/blank.jpg
-  desc:   
-    Personal Sponsor
-- name: Edwina Smith 
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
 - name: Fastenal
   logo: images/sponsors/fastenal.png
   desc:
@@ -29,7 +17,7 @@
   logo: images/sponsors/github.png
   desc:
      <a href="https://github.com/" target="_blank">Github</a> is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
-- name: Green Law Office
+- name: Law Office of Susan Green
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
@@ -37,10 +25,6 @@
   logo: images/sponsors/grider.jpg
   desc:
    The <a href="https://griderorthodontics.com/" target="_blank">Grider Orthodontics'</a> team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
-- name: Haimer USA
-  logo: images/sponsors/haimer_en.svg
-  desc:
-   <a href="https://www.haimer-usa.com/" target="_blank">Haimer USA</a>
 - name: Jon Plaas
   logo: images/sponsors/blank.jpg
   desc:
@@ -65,30 +49,10 @@
   logo: images/sponsors/tribune.jpg
   desc:
     The Lee's Summit Tribune is dedicated to providing you the most current and accurate news and events in Lee's Summit.
-- name: Maruka USA
-  logo: images/sponsors/maruka.jpg
-  desc:
-    <a href="http://www.marukausa.com" target="_blank">Maruka USA</a>
-- name: New Mill Capital
-  logo: images/sponsors/nmc_logo.png
-  desc:
-    <a href="http://www.newmillcapital.com/" target="_blank">New Mill Capital</a>
-- name: Painted With Powder
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
 - name: R &amp; D Leverage
   logo: images/sponsors/leverage.jpg
   desc:
     <a href="http://www.rdleverage.com/" target="_blank">R &amp; D Leverage</a> is recognized as the world's leading suppliers of tooling for the food, beverage, home, personal care and healthcare industries. With offices in the Kansas City, Missouri metro area and in the United Kingdom, R&D is a full-service plastic product solutions company. From idea, to tooling, to manufacturing, the company's packaging solutions support the branded product. Services include full mold manufacturing for PET tooling, IBM tooling, injection molds, custom medical injection, silicone services, and a full range of support functions that include sampling analysis, mold maintenance, contract molding and processing assistance.
-- name: Reiman Foundation
-  logo: images/sponsors/reiman.png
-  desc:
-    <a href="http://www.reimanfoundation.org/" target="_blank">The Reiman Foundation</a> continues to provide significant support to hundreds of nonprofit, charitable and civic initiatives.
-- name: Royal Products
-  logo: images/sponsors/royal_products.png
-  desc:
-    <a href="http://www.royalproducts.com/" target="_blank">Royal Products</a>
 - name: Sean and Michelle Ahern
   logo: images/sponsors/blank.jpg
   desc:
@@ -101,15 +65,7 @@
   logo: images/logo-original.png
   desc:
     Personal Sponsor
-- name: Wentworth Technolog Solutions
-  logo: images/sponsors/wentworth.png
-  desc:
-     <a href="http://www.wentworthtechnology.com/" target="_blank">Wentworth Technology Solutions</a> is a team of wireless communications professionals have over 60 years of combined experience providing full-featured wireless communications solutions to the most demanding industries.
 - name: Westlake ACE Hardware
   logo: images/sponsors/ace.jpeg
   desc:
     <a href="https://www.westlakehardware.com/" target="_blank">ACE</a> is the place with the helpful hardware folks ;)
-- name: WM. F. Hurst
-  logo: images/sponsors/wm_hurst.jpg
-  desc:
-    <a href="http://www.wmhurst.com/" target="_blank">WM. F. Hurst</a> Industrial Supplies
