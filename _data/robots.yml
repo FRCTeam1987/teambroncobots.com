@@ -1,3 +1,8 @@
+- image: images/robots/2019robot.jpg
+  title: Orion
+  klass: graphic-design
+  link_to: 2019-robot.html
+  desc: "2019 DESTINATION: DEEP SPACE"
 - image: images/robots/2018robot.jpg
   title: Sidious
   klass: graphic-design

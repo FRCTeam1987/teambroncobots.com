@@ -1,3 +1,7 @@
+- name: Aaron Kaplan
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: Best Buy
   logo: images/sponsors/BestBuy.png
   desc: Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech.
@@ -5,6 +9,18 @@
   logo: images/sponsors/brunson.png
   desc:
     <a href="http://www.brunson.us/" target="_blank">Brunson Instruments</a> live in a specialized world of industrial measurement. They deal with measurement problems faced by people who build, inspect, or maintain fairly large machines – machines like aircraft, paper mills, satellites, ships, machine tools, particle accelerators, and automobiles, to name a very few. 
+- name: Catalent
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Charles Hasek
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Chuck Stepherson
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: Citizens of Lee's Summit
   logo: images/sponsors/lees_summit.jpg
   desc:
@@ -13,6 +29,10 @@
   logo: images/sponsors/fastenal.png
   desc:
     For the past 47 years, <a href="https://www.fastenal.com/home" target="_blank">Fastenal</a> has grown from a small-town fastener shop, to a thriving regional business, to North America’s largest fastener distributor, to the world’s most efficient supplier of OEM, MRO, and construction products.
+- name: First Hand Foundation
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: GitHub
   logo: images/sponsors/github.png
   desc:
@@ -37,6 +57,10 @@
   logo: images/sponsors/kcstem.jpg
   desc:
     The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community. 
+- name: Kent Werremeyer
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: Laird Plastics
   logo: images/sponsors/laird.jpg
   desc:
@@ -49,6 +73,10 @@
   logo: images/sponsors/tribune.jpg
   desc:
     The Lee's Summit Tribune is dedicated to providing you the most current and accurate news and events in Lee's Summit.
+- name: Paul Sites
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: R &amp; D Leverage
   logo: images/sponsors/leverage.jpg
   desc:
@@ -61,6 +89,10 @@
   logo: images/sponsors/stonehaus.png
   desc:
      <a href="http://www.stonehausfarms.com/" target="_blank">Stonehaus Winery</a> was founded and contiunes to grow as a family owned and operated buisness since 1996. With the art of wine making contiuned in their family's passion through the years.
+- name: Talley Family
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
 - name: Team 1987 Mentors
   logo: images/logo-original.png
   desc:
