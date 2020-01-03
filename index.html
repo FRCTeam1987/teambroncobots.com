@@ -170,9 +170,9 @@ milestones:
 
 <div class="full" style="background: #f5f5f5;">
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-6 columns">
       {% include section-header.html title="Welcome" %}
-      <div class="spacing"></div>
+     
       <p>
         We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students
         attending <a href="http://lsnhs.lsr7.org/">Lee's Summit North High School</a>, 5 coaches, several amazing
@@ -180,7 +180,7 @@ milestones:
         <a href="http://www.usfirst.org/">FIRST</a> (For Inspiration and Recognition of Science and Technology), our
         community, and working hard to encourage <a href="http://kcstem.org/">STEM</a> (Science, Technology, Engineering,
         and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC
-        Season. To learn more about our team, check out the About Us section of our website!
+          Season. To learn more about our team, check out the <a href="http://localhost:4000/about-us.html">About Us</a> section of our website!
       </p>
       <p>
         We are currently building our 2019 robot and updating our web site with current content.
@@ -190,6 +190,33 @@ milestones:
       </p>
       <div class="three spacing"></div>
     </div>
+      <div class="large-6 columns">
+         
+          <div class='mod modGallery'>
+      <div class='gallery-nav'>
+      </div>
+
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for robot in site.data.robots %}
+        <li class="{{ robot.klass }}">
+          <a href='{{ robot.link_to }}'>
+            <img alt="" src="{{ robot.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ robot.title }}</h3>
+                <p>{{ robot.desc }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+      </div>
   </div>
 
   <div class="mod modGallery">
@@ -214,6 +241,7 @@ milestones:
     </ul>
   </div>
 </div>
+
 
 <div class='full'>
   <div class='row'>
@@ -246,6 +274,7 @@ milestones:
   <hr/>
   <div class='four spacing'></div>
 </div>
+
 
 <div class="row">
   <div class="medium-3 large-3 columns">

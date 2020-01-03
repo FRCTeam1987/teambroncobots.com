@@ -33,5 +33,7 @@
   path: media.html
 - name: Sponsors
   path: sponsors.html
+- name: Resources
+  path: resources.html
 - name: Blog
   path: blog.html
