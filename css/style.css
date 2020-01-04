@@ -801,6 +801,7 @@ ul.shortcode-list i {
 /*Top bar */
 .top-bar {
   z-index: 100;
+  max-width: 63% !important;
 }
 .top-bar .title-area .name h1 a {
   font-size: 2.57143rem;
