@@ -11,29 +11,32 @@
       path: our-awards.html
     - name: R7 Alliance
       path: r7-alliance.html
-- name: Our Robots
-  path: robots.html
-  section_id: our_robots
-  children:
-    - name: 2019 Robot
-      path: 2019-robot.html
-    - name: 2018 Robot
-      path: 2018-robot.html
-    - name: 2017 Robot
-      path: 2017-robot.html
-    - name: 2016 Robot
-      path: 2016-robot.html
-    - name: All Robots
+    - name: Our Robots
       path: robots.html
+      section_id: our_robots
+      children:
+        - name: 2019 Robot
+          path: 2019-robot.html
+        - name: 2018 Robot
+          path: 2018-robot.html
+        - name: 2017 Robot
+          path: 2017-robot.html
+        - name: 2016 Robot
+          path: 2016-robot.html
+        - name: All Robots
+          path: robots.html
 - name: Calendar
   path: calendar.html
 - name: Summer Camps
   path: camps.html
 - name: Media
   path: media.html
-- name: Sponsors
-  path: sponsors.html
 - name: Resources
   path: resources.html
+  children:
+    - name: Resources
+      path: resources.html
+    - name: Sponsors
+      path: sponsors.html
 - name: Blog
   path: blog.html

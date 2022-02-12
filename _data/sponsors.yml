@@ -1,7 +1,3 @@
-- name: Aaron Kaplan
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
 - name: Catalent
   logo: images/sponsors/blank.jpg
   desc: 
@@ -10,39 +6,11 @@
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: Chuck Stepherson
+- name: Chuck Stephenson
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
-- name: First Hand Foundation
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Law Office of Susan Green
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Jon Plaas
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor in memory of Adam Stevens
 - name: Jonathan Smith
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Kent Werremeyer
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Paul Sites
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Sean and Michelle Ahern
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Talley Family
   logo: images/sponsors/blank.jpg
   desc:
     Personal Sponsor
@@ -50,10 +18,11 @@
   logo: images/logo-original.png
   desc:
     Personal Sponsor
-    
-- name: Best Buy
-  logo: images/sponsors/BestBuy.png
-  desc: Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech.
+
+- name: Actuonix (Needs Image)
+  logo: images/sponsors/blank.jpg
+  desc:
+     <a href="https://www.actuonix.com/" target="_blank">Our</a> micro linear actuators and servos are designed to save product designers the difficulties and hassle of engineering a linear stage from large and awkward motors, servos, gears and rods.
 - name: Brunson
   logo: images/sponsors/brunson.png
   desc:
@@ -62,10 +31,6 @@
   logo: images/sponsors/lees_summit.jpg
   desc:
     Personal Sponsor
-- name: Fastenal
-  logo: images/sponsors/fastenal.png
-  desc:
-    For the past 47 years, <a href="https://www.fastenal.com/home" target="_blank">Fastenal</a> has grown from a small-town fastener shop, to a thriving regional business, to North America’s largest fastener distributor, to the world’s most efficient supplier of OEM, MRO, and construction products.
 - name: GitHub
   logo: images/sponsors/github.png
   desc:
@@ -74,14 +39,18 @@
   logo: images/sponsors/grider.jpg
   desc:
    The <a href="https://griderorthodontics.com/" target="_blank">Grider Orthodontics'</a> team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
+- name: Harbor Freight
+  logo: images/sponsors/Harbor_Freight.jpg
+  desc:
+     <a href="https://www.harborfreight.com//" target="_blank">We</a>  have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!
+- name: Intuitive Foundation
+  logo: images/sponsors/Intuitive_Foundation.jpg
+  desc:
+     <a href="https://www.intuitive-foundation.org/" target="_blank">The Intuitive Foundation</a> is a proud sponsor of FIRST (For Inspiration and Recognition of Science and Technology) high school robotics teams.
 - name: KC Stem Alliance
   logo: images/sponsors/kcstem.jpg
   desc:
     The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community. 
-- name: Laird Plastics
-  logo: images/sponsors/laird.jpg
-  desc:
-     <a href="https://www.lairdplastics.com/" target="_blank">Laird Plastics</a> is a multi-national team of over 400 employees services over 25,000 customers across North America in all segments of commercial, industrial and advertising activity. We offer a comprehensive network of service centers and inventories with an extensive product range including such major segments as acrylics and polycarbonates, graphics materials (substrates and a variety of higher end materials) and mechanical/engineering materials (UHMW, LDPE, HDPE, nylons, acetals).
 - name: Lee's Summit North High School
   logo: images/sponsors/lsn.jpg
   desc:
@@ -94,11 +63,3 @@
   logo: images/sponsors/leverage.jpg
   desc:
     <a href="http://www.rdleverage.com/" target="_blank">R &amp; D Leverage</a> is recognized as the world's leading suppliers of tooling for the food, beverage, home, personal care and healthcare industries. With offices in the Kansas City, Missouri metro area and in the United Kingdom, R&D is a full-service plastic product solutions company. From idea, to tooling, to manufacturing, the company's packaging solutions support the branded product. Services include full mold manufacturing for PET tooling, IBM tooling, injection molds, custom medical injection, silicone services, and a full range of support functions that include sampling analysis, mold maintenance, contract molding and processing assistance.
-- name: Stonehaus Winery
-  logo: images/sponsors/stonehaus.png
-  desc:
-     <a href="http://www.stonehausfarms.com/" target="_blank">Stonehaus Winery</a> was founded and contiunes to grow as a family owned and operated buisness since 1996. With the art of wine making contiuned in their family's passion through the years.
-- name: Westlake ACE Hardware
-  logo: images/sponsors/ace.jpeg
-  desc:
-    <a href="https://www.westlakehardware.com/" target="_blank">ACE</a> is the place with the helpful hardware folks ;)
