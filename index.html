@@ -119,51 +119,103 @@ milestones:
       <span></span>
     </a>
     <ul class='sequence-pagination'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign class = 'current' %}
-        {% else %}
-          {% assign class = '' %}
-        {% endif %}
-        <li class="{{class}}"></li>
-      {% endfor %}
+      
+        
+        <li class="current"></li>
+      
+        
+        <li class=""></li>
+      
+        
+        <li class=""></li>
+      
     </ul>
     <ul class='sequence-canvas'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign style = 'static' %}
-        {% else %}
-          {% assign style = '' %}
-        {% endif %}
+      
+        
 
-        <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
-          <div class='small-title {{ slide.small_title.klass }}'>
+        <li class='frame static '>
+          <div class='bg' style='background-image: url(images/slides/Turret_Slide.jpg);'></div>
+          <div class='small-title bottom-to-top'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>FRC Team 1987</h2>
+              </div>
+            </div>
+          </div>
+          <div class='title bottom-to-top'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>The Broncobots</h2>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper '>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+      
+        
+
+        <li class='frame  '>
+          <div class='bg' style='background-image: url(images/slides/GKC_Winner.jpg);'></div>
+          <div class='small-title bottom-to-top'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>2017 Greater Kansas City Regional</h2>
+              </div>
+            </div>
+          </div>
+          <div class='title bottom-to-top'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>Winner</h2>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper '>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                
+              </div>
+            </div>
+          </div>
+        </li>
+      
+        
+
+        <li class='frame  '>
+          <div class='bg' style='background-image: url(images/slides/EI_Iowa.jpg);'></div>
+          <div class='small-title bottom-to-top'>
             <div class='row'>
               <div class='large-12 columns'>
                 <h2>{{ slide.sall_title.text }}</h2>
               </div>
             </div>
           </div>
-          <div class='title {{ slide.title.klass }}'>
+          <div class='title bottom-to-top'>
             <div class='row'>
               <div class='large-12 columns'>
-                <h2>{{ slide.title.text }}</h2>
+                <h2>Engineering Inspiration</h2>
               </div>
             </div>
           </div>
-          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+          <div class='buttons-wrapper '>
             <div class='row'>
               <div class='large-12 columns'>
                 <div class='two spacing'></div>
-                {% for button in slide.buttons.items %}
-                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
-                {% endfor %}
+                
               </div>
             </div>
           </div>
         </li>
-      {% endfor %}
+      
     </ul>
   </div>
 </div>
@@ -295,10 +347,15 @@ milestones:
 
 <div class="spacing"></div>
 
-<div class='full parallax' style='background-image: url(images/home/IowaTeamPic.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url(images/home/2019TeamPic.JPG); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Broncobots by the Numbers" color="#fff" %}
+      <div class="mod modSectionHeader ">
+  <div class="special-title centered-text">
+    <h2 style="color: #fff;">Broncobots by the Numbers</h2>
+  </div>
+  
+</div>
       <div class='spacing'></div>
       <p class='centered-text' style='color: #F8F8F8;'>
         Over the years the Broncobots have inspired countless future engineers, attended dozens of
@@ -308,69 +365,43 @@ milestones:
     </div>
   </div>
   <div class='row'>
-    {% for milestone in page.milestones %}
+    
       <div class='medium-3 large-3 columns'>
         <div class='mod modMilestone'>
-          <i class='fa fa-{{milestone.icon}}'></i>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'style='color: #EEEEEE;'>&nbsp;</strong>
-          <b style='color: #FFFFFF'>{{milestone.title}}</b>
+          <i class='fa fa-line-chart'></i>
+          <strong data-from='0' data-to='11'>&nbsp;</strong>
+          <span>Seasons Competed</span>
           <div class='four spacing'></div>
         </div>
       </div>
-    {% endfor %}
-  </div>
-  <div class='two spacing'></div>
-</div>
-
-<!---
-<div class='full' style='background: #f5f5f5'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Latest Blog Posts" %}
-      <div class='spacing'></div>
-      <p>
-        
-      </p>
-      <div class='two spacing'></div>
-    </div>
-  </div>
-
-  <div class='row'>
-    {% for post in site.posts %}
-      {% if forloop.index > 3 %}
-        {% break %}
-      {% endif %}
-
-      <div class='large-4 medium-4 columns'>
-        <div class='mod modBlogPost'>
-          {% for image in post.images %}
-            {% unless forloop.first %}
-              {% break %}
-            {% endunless %}
-            <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
-          {% endfor %}
-          <div class='content'>
-            <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
-            <h4><a href="{{post.url}}">{{post.title}}</a></h4>
-            <p>{{post.excerpt}}</p>
-          </div>
+    
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <i class='fa fa-trophy'></i>
+          <strong data-from='0' data-to='31'>&nbsp;</strong>
+          <span>Competitions</span>
+          <div class='four spacing'></div>
         </div>
       </div>
-
-    {% endfor %}
-
+    
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <i class='fa fa-flag'></i>
+          <strong data-from='0' data-to='7'>&nbsp;</strong>
+          <span>Blue Banners</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <i class='fa fa-thumbs-up'></i>
+          <strong data-from='0' data-to='999'>&nbsp;</strong>
+          <span>Future Engineers Inspired</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    
   </div>
-
-
   <div class='two spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p class='centered-text'>
-        <a class='button' href='blog.html'>See all posts</a>
-      </p>
-    </div>
-  </div>
-  <div class='two spacing'></div>
-
 </div>
---->

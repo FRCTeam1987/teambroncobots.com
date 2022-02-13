@@ -18,9 +18,8 @@
   logo: images/logo-original.png
   desc:
     Personal Sponsor
-
-- name: Actuonix (Needs Image)
-  logo: images/sponsors/blank.jpg
+- name: Actuonix (CHECK REQUIRMENTS)
+  logo: images/sponsors/actuonix.png
   desc:
      <a href="https://www.actuonix.com/" target="_blank">Our</a> micro linear actuators and servos are designed to save product designers the difficulties and hassle of engineering a linear stage from large and awkward motors, servos, gears and rods.
 - name: Brunson
