@@ -44,22 +44,22 @@
   link_to: 2013-robot.html
   desc: 2013 Ultimate Ascent
 - image: images/robots/2012robot.png
-  title: ROBOT NAME
+  title: 2012 robot
   klass: graphic-design
   link_to: 2012-robot.html
   desc: 2012 Rebound Rumble
 - image: images/robots/2011robot.png
-  title: ROBOT NAME
+  title: 2011 robot
   klass: graphic-design
   link_to: 2011-robot.html
   desc: 2011 Logo Motion
 - image: images/robots/2010robot.png
-  title: ROBOT NAME
+  title: 2010 robot
   klass: graphic-design
   link_to: 2010-robot.html
   desc: 2010 Breakaway
 - image: images/robots/2009robot.png
-  title: ROBOT NAME
+  title: 2009 robot
   klass: graphic-design
   link_to: 2009-robot.html
   desc: 2009 Lunacy
@@ -69,7 +69,7 @@
   link_to: 2008-robot.html
   desc: 2008 Overdrive 
 - image: images/robots/2007robot.png
-  title: ROBOT NAME
+  title: 2007 robot
   klass: graphic-design
   link_to: 2007-robot.html
   desc: 2007 RACK 'N' ROLL 
