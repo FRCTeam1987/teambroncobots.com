@@ -3,15 +3,15 @@
 - name: Chief Delphi
   link: //www.chiefdelphi.com
 - name: Gear Calculator
-  link: https://www.wcproducts.com/how-to-gears/
+  link: //www.wcproducts.com/pages/calculator-gear?pitch=20&calc_unit=in&vex_modifield=true&gear1t=14&gear2t=60&extra_center=0.003
 - name: Belt Calculator
-  link: https://www.wcproducts.com/how-to-belts/
-- name: Drivetrain Calculator
-  link: https://www.wcproducts.com/how-to-drivetrain/
-- name: Chain Calculator
-  link: //www.botlanta.org/converters/dale-calc/sprocket.html
+  link: //www.wcproducts.com/pages/calculator-belt?pitch=3&calc_unit=in&vex_modifield=true&pulley1t=16&pulley2t=24&desired_center=5.000&extra_center=0.000
 - name: Design Spreadsheets
   link: //blog.spectrum3847.org/2017/12/spectrum-robot-design-sheet.html
+- name: Onshape
+  link: //www.onshape.com/en/
+- name: Onshape4FRC
+  link: //www.onshape4frc.com/
 - name: Compass Alliance
   link: //www.thecompassalliance.org
 - name: Socket Head Clearance

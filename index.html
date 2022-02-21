@@ -2,111 +2,6 @@
 layout: default
 section_id: home
 slides:
-  - bg: images/slides/Turret_Slide.jpg
-    small_title:
-      klass: bottom-to-top
-      text: FRC Team 1987
-    title:
-      klass: bottom-to-top
-      text: The Broncobots
-  - bg: images/slides/GKC_Winner.jpg
-    small_title:
-      klass: bottom-to-top
-      text: 2017 Greater Kansas City Regional
-    title:
-      klass: bottom-to-top
-      text: Winner
-  - bg: images/slides/EI_Iowa.jpg
-    small_title:
-      klass: bottom-to-top
-      text: 2017 Iowa Regional
-    title:
-      klass: bottom-to-top
-      text: Engineering Inspiration
-
-works:
-  - image: images/home/Robots.jpg
-    title: Our Robots
-    link_to: robots.html
-    klass: graphi-design
-    desc: Design &amp; Development
-  - image: images/home/OurTeam.jpg
-    title: About Us
-    link_to: about-us.html
-    klass: graphi-design
-    desc: About Team 1987
-  - image: images/home/GKCCheer.jpg
-    title: Our Awards
-    link_to: our-awards.html
-    klass: graphi-design
-    desc: Through Twelve Seasons
-  - image: images/home/AboutFIRST.jpg
-    title: FIRST Robotics
-    external: https://www.firstinspires.org
-    klass: graphi-design
-    desc: FIRST
-  - image: images/home/Sponsors.jpg
-    title: Our Sponsors
-    link_to: sponsors.html
-    klass: graphi-design
-    desc: Thank You!
-  - image: images/home/SummerCamps.jpg
-    title: Summer Camps
-    link_to: camps.html
-    klass: graphi-design
-    desc: Inspiring Young Engineers
-  - image: images/home/Media.jpg
-    title: Media
-    link_to: media.html
-    klass: graphi-design
-    desc: Pictures and Videos
-  - image: images/home/Resources.jpg
-    title: Blog
-    link_to: blog.html
-    klass: graphi-design
-    desc: Robots and Stuff
-
-robots:
-  - image: images/robots/2017robot.jpg
-    title: Perseus
-    klass: graphic-design
-    link_to: 2017-robot.html
-    desc: 2017 FIRST STEAMWORKS 
-  - image: images/robots/2016robot.jpg
-    title: Knight Mare
-    klass: graphic-design
-    link_to: 2016-robot.html
-    desc: 2016 FIRST STRONGHOLD
-  - image: images/robots/2015robot.jpg
-    title: Darth Conveydor
-    klass: graphic-design
-    link_to: 2015-robot.html
-    desc: 2015 FIRST RECYCLE RUSH
-  - image: images/robots/2008robot.jpg
-    title: Previous Robots
-    klass: graphic-design
-    link_to: previous-robots.html
-    desc: Back to the Past
-
-
-milestones:
-  - icon: line-chart
-    from: 0
-    to: 12
-    title: Seasons Competed
-  - icon: trophy
-    from: 0
-    to: 32
-    title: Competitions
-  - icon: flag
-    from: 0
-    to: 7
-    title: Blue Banners
-  - icon: thumbs-up
-    from: 0
-    to: 550
-    title: Future Engineers Inspired
-
 ---
 
 
@@ -119,104 +14,157 @@ milestones:
       <span></span>
     </a>
     <ul class='sequence-pagination'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign class = 'current' %}
-        {% else %}
-          {% assign class = '' %}
-        {% endif %}
-        <li class="{{class}}"></li>
-      {% endfor %}
+
+
+      <li class="current"></li>
+
+
+      <li class=""></li>
+
+
+      <li class=""></li>
+
     </ul>
     <ul class='sequence-canvas'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign style = 'static' %}
-        {% else %}
-          {% assign style = '' %}
-        {% endif %}
 
-        <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
-          <div class='small-title {{ slide.small_title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
-              </div>
+
+
+      <li class='frame static '>
+        <div class='bg' style='background-image: url(images/slides/Turret_Slide.jpg);'></div>
+        <div class='small-title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2>FRC Team 1987</h2>
             </div>
           </div>
-          <div class='title {{ slide.title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.title.text }}</h2>
-              </div>
+        </div>
+        <div class='title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2>The Broncobots</h2>
             </div>
           </div>
-          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <div class='two spacing'></div>
-                {% for button in slide.buttons.items %}
-                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
-                {% endfor %}
-              </div>
+        </div>
+        <div class='buttons-wrapper '>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <div class='two spacing'></div>
+
             </div>
           </div>
-        </li>
-      {% endfor %}
+        </div>
+      </li>
+
+
+
+      <li class='frame  '>
+        <div class='bg' style='background-image: url(images/slides/2021_Excellence_in_Engineering_Award.jpg);'></div>
+        <div class='small-title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+            </div>
+          </div>
+        </div>
+        <div class='title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2>Winner</h2>
+            </div>
+          </div>
+        </div>
+        <div class='buttons-wrapper '>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <div class='two spacing'></div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+
+      <li class='frame  '>
+        <div class='bg' style='background-image: url(images/slides/team-2019.jpg);'></div>
+        <div class='small-title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2>{{ slide.sall_title.text }}</h2>
+            </div>
+          </div>
+        </div>
+        <div class='title bottom-to-top'>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <h2>Engineering Inspiration</h2>
+            </div>
+          </div>
+        </div>
+        <div class='buttons-wrapper '>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <div class='two spacing'></div>
+
+            </div>
+          </div>
+        </div>
+      </li>
+
     </ul>
   </div>
 </div>
 
+
+<!---welcome---->
 <div class="full" style="background: #f5f5f5;">
   <div class="row">
     <div class="large-6 columns">
       {% include section-header.html title="Welcome" %}
-     
+
       <p>
         We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students
-        attending <a href="http://lsnhs.lsr7.org/">Lee's Summit North High School</a>, 5 coaches, several amazing
+        attending <a href="http://lsnhs.lsr7.org/">Lee's Summit North High School</a>, 7 coaches, several amazing
         mentors, and multiple gracious, corporate sponsors! Our team is dedicated to
         <a href="http://www.usfirst.org/">FIRST</a> (For Inspiration and Recognition of Science and Technology), our
         community, and working hard to encourage <a href="http://kcstem.org/">STEM</a> (Science, Technology, Engineering,
         and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC
-          Season. To learn more about our team, check out the <a href="http://localhost:4000/about-us.html">About Us</a> section of our website!
+        Season. To learn more about our team, check out the <a href="http://localhost:4000/about-us.html">About Us</a> section of our website!
       </p>
       <p>
-        We are currently building our 2019 robot and updating our web site with current content.
+        We are currently building our 2022 robot and updating our web site with current content.
       </p>
       <p>
         <strong>Check back here often for events, competitions, and general team information!</strong>
       </p>
       <div class="three spacing"></div>
     </div>
-      <div class="large-6 columns">
-         
-          <div class='mod modGallery'>
-      <div class='gallery-nav'>
-      </div>
+    <div class="large-6 columns">
+
+      <div class='mod modGallery'>
+        <div class='gallery-nav'>
+        </div>
 
 
-      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+        <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
 
-        {% for robot in site.data.robots %}
-        <li class="{{ robot.klass }}">
-          <a href='{{ robot.link_to }}'>
-            <img alt="" src="{{ robot.image }}" />
-            <div class='overlay'>
-              <div class='thumb-info'>
-                <h3>{{ robot.title }}</h3>
-                <p>{{ robot.desc }}</p>
+          {% for robot in site.data.robots %}
+          <li class="{{ robot.klass }}">
+            <a href='{{ robot.link_to }}'>
+              <img alt="" src="{{ robot.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ robot.title }}</h3>
+                  <p>{{ robot.desc }}</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-        {% endfor %}
+            </a>
+          </li>
+          {% endfor %}
 
-      </ul>
+        </ul>
 
-    </div>
       </div>
+    </div>
   </div>
 
   <div class="mod modGallery">
@@ -224,18 +172,18 @@ milestones:
       {% for work in page.works %}
       <li class="{{ work.klass }}">
         {% if work.external %}
-          <a href='{{ work.external }}' target="_blank">
-        {% else %}
+        <a href='{{ work.external }}' target="_blank">
+          {% else %}
           <a href='{{ work.link_to }}'>
-        {% endif %}
-          <img alt="" src="{{ work.image }}" />
-          <div class='overlay'>
-            <div class='thumb-info'>
-              <h3>{{ work.title }}</h3>
-              <p>{{ work.desc }}</p>
+            {% endif %}
+            <img alt="" src="{{ work.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ work.title }}</h3>
+                <p>{{ work.desc }}</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
       </li>
       {% endfor %}
     </ul>
@@ -284,7 +232,7 @@ milestones:
     {% include icon-text.html title='Awards' desc='We are successful both on and off the competition field.' icon_class='fa fa-trophy' delay='200' shape_class='icon-text-circle' %}
   </div>
   <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Summer Camps' desc='In our off-season we hold summer camps and family engineering nights to inspire future engineers.' icon_class='fa fa-university' delay='400' shape_class='icon-text-circle' %}
+    {% include icon-text.html title='Summer Camps' desc='In our off-season we hold summer camps to inspire future engineers.' icon_class='fa fa-university' delay='400' shape_class='icon-text-circle' %}
   </div>
   <div class="medium-3 large-3 columns">
     {% include icon-text.html title='Opportunities' desc='We are more than robots. Team members can learn public speaking, engineering, time management, and much more.' icon_class='fa fa-wrench' delay='600' shape_class='icon-text-circle' %}
@@ -293,10 +241,15 @@ milestones:
 
 <div class="spacing"></div>
 
-<div class='full parallax' style='background-image: url(images/home/IowaTeamPic.jpg); color: #fff;'>
+<div class='full parallax' style='background-image: url(images/home/2019TeamPic.JPG); color: #fff;'>
   <div class='row'>
     <div class='large-12 columns'>
-      {% include section-header.html title="Broncobots by the Numbers" color="#fff" %}
+      <div class="mod modSectionHeader ">
+        <div class="special-title centered-text">
+          <h2 style="color: #fff;">Broncobots by the Numbers</h2>
+        </div>
+
+      </div>
       <div class='spacing'></div>
       <p class='centered-text' style='color: #F8F8F8;'>
         Over the years the Broncobots have inspired countless future engineers, attended dozens of
@@ -306,67 +259,43 @@ milestones:
     </div>
   </div>
   <div class='row'>
-    {% for milestone in page.milestones %}
-      <div class='medium-3 large-3 columns'>
-        <div class='mod modMilestone'>
-          <i class='fa fa-{{milestone.icon}}'></i>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'style='color: #EEEEEE;'>&nbsp;</strong>
-          <b style='color: #FFFFFF'>{{milestone.title}}</b>
-          <div class='four spacing'></div>
-        </div>
+
+    <div class='medium-3 large-3 columns'>
+      <div class='mod modMilestone'>
+        <i class='fa fa-line-chart'></i>
+        <strong data-from='0' data-to='15'>&nbsp;</strong>
+        <span>Seasons Competed</span>
+        <div class='four spacing'></div>
       </div>
-    {% endfor %}
-  </div>
-  <div class='two spacing'></div>
-</div>
-
-<div class='full' style='background: #f5f5f5'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Latest Blog Posts" %}
-      <div class='spacing'></div>
-      <p>
-        
-      </p>
-      <div class='two spacing'></div>
     </div>
-  </div>
 
-  <div class='row'>
-    {% for post in site.posts %}
-      {% if forloop.index > 3 %}
-        {% break %}
-      {% endif %}
-
-      <div class='large-4 medium-4 columns'>
-        <div class='mod modBlogPost'>
-          {% for image in post.images %}
-            {% unless forloop.first %}
-              {% break %}
-            {% endunless %}
-            <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
-          {% endfor %}
-          <div class='content'>
-            <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
-            <h4><a href="{{post.url}}">{{post.title}}</a></h4>
-            <p>{{post.excerpt}}</p>
-          </div>
-        </div>
+    <div class='medium-3 large-3 columns'>
+      <div class='mod modMilestone'>
+        <i class='fa fa-trophy'></i>
+        <strong data-from='0' data-to='56'>&nbsp;</strong>
+        <span>Competitions</span>
+        <div class='four spacing'></div>
       </div>
-
-    {% endfor %}
-
-  </div>
-
-
-  <div class='two spacing'></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <p class='centered-text'>
-        <a class='button' href='blog.html'>See all posts</a>
-      </p>
     </div>
+
+    <div class='medium-3 large-3 columns'>
+      <div class='mod modMilestone'>
+        <i class='fa fa-flag'></i>
+        <strong data-from='0' data-to='7'>&nbsp;</strong>
+        <span>Blue Banners</span>
+        <div class='four spacing'></div>
+      </div>
+    </div>
+
+    <div class='medium-3 large-3 columns'>
+      <div class='mod modMilestone'>
+        <i class='fa fa-thumbs-up'></i>
+        <strong data-from='0' data-to='682'>&nbsp;</strong>
+        <span>Future Engineers Inspired</span>
+        <div class='four spacing'></div>
+      </div>
+    </div>
+
   </div>
   <div class='two spacing'></div>
-
 </div>
