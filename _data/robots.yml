@@ -39,12 +39,12 @@
   link_to: 2014-robot.html
   desc: 2014 Aerial Assist
 - image: images/robots/2013robot.png
-  title: Drill Sergeant
+  title: Dennis The Menace
   klass: graphic-design
   link_to: 2013-robot.html
   desc: 2013 Ultimate Ascent
 - image: images/robots/2012robot.png
-  title: 2012 robot
+  title: Drill Sergeant
   klass: graphic-design
   link_to: 2012-robot.html
   desc: 2012 Rebound Rumble
