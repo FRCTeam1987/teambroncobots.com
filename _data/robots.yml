@@ -67,12 +67,12 @@
   title: The Mammoth
   klass: graphic-design
   link_to: 2008-robot.html
-  desc: 2008 Overdrive 
+  desc: 2008 Overdrive
 - image: images/robots/2007robot.png
   title: 2007 robot
   klass: graphic-design
   link_to: 2007-robot.html
-  desc: 2007 RACK 'N' ROLL 
+  desc: 2007 RACK 'N' ROLL
 - image: images/robots/Official_Broncobot_Logo.png
   title: All Robots
   klass: graphic-design
