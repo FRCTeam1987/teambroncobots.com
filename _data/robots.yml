@@ -1,13 +1,13 @@
-- image: images/robots/2021robot.png
-  title: Anubis
-  klass: graphic-design
-  link_to: 2021-robot.html
-  desc: "2021 INFINITE RECHARGE"
-- image: images/robots/2021robot.png
-  title: Mando
-  klass: graphic-design
-  link_to: 2020-robot.html
-  desc: 2020 INFINITE RECHARGE
+#- image: images/robots/2021robot.png
+#  title: Anubis
+#  klass: graphic-design
+#  link_to: 2021-robot.html
+#  desc: "2021 INFINITE RECHARGE"
+#- image: images/robots/2020robot.png
+#  title: Mando
+#  klass: graphic-design
+#  link_to: 2020-robot.html
+#  desc: 2020 INFINITE RECHARGE
 - image: images/robots/2019robot.png
   title: Orion
   klass: graphic-design
@@ -33,46 +33,46 @@
   klass: graphic-design
   link_to: 2015-robot.html
   desc: 2015 Recycle Rush
-- image: images/robots/2014robot.png
-  title: Apollo
-  klass: graphic-design
-  link_to: 2014-robot.html
-  desc: 2014 Aerial Assist
-- image: images/robots/2013robot.png
-  title: Dennis The Menace
-  klass: graphic-design
-  link_to: 2013-robot.html
-  desc: 2013 Ultimate Ascent
-- image: images/robots/2012robot.png
-  title: Drill Sergeant
-  klass: graphic-design
-  link_to: 2012-robot.html
-  desc: 2012 Rebound Rumble
-- image: images/robots/2011robot.png
-  title: 2011 robot
-  klass: graphic-design
-  link_to: 2011-robot.html
-  desc: 2011 Logo Motion
-- image: images/robots/2010robot.png
-  title: 2010 robot
-  klass: graphic-design
-  link_to: 2010-robot.html
-  desc: 2010 Breakaway
-- image: images/robots/2009robot.png
-  title: 2009 robot
-  klass: graphic-design
-  link_to: 2009-robot.html
-  desc: 2009 Lunacy
-- image: images/robots/2008robot.png
-  title: The Mammoth
-  klass: graphic-design
-  link_to: 2008-robot.html
-  desc: 2008 Overdrive
-- image: images/robots/2007robot.png
-  title: 2007 robot
-  klass: graphic-design
-  link_to: 2007-robot.html
-  desc: 2007 RACK 'N' ROLL
+#- image: images/robots/2014robot.png
+#  title: Apollo
+#  klass: graphic-design
+#  link_to: 2014-robot.html
+#  desc: 2014 Aerial Assist
+#- image: images/robots/2013robot.png
+#  title: Dennis The Menace
+#  klass: graphic-design
+#  link_to: 2013-robot.html
+#  desc: 2013 Ultimate Ascent
+#- image: images/robots/2012robot.png
+#  title: Drill Sergeant
+#  klass: graphic-design
+#  link_to: 2012-robot.html
+#  desc: 2012 Rebound Rumble
+#- image: images/robots/2011robot.png
+#  title: 2011 robot
+#  klass: graphic-design
+#  link_to: 2011-robot.html
+#  desc: 2011 Logo Motion
+#- image: images/robots/2010robot.png
+#  title: 2010 robot
+#  klass: graphic-design
+#  link_to: 2010-robot.html
+#  desc: 2010 Breakaway
+#- image: images/robots/2009robot.png
+#  title: 2009 robot
+#  klass: graphic-design
+#  link_to: 2009-robot.html
+#  desc: 2009 Lunacy
+#- image: images/robots/2008robot.png
+#  title: The Mammoth
+#  klass: graphic-design
+#  link_to: 2008-robot.html
+#  desc: 2008 Overdrive
+#- image: images/robots/2007robot.png
+#  title: 2007 robot
+#  klass: graphic-design
+#  link_to: 2007-robot.html
+#  desc: 2007 RACK 'N' ROLL
 - image: images/robots/Official_Broncobot_Logo.png
   title: All Robots
   klass: graphic-design
