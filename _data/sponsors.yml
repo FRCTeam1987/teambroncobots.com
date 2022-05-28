@@ -1,35 +1,3 @@
-- name: Catalent
-  logo: images/sponsors/blank.jpg
-  desc: 
-    Catalent is a global leader in providing integrated services, superior drug delivery technologies and manufacturing solutions to help life science innovators develop and launch successful pharmaceuticals, biologics and consumer health products.
-- name: Charles Hasek
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Chuck Stephenson
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Dautenhahn Family
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsors
-- name: Jonathan Smith
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Linda Pickett
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Tracy Bornman PC
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
-- name: Ted Cahall
-  logo: images/sponsors/blank.jpg
-  desc:
-    Personal Sponsor
 - name: Team 1987 Mentors
   logo: images/logo-original.png
   desc:
@@ -102,3 +70,35 @@
   logo: images/sponsors/VFW.png
   desc:
     The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
+- name: Catalent
+  logo: images/sponsors/blank.jpg
+  desc: 
+    Catalent is a global leader in providing integrated services, superior drug delivery technologies and manufacturing solutions to help life science innovators develop and launch successful pharmaceuticals, biologics and consumer health products.
+- name: Charles Hasek
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Chuck Stephenson
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Dautenhahn Family
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsors
+- name: Jonathan Smith
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Linda Pickett
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Tracy Bornman PC
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
+- name: Ted Cahall
+  logo: images/sponsors/blank.jpg
+  desc:
+    Personal Sponsor
