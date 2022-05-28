@@ -214,7 +214,7 @@ jQuery(document).foundation();
   })
 })(Tc.$);
 (function($) {
-  Tc.Module.BlogPost = Tc.Module.extend({
+  Tc.Module.VideosPost = Tc.Module.extend({
     init: function($ctx, sandbox, modId) {
       this._super($ctx, sandbox, modId);
     },

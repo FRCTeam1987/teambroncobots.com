@@ -1063,7 +1063,7 @@ form input.error, form textarea.error {
   float: right;
 }
 
-/*Blog comments */
+/*videos comments */
 .comments-wrapper {
   width: 97%;
 }
@@ -1424,84 +1424,84 @@ form input.error, form textarea.error {
   opacity: 0.75;
 }
 
-.modBlogPost {
+.modVideosPost {
   margin-bottom: 40px;
   background: #fff;
 }
-.modBlogPost .content {
+.modVideosPost .content {
   padding: 30px 20px;
 }
-.modBlogPost h4 a {
+.modVideosPost h4 a {
   color: #333;
 }
-.modBlogPost h4 a:hover {
+.modVideosPost h4 a:hover {
   color: #f9ce06;
 }
-.modBlogPost .date {
+.modVideosPost .date {
   font-size: 0.78571rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ccc;
   margin-bottom: 5px;
 }
-.modBlogPost .tags {
+.modVideosPost .tags {
   padding: 5px 0;
 }
-.modBlogPost .tags a {
+.modVideosPost .tags a {
   font-style: italic;
 }
-.modBlogPost img {
+.modVideosPost img {
   width: 100%;
 }
-.modBlogPost a:hover img {
+.modVideosPost a:hover img {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   opacity: 0.5;
 }
-.modBlogPost .slick-slider {
+.modVideosPost .slick-slider {
   margin-bottom: 0;
 }
-.modBlogPost .images .slick-dots {
+.modVideosPost .images .slick-dots {
   margin: 0;
 }
-.modBlogPost .images .slick-dots li button:before {
+.modVideosPost .images .slick-dots li button:before {
   font-size: 30px;
   top: -65px;
 }
 
-.modBlogPost.big {
+.modVideosPost.big {
   width: 97%;
 }
-.modBlogPost.big .content {
+.modVideosPost.big .content {
   padding: 50px 40px;
 }
-.modBlogPost.big .info {
+.modVideosPost.big .info {
   font-size: 0.78571rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ccc;
 }
-.modBlogPost.big h3 {
+.modVideosPost.big h3 {
   font-size: 2.5rem;
 }
-.modBlogPost.big h3 a {
+.modVideosPost.big h3 a {
   color: #333;
 }
-.modBlogPost.big h3 a:hover {
+.modVideosPost.big h3 a:hover {
   color: #f9ce06;
 }
-.modBlogPost.big h4 {
+.modVideosPost.big h4 {
   font-size: 1.7rem;
 }
-.modBlogPost.big h5 {
+.modVideosPost.big h5 {
   font-size: 1.15rem;
 }
-.modBlogPost.big a:hover img {
+.modVideosPost.big a:hover img {
   opacity: 1;
 }
-.modBlogPost.big blockquote {
+.modVideosPost.big blockquote {
   color: #ccc;
   font-style: italic;
   letter-spacing: 1px;
@@ -1509,21 +1509,21 @@ form input.error, form textarea.error {
   padding: 0 20px;
 }
 
-.modBlogPost.masonry {
+.modVideosPost.masonry {
   width: 343px;
   height: auto;
   overflow: hidden;
 }
 
-.modBlogPost.no_bg {
+.modVideosPost.no_bg {
   background: none;
 }
-.modBlogPost.no_bg .content {
+.modVideosPost.no_bg .content {
   padding: 30px 0 10px;
   background: none;
 }
 
-.modBlogPost.no_bg.no-media .content {
+.modVideosPost.no_bg.no-media .content {
   padding: 0 0 10px;
 }
 

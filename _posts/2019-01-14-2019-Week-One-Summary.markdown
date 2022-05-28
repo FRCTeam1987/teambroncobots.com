@@ -2,13 +2,13 @@
 layout: post
 title:  "Build Season : Week One Summary"
 categories: build journal
-images: images/2019/blogweek1.png
+images: images/2019/Videosweek1.png
 author: JJ Keen
 ---
 
 We start off our prototyping and brainstorming for the Destination : Deep Space game!
 
-Week One started off with our Destination : Deep Space game reveal, and Two day collaboration period. We have a blog post about that on our website that you should go check out.
+Week One started off with our Destination : Deep Space game reveal, and Two day collaboration period. We have a Videos post about that on our website that you should go check out.
 
 After we got settled in the shop, we went off brainstorming prototypes for the game piece collection. This went into separate groups for each game piece. We make our prototypes out of materials around the shop, which is a great learning experience for learning to brainstorm ideas and using our tools around the shop. We take these prototypes to the mentors and other team members to critique the ideas and decide on some final strategy ideas that reflect our chassis, collection of game pieces, and speed of our robot.
 
