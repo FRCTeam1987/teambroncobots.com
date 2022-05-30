@@ -3,7 +3,7 @@ layout: post
 title:  "You're invited to Broncobots Kickoff, INFINITE RECHARGE"
 date:   2019-12-07 01:58:02 -0500
 categories: build journal
-images: images/blog/pancake.png
+images: images/Videos/pancake.png
 author: Joya Shelton
 ---
 
@@ -16,4 +16,4 @@ After the breakfast, the Broncobots will clean up the area, and braintstorm 11am
 
 Day Two we will “charge” into the gritty details of what the Broncobot robot should accomplish. We will split into three different robot design groups, and one group dedicated to game strategy. This group will ultimately decide a critical role in our gameplay of Infinite Recharge, as well as a definite design decision that would affect the other design teams. The other three groups brainstorming their design ideas for climbing strategies, hatch panel placement, and cargo storage, as well as the design decision of the starting platform. After about three hours of discussion, each design sub-team will present their ideas to the entire team and make robot design decisions. We will then bring these ideas into the shop.
 
-We look forward and are excited for the upcoming season! Weekly Updates will be made to our website recapping our season, so check back here for Blog Posts and Pictures!
+We look forward and are excited for the upcoming season! Weekly Updates will be made to our website recapping our season, so check back here for Videos Posts and Pictures!

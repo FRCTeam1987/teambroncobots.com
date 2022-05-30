@@ -35,5 +35,5 @@
   path: sponsors.html
 - name: Resources
   path: resources.html
-- name: Blog
-  path: blog.html
+- name: Videos
+  path: Videos.html
