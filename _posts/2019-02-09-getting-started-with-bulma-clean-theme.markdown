@@ -9,7 +9,7 @@ published: true
 canonical_url: https://www.csrhymes.com/development/2019/02/09/getting-started-with-bulma-clean-theme.html
 ---
 
-I have made a [theme for Jekyll](https://rubygems.org/gems/bulma-clean-theme) which is based on the Bulma frontend framework. It might look familiar, because I am also using it for this site. If you like the look of this theme then I thought I would write a little blog post about how to use it for your own site and how you can use it with GitHub Pages. 
+I have made a [theme for Jekyll](https://rubygems.org/gems/bulma-clean-theme) which is based on the Bulma frontend framework. It might look familiar, because I am also using it for this site. If you like the look of this theme then I thought I would write a little blog post about how to use it for your own site and how you can use it with GitHub Pages.
 
 ## Getting started
 
@@ -43,7 +43,7 @@ bundle exec jekyll serve
 
 ## Creating pages
 
-A page can either be a html or a markdown file, as long as you set the frontmatter. There are a few settings that pages can use to customise the default theme a bit further if you so choose. 
+A page can either be a html or a markdown file, as long as you set the frontmatter. There are a few settings that pages can use to customise the default theme a bit further if you so choose.
 
 ```yaml
 ---
@@ -57,13 +57,13 @@ hero_height: is-fullheight
 ---
 ```
 
-If you don't set a subtitle, image, hero_image or hero_height then defaults will be used or in the case of the hero_image, no image will be used on the hero. 
+If you don't set a subtitle, image, hero_image or hero_height then defaults will be used or in the case of the hero_image, no image will be used on the hero.
 
-The theme uses the jekyll-seo-tag plugin so it will use the information you provide in the frontmatter to auto populate the meta tags and open graph tags. 
+The theme uses the jekyll-seo-tag plugin so it will use the information you provide in the frontmatter to auto populate the meta tags and open graph tags.
 
 ## Posts
 
-Posts are created as per the standard Jekyll method, in a _posts directory, with each post named YYYY-MM-DD-name-of-post.markdown. For the post frontmatter you can use the same settings as a page, except you need to change the layout to post and add date and author settings. 
+Posts are created as per the standard Jekyll method, in a _posts directory, with each post named YYYY-MM-DD-name-of-post.markdown. For the post frontmatter you can use the same settings as a page, except you need to change the layout to post and add date and author settings.
 
 ## Blog page
 
@@ -77,7 +77,7 @@ paginate_path: "/blog/page:num"
 
 ## Site defaults
 
-If you don't want to set each hero_image individually, then you can set default values in your _config.yml. The below example sets a default author, layout and hero image for every post. It also turns on the side bar on the right of post pages, which will display links to your latest posts. 
+If you don't want to set each hero_image individually, then you can set default values in your _config.yml. The below example sets a default author, layout and hero image for every post. It also turns on the side bar on the right of post pages, which will display links to your latest posts.
 
 ```yml
 defaults:
@@ -104,7 +104,7 @@ $primary: #333333;
 @import "main";
 ```
 
-You can also add any of your own custom css to this file if you want to. 
+You can also add any of your own custom css to this file if you want to.
 
 ### Navigation
 
@@ -115,30 +115,30 @@ Once you have created posts and pages, you will need to create a way for visitor
   link: page-1
 - name: Blog
   link: blog
-  dropdown: 
+  dropdown:
     - name: Page 2
       link: page-2
 ```
 
-Bulma is pretty handy in the way it converts the same HTML into a mobile / tablet friendly navigation, so you only need to set the menu up once for all screen sizes. 
+Bulma is pretty handy in the way it converts the same HTML into a mobile / tablet friendly navigation, so you only need to set the menu up once for all screen sizes.
 
 ## Using bulma-clean-theme with Github Pages
 
-For the site to work with Github Pages, all you need to do is update the _config.yml so it uses remote_theme instead of theme and update it to chrisrhymes/bulma-clean-theme so it knows which GitHub repo to pull the theme from when it builds your site. 
+For the site to work with Github Pages, all you need to do is update the _config.yml so it uses remote_theme instead of theme and update it to chrisrhymes/bulma-clean-theme so it knows which GitHub repo to pull the theme from when it builds your site.
 
 ```yaml
 #theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 ```
 
-And then push up your changes to Github as normal. 
+And then push up your changes to Github as normal.
 
 There seems to be an issue where Jekyll doesn't work locally with remote_theme, so when working locally you have to add theme back in, but remember to comment theme out again before pushing back up to GitHub or you will probably get a build warning email.
 
 ## I hope you're not feeling overwhelmed
 
-It may seem like there is a lot to do to get started, but really it shouldn't take very long to get a site up and running. All the options are there just in case you want to further customise the theme to be more personal to you, but you can just use the basic minimal settings to get yourself up and running. 
+It may seem like there is a lot to do to get started, but really it shouldn't take very long to get a site up and running. All the options are there just in case you want to further customise the theme to be more personal to you, but you can just use the basic minimal settings to get yourself up and running.
 
 ## Feedback and Issues
 
-If you have any feedback, ideas or issues with how the theme could be improved, then please create an issue on the theme's GitHub page and I will try and take a look into it as soon as I can. The theme is still quite new and I have quite a few ideas for future enhancements, so I will write a new blog post on this site when any new features become available. 
+If you have any feedback, ideas or issues with how the theme could be improved, then please create an issue on the theme's GitHub page and I will try and take a look into it as soon as I can. The theme is still quite new and I have quite a few ideas for future enhancements, so I will write a new blog post on this site when any new features become available.

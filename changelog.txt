@@ -135,7 +135,7 @@
 * Fix headings not showing in post
 
 # 0.5
-* Add product page layouts
+* Add robot page layouts
 
 # 0.4.1
 * Added footer links

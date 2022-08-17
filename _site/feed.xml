@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/bulma-clean-theme/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/bulma-clean-theme/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-08-17T10:23:04-05:00</updated><id>http://localhost:4000/bulma-clean-theme/feed.xml</id><title type="html">Broncobots</title><subtitle>The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-</subtitle><entry><title type="html">Creating a post series</title><link href="http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series/" rel="alternate" type="text/html" title="Creating a post series" /><published>2021-10-30T04:00:07-05:00</published><updated>2021-10-30T04:00:07-05:00</updated><id>http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series/"><![CDATA[From version 0.12, you can now make a post a part of a series of posts, linking to the other posts in the series, by creating a `series` data file and then setting the series in each of the post's front matter.  
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/bulma-clean-theme/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/bulma-clean-theme/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-08-17T10:53:05-05:00</updated><id>http://localhost:4000/bulma-clean-theme/feed.xml</id><title type="html">Broncobots</title><subtitle>Broncobots webste FRC Team 1987
+</subtitle><entry><title type="html">Creating a post series</title><link href="http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series/" rel="alternate" type="text/html" title="Creating a post series" /><published>2021-10-30T04:00:07-05:00</published><updated>2021-10-30T04:00:07-05:00</updated><id>http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/2021/10/30/creating-a-post-series/"><![CDATA[From version 0.12, you can now make a post a part of a series of posts, linking to the other posts in the series, by creating a `series` data file and then setting the series in each of the post's front matter.
 
-The current post in the list is highlighted to help give context of where you are in the series. 
+The current post in the list is highlighted to help give context of where you are in the series.
 
 ## Blog Series Data File
 
-Start by creating a yml file in the _data directory, for example `my_blog_series.yml`. Give the series a title and, optionally, a description. 
+Start by creating a yml file in the _data directory, for example `my_blog_series.yml`. Give the series a title and, optionally, a description.
 
 ## Sections
 
 Next add sections. Each section can have a label (optional) and items. Each item is the title of an existing blog post. If the title is not found then the link will be empty.
 
-If you just want one list without labels, then omit the label and just add the items. 
+If you just want one list without labels, then omit the label and just add the items.
 
 ```yaml
 title: The series title
@@ -40,21 +40,21 @@ sections:
 
 ## Update your posts
 
-Finally, add the series setting to your front matter in each post you want the series to show in. 
+Finally, add the series setting to your front matter in each post you want the series to show in.
 
 ```yaml
 series: my_blog_series
-```]]></content><author><name>C.S. Rhymes</name></author><category term="bulma-clean-theme" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[How to create a post series with Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/bulma-clean-theme/bulma-clean-theme/img/blog-post-series.jpg" /><media:content medium="image" url="http://localhost:4000/bulma-clean-theme/bulma-clean-theme/img/blog-post-series.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Creating a docs site with Bulma Clean Theme</title><link href="http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme/" rel="alternate" type="text/html" title="Creating a docs site with Bulma Clean Theme" /><published>2020-05-08T04:00:07-05:00</published><updated>2020-05-08T04:00:07-05:00</updated><id>http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme/"><![CDATA[I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project. 
+```]]></content><author><name>C.S. Rhymes</name></author><category term="bulma-clean-theme" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[How to create a post series with Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/bulma-clean-theme/bulma-clean-theme/img/blog-post-series.jpg" /><media:content medium="image" url="http://localhost:4000/bulma-clean-theme/bulma-clean-theme/img/blog-post-series.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Creating a docs site with Bulma Clean Theme</title><link href="http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme/" rel="alternate" type="text/html" title="Creating a docs site with Bulma Clean Theme" /><published>2020-05-08T04:00:07-05:00</published><updated>2020-05-08T04:00:07-05:00</updated><id>http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/2020/05/08/creating-a-docs-site-with-bulma-clean-theme/"><![CDATA[I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project.
 
 ## GitHub Pages Configuration
 
-GitHub pages allows you to create a website for your project with free hosting. Go to your repo on GitHub, then click Settings, then scroll down to the GitHub Pages section. You have the option to create a site from the root of your master branch of from the /docs directory in your master branch. For this example, we are going to use the /docs directory. 
+GitHub pages allows you to create a website for your project with free hosting. Go to your repo on GitHub, then click Settings, then scroll down to the GitHub Pages section. You have the option to create a site from the root of your master branch of from the /docs directory in your master branch. For this example, we are going to use the /docs directory.
 
-Don't change this setting just yet as if you don't have a docs directory there will be nothing there to publish. 
+Don't change this setting just yet as if you don't have a docs directory there will be nothing there to publish.
 
 ## Creating the docs directory
 
-Clone your git repo to a local directory, let's say `~/code/my-project` for this example. The below assumes you don't yet have a docs directory and you have [jekyll installed](https://jekyllrb.com/docs/installation/). If you do already have a docs directory you will have to rename it to something else. 
+Clone your git repo to a local directory, let's say `~/code/my-project` for this example. The below assumes you don't yet have a docs directory and you have [jekyll installed](https://jekyllrb.com/docs/installation/). If you do already have a docs directory you will have to rename it to something else.
 
 Create a new jekyll installation in the docs directory, ensuring you replace your username and project name in the below example.
 
@@ -64,7 +64,7 @@ cd ~/code/my-project
 jekyll new docs
 ```
 
-You should now have a base install of Jekyll in your freshly created docs directory. 
+You should now have a base install of Jekyll in your freshly created docs directory.
 
 ## Configuring the theme
 
@@ -104,7 +104,7 @@ To create a menu on the left on your docs page you need to create a new yaml fil
     - name: Menu item
       link: /link/
       items:
-        - name: Sub menu item 
+        - name: Sub menu item
           link: /sub-menu-item/
 ```
 
@@ -122,30 +122,30 @@ gh_sponsor: chrisrhymes
 
 ## Making the docs page live
 
-Once you have finished creating your docs page you can commit your changes and push everything up to GitHub. Go back to the GitHub settings page and scroll back down to the GitHub Pages section. Now we can update the setting to use the Master branch /docs folder and then GitHub will build your new docs page. 
+Once you have finished creating your docs page you can commit your changes and push everything up to GitHub. Go back to the GitHub settings page and scroll back down to the GitHub Pages section. Now we can update the setting to use the Master branch /docs folder and then GitHub will build your new docs page.
 
 ## Want to see an example?
 
 I recently updated one of my own packages to use Bulma Clean Theme to power the docs page. Check out the docs for [Bulma Block List](https://www.csrhymes.com/bulma-block-list) as an example.]]></content><author><name>C.S. Rhymes</name></author><category term="bulma-clean-theme" /><category term="jekyll" /><category term="docs" /><summary type="html"><![CDATA[How to create a docs site for your project with Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.csrhymes.com/img/example-docs-page.jpg" /><media:content medium="image" url="https://www.csrhymes.com/img/example-docs-page.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing some new layouts to Bulma Clean Theme</title><link href="http://localhost:4000/bulma-clean-theme/2019/07/23/introducing-some-new-layouts-to-bulma-clean-theme/" rel="alternate" type="text/html" title="Introducing some new layouts to Bulma Clean Theme" /><published>2019-07-23T03:00:07-05:00</published><updated>2019-07-23T03:00:07-05:00</updated><id>http://localhost:4000/bulma-clean-theme/2019/07/23/introducing-some-new-layouts-to-bulma-clean-theme</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/2019/07/23/introducing-some-new-layouts-to-bulma-clean-theme/"><![CDATA[I’ve been meaning to write about some of the new features I have been rolling out to my Jekyll theme, [Bulma Clean Theme](https://www.csrhymes.com/bulma-clean-theme/), for a while but I have only just managed to push the update for the landing page layout last weekend. This article provides some of the thinking behind the updates, as well as a brief introduction to how to get started.
 
-## Product Pages
+## Robot Pages
 
 I use the theme to power my own personal website and decided that it would be good to update my [book pages](https://www.csrhymes.com/books), or book page as it was then. The page had used a very simple layout with both books on one page and was not really up to scratch. I decided it would be better to make each book its own page, and if I ever get round to it and write another book it would be easy to add another to the site in the future. Rather than just building these pages for my own site, I thought it would be a nice addition to the base theme.
 
-I really like Jekyll as it is simple to use, but also very powerful. I decided to make the most of the frontmatter and allow you to set most of the product information in there, leaving the main content of the page for the text description.
+I really like Jekyll as it is simple to use, but also very powerful. I decided to make the most of the frontmatter and allow you to set most of the robot information in there, leaving the main content of the page for the text description.
 
-To get started, create your product pages inside a `_products` directory as we will make use of collections later on.
+To get started, create your robot pages inside a `_robots` directory as we will make use of collections later on.
 
-The below is an example of the frontmatter for the product page. The product page uses the same hero, title and subtitle settings as other pages, but has additional settings for product code, image, price, rating and features. The product code is important for later on.
+The below is an example of the frontmatter for the robot page. The robot page uses the same hero, title and subtitle settings as other pages, but has additional settings for robot code, image, price, rating and features. The robot code is important for later on.
 
 ```yml
 ---
-title: Product 1 Name
-subtitle: Product 1 tagline here
-description: This is a product description
+title: Robot 1 Name
+subtitle: Robot 1 tagline here
+description: This is a robot description
 hero_image: /img/hero-img.jpg
-product_code: ABC124
-layout: product
+robot_code: ABC124
+layout: robot
 image: https://via.placeholder.com/640x480
 price: £1.99 + VAT
 features:
@@ -159,66 +159,66 @@ rating: 3
 ---
 ```
 
-The features provides a way of making a bullet point list of the key product features, but instead of plain disc bullet points you can use font awesome icons to make it a bit more interesting.
+The features provides a way of making a bullet point list of the key robot features, but instead of plain disc bullet points you can use font awesome icons to make it a bit more interesting.
 
 I don’t know about you, but sometimes I spend longer deciding on what icon to use than making the rest of the page.
 
-I’ve deliberately made the product pages have a 4 by 3 image ratio as I feel it works best across different screen sizes. Like all themes, if you want to change it you can override the default layouts if you want a different ratio.
+I’ve deliberately made the robot pages have a 4 by 3 image ratio as I feel it works best across different screen sizes. Like all themes, if you want to change it you can override the default layouts if you want a different ratio.
 
-Once you have created your product pages, you will need to tell Jekyll to output them. This is done by adding collections settings in the `_config.yml` for your site.
+Once you have created your robot pages, you will need to tell Jekyll to output them. This is done by adding collections settings in the `_config.yml` for your site.
 
 ```yml
 collections:
-  products:
+  robots:
     output: true
-    layout: product
+    layout: robot
     image: https://via.placeholder.com/800x600
     show_sidebar: false
 ```
 
-Now when you run jekyll build it will output a load of product pages for you, now we just need a way of getting to them. This is where the product category page comes in.
+Now when you run jekyll build it will output a load of robot pages for you, now we just need a way of getting to them. This is where the robot category page comes in.
 
-## Product Category
+## Robot Category
 
-Create a page, such as products.md or in my case books.md and set it to use the product-category layout. This will generate a list of the products, but you can also add some introduction content in the main content section of the page if you so desire.
+Create a page, such as robots.md or in my case books.md and set it to use the robot-category layout. This will generate a list of the robots, but you can also add some introduction content in the main content section of the page if you so desire.
 
 ```yml
 ---
-title: Products
-subtitle: Check out our range of products
-layout: product-category
+title: Robots
+subtitle: Check out our range of robots
+layout: robot-category
 show_sidebar: false
 sort: title
 ---
 
 
-This is some page content and it will appear above the product list.
+This is some page content and it will appear above the robot list.
 ```
 
-## Product Reviews
+## Robot Reviews
 
-The last addition to the product pages is reviews. If you would like to list some customer reviews on your product pages, then you will need to create a reviews directory inside _data and create a separate file for each product with reviews, named after the product code. For example `_data/reviews/ABC124.yml`
+The last addition to the robot pages is reviews. If you would like to list some customer reviews on your robot pages, then you will need to create a reviews directory inside _data and create a separate file for each robot with reviews, named after the robot code. For example `_data/reviews/ABC124.yml`
 
 The data file should follow the below format. The name is the customer name, the rating is how many stars out of 5, the title is the main title of the review and the avatar is a link to an image, if you have one. If you don’t have a customer image then just omit it and a user icon will be used instead. Lastly, the description is the main content of the review.
 
 ```yml
 - name: Mr E Xample
   rating: 4
-  title: Great product, highly recommended
+  title: Great robot, highly recommended
   date: 01/01/2019
   avatar: https://bulma.io/images/placeholders/128x128.png
   description: >
-    The product worked really well. I would recommend this to most people to use. Delivery was quick and reasonable.
+    The robot worked really well. I would recommend this to most people to use. Delivery was quick and reasonable.
     Would recommend this to my friends.
 - name: Mrs R E View
   rating: 5
   title: Nice, really liked this
   date: 02/02/2019
   description: >
-    The product worked exactly as described.
+    The robot worked exactly as described.
 ```
 
-Example [product category and product pages](https://www.csrhymes.com/bulma-clean-theme/products/) can be seen on the theme’s demo site here if you want to take a look.
+Example [robot category and robot pages](https://www.csrhymes.com/bulma-clean-theme/robots/) can be seen on the theme’s demo site here if you want to take a look.
 
 ## Landing Page Layout
 
@@ -276,7 +276,7 @@ An example [landing page layout](https://www.csrhymes.com/bulma-clean-theme/land
 
 I’ve tried to make these additions easy to use and flexible where possible. I’ve updated the readme file and the theme demo site with more information to help you get started with these new features.
 
-If you decide to give the theme a go, it would be great to see how you are using it and if you have any ideas of how it can be developed further. You never know, if I get enough responses then I may even make a showcase page on the demo theme site to highlight how others are using it.]]></content><author><name>C.S. Rhymes</name></author><category term="webdev" /><category term="showdev" /><category term="webdesign" /><summary type="html"><![CDATA[Introducing Product Pages and Landing Pages for Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.csrhymes.com/img/landing-page.jpg" /><media:content medium="image" url="https://www.csrhymes.com/img/landing-page.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Getting started with Bulma Clean Theme for Jekyll</title><link href="http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme/" rel="alternate" type="text/html" title="Getting started with Bulma Clean Theme for Jekyll" /><published>2019-02-09T14:00:07-06:00</published><updated>2019-02-09T14:00:07-06:00</updated><id>http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme/"><![CDATA[I have made a [theme for Jekyll](https://rubygems.org/gems/bulma-clean-theme) which is based on the Bulma frontend framework. It might look familiar, because I am also using it for this site. If you like the look of this theme then I thought I would write a little blog post about how to use it for your own site and how you can use it with GitHub Pages. 
+If you decide to give the theme a go, it would be great to see how you are using it and if you have any ideas of how it can be developed further. You never know, if I get enough responses then I may even make a showcase page on the demo theme site to highlight how others are using it.]]></content><author><name>C.S. Rhymes</name></author><category term="webdev" /><category term="showdev" /><category term="webdesign" /><summary type="html"><![CDATA[Introducing Robot Pages and Landing Pages for Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.csrhymes.com/img/landing-page.jpg" /><media:content medium="image" url="https://www.csrhymes.com/img/landing-page.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Getting started with Bulma Clean Theme for Jekyll</title><link href="http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme/" rel="alternate" type="text/html" title="Getting started with Bulma Clean Theme for Jekyll" /><published>2019-02-09T14:00:07-06:00</published><updated>2019-02-09T14:00:07-06:00</updated><id>http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme</id><content type="html" xml:base="http://localhost:4000/bulma-clean-theme/development/2019/02/09/getting-started-with-bulma-clean-theme/"><![CDATA[I have made a [theme for Jekyll](https://rubygems.org/gems/bulma-clean-theme) which is based on the Bulma frontend framework. It might look familiar, because I am also using it for this site. If you like the look of this theme then I thought I would write a little blog post about how to use it for your own site and how you can use it with GitHub Pages.
 
 ## Getting started
 
@@ -310,7 +310,7 @@ bundle exec jekyll serve
 
 ## Creating pages
 
-A page can either be a html or a markdown file, as long as you set the frontmatter. There are a few settings that pages can use to customise the default theme a bit further if you so choose. 
+A page can either be a html or a markdown file, as long as you set the frontmatter. There are a few settings that pages can use to customise the default theme a bit further if you so choose.
 
 ```yaml
 ---
@@ -324,13 +324,13 @@ hero_height: is-fullheight
 ---
 ```
 
-If you don't set a subtitle, image, hero_image or hero_height then defaults will be used or in the case of the hero_image, no image will be used on the hero. 
+If you don't set a subtitle, image, hero_image or hero_height then defaults will be used or in the case of the hero_image, no image will be used on the hero.
 
-The theme uses the jekyll-seo-tag plugin so it will use the information you provide in the frontmatter to auto populate the meta tags and open graph tags. 
+The theme uses the jekyll-seo-tag plugin so it will use the information you provide in the frontmatter to auto populate the meta tags and open graph tags.
 
 ## Posts
 
-Posts are created as per the standard Jekyll method, in a _posts directory, with each post named YYYY-MM-DD-name-of-post.markdown. For the post frontmatter you can use the same settings as a page, except you need to change the layout to post and add date and author settings. 
+Posts are created as per the standard Jekyll method, in a _posts directory, with each post named YYYY-MM-DD-name-of-post.markdown. For the post frontmatter you can use the same settings as a page, except you need to change the layout to post and add date and author settings.
 
 ## Blog page
 
@@ -344,7 +344,7 @@ paginate_path: "/blog/page:num"
 
 ## Site defaults
 
-If you don't want to set each hero_image individually, then you can set default values in your _config.yml. The below example sets a default author, layout and hero image for every post. It also turns on the side bar on the right of post pages, which will display links to your latest posts. 
+If you don't want to set each hero_image individually, then you can set default values in your _config.yml. The below example sets a default author, layout and hero image for every post. It also turns on the side bar on the right of post pages, which will display links to your latest posts.
 
 ```yml
 defaults:
@@ -371,7 +371,7 @@ $primary: #333333;
 @import "main";
 ```
 
-You can also add any of your own custom css to this file if you want to. 
+You can also add any of your own custom css to this file if you want to.
 
 ### Navigation
 
@@ -382,29 +382,29 @@ Once you have created posts and pages, you will need to create a way for visitor
   link: page-1
 - name: Blog
   link: blog
-  dropdown: 
+  dropdown:
     - name: Page 2
       link: page-2
 ```
 
-Bulma is pretty handy in the way it converts the same HTML into a mobile / tablet friendly navigation, so you only need to set the menu up once for all screen sizes. 
+Bulma is pretty handy in the way it converts the same HTML into a mobile / tablet friendly navigation, so you only need to set the menu up once for all screen sizes.
 
 ## Using bulma-clean-theme with Github Pages
 
-For the site to work with Github Pages, all you need to do is update the _config.yml so it uses remote_theme instead of theme and update it to chrisrhymes/bulma-clean-theme so it knows which GitHub repo to pull the theme from when it builds your site. 
+For the site to work with Github Pages, all you need to do is update the _config.yml so it uses remote_theme instead of theme and update it to chrisrhymes/bulma-clean-theme so it knows which GitHub repo to pull the theme from when it builds your site.
 
 ```yaml
 #theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 ```
 
-And then push up your changes to Github as normal. 
+And then push up your changes to Github as normal.
 
 There seems to be an issue where Jekyll doesn't work locally with remote_theme, so when working locally you have to add theme back in, but remember to comment theme out again before pushing back up to GitHub or you will probably get a build warning email.
 
 ## I hope you're not feeling overwhelmed
 
-It may seem like there is a lot to do to get started, but really it shouldn't take very long to get a site up and running. All the options are there just in case you want to further customise the theme to be more personal to you, but you can just use the basic minimal settings to get yourself up and running. 
+It may seem like there is a lot to do to get started, but really it shouldn't take very long to get a site up and running. All the options are there just in case you want to further customise the theme to be more personal to you, but you can just use the basic minimal settings to get yourself up and running.
 
 ## Feedback and Issues
 
@@ -419,7 +419,7 @@ The initial advantage of a static site over a dynamic, database driven site is t
 The next advantage of a static site is that it is that it can be version controlled. Usually a CMS relies on a database, which means that if you delete a page or some page content you either have to have revisions enabled in your CMS so you can roll back to a previous version or you need regular backups of your database so you can roll that back to a previous version. A static site with version control means you can easily revert to a previous version of your site and content without the need for database manipulation.
 
 ## Data Files
-Static sites, such as Jekyll, also offer a way of storing data in a more human readable format, such as yaml or JSON. This means you can store data that is used in multiple places across your site in one file and reference it in many places. For example, you may have a data file containing products, which you want to list in a category page and a product details page and maybe feature it on the homepage as well. These files can also be version controlled, meaning any changes or updates to your datafiles can be undone easily. The files can also be easily edited in a text editor so if you need to make multiple product amends, such as updating a misspelt brand name you can use something as simple as find and replace to update the spelling in all places at once without having to navigate to multiple different pages in a CMS.
+Static sites, such as Jekyll, also offer a way of storing data in a more human readable format, such as yaml or JSON. This means you can store data that is used in multiple places across your site in one file and reference it in many places. For example, you may have a data file containing robots, which you want to list in a category page and a robot details page and maybe feature it on the homepage as well. These files can also be version controlled, meaning any changes or updates to your datafiles can be undone easily. The files can also be easily edited in a text editor so if you need to make multiple robot amends, such as updating a misspelt brand name you can use something as simple as find and replace to update the spelling in all places at once without having to navigate to multiple different pages in a CMS.
 
 ## Design Freedom
 The biggest benefit I find to a static site is there is more freedom for a frontend developer and how they design and build your site. Some CMS’s work in a particular way and you are limited by the way they work. Page builders are available for many CMS’s but it often results in a lot of effort to get a particular piece of content in a particular place on the page.

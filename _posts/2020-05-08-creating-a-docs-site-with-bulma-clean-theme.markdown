@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a docs site with Bulma Clean Theme
-description: How to create a docs site for your project with Bulma Clean Theme 
+description: How to create a docs site for your project with Bulma Clean Theme
 date: 2020-05-08 09:00:07
 hero_image: https://www.csrhymes.com/img/example-docs-page.jpg
 hero_height: is-large
@@ -11,17 +11,17 @@ tags: bulma-clean-theme jekyll docs
 canonical_url: https://www.csrhymes.com/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html
 ---
 
-I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project. 
+I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project.
 
 ## GitHub Pages Configuration
 
-GitHub pages allows you to create a website for your project with free hosting. Go to your repo on GitHub, then click Settings, then scroll down to the GitHub Pages section. You have the option to create a site from the root of your master branch of from the /docs directory in your master branch. For this example, we are going to use the /docs directory. 
+GitHub pages allows you to create a website for your project with free hosting. Go to your repo on GitHub, then click Settings, then scroll down to the GitHub Pages section. You have the option to create a site from the root of your master branch of from the /docs directory in your master branch. For this example, we are going to use the /docs directory.
 
-Don't change this setting just yet as if you don't have a docs directory there will be nothing there to publish. 
+Don't change this setting just yet as if you don't have a docs directory there will be nothing there to publish.
 
 ## Creating the docs directory
 
-Clone your git repo to a local directory, let's say `~/code/my-project` for this example. The below assumes you don't yet have a docs directory and you have [jekyll installed](https://jekyllrb.com/docs/installation/). If you do already have a docs directory you will have to rename it to something else. 
+Clone your git repo to a local directory, let's say `~/code/my-project` for this example. The below assumes you don't yet have a docs directory and you have [jekyll installed](https://jekyllrb.com/docs/installation/). If you do already have a docs directory you will have to rename it to something else.
 
 Create a new jekyll installation in the docs directory, ensuring you replace your username and project name in the below example.
 
@@ -31,7 +31,7 @@ cd ~/code/my-project
 jekyll new docs
 ```
 
-You should now have a base install of Jekyll in your freshly created docs directory. 
+You should now have a base install of Jekyll in your freshly created docs directory.
 
 ## Configuring the theme
 
@@ -71,7 +71,7 @@ To create a menu on the left on your docs page you need to create a new yaml fil
     - name: Menu item
       link: /link/
       items:
-        - name: Sub menu item 
+        - name: Sub menu item
           link: /sub-menu-item/
 ```
 
@@ -89,8 +89,8 @@ gh_sponsor: chrisrhymes
 
 ## Making the docs page live
 
-Once you have finished creating your docs page you can commit your changes and push everything up to GitHub. Go back to the GitHub settings page and scroll back down to the GitHub Pages section. Now we can update the setting to use the Master branch /docs folder and then GitHub will build your new docs page. 
+Once you have finished creating your docs page you can commit your changes and push everything up to GitHub. Go back to the GitHub settings page and scroll back down to the GitHub Pages section. Now we can update the setting to use the Master branch /docs folder and then GitHub will build your new docs page.
 
 ## Want to see an example?
 
-I recently updated one of my own packages to use Bulma Clean Theme to power the docs page. Check out the docs for [Bulma Block List](https://www.csrhymes.com/bulma-block-list) as an example. 
+I recently updated one of my own packages to use Bulma Clean Theme to power the docs page. Check out the docs for [Bulma Block List](https://www.csrhymes.com/bulma-block-list) as an example.

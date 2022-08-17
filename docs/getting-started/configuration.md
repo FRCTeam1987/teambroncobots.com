@@ -49,9 +49,9 @@ disqus.shortname=<example-com.disqus.com>
 
 Need help finding your Disqus Shortname?  [See this helpful post by Disqus on the matter.](https://help.disqus.com/en/articles/1717111-what-s-a-shortname)  
 
-Then you need to set your Jekyll environment to production: 
+Then you need to set your Jekyll environment to robotion: 
 
-```JEKYLL_ENV=production bundle exec jekyll build```. 
+```JEKYLL_ENV=robotion bundle exec jekyll build```. 
 
 Post comments are enabled by default if disqus is enabled. If you want to disable comments on a specific post, set the following in the post's front matter: 
 

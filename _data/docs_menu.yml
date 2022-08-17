@@ -61,14 +61,14 @@
       link: /docs/page-components/video/
 
 
-- label: Products
+- label: Robots
   items:
-    - name: Product Pages
-      link: /docs/products/product-pages/
-    - name: Product Reviews
-      link: /docs/products/product-reviews/
+    - name: Robot Pages
+      link: /docs/robots/robot-pages/
+    - name: Robot Reviews
+      link: /docs/robots/robot-reviews/
     - name: Category Page
-      link: /docs/products/category-page/
+      link: /docs/robots/category-page/
 
 - label: Recipes
   items:

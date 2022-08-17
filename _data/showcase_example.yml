@@ -8,7 +8,7 @@ items:
     description: |-
       The C.S. Rhymes website is built using Bulma Clean Theme.
 
-      This website utilises the built in blog and products layouts that come included with the theme.
+      This website utilises the built in blog and robots layouts that come included with the theme.
     image: /img/csrhymes-com.jpg
     image_ratio: is-16by9
     link: https://www.csrhymes.com
