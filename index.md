@@ -1,6 +1,6 @@
 ---
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
+title: Broncobots
+subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
 show_sidebar: true

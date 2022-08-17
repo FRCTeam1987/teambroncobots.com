@@ -22,12 +22,18 @@
                         <p class="title {% if tier.size == 'large' %} is-4 {% elsif tier.size == 'small' %} is-6 {% else %} is-5 {% endif %}">
                             {{ sponsor.name }}
                         </p>
+                        {% if sponsor.image %}
+                            <img src= {{ sponsor.image }} alt=" ">
+                            {% else %}
+                            &nbsp;
+                            {% endif %} 
                         <p class="subtitle is-6">
+                            <p>{{ sponsor.description }}</p>
                             {% if sponsor.profile %}
                             <a href="{{ sponsor.profile }}" class="is-link is-small">View Profile</a>
                             {% else %}
                             &nbsp;
-                            {% endif %}
+                            {% endif %} 
                         </p>
                     </div>
                 </div>

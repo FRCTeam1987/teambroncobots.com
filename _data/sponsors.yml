@@ -1,0 +1,125 @@
+#- tier_name: Platinum Sponsors
+#  size: large
+#  description: |-
+#    This is the description for the Platinum Tiers.
+#
+#    It can contain multiple lines. It has the size set to 'large'.
+#  sponsors:
+#    - name: Dave McDave
+#      profile: https://github.com/
+#    - name: Sarah Lee-Cheesecake
+#      profile: https://github.com/
+#      
+#- tier_name: Gold Sponsors
+#  description: |-
+#    This is the description for the Gold Tier
+#  sponsors:
+#    - name: Dave McDave
+#      profile: https://github.com/
+#    - name: Sarah Lee-Cheesecake
+#      profile: https://github.com/
+#    - name: John Smith
+#      profile: https://github.com/
+      
+      
+- tier_name: Company Sponsors
+  size: small
+  description: |-
+    These are the companys are sponsor us.
+  sponsors:
+    - name: Actuonix
+      image: ../images/sponsors/actuonix.png
+      description: Our micro linear actuators and servos are designed to save product designers the difficulties and hassle of engineering a linear stage from large and awkward motors, servos, gears and rods.
+      profile: https://www.actuonix.com/
+    - name: Brunson
+      image: ../images/sponsors/brunson.png
+      description: Brunson Instruments live in a specialized world of industrial measurement. They deal with measurement problems faced by people who build, inspect, or maintain fairly large machines – machines like aircraft, paper mills, satellites, ships, machine tools, particle accelerators, and automobiles, to name a very few.
+      profile: http://www.brunson.us/
+    - name: Brown Industries INC.
+      image: ../images/sponsors/BrownIndustriesINC.png
+      description: Brown Industries provides a turnkey service from ordering the materials to shipment of the finished product. With over 35 years of experience, they offer the ability to efficiently produce your product while helping to reduce your overall costs and maximize your profits without adding unnecessary overhead.
+      profile: https://www.brownindustries.com/
+    - name: Catalent
+      image: ../images/sponsors/catalent.svg
+      description: Catalent is a global leader in providing integrated services, superior drug delivery technologies and manufacturing solutions to help life science innovators develop and launch successful pharmaceuticals, biologics and consumer health products.
+      profile: https://www.catalent.com/
+    - name: COX Air Systems, INC.
+      image: ../images/sponsors/Cox.png
+      description: They are an industrial sheet metal contractor based in the Kansas City area. We offer turnkey design, engineering, fabrication and installation of industrial air systems, industrial services and specialty items.
+      profile: https://www.coxairsystems.com/
+    - name: GitHub
+      image: ../images/sponsors/github.png
+      description: Github is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
+      profile: https://github.com/
+    - name: Grider Orthodontics
+      image: ../images/sponsors/grider.jpg
+      description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
+      profile: https://griderorthodontics.com/
+    - name: Harbor Freight
+      image: ../images/sponsors/Harbor_Freight.jpg
+      description: We have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!
+      profile: https://www.harborfreight.com//
+    - name: Intuitive Foundation
+      image: ../images/sponsors/Intuitive_Foundation.jpg
+      description: The Intuitive Foundation is a proud sponsor of FIRST (For Inspiration and Recognition of Science and Technology) high school robotics teams.
+      profile: https://www.intuitive-foundation.org/
+    - name: ken Tinkering
+      image: ../images/sponsors/kenTinkering.jpg
+      description: Home CNC Woodworker! Let me custom design something for you; Signs, Plaques, Wood Toys, Puzzles, Home Decor, Picture Frames, Wood Boxes, Trays, and Furniture.
+      profile: 
+    - name: United States of America Navy
+      image: ../images/sponsors/Navy.jpg
+      description: In America's Navy, water and salt flow through our veins in the same proportion as the sea. That mighty force is the lifeblood of the greatest Navy ever to sail upon it, slip beneath it or fly above it. It shapes Americans from every corner of the nation into Sailors with the courage to protect liberty back home. Bonding us with the commitment to serve with honor. The sea propels every one of our men and women to defeat or defend. To comfort or to awe. To victory or to the rescue.
+      profile: https://www.navy.mil/
+    - name: KC Stem Alliance
+      image: ../images/sponsors/kcstem.jpg
+      description: The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community.
+      profile: https://www.kcstem.org/
+    - name: Lee's Summit North High School
+      image: ../images/sponsors/lsn.jpg
+      description: Lee's Summit North is a high school that serves grades 9-12 and it is located in the north central part of Lee's Summit, Missouri. It is the second of three high schools to open in Lee's Summit, Missouri.
+      profile: http://lsnhs.lsr7.org/
+    - name: Lee's Summit Tribune
+      image: ../images/sponsors/tribune.jpg
+      description: The Lee's Summit Tribune is dedicated to providing you the most current and accurate news and events in Lee's Summit.
+      profile: https://lstribune.net/
+    - name: GitHub
+      image: ../images/sponsors/github.png
+      description: Github is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
+      profile: https://github.com/
+    - name: R&D Leverage
+      image: ../images/sponsors/leverage.jpg
+      description: R & D Leverage is recognized as the world's leading suppliers of tooling for the food, beverage, home, personal care and healthcare industries. With offices in the Kansas City, Missouri metro area and in the United Kingdom, R&D is a full-service plastic product solutions company. From idea, to tooling, to manufacturing, the company's packaging solutions support the branded product. Services include full mold manufacturing for PET tooling, IBM tooling, injection molds, custom medical injection, silicone services, and a full range of support functions that include sampling analysis, mold maintenance, contract molding and processing assistance.
+      profile: http://www.rdleverage.com/
+    - name: SoundWorks
+      image: ../images/sponsors/SoundWorks.png
+      description: Home of Kansas City's leading musical and entertainment professionals. Encompassing all your professional recording and production needs.
+      profile: https://soundworksrec.com/index.html
+    - name: Veterans of Foreign Wars
+      image: ../images/sponsors/VFW.png
+      description: The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
+      profile: https://www.vfw.org/
+
+- tier_name: Personal Sponsors
+  size: medium
+  description: |-
+    These are the people that sponsor us.
+  sponsors:
+    - name: Team 1987 Mentors
+      description: Personal Sponsors
+    - name: Citizens of Lee's Summit
+      description: Personal Sponsors
+    - name: Charles Hasek
+      description: Personal Sponsor
+    - name: Chuck Stephenson
+      description: Personal Sponsor
+    - name: Dautenhahn Family
+      description: Personal Sponsors
+    - name: Jonathan Smith
+      description: Personal Sponsor
+    - name: Linda Pickett
+      description: Personal Sponsor
+    - name: Tracy Bornman PC
+      description: Personal Sponsor
+    - name: Ted Cahall
+      description: Personal Sponsor
