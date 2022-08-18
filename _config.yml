@@ -15,6 +15,7 @@ gh_sponsor: chrisrhymes
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
 
+
 paginate: 5
 paginate_path: "/blog/page:num"
 
