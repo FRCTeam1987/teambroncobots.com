@@ -6,7 +6,7 @@ items:
   - title: C.S. Rhymes Website
     subtitle: csrhymes.com
     description: |-
-      The C.S. Rhymes website is built using Bulma Clean Theme.
+      The C.S. Rhymes website is built using Broncobots.
 
       This website utilises the built in blog and robots layouts that come included with the theme.
     image: /img/csrhymes-com.jpg
@@ -15,7 +15,7 @@ items:
     link_text: View the CS Rhymes Website
     tags: Bulma,CSS,Jekyll
     github: chrisrhymes/chrisrhymes.github.io
-  - title: Bulma Clean Theme
+  - title: Broncobots
     subtitle: A clean and simple theme built with Bulma
     description: |-
       A clean and simple Jekyll theme built with the Bulma framework, available as a Ruby Gem. You may recognise it, it's what powers this website!

@@ -13,7 +13,7 @@ Much of a Jekyll's configuration is held in the `_config.yml` file in the projec
 
 For information on general Jekyll configuration, please check out the [Jekyll docs](https://jekyllrb.com/docs/configuration/).
 
-Below are some specific options that you might want to set in your `_config.yml` when using Bulma Clean Theme.
+Below are some specific options that you might want to set in your `_config.yml` when using Broncobots.
 
 ## Lang
 

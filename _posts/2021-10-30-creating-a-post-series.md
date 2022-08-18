@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a post series
-description: How to create a post series with Bulma Clean Theme
+description: How to create a post series with Broncobots
 date: 2021-10-30 09:00:07
 hero_image: /bulma-clean-theme/img/blog-post-series.jpg
 image: /bulma-clean-theme/img/blog-post-series.jpg
@@ -30,7 +30,7 @@ title: The series title
 sections:
   - items:
       - title: Why use a static site generator
-      - title: Getting started with Bulma Clean Theme for Jekyll
+      - title: Getting started with Broncobots for Jekyll
 ```
 
 Here is a full example with multiple sections with labels.
@@ -42,11 +42,11 @@ sections:
   - label: The first section
     items:
       - title: Why use a static site generator
-      - title: Getting started with Bulma Clean Theme for Jekyll
+      - title: Getting started with Broncobots for Jekyll
   - label: Another section
     items:
-      - title: Introducing some new layouts to Bulma Clean Theme
-      - title: Creating a docs site with Bulma Clean Theme
+      - title: Introducing some new layouts to Broncobots
+      - title: Creating a docs site with Broncobots
       - title: Creating a post series
 ```
 

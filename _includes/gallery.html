@@ -7,16 +7,27 @@
         </div>
         {% for image in gallery.images %}
         <div class="column is-4-desktop is-6-tablet">
-            <div class="card">
+            <div class="card"> 
                 <div class="card-image">
-                    {% include image-modal.html ratio=image.ratio link=image.link alt=image.alt large_link=image.large_link %}
+<!--                    {% include image-modal.html ratio=image.ratio image=image.image alt=image.alt large_link=image.large_link %} -->
+<!--                    <img src={{ image.image }} alt={{ image.alt }}>-->
+                      <a href={{ image.image }}>
+                        <img src={{ image.image }} alt={{ image.alt }}>
+                                               </a>
                 </div>
                 <div class="card-content">
-                    <div class="content">
-                        {{ image.description | markdownify }}
+                    <div class="content"> 
+                        {{ image.description | markdownify }} 
+                        <a href={{ image.image }} download>
+                        {% if image.altdownload %}
+                            </a>
+                            <a href={{ image.altdownload }} download>
+                            {% endif %}
+                        <button class="btn"><i class="fa fa-download"></i> Download</button> 
+                        </a>
                     </div>
-
-                </div>
+ 
+                </div> 
             </div>
         </div>
         {% endfor %}

@@ -9,7 +9,7 @@ show_sidebar: false
 
 ## Bulma
 
-Bulma Clean Theme uses the Bulma frontend framework. Check out the [Bulma docs](https://bulma.io/documentation/) for more information.
+Broncobots uses the Bulma frontend framework. Check out the [Bulma docs](https://bulma.io/documentation/) for more information.
 
 ## Setting the Primary Colour
 

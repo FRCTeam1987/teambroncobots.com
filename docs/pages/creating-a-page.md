@@ -27,7 +27,7 @@ subtitle: The page subtitle
 
 ## Search Engine Optimisation
 
-Bulma Clean Theme uses Jekyll SEO tag to generate additional meta tags. Ensure each page and post has a unique title and description in the front matter. 
+Broncobots uses Jekyll SEO tag to generate additional meta tags. Ensure each page and post has a unique title and description in the front matter. 
 
 You can also set an image that will be used when the page or post is shared on social media. 
 
