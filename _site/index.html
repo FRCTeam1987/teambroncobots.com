@@ -70,7 +70,7 @@
                             
                             <a href="/bulma-clean-theme/sponsors/" class="navbar-item ">Sponsors Page</a>
                             
-                            <a href="/bulma-clean-theme/gallery/" class="navbar-item ">Image Gallery</a>
+                            <a href="/bulma-clean-theme/gallery/" class="navbar-item ">Assets</a>
                             
                             <a href="/bulma-clean-theme/robots/" class="navbar-item ">Robots</a>
                             
@@ -191,6 +191,24 @@
                     
 <div class="content">
     <h1 id="broncobots-demo-website">Broncobots demo website</h1>
+<div x-data="{visible: true}">
+    <div class="notification is-info" x-show.transition.duration.300ms="visible">
+        
+            <button class="delete" x-on:click="visible = false"></button>
+        
+        <article class="media">
+            
+                <div class="media-left">
+                    <span class="icon"><i class="fas fa-exclamation-circle fa-lg"></i></span>
+                </div>
+            
+            <div class="media-content">
+                <div class="content"><p>This Website was last updated on 8/17/2022 any information past that point may be outdated.</p>
+</div>
+            </div>
+        </article>
+    </div>
+</div>
 
 <p>This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages.</p>
 
@@ -226,7 +244,7 @@
   <li>Contents</li>
   <li>Landing Page With Callouts</li>
   <li>Sponsors Page</li>
-  <li>Image Gallery</li>
+  <li>Assets</li>
   <li>Recipe Page</li>
   <li>Blog</li>
   <li>Post</li>

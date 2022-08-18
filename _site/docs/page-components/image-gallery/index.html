@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Image Gallery | Broncobots</title>
+<title>Assets | Broncobots</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Image Gallery" />
+<meta property="og:title" content="Assets" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Broncobots webste FRC Team 1987" />
 <meta property="og:description" content="Broncobots webste FRC Team 1987" />
@@ -32,9 +32,9 @@
 <meta property="og:site_name" content="Broncobots" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Image Gallery" />
+<meta property="twitter:title" content="Assets" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Broncobots webste FRC Team 1987","headline":"Image Gallery","url":"http://localhost:4000/bulma-clean-theme/docs/page-components/image-gallery/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Broncobots webste FRC Team 1987","headline":"Assets","url":"http://localhost:4000/bulma-clean-theme/docs/page-components/image-gallery/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts --></head>
@@ -70,7 +70,7 @@
                             
                             <a href="/bulma-clean-theme/sponsors/" class="navbar-item ">Sponsors Page</a>
                             
-                            <a href="/bulma-clean-theme/gallery/" class="navbar-item ">Image Gallery</a>
+                            <a href="/bulma-clean-theme/gallery/" class="navbar-item ">Assets</a>
                             
                             <a href="/bulma-clean-theme/robots/" class="navbar-item ">Robots</a>
                             
@@ -110,7 +110,7 @@
         <section class="hero  is-medium  is-bold is-primary" >
     <div class="hero-body ">
         <div class="container">
-            <h1 class="title is-2">Image Gallery</h1>
+            <h1 class="title is-2">Assets</h1>
             <p class="subtitle is-3">Page Component</p>
             
         </div>
@@ -228,7 +228,7 @@
         </li>
         
         <li>
-            <a href="/bulma-clean-theme/docs/page-components/image-gallery/" class="is-active">Image Gallery</a>
+            <a href="/bulma-clean-theme/docs/page-components/image-gallery/" class="is-active">Assets</a>
             
         </li>
         
@@ -315,8 +315,8 @@
     <div class="menu">
         <p class="menu-label">Contents</p>
         <ul class="menu-list">
-  <li><a href="#image-gallery">Image Gallery</a></li>
-  <li><a href="#create-an-image-gallery-data-file">Create an image gallery data file</a></li>
+  <li><a href="#assets">Assets</a></li>
+  <li><a href="#create-an-assets-data-file">Create an assets data file</a></li>
   <li><a href="#multiple-galleries">Multiple galleries</a></li>
   <li><a href="#displaying-the-gallery">Displaying the gallery</a></li>
 </ul>
@@ -327,17 +327,17 @@
 
 
 <div class="content">
-    <h2 id="image-gallery">Image Gallery</h2>
+    <h2 id="assets">Assets</h2>
 
 <p>You can display a gallery of images on a page. It allows you to show a small version and click on it to enlarge the image.</p>
 
-<p><a href="/bulma-clean-theme/gallery/">View the image gallery example page</a></p>
+<p><a href="/bulma-clean-theme/gallery/">View the assets example page</a></p>
 
-<h2 id="create-an-image-gallery-data-file">Create an image gallery data file</h2>
+<h2 id="create-an-assets-data-file">Create an assets data file</h2>
 
 <p>Start by creating a gallery data file using the below format, for example <code class="language-plaintext highlighter-rouge">my_gallery.yml</code>. The image (link) will display on the page and when you click on the image, it will display the large_link image in a modal window.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Image Gallery Title</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Assets Title</span>
   <span class="na">images</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">link</span><span class="pi">:</span> <span class="s">https://via.placeholder.com/800x450</span>
       <span class="na">large_link</span><span class="pi">:</span> <span class="s">https://via.placeholder.com/1200x675</span>
@@ -362,7 +362,7 @@
 
 <p>If you want multiple image galleries on the same page then create additional sections in your yaml file.</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">First Image Gallery Title</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">First Assets Title</span>
   <span class="na">images</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">link</span><span class="pi">:</span> <span class="s">https://via.placeholder.com/800x450</span>
       <span class="na">alt</span><span class="pi">:</span> <span class="s">The alt text for the image</span>
@@ -374,7 +374,7 @@
       <span class="na">description</span><span class="pi">:</span> <span class="s">The image description</span>
       <span class="na">ratio</span><span class="pi">:</span> <span class="s">is-4by3</span>
 
-<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Second Image Gallery Title</span>
+<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Second Assets Title</span>
   <span class="na">images</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">link</span><span class="pi">:</span> <span class="s">https://via.placeholder.com/800x450</span>
       <span class="na">alt</span><span class="pi">:</span> <span class="s">The alt text for the image</span>
@@ -392,7 +392,7 @@
 <p>In your pages front matter add a gallery with the datafiles filename without the extension.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">layout</span><span class="pi">:</span> <span class="s">page</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s">My Image Gallery</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">My Assets</span>
 <span class="na">gallery</span><span class="pi">:</span> <span class="s">my_gallery</span>
 </code></pre></div></div>
 

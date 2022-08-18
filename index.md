@@ -7,6 +7,10 @@ show_sidebar: true
 ---
 
 # Broncobots demo website
+{% include notification.html
+message="This Website was last updated on 8/17/2022 any information past that point may be outdated."
+status="is-info"
+dismissable="true" %}
 
 This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
 
@@ -42,7 +46,7 @@ This demo site showcases the available page layout options.
 * Contents
 * Landing Page With Callouts
 * Sponsors Page
-* Image Gallery
+* Assets
 * Recipe Page
 * Blog
 * Post

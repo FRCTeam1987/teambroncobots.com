@@ -1,24 +1,24 @@
 ---
 layout: page
-title: Image Gallery
+title: Assets
 subtitle: Page Component
 menubar: docs_menu
 show_sidebar: false
 toc: true
 ---
 
-## Image Gallery
+## Assets
 
 You can display a gallery of images on a page. It allows you to show a small version and click on it to enlarge the image. 
 
-[View the image gallery example page](/bulma-clean-theme/gallery/)
+[View the assets example page](/bulma-clean-theme/gallery/)
 
-## Create an image gallery data file
+## Create an assets data file
 
 Start by creating a gallery data file using the below format, for example `my_gallery.yml`. The image (link) will display on the page and when you click on the image, it will display the large_link image in a modal window. 
 
 ```yaml
-- title: Image Gallery Title
+- title: Assets Title
   images:
     - link: https://via.placeholder.com/800x450
       large_link: https://via.placeholder.com/1200x675
@@ -42,7 +42,7 @@ Start by creating a gallery data file using the below format, for example `my_ga
 If you want multiple image galleries on the same page then create additional sections in your yaml file.
 
 ```yaml
-- title: First Image Gallery Title
+- title: First Assets Title
   images:
     - link: https://via.placeholder.com/800x450
       alt: The alt text for the image
@@ -54,7 +54,7 @@ If you want multiple image galleries on the same page then create additional sec
       description: The image description
       ratio: is-4by3
 
-- title: Second Image Gallery Title
+- title: Second Assets Title
   images:
     - link: https://via.placeholder.com/800x450
       alt: The alt text for the image
@@ -73,6 +73,6 @@ In your pages front matter add a gallery with the datafiles filename without the
 
 ```yaml
 layout: page
-title: My Image Gallery
+title: My Assets
 gallery: my_gallery
 ```

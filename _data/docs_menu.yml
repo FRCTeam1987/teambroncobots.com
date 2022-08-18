@@ -43,7 +43,7 @@
   items:
     - name: Callouts
       link: /docs/page-components/callouts/
-    - name: Image Gallery
+    - name: Assets
       link: /docs/page-components/image-gallery/
     - name: Image Modal
       link: /docs/page-components/image-modal/

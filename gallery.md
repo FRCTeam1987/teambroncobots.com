@@ -7,4 +7,4 @@ gallery: Assets
 show_sidebar: false
 --- 
 
-[View the Image Gallery Docs](/bulma-clean-theme/docs/image-gallery/)
+[View the Assets Docs](/bulma-clean-theme/docs/image-gallery/)

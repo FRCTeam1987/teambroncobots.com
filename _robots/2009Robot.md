@@ -2,7 +2,7 @@
 title: 2009 Robot
 subtitle: Lunacy FRC Robot
 description: Lunacy Robot 2009
-robot_code: 2007
+robot_code: 2009
 layout: robot
 imageicon: "../images/robots/2009robot.png"
 image: "../../images/robots/2009robot.png"
@@ -14,7 +14,7 @@ features:
       icon: fa-grin-stars
     - label: Available in multiple sizes
       icon: fa-fighter-jet
-<!--rating: 3-->
+rating: 2
 ---
 
 This is the content about the robot.

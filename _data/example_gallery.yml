@@ -1,4 +1,4 @@
-- title: Image Gallery Title
+- title: Assets Title
   images:
     - image: ../images/media.jpg
       large_link: https://via.placeholder.com/1200x675
@@ -10,7 +10,7 @@
       large_link: https://via.placeholder.com/1200x675
       description: The image description
 
-- title: Second Image Gallery Title
+- title: Second Assets Title
   images:
     - link: https://via.placeholder.com/800x450
       alt: The alt text for the image
