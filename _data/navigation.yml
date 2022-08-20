@@ -11,21 +11,21 @@
       link: /awards/
     - name: Sponsors Page
       link: /sponsors/
-- name: Example Pages
-  link: /#
-  dropdown:
-    - name: Landing Page With Callouts
-      link: /landing/
-    - name: Sponsors Page
-      link: /sponsors/
-    - name: Assets
-      link: /gallery/
-    - name: Robots
-      link: /robots/
-    - name: Recipe Page
-      link: /example-recipe/
-    - name: Showcase
-      link: /showcase/
+#- name: Example Pages
+#  link: /#
+#  dropdown:
+#    - name: Landing Page With Callouts
+#      link: /landing/
+#    - name: Sponsors Page
+#      link: /sponsors/
+#    - name: Assets
+#      link: /gallery/
+#    - name: Robots
+#      link: /robots/
+#    - name: Recipe Page
+#      link: /example-recipe/
+#    - name: Showcase
+#      link: /showcase/
 - name: Blog
   link: /blog/
 

@@ -2,10 +2,10 @@
 lang: en
 title: Broncobots
 tagline: Broncobots website
-email: your-email@domain.com
+email: broncobots@gmail.com
 description: >
   Broncobots webste FRC Team 1987
-baseurl: "/bulma-clean-theme"
+baseurl: "/Broncobots"
 url: "https://teambroncobots.com/"
 permalink: pretty
 #favicon: /path/to/favicon.png
