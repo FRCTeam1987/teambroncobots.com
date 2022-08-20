@@ -5,8 +5,28 @@ layout: page
 callouts: home_callouts
 show_sidebar: true
 hero_image: images/slides/Homeimg.jpg
+hero_darken: true
 hero_height: is-large
 ---
+
+ <style>
+.zoom {
+/*  padding: 50px;*/
+/*  background-color: green;*/
+  transition: transform .2s; /* Animation */
+/*  width: 200px;*/
+/*  height: 200px;*/
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  backface-visibility: hidden;
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  
+}
+</style>
+
+<div class="zoom"></div> 
 
 # Welcome
 {% include notification.html
@@ -25,6 +45,7 @@ We are currently building our 2022 robot and updating our web site with current 
 ![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
 ![GitHub Repo stars](https://img.shields.io/github/stars/chrisrhymes/bulma-clean-theme?style=social)
 -->
+<img src="images/2022TeamPic.jpg" alt=" " class="zoom">
 ## About Us
 
 ### Team Broncobots Mission Statement

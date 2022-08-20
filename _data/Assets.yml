@@ -15,9 +15,33 @@
       description: 2022 Robotics Camp Logo
     - image: ../images/Assets/SummerCamps/Manuals/manual.png
       description: 2022 Robotics Camp Manual
-      altdownload: ../images/Assets/SummerCamps/Manuals/2022Manual.docx
+      altdownload: ../images/Assets/SummerCamps/Manuals/2022PiratePanicManual.docx
     - image: ../images/Assets/SummerCamps/Logos/2021Logo.png
       description: 2021 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Logos/2019Logo.jpg
+      description: 2019 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2019 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2019BeachBlastManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2018Logo.jpg
+      description: 2018 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2018 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2018SafariShowdownManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2017Logo.png
+      description: 2017 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2017 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2017SpaceRaceManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2016Logo.jpg
+      description: 2016 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2016 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2016MiningMayhemManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2015Logo.jpg
+      description: 2015 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Logos/2013Logo.jpg
+      description: 2013 Robotics Camp Logo
 
 
 - title: Robot Gallery

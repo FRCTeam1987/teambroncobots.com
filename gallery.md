@@ -3,7 +3,7 @@ layout: page
 title: Assets
 subtitle: Our teams assets!
 description: Our teams assets
-gallery: Assets
+gallery: Assets 
 show_sidebar: false
 --- 
 

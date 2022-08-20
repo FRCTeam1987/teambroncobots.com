@@ -1,5 +1,16 @@
+- name: Sponsors
+  link: /Sponsors/
+- name: Robots
+  link: /robots/
 - name: Docs
   link: /docs/
+- name: About Us
+  link: /#
+  dropdown:
+    - name: Our Awards
+      link: /awards/
+    - name: Sponsors Page
+      link: /sponsors/
 - name: Example Pages
   link: /#
   dropdown:
@@ -17,5 +28,4 @@
       link: /showcase/
 - name: Blog
   link: /blog/
-- name: Sponsors
-  link: /Sponsors/
+
