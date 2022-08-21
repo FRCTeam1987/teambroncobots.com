@@ -11,6 +11,17 @@
       link: /awards/
     - name: Sponsors Page
       link: /sponsors/
+    - name: R7 Alliance
+      link: /R7Alliance/
+- name: Resources
+  link: /#
+  dropdown:
+    - name: Helpful Links
+      link: /HelpfulLinks/
+    - name: Assets
+      link: /gallery/
+- name: Summer Camps
+  link: /SummerCamps/
 #- name: Example Pages
 #  link: /#
 #  dropdown:

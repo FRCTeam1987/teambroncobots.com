@@ -5,8 +5,8 @@ subtitle: First Through Sixth Grade
 description: Broncobots Summer Camps
 show_sidebar: false
 hero_image: ../images/camps.jpg
-hero_darken: false
-hero_height: is-large
+hero_darken: true
+hero_height: is-medium
 ---
 
 <div class="centered">
