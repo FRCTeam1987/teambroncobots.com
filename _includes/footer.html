@@ -1,24 +1,96 @@
+<style> 
+input[type=animated] {
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 12px;
+  transition: height,width 0.4s ease-in-out;
+/*  transition:  0.4s ease-in-out;*/
+  
+}
+input[type=animated]:focus {
+  width: 500px;
+  height: 55px;
+}
+.button {
+  background-color: #830506;
+  border: none;
+  color: white;
+  padding: 0px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.buttonRed {
+  background-color: #830506;
+  color: white;
+}
+
+.buttonRed:hover {
+
+  background-color: white; 
+  color: black;   
+  border: 2px solid #830506;
+}
+</style>
 <footer class="footer">
     <div class="container">
         
         {% if site.footer_menu %}
+          <form target="_blank" action="https://formsubmit.co/allenmc220@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col"><center>
+                  <input type="animated" name="name" class="form-control" placeholder="Full Name" required>
+                  <input type="animated" name="email" class="form-control" placeholder="Email Address" required>
+                    <div class="form-group">
+                      <textarea id="txt" placeholder="Your Message" class="form-control" name="message"  required></textarea>
+                    </div>
+                </center></div>
+              </div>
+            </div> 
+            <center>
+                <button type="submit" class="button buttonRed">Connect with us!</button>
+            </center>
+          </form>
+        <br>
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
-            <div class="column has-text-centered">
+            <div class="column has-text-centered"> 
                 <div>
                     <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
                 </div>
             </div>
             {% endfor %}
         </div>
+        <div class="columns is-multiline">
+           {% for item in site.data[site.footer_social_media] %}
+            <div class="column has-text-centered">
+                {% if item.company %}
+                    <a href="{{ item.link | relative_url }}" class="link"><i class="fab {{ item.icon }}"></i></a>
+                {% else %}
+                    <a href="{{ item.link | relative_url }}" class="link"><i class="fas {{ item.icon }}"></i></a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
         {% endif %}
 
         <div class="content is-small has-text-centered"> 
-            <a href='{{ site.baseurl }}'> 
+            <a href='{{ site.baseurl }}/'> 
               <img src="{{ site.baseurl }}/broncobots.svg" alt="" width="150" height="200" >
             </a>
             <p>© The Broncobots. All rights reserved.</p>
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
         </div>
     </div>
 </footer>

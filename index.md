@@ -3,7 +3,7 @@ title: Broncobots
 subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
-show_sidebar: true
+show_sidebar: false
 hero_image: images/slides/Homeimg.jpg
 hero_darken: true
 hero_height: is-large
@@ -28,11 +28,9 @@ hero_height: is-large
 
 <div class="zoom"></div> 
 
-# Welcome
-{% include notification.html
-message="This Website was last updated on 8/17/2022 any information past that point may be outdated."
-status="is-info"
-dismissable="true" %}
+<p><h1><center>
+    Welcome!
+</center></h1></p>
 
  We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students attending [Lee's Summit North High School](https://lsnhs.lsr7.org/), 7 coaches, several amazing mentors, and multiple gracious, corporate sponsors! Our team is dedicated to [FIRST](https://www.firstinspires.org/) (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage [STEM](https://www.kcstem.org/) (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!
 
@@ -40,19 +38,24 @@ We are currently building our 2022 robot and updating our web site with current 
 
 **Check back here often for events, competitions, and general team information!**
 
-<!--
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
-![GitHub Repo stars](https://img.shields.io/github/stars/chrisrhymes/bulma-clean-theme?style=social)
--->
-<img src="images/2022TeamPic.jpg" alt=" " class="zoom">
-## About Us
+---
 
-### Team Broncobots Mission Statement
+<img src="images/2022TeamPic.jpg" alt=" " class="zoom">
+
+---
+
+<p><h2><center>
+    About Us
+</center></h2></p>
+
+<p><h3><center>
+    Team Broncobots Mission Statement
+</center></h3></p>
 
  The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success. 
-
-### Team Focus
+<p><h3><center>
+    Team Focus
+</center></h3></p>
 
  The focus of our team has been to reach out to our community in every way possible. Over the past three years, we have attended school carnivals, school presentations, bingo raffles, Boy Scout meetings, school board meetings, and business meetings. We have been featured over ten times in publications, including three local newspapers, Honeywell newsletters, and even two books: FIRST Robotics: Rack N Roll and FIRST Robots: Behind The Design. We also created a team video as an introduction to FIRST for the Lee's Summit community that aired on the local government channel. The team has even published a book about our team and our history.
 
@@ -64,6 +67,8 @@ We have mentored Team 2894, the ACE Robotics Team from the African Centered Educ
 
 Over four years, we have sent over 1,500 letters to government officials. In 2008, there was a "Lee's Summit Robotics Day" proclamation from the mayor, and Governor Matt Blunt officially recognized and commended the FIRST Robotics Competition in the state of Missouri. Along with starting a mail campaign to government officials (fifteen different officials and federal offices), took the classic Flat Stanley and combinded it with the spirit of FIRST to start our Flat Creation Campaign. This was designed to reach people outside of our direct area of influence, like families and friends from other states and countries. During its time traveling, Flat Mammoth (from our 2008 Flat Creation Campaign) has visited a second grade classroom, attended a robot-themed movie night, enjoyed the warm weather in Honduras, and sat in the Missouri House of Representatives! 
 
-### Team History
+<p><h3><center>
+    Team History
+</center></h3></p>
 
  Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and and out of state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's Cowtown Throwdown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 

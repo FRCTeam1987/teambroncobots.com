@@ -2,8 +2,8 @@
   link: /Sponsors/
 - name: Robots
   link: /robots/
-- name: Docs
-  link: /docs/
+- name: FIRST
+  link: https://www.firstinspires.org/
 - name: About Us
   link: /#
   dropdown:
@@ -13,6 +13,8 @@
       link: /sponsors/
     - name: R7 Alliance
       link: /R7Alliance/
+    - name: Branding
+      link: /Branding/
 - name: Resources
   link: /#
   dropdown:
@@ -20,6 +22,8 @@
       link: /HelpfulLinks/
     - name: Assets
       link: /gallery/
+    - name: Videos
+      link: /videos/
 - name: Summer Camps
   link: /SummerCamps/
 #- name: Example Pages
@@ -37,6 +41,6 @@
 #      link: /example-recipe/
 #    - name: Showcase
 #      link: /showcase/
-- name: Blog
-  link: /blog/
+#- name: Blog
+#  link: /blog/
 
