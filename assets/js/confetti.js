@@ -4,18 +4,20 @@ var startConfetti; //call to start confetti animation
 var stopConfetti; //call to stop adding confetti
 var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
 var removeConfetti; //call to stop the confetti animation and remove all confetti immediately
+var fallForDuration; //call to run confetti for number of milliseconds
 
 (function() {
 	startConfetti = startConfettiInner;
 	stopConfetti = stopConfettiInner;
 	toggleConfetti = toggleConfettiInner;
 	removeConfetti = removeConfettiInner;
+	fallForDuration = fallForDurationInner;
 	var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var particles = [];
 	var waveAngle = 0;
-	
+
 	function resetParticle(particle, width, height) {
 		particle.color = colors[(Math.random() * colors.length) | 0];
 		particle.x = Math.random() * width;
@@ -29,6 +31,8 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 
 	function startConfettiInner() {
 		var width = window.innerWidth;
+		// var height = document.body.offsetHeight;
+        var currentheight = document.documentElement.scrollTop || document.body.scrollTop;
 		var height = window.innerHeight;
 		window.requestAnimFrame = (function() {
 			return window.requestAnimationFrame ||
@@ -44,7 +48,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 		if (canvas === null) {
 			canvas = document.createElement("canvas");
 			canvas.setAttribute("id", "confetti-canvas");
-			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none");
+			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0;left:0;");
 			document.body.appendChild(canvas);
 			canvas.width = width;
 			canvas.height = height;
@@ -74,6 +78,12 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 	function stopConfettiInner() {
 		streamingConfetti = false;
 	}
+    function fallForDurationInner(milliseconds) {
+        startConfetti();
+        setTimeout(stopConfetti, milliseconds);
+        setTimeout(removeConfetti, milliseconds+10000);
+        
+    }
 
 	function removeConfettiInner() {
 		stopConfetti();

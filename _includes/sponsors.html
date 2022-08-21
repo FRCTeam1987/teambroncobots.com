@@ -21,9 +21,24 @@
                     <div class="box has-text-centered">
                         <p class="title {% if tier.size == 'large' %} is-4 {% elsif tier.size == 'small' %} is-6 {% else %} is-5 {% endif %}">
                             {% if sponsor.Confetti %}
-                                <button onclick="startConfetti();" class="btn btn-danger">Start</button>
-                            {% endif %}
+                                <span onclick="fallForDuration(3000);" id="textButton">
+                                    {{ sponsor.name }}
+                                </span>
+                                <script src="../assets/js/confetti.js"></script>
+                                <style>
+                                    #textButton{
+                                        background:none;
+                                        border:none;
+                                        font-size:1.25rem;
+                                        font-weight: 600;
+                                        line-height: 1.125;
+                                        color: #363636;
+                                        cursor: text;
+                                    }
+                                </style>
+                            {% else %}
                             {{ sponsor.name }}
+                            {% endif %}
                         </p>
                         {% if sponsor.image %}
                             <img src= {{ sponsor.image }} alt=" ">
