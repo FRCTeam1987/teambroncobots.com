@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Our Generous Sponsors
+  link: /sponsors/
+- name: Videos
+  link: /videos/
+- name: Robots
+  link: /robots/
+- name: Assets
+  link: /gallery/
