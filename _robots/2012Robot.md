@@ -8,12 +8,12 @@ imageicon: "../images/robots/2012robot.png"
 image: "../../images/robots/2012robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: won the Engineering Inspiration Award at the St. Louis Regional
-      icon: fa-robot
-    - label: made it to the FRC World Championship and competed in the Archimedes Division
-      icon: fa-undo
-    - label: won the Judges' Award at the Greater Kansas City Regional
-      icon: fa-undo
+    - label: Won the Engineering Inspiration Award at the St. Louis Regional
+      icon: fa-search 
+    - label: Made it to the FRC World Championship and competed in the Archimedes Division
+      icon: fa-puzzle-piece
+    - label: Won the Judges' Award at the Greater Kansas City Regional
+      icon: fa-gavel 
 rating: 0
 ---
 

@@ -8,12 +8,12 @@ imageicon: "../images/robots/2013robot.png"
 image: "../../images/robots/2013robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: made it to the FRC World Championship and competed in the Galileo Division
-      icon: fa-robot
-    - label: was a regional finalist at the Greater Kansas City Regional
-      icon: fa-undo
-    - label: won the Regional Chairman's Award at the Alamo Regional sponsored by Rackspace Hosting
-      icon: fa-undo
+    - label: Made it to the FRC World Championship and competed in the Galileo Division
+      icon: fa-exclamation 
+    - label: Was a regional finalist at the Greater Kansas City Regional
+      icon: fa-compass 
+    - label: Won the Regional Chairman's Award at the Alamo Regional
+      icon: fa-leaf 
 rating: 1
 ---
 

@@ -8,12 +8,12 @@ imageicon: "../images/robots/2008robot.png"
 image: "../../images/robots/2008robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: won the Regional Engineering Inspiration Award at the Minnesota Regional
-      icon: fa-robot
-    - label:  made it to the FRC World Championship and competed in the Archimedes Division
-      icon: fa-undo
-    - label: won the Autodesk Visualization Award at the Minnesota Regional
-      icon: fa-undo
+    - label: Won the Regional Engineering Inspiration Award at the Minnesota Regional
+      icon: fa-road 
+    - label:  Made it to the FRC World Championship and competed in the Archimedes Division
+      icon: fa-trophy 
+    - label: Won the Autodesk Visualization Award at the Minnesota Regional
+      icon: fa-star
 rating: 0
 ---
 

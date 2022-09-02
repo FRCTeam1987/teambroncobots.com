@@ -9,11 +9,11 @@ image: "../../images/robots/2018robot.png"
 <!--price: £3.99 + VAT-->
 features:
     - label:  Broncobot won the FIRST Dean's List Finalist Award (Sarah Ahern)
-      icon: fa-robot
-    - label: won the Quality Award sponsored by Motorola Solutions Foundation at the Greater Kansas City Regional
-      icon: fa-undo
-    - label: ranked third in the Oklahoma Regional
-      icon: fa-undo
+      icon: fa-user-circle
+    - label: Won the Quality Award sponsored by Motorola Solutions Foundation at the GKC Regional
+      icon: fa-volume-up
+    - label: Ranked third in the Oklahoma Regional
+      icon: fa-wrench 
 rating: 0
 ---
 

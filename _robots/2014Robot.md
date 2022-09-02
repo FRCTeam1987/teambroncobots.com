@@ -8,12 +8,12 @@ imageicon: "../images/robots/2014robot.png"
 image: "../../images/robots/2014robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: won the Industrial Design Award sponsored by General Motors at the Greater Kansas City Regional
-      icon: fa-robot
-    - label: won the Industrial Safety Award sponsored by Underwriters Laboratories at the Colorado Regional
-      icon: fa-undo
-    - label: won the Quality Award sponsored by Motorola  at the Colorado Regional
-      icon: fa-undo
+    - label: Won the Industrial Design Award sponsored by General Motors at the GKC Regional
+      icon: fa-desktop 
+    - label: Won the Industrial Safety Award at the Colorado Regional
+      icon: fa-flask 
+    - label: Won the Quality Award sponsored by Motorola  at the Colorado Regional
+      icon: fa-battery-full 
 rating: 0
 ---
 

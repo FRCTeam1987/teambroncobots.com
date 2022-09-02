@@ -8,12 +8,12 @@ imageicon: "../images/robots/2009robot.png"
 image: "../../images/robots/2009robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: made it to the FRC World Championship and competed in the Archimedes Division
-      icon: fa-robot
-    - label: ranked third in the Archimedes Division
-      icon: fa-undo
-    - label: won the Woodie Flowers Award at the Colorado Regional
-      icon: fa-undo
+    - label: Made it to the FRC World Championship and competed in the Archimedes Division
+      icon: fa-moon
+    - label: Ranked third in the Archimedes Division
+      icon: fa-bullseye
+    - label: Won the Woodie Flowers Award at the Colorado Regional
+      icon: fa-sun
 rating: 2
 ---
 

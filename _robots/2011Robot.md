@@ -8,12 +8,12 @@ imageicon: "../images/robots/2011robot.png"
 image: "../../images/robots/2011robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: ranked third in the Midwest Regional
-      icon: fa-robot
-    - label: won the Quality Award sponsored by Motorola at the Midwest Regional
-      icon: fa-undo
-    - label: won the Website Award at the Midwest Regional
-      icon: fa-undo
+    - label: Ranked third in the Midwest Regional
+      icon: fa-lemon
+    - label: Won the Quality Award sponsored by Motorola at the Midwest Regional
+      icon: fa-key 
+    - label: Won the Website Award at the Midwest Regional
+      icon: fa-laptop 
 rating: 0
 ---
 

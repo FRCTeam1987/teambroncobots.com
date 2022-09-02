@@ -9,11 +9,11 @@ image: "../../images/robots/2015robot.png"
 <!--price: £3.99 + VAT-->
 features:
     - label: Broncobot won the FIRST Dean's List Finalist Award (Austin Ahern)
-      icon: fa-robot
-    - label: ranked 12 in the Buckeye Regional
-      icon: fa-undo
-    - label: had an average playoff score of 117.40 at the Buckeye Regional
-      icon: fa-undo
+      icon: fa-user 
+    - label: Ranked 12 in the Buckeye Regional
+      icon: fa-circle
+    - label: Had an average playoff score of 117.40 at the Buckeye Regional
+      icon: fa-arrow-up
 rating: 0
 ---
 

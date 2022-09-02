@@ -1,11 +1,11 @@
 # Site Settings
 lang: en
-title: Broncobots
+title: Broncobots FRC Team 1987
 tagline: Broncobots website
 email: broncobots@gmail.com
 description: >
   Broncobots webste FRC Team 1987
-baseurl: "/Broncobots"
+baseurl: ""
 url: "https://teambroncobots.com/"
 permalink: pretty
 #favicon: /path/to/favicon.png
