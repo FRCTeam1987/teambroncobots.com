@@ -8,17 +8,24 @@ imageicon: "../images/robots/2020robot.png"
 image: "../../images/robots/2020robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: Team 1987's first robot
+    - label: ranked 4 in the Greater Kansas City Regional
       icon: fa-robot
-    - label: Comes in a range of styles
-      icon: fa-grin-stars
-    - label: Available in multiple sizes
-      icon: fa-fighter-jet
+    - label: won the Quality Award sponsored by Motorola Solutions Foundation in the Greater Kansas City Regional
+      icon: fa-undo
+    - label: was 12-5-0 in official play in 2020
+      icon: fa-undo
 rating: 0
 ---
 
-This is the content about the robot.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris lacus, semper vel massa mattis, ullamcorper auctor libero. Maecenas sit amet ultricies erat. Curabitur eleifend est eget sagittis convallis. Mauris sit amet placerat lacus. Pellentesque vehicula quis massa ac lacinia. Vivamus gravida bibendum tincidunt. Sed eget augue vitae ligula ultricies lacinia a eget augue. Donec vulputate metus ut ante scelerisque sollicitudin. Nullam commodo suscipit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tristique pharetra mollis. 
-
-Praesent ut accumsan mauris. Maecenas tempus finibus lectus, in iaculis mauris lobortis ac. Proin ipsum erat, imperdiet at arcu a, egestas hendrerit turpis. Suspendisse in lectus lacinia, sollicitudin felis non, auctor urna. Ut lacinia, ligula a cursus fringilla, diam arcu semper orci, quis sagittis eros quam nec ante.
+Drive Train:
+- 6 6" wheels
+- NEEDS UPDATED 14 feet per second
+Manipulators:
+- A collector to intake balls from the floor
+- Extendable arms to climb
+Auto:
+- A limelight to help shoot
+- Automatic navigation of the field and shooting.
+End Game:
+- Two extendable arms to climb

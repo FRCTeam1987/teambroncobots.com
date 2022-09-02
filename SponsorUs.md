@@ -42,7 +42,6 @@ show_sidebar: false
 <body>
     <div class="row">
         <div class="column" style="background-color:#fafafa;">
-            <h2>Column 1</h2>
             <p>Donations of any amount are greatly appreciated. Your contribution is tax deductible. If you would like to write a check,  it should be written to LSEF and mailed to: </p>
             <br>
             <p>Lee’s Summit Educational Foundation</p>

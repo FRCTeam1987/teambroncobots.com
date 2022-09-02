@@ -42,6 +42,12 @@
       description: 2015 Robotics Camp Logo
     - image: ../images/Assets/SummerCamps/Logos/2013Logo.jpg
       description: 2013 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2012 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2012RecessRumbleManual.doc
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2011 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2011TeeTimeManual.doc
 
 
 - title: Robot Gallery

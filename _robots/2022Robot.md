@@ -8,17 +8,28 @@ imageicon: "../images/robots/2022robot.png"
 image: "../../images/robots/2022robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: Team 1987's first robot
+    - label: Two time regional winners
+      icon: fa-certificate
+    - label: First Broncobots swerve drive robot
       icon: fa-robot
-    - label: Comes in a range of styles
-      icon: fa-grin-stars
-    - label: Available in multiple sizes
-      icon: fa-fighter-jet
+    - label: ~95% high goal shooting accuracy
+      icon: fa-crosshairs
 rating: 2
 ---
 
-This is the content about the robot.
+<h2>Robot capabilities</h2>
+* Four wheel highly maneuverable swerve drive capabilities.
+* Double high-speed climber arm capabilities. (Able to climb to the traversal rung, 7.58ft. in about 5.5 seconds)
+* High speed shooting capabilities of accurately scoring high ~95% of the time.
+* Triple roller bar collecting system
+* "S" shaped storage mechanism
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris lacus, semper vel massa mattis, ullamcorper auctor libero. Maecenas sit amet ultricies erat. Curabitur eleifend est eget sagittis convallis. Mauris sit amet placerat lacus. Pellentesque vehicula quis massa ac lacinia. Vivamus gravida bibendum tincidunt. Sed eget augue vitae ligula ultricies lacinia a eget augue. Donec vulputate metus ut ante scelerisque sollicitudin. Nullam commodo suscipit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tristique pharetra mollis. 
+<h2>Robot facts</h2>
+* Weight: 119 lbs.
+* Two telescoping arms
 
-Praesent ut accumsan mauris. Maecenas tempus finibus lectus, in iaculis mauris lobortis ac. Proin ipsum erat, imperdiet at arcu a, egestas hendrerit turpis. Suspendisse in lectus lacinia, sollicitudin felis non, auctor urna. Ut lacinia, ligula a cursus fringilla, diam arcu semper orci, quis sagittis eros quam nec ante.
+<h2>Competitions</h2>
+* Heartland Region
+* Central Missouri Regional
+* Hosted Greater Kansas City Regional
+* 2022 World Championships

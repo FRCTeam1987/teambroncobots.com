@@ -8,17 +8,13 @@ imageicon: "../images/robots/2014robot.png"
 image: "../../images/robots/2014robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: Team 1987's first robot
+    - label: won the Industrial Design Award sponsored by General Motors at the Greater Kansas City Regional
       icon: fa-robot
-    - label: Comes in a range of styles
-      icon: fa-grin-stars
-    - label: Available in multiple sizes
-      icon: fa-fighter-jet
+    - label: won the Industrial Safety Award sponsored by Underwriters Laboratories at the Colorado Regional
+      icon: fa-undo
+    - label: won the Quality Award sponsored by Motorola  at the Colorado Regional
+      icon: fa-undo
 rating: 0
 ---
 
-This is the content about the robot.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris lacus, semper vel massa mattis, ullamcorper auctor libero. Maecenas sit amet ultricies erat. Curabitur eleifend est eget sagittis convallis. Mauris sit amet placerat lacus. Pellentesque vehicula quis massa ac lacinia. Vivamus gravida bibendum tincidunt. Sed eget augue vitae ligula ultricies lacinia a eget augue. Donec vulputate metus ut ante scelerisque sollicitudin. Nullam commodo suscipit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tristique pharetra mollis. 
-
-Praesent ut accumsan mauris. Maecenas tempus finibus lectus, in iaculis mauris lobortis ac. Proin ipsum erat, imperdiet at arcu a, egestas hendrerit turpis. Suspendisse in lectus lacinia, sollicitudin felis non, auctor urna. Ut lacinia, ligula a cursus fringilla, diam arcu semper orci, quis sagittis eros quam nec ante.
+<h2>Description pending, check back soon!</h2>

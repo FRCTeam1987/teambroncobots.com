@@ -8,17 +8,26 @@ imageicon: "../images/robots/2018robot.png"
 image: "../../images/robots/2018robot.png"
 <!--price: £3.99 + VAT-->
 features:
-    - label: Team 1987's first robot
+    - label:  Broncobot won the FIRST Dean's List Finalist Award (Sarah Ahern)
       icon: fa-robot
-    - label: Comes in a range of styles
-      icon: fa-grin-stars
-    - label: Available in multiple sizes
-      icon: fa-fighter-jet
+    - label: won the Quality Award sponsored by Motorola Solutions Foundation at the Greater Kansas City Regional
+      icon: fa-undo
+    - label: ranked third in the Oklahoma Regional
+      icon: fa-undo
 rating: 0
 ---
 
-This is the content about the robot.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris lacus, semper vel massa mattis, ullamcorper auctor libero. Maecenas sit amet ultricies erat. Curabitur eleifend est eget sagittis convallis. Mauris sit amet placerat lacus. Pellentesque vehicula quis massa ac lacinia. Vivamus gravida bibendum tincidunt. Sed eget augue vitae ligula ultricies lacinia a eget augue. Donec vulputate metus ut ante scelerisque sollicitudin. Nullam commodo suscipit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tristique pharetra mollis. 
-
-Praesent ut accumsan mauris. Maecenas tempus finibus lectus, in iaculis mauris lobortis ac. Proin ipsum erat, imperdiet at arcu a, egestas hendrerit turpis. Suspendisse in lectus lacinia, sollicitudin felis non, auctor urna. Ut lacinia, ligula a cursus fringilla, diam arcu semper orci, quis sagittis eros quam nec ante.
+<h2>Drive Train:</h2>
+- Eight 4.625" custom wheels with an 1/8" drop
+- 18 feet per second
+<h2>Manipulators:</h2>
+- A cube collector to intake cubes from floor
+- An elevator to place at all heights of the scale
+- Hopper fuel intake
+<h2>Auto:</h2>
+- Both sides of switch
+- Both sides of scale
+- Two cube auto on scale and switch
+<h2>End Game:</h2>
+- Climb alone
