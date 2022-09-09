@@ -73,7 +73,6 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
-footer_menu: footer_menu
 footer_social_media: footer_social_media
 
 collections:

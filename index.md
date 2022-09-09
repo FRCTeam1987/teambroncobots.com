@@ -25,6 +25,19 @@ hero_height: is-large
   
 }
 @import "TextAnimationEffect.scss";
+
+.button {
+    border: none;
+    color: grey;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer
+    background-color: blue
+}
 </style>
 
 <p><h1><center>
@@ -43,7 +56,7 @@ We are currently building our 2022 robot and updating our web site with current 
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "inspirations.", "intellectuals.", "listeners.", "thinkers.", "a family." ]'></span>
+     data-rotate='[ "inspirations.", "innovators.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
 </center></h1>
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
@@ -58,13 +71,13 @@ We are currently building our 2022 robot and updating our web site with current 
 <div class="zoom"></div> 
 
 
- <details>
+ <details open>
   <summary>
       <center><h2 style="color:maroon;"><u>
         About Us
       </u></h2></center>
   </summary>
- <details>
+ <details open>
  <br>
   <summary>
       <center><h3 style="color:maroon;"><u>
@@ -77,7 +90,7 @@ We are currently building our 2022 robot and updating our web site with current 
 </details>
 <br>
  
-<details>
+<details open>
   <summary>
       <center><h3 style="color:maroon;"><u>
         Team Focus
@@ -97,11 +110,11 @@ We are currently building our 2022 robot and updating our web site with current 
 </details>
 <br>
 
-<details>
+<details open>
   <summary>
-      <center><h3 style="color:maroon;"><u>
+      <center><h3 style="color:white" class="button">
         Team History
-      </u></h3></center>
+      </h3></center>
   </summary>
   <p>
      Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and and out of state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's Cowtown Throwdown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 
@@ -111,3 +124,8 @@ We are currently building our 2022 robot and updating our web site with current 
 </details>
 <br>
  
+<center>
+    <button class="button">Mission Statement</button>
+    <button class="button">Team Focus</button>
+    <button class="button">Team History</button>
+</center>

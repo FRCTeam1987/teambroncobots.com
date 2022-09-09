@@ -9,8 +9,6 @@
   dropdown:
     - name: Our Awards
       link: /awards/
-    - name: Sponsors Page
-      link: /sponsors/
     - name: R7 Alliance
       link: /R7Alliance/
     - name: Branding
