@@ -1,0 +1,86 @@
+- title: Branding Gallery
+  images:
+    - image: ../images/Assets/Branding/broncobots.svg
+      description: SVG of the Broncobots logo
+    - image: ../images/Assets/Branding/HighResBroncobotLogo.png
+      description: High resolution Broncobots logo
+    - image: ../images/Assets/Branding/OfficialBroncobotLogo.png
+      description: The Official Broncobots logo
+    - image: ../images/Assets/Branding/colors.png
+      description: The Official Team colors
+
+- title: Summer Camps Gallery
+  images:
+    - image: ../images/Assets/SummerCamps/Logos/2022Logo.png
+      description: 2022 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2022 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2022PiratePanicManual.docx
+    - image: ../images/Assets/SummerCamps/Logos/2021Logo.png
+      description: 2021 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Logos/2019Logo.jpg
+      description: 2019 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2019 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2019BeachBlastManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2018Logo.jpg
+      description: 2018 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2018 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2018SafariShowdownManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2017Logo.png
+      description: 2017 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2017 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2017SpaceRaceManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2016Logo.jpg
+      description: 2016 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2016 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2016MiningMayhemManual.doc
+    - image: ../images/Assets/SummerCamps/Logos/2015Logo.jpg
+      description: 2015 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Logos/2013Logo.jpg
+      description: 2013 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2012 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2012RecessRumbleManual.doc
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2011 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2011TeeTimeManual.doc
+
+
+- title: Robot Gallery
+  images:
+#    - image: ../images/robots/2022robot.png
+#      description: The Bronocbots 2022 Robot!
+    - image: ../images/robots/2021robot.png
+      description: The Bronocbots 2021 Robot!
+#    - image: ../images/robots/2020robot.png
+#      description: The Bronocbots 2020 Robot!
+    - image: ../images/robots/2019robot.png
+      description: The Bronocbots 2019 Robot!
+    - image: ../images/robots/2018robot.png
+      description: The Bronocbots 2018 Robot!
+    - image: ../images/robots/2017robot.png
+      description: The Bronocbots 2017 Robot!
+    - image: ../images/robots/2016robot.png
+      description: The Bronocbots 2016 Robot!
+    - image: ../images/robots/2015robot.png
+      description: The Bronocbots 2015 Robot!
+    - image: ../images/robots/2014robot.png
+      description: The Bronocbots 2014 Robot!
+    - image: ../images/robots/2013robot.png
+      description: The Bronocbots 2013 Robot!
+    - image: ../images/robots/2012robot.png
+      description: The Bronocbots 2012 Robot!
+    - image: ../images/robots/2011robot.png
+      description: The Bronocbots 2011 Robot!
+    - image: ../images/robots/2010robot.png
+      description: The Bronocbots 2010 Robot!
+    - image: ../images/robots/2009robot.png
+      description: The Bronocbots 2009 Robot!
+    - image: ../images/robots/2008robot.png
+      description: The Bronocbots 2008 Robot!
+    - image: ../images/robots/2007robot.png
+      description: The Bronocbots 2007 Robot!

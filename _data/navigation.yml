@@ -1,0 +1,44 @@
+- name: Sponsors
+  link: /Sponsors/
+- name: Robots
+  link: /robots/
+- name: FIRST
+  link: https://www.firstinspires.org/
+- name: About Us
+  link: /#
+  dropdown:
+    - name: Our Awards
+      link: /awards/
+    - name: R7 Alliance
+      link: /R7Alliance/
+    - name: Branding
+      link: /Branding/
+- name: Resources
+  link: /#
+  dropdown:
+    - name: Helpful Links
+      link: /HelpfulLinks/
+    - name: Assets
+      link: /gallery/
+    - name: Videos
+      link: /videos/
+- name: Summer Camps
+  link: /SummerCamps/
+#- name: Example Pages
+#  link: /#
+#  dropdown:
+#    - name: Landing Page With Callouts
+#      link: /landing/
+#    - name: Sponsors Page
+#      link: /sponsors/
+#    - name: Assets
+#      link: /gallery/
+#    - name: Robots
+#      link: /robots/
+#    - name: Recipe Page
+#      link: /example-recipe/
+#    - name: Showcase
+#      link: /showcase/
+#- name: Blog
+#  link: /blog/
+

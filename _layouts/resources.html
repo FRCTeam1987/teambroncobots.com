@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="full">
+    <div class="row">
+        {% for resource in site.data.resources %}
+            <center>
+                <b>
+                    <p>
+                        <a href="{{resource.link}}" target="_blank" style="color:#830506;">
+                            {{resource.name}}
+                        </a>
+                    </p>
+                </b>
+            </center>
+        {% endfor %}
+    </div>
+    

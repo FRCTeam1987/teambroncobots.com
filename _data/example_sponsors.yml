@@ -1,0 +1,45 @@
+#- tier_name: Platinum Sponsors
+#  size: large
+#  description: |-
+#    This is the description for the Platinum Tiers.
+#
+#    It can contain multiple lines. It has the size set to 'large'.
+#  sponsors:
+#    - name: Dave McDave
+#      profile: https://github.com/
+#    - name: Sarah Lee-Cheesecake
+#      profile: https://github.com/
+#      
+#- tier_name: Gold Sponsors
+#  description: |-
+#    This is the description for the Gold Tier
+#  sponsors:
+#    - name: Dave McDave
+#      profile: https://github.com/
+#    - name: Sarah Lee-Cheesecake
+#      profile: https://github.com/
+#    - name: John Smith
+#      profile: https://github.com/
+      
+      
+- tier_name: Company Sponsors
+  size: small
+  description: |-
+    These are the companys are sponsor us.
+  sponsors:
+    - name: Dave McDave
+      image: /images/sponsors/catalent.svg
+      description: hi!
+      profile: https://github.com/
+    - name: Sarah Lee-Cheesecake
+      profile: https://github.com/
+    - name: John Smith
+      profile: https://github.com/
+    - name: Jane Smith
+      profile: https://github.com
+    - name: John Doe
+      profile: https://github.com/
+    - name: Jane Doe
+      profile: https://github.com/
+    - name: John Jones
+    - name: Jane Jones
