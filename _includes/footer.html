@@ -46,7 +46,7 @@ input[type=animated]:focus {
 <footer class="footer">
     <div class="container">
         
-        {% if site.footer_menu %}
+        
           <form target="_blank" action="https://formsubmit.co/allenmc220@gmail.com" method="POST">
             <div class="form-group">
               <div class="form-row">
@@ -65,6 +65,7 @@ input[type=animated]:focus {
           </form>
         <br>
         <div class="columns is-multiline">
+<!--
             {% for item in site.data[site.footer_menu] %}
             <div class="column has-text-centered"> 
                 <div>
@@ -72,6 +73,7 @@ input[type=animated]:focus {
                 </div>
             </div>
             {% endfor %}
+-->
         </div>
         <div class="columns is-multiline">
            {% for item in site.data[site.footer_social_media] %}
@@ -84,7 +86,7 @@ input[type=animated]:focus {
             </div>
             {% endfor %}
         </div>
-        {% endif %}
+        
 
         <div class="content is-small has-text-centered"> 
             <a href='{{ site.baseurl }}/'> 

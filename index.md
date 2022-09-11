@@ -28,7 +28,7 @@ hero_height: is-large
 
 .button {
     border: none;
-    color: grey;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -36,8 +36,10 @@ hero_height: is-large
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer
-    background-color: blue
+    background-color: white
 }
+
+
 </style>
 
 <p><h1><center>
@@ -67,35 +69,21 @@ We are currently building our 2022 robot and updating our web site with current 
 </center>
 ---
 
-
 <div class="zoom"></div> 
 
+<center><h2 style="color:maroon">About us</h2></center>
 
- <details open>
-  <summary>
-      <center><h2 style="color:maroon;"><u>
-        About Us
-      </u></h2></center>
-  </summary>
- <details open>
- <br>
-  <summary>
-      <center><h3 style="color:maroon;"><u>
-        Team Broncobots Mission Statement
-      </u></h3></center>
-  </summary>
-  <p>
+<center>
+    <button class="button" onclick="missionStatement()">Mission Statement</button>
+    <button class="button" onclick="teamFocus()">Team Focus</button>
+    <button class="button" onclick="teamHistory()">Team History</button>
+</center>
+
+<div id="missStat" style="display:none">
       The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success.  
-  </p>
-</details>
-<br>
- 
-<details open>
-  <summary>
-      <center><h3 style="color:maroon;"><u>
-        Team Focus
-      </u></h3></center>
-  </summary>
+</div>
+
+<div id="teamFoc" style="display:none">
       <p>
          The focus of our team has been to reach out to our community in every way possible. Over the past three years, we have attended school carnivals, school presentations, bingo raffles, Boy Scout meetings, school board meetings, and business meetings. We have been featured over ten times in publications, including three local newspapers, Honeywell newsletters, and even two books: FIRST Robotics: Rack N Roll and FIRST Robots: Behind The Design. We also created a team video as an introduction to FIRST for the Lee's Summit community that aired on the local government channel. The team has even published a book about our team and our history.
     <br><br>
@@ -107,26 +95,49 @@ We are currently building our 2022 robot and updating our web site with current 
     <br><br>
         Over four years, we have sent over 1,500 letters to government officials. In 2008, there was a "Lee's Summit Robotics Day" proclamation from the mayor, and Governor Matt Blunt officially recognized and commended the FIRST Robotics Competition in the state of Missouri. Along with starting a mail campaign to government officials (fifteen different officials and federal offices), took the classic Flat Stanley and combinded it with the spirit of FIRST to start our Flat Creation Campaign. This was designed to reach people outside of our direct area of influence, like families and friends from other states and countries. During its time traveling, Flat Mammoth (from our 2008 Flat Creation Campaign) has visited a second grade classroom, attended a robot-themed movie night, enjoyed the warm weather in Honduras, and sat in the Missouri House of Representatives! 
     </p>
-</details>
-<br>
+</div>
 
-<details open>
-  <summary>
-      <center><h3 style="color:maroon;"><u>
-        Team History
-      </u></h3></center>
-  </summary>
+<div id="teamHist" style="display:none">
   <p>
      Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and and out of state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's Cowtown Throwdown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 
   </p>
-</details>
+</div>
 
-</details>
-<br>
- 
-<!--
-<center>
-    <button class="button">Mission Statement</button>
-    <button class="button">Team Focus</button>
-    <button class="button">Team History</button>
-</center>-->
+<script>
+function missionStatement() {
+    let m = document.getElementById("missStat");
+    let f = document.getElementById("teamFoc");
+    let h = document.getElementById("teamHist");
+    f.style.display = "none";
+    h.style.display = "none";
+    if (m.style.display === "none") {
+        m.style.display = "block";
+    } else {
+        m.style.display = "none";
+    }
+} 
+function teamFocus() {
+    let m = document.getElementById("missStat");
+    let f = document.getElementById("teamFoc");
+    let h = document.getElementById("teamHist");
+    m.style.display = "none";
+    h.style.display = "none";
+  if (f.style.display === "none") {
+    f.style.display = "block";
+  } else {
+    f.style.display = "none";
+  }
+}
+function teamHistory() {
+    let m = document.getElementById("missStat");
+    let f = document.getElementById("teamFoc");
+    let h = document.getElementById("teamHist");
+    f.style.display = "none";
+    m.style.display = "none";
+  if (h.style.display === "none") {
+    h.style.display = "block";
+  } else {
+    h.style.display = "none";
+  }
+}
+</script>
