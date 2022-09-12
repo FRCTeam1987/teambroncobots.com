@@ -13,15 +13,15 @@ gallery: awards
 <div class="begin-examples"></div>
 ## 2022
 {: style="text-align: center;"}
-- Engineering Inspiration Award - Heartland Region
-- Winner - Heartland Region
+- Engineering Inspiration Award - Heartland Regional
+- Winner - Heartland Regional
 - Quality Award sponsored by the BOEING company - Central Missouri Regional
 - Winner - Central Missouri Regional
 
 ## 2021
 {: style="text-align: center;"}
-- FIRST Woodie Flowers Finalist Award - MOKAN Region
-- Excellence in Engineering Award - MOKAN Region
+- FIRST Woodie Flowers Finalist Award - MOKAN Regional
+- Excellence in Engineering Award - MOKAN Regional
 
 ## 2020
 {: style="text-align: center;"}
@@ -37,7 +37,7 @@ gallery: awards
 ## 2018
 {: style="text-align: center;"}
 - Quality Award sponsored by Motorola - Greater Kansas City Regional
-- FIRST Dean's List Award - Greater Kansas City Regional
+- FIRST Dean's List Finalist Award - Greater Kansas City Regional
 - Industrial Design Award - Oklahoma City Regional
 
 ## 2017
