@@ -4,6 +4,7 @@
   link: /robots/
 - name: FIRST
   link: https://www.firstinspires.org/
+  newtab: true
 - name: About Us
   link: /#
   dropdown:

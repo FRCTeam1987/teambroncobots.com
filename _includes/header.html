@@ -27,7 +27,11 @@
                         </div>
                     </div>
                     {% else %}
-                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        {% if item.newtab %}
+                            <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}" target="_blank">{{ item.name }}</a>
+                        {% else %}
+                            <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
                 {% endif %}
