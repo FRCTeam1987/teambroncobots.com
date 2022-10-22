@@ -4,7 +4,7 @@ subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
 show_sidebar: false
-hero_image: images/slides/Homeimg.jpg
+hero_image: images/Homeimg.jpg
 hero_darken: true
 hero_height: is-large
 ---

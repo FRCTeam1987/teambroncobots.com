@@ -81,3 +81,4 @@ collections:
     layout: robot
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+jekyll_src: 'docs'
