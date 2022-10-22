@@ -15,6 +15,7 @@ features:
     - label: Won the Regional Chairman's Award at the Oklahoma Regional
       icon: fa-smile
 rating: 2
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

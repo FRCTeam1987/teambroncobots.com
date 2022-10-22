@@ -15,6 +15,7 @@ features:
     - label: Was 12-5-0 in official play in 2020
       icon: fa-thumbs-up
 rating: 0
+hide_hero: true
 ---
 
 

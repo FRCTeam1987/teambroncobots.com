@@ -20,8 +20,8 @@ gallery: awards
 
 ## 2021
 {: style="text-align: center;"}
-- FIRST Woodie Flowers Finalist Award - MOKAN Regional
-- Excellence in Engineering Award - MOKAN Regional
+- FIRST Woodie Flowers Finalist Award - MOKAN Region
+- Excellence in Engineering Award - MOKAN Region
 
 ## 2020
 {: style="text-align: center;"}

@@ -15,6 +15,7 @@ features:
     - label: Won the Quality Award sponsored by Motorola  at the Colorado Regional
       icon: fa-battery-full 
 rating: 0
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

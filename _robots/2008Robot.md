@@ -15,6 +15,7 @@ features:
     - label: Won the Autodesk Visualization Award at the Minnesota Regional
       icon: fa-star
 rating: 0
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

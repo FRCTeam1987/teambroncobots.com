@@ -15,6 +15,7 @@ features:
     - label: Won the Website Award at the Midwest Regional
       icon: fa-laptop 
 rating: 0
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

@@ -15,6 +15,7 @@ features:
     - label: Won the Judges' Award at the Greater Kansas City Regional
       icon: fa-gavel 
 rating: 0
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

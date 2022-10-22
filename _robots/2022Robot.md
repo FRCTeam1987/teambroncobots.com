@@ -15,6 +15,7 @@ features:
     - label: ~95% high goal shooting accuracy
       icon: fa-crosshairs
 rating: 2
+hide_hero: true
 ---
 
 <h2>Robot capabilities</h2>

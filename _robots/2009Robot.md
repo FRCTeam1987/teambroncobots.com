@@ -15,6 +15,7 @@ features:
     - label: Won the Woodie Flowers Award at the Colorado Regional
       icon: fa-sun
 rating: 2
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

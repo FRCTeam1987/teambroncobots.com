@@ -12,9 +12,10 @@ features:
       icon: fa-robot
     - label: 14 feet per second moving speed
       icon: fa-rocket
-    - label: Winner of the Heartland Regional
+    - label: Winner of the Central Missouri Regional
       icon: fa-trophy
 rating: 1
+hide_hero: true
 ---
 
 

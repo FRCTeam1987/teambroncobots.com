@@ -15,6 +15,7 @@ features:
     - label: Won the Regional Chairman's Award at the Alamo Regional
       icon: fa-leaf 
 rating: 1
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

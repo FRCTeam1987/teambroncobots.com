@@ -15,6 +15,7 @@ features:
     - label: Won the Regional Engineering Inspiration Award at the Hub City Regional
       icon: fa-unlock-alt
 rating: 0
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>

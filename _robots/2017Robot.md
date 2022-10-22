@@ -15,6 +15,7 @@ features:
     - label: Broncobot won the FIRST Dean's List Finalist Award (Levi Madden)
       icon: fa-child 
 rating: 1
+hide_hero: true
 ---
 
 <h2>Description pending, check back soon!</h2>
