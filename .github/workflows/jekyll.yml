@@ -29,7 +29,11 @@ jobs:
 
     - name: Create CNAME file
       run: |
-        echo teambroncobots.com > '_site/CNAME'
+        ls -a
+        ls -a _site
+        touch _site/CNAME
+        echo teambroncobots.com >> '_site/CNAME'
+        ls -a _site
       shell: bash
 
     - name: Deploy 🚀
