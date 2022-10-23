@@ -1,29 +1,28 @@
 ---
-layout: videos
-section_id: Videos
+layout: default
 ---
 
+<div class="content">
 
-<div class='row'>
-  <div class='large-12 columns'>
-    <div class='mod modVideosPost big'>
-      <div class='images'>
-        {% for image in page.images %}
-          <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
-        {% endfor %}
-      </div>
-      <div class='content'>
-        <p class='info'>
-          <span>{{page.date | date: "%B %d, %Y" }}</span>
-          /
-          <span>
-            by {{page.author}}
-          </span>
-        </p>
-        <h3><a href="{{page.url}}">{{page.title}}</a></h3>
-        {{ content }}
-      </div>
-    </div>
-    <div class='four spacing'></div>
-  </div>
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
+
+    {{ content }}
 </div>
+
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
+
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}
