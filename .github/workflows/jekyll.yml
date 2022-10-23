@@ -30,11 +30,9 @@ jobs:
 
     - name: Create CNAME file
       run: |
-        ls -a
-        ls -a _site
+        sudo chown -R $USER:$USER _site
         touch _site/CNAME
         echo teambroncobots.com >> '_site/CNAME'
-        ls -a _site
       shell: bash
 
     - name: Deploy 🚀
