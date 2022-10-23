@@ -26,3 +26,14 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         jekyll_src: './'
         build_only: true
+
+    - name: Create CNAME file
+      run: |
+        echo teambroncobots.com > ./_site/CNAME
+      shell: bash
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: _site # The folder the action should deploy.
+      if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
