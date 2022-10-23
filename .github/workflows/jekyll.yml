@@ -33,7 +33,7 @@ jobs:
         sudo chown -R $USER:$USER _site
         touch _site/CNAME
         echo teambroncobots.com >> '_site/CNAME'
-        tree -d _site
+        tree _site
       shell: bash
 
     - name: Deploy 🚀
