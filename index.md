@@ -40,6 +40,7 @@ hero_height: is-large
 }
 
 
+
 </style>
 
 <p><h1><center>
@@ -64,9 +65,9 @@ We are currently building our 2022 robot and updating our web site with current 
 </div>
 
 ---
-<center>
-<img src="images/2022TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
-</center>
+<div style="text-align:center; vertical-align: middle; padding:0px 0;">
+    <img src="images/2022TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
+</div>
 ---
 
 <div class="zoom"></div> 
