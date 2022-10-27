@@ -14,7 +14,7 @@ features:
       icon: fa-flask 
     - label: Won the Quality Award sponsored by Motorola  at the Colorado Regional
       icon: fa-battery-full 
-rating: 0
+rating: 3
 hide_hero: true
 ---
 

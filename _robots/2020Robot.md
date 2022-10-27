@@ -14,19 +14,8 @@ features:
       icon: fa-camera
     - label: Was 12-5-0 in official play in 2020
       icon: fa-thumbs-up
-rating: 0
+rating: 1
 hide_hero: true
 ---
 
-
-Drive Train:
-- 6 6" wheels
-- NEEDS UPDATED 14 feet per second
-Manipulators:
-- A collector to intake balls from the floor
-- Extendable arms to climb
-Auto:
-- A limelight to help shoot
-- Automatic navigation of the field and shooting.
-End Game:
-- Two extendable arms to climb
+<h2>Description pending, check back soon!</h2>

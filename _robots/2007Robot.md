@@ -14,7 +14,7 @@ features:
       icon: fa-leaf 
     - label: Competed in Colorado Regional despite being based in Missouri
       icon: fa-plane 
-rating: 0
+rating: 3
 hide_hero: true
 ---
 

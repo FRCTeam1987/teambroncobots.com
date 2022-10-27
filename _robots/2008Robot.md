@@ -14,7 +14,7 @@ features:
       icon: fa-trophy 
     - label: Won the Autodesk Visualization Award at the Minnesota Regional
       icon: fa-star
-rating: 0
+rating: 3
 hide_hero: true
 ---
 

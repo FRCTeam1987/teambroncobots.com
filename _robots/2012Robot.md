@@ -14,7 +14,7 @@ features:
       icon: fa-puzzle-piece
     - label: Won the Judges' Award at the Greater Kansas City Regional
       icon: fa-gavel 
-rating: 0
+rating: 4
 hide_hero: true
 ---
 

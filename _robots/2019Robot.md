@@ -14,7 +14,7 @@ features:
       icon: fa-rocket
     - label: Winner of the Central Missouri Regional
       icon: fa-trophy
-rating: 1
+rating: 4
 hide_hero: true
 ---
 

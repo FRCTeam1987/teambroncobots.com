@@ -14,7 +14,7 @@ features:
       icon: fa-key 
     - label: Won the Website Award at the Midwest Regional
       icon: fa-laptop 
-rating: 0
+rating: 2
 hide_hero: true
 ---
 

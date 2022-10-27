@@ -14,7 +14,7 @@ features:
       icon: fa-rocket 
     - label: Won the Regional Engineering Inspiration Award at the Hub City Regional
       icon: fa-unlock-alt
-rating: 0
+rating: 4
 hide_hero: true
 ---
 

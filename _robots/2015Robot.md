@@ -14,7 +14,7 @@ features:
       icon: fa-circle
     - label: Had an average playoff score of 117.40 at the Buckeye Regional
       icon: fa-arrow-up
-rating: 0
+rating: 4
 hide_hero: true
 ---
 

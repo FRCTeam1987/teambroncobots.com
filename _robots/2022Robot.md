@@ -14,7 +14,7 @@ features:
       icon: fa-robot
     - label: ~95% high goal shooting accuracy
       icon: fa-crosshairs
-rating: 2
+rating: 4
 hide_hero: true
 ---
 

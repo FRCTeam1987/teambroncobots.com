@@ -14,7 +14,7 @@ features:
       icon: fa-plane 
     - label: Was 2-2-0 during the 2021 offseason
       icon: fa-space-shuttle
-rating: 1
+rating: 2
 hide_hero: true
 ---
 

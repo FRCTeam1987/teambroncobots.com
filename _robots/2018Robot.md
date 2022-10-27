@@ -14,7 +14,7 @@ features:
       icon: fa-volume-up
     - label: Ranked third in the Oklahoma Regional
       icon: fa-wrench 
-rating: 0
+rating: 3
 hide_hero: true
 ---
 
