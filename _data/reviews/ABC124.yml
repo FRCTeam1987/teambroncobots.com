@@ -1,5 +1,5 @@
 - name: Mr E Xample
-  rating: 4
+  awards: 4
   title: Great robot, highly recommended!
   date: 01/01/2019
   avatar: https://bulma.io/images/placeholders/128x128.png
@@ -7,7 +7,7 @@
     The robot worked really well. I would recommend this to most people to use. Delivery was quick and reasonable.
     Would recommend this to my friends.
 - name: Mrs R E View
-  rating: 5
+  awards: 5
   title: Nice, really liked this
   date: 02/02/2019
   description: >

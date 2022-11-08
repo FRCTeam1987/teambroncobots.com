@@ -17,8 +17,8 @@ layout: default
         <p class="subtitle is-5 has-text-right">{{ page.description }}</p>
         {% endif %}
 
-        {% if page.rating %}
-            {% include rating.html rating=page.rating %}
+        {% if page.awardsWon %}
+            {% include awardsWon.html awards=page.awardsWon %}
         {% endif %}
 
         {% if page.features %}

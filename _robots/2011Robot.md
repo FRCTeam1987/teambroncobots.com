@@ -6,7 +6,6 @@ robot_code: 2011
 layout: robot
 imageicon: "../images/robots/2011robot.png"
 image: "../../images/robots/2011robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Ranked third in the Midwest Regional
       icon: fa-lemon
@@ -14,8 +13,12 @@ features:
       icon: fa-key 
     - label: Won the Website Award at the Midwest Regional
       icon: fa-laptop 
-rating: 2
+awardsWon: 2
 hide_hero: true
 ---
+
+<h2>Competitions</h2>
+* Midwest Regional
+* CowTown ThrowDown
 
 <h2>Description pending, check back soon!</h2>

@@ -25,8 +25,8 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         jekyll_src: './'
-        build_only: true
         build_dir: _site
+        build_only: true
 
     - name: Create CNAME file
       run: |

@@ -26,8 +26,6 @@
   size: small
   description: |-
     These are the company's are sponsor us.
-
-    (In order of amount donated)
   sponsors:
     - name: KC Stem Alliance
       image: ../images/sponsors/kcstem.jpg
@@ -67,8 +65,6 @@
   size: small
   description: |-
     These are the company's are sponsor us.
-
-    (In order of contribution donated)
   sponsors:
     - name: Brunson
       image: ../images/sponsors/brunson.png
@@ -111,15 +107,6 @@
       description: Lee's Summit North is a high school that serves grades 9-12 and it is located in the north central part of Lee's Summit, Missouri. It is the second of three high schools to open in Lee's Summit, Missouri.
       profile: http://lsnhs.lsr7.org/
 
-#    - name: GitHub
-#      image: ../images/sponsors/github.png
-#      description: Github is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
-#      profile: https://github.com/
-#    - name: Lee's Summit Tribune
-#      image: ../images/sponsors/tribune.jpg
-#      description: The Lee's Summit Tribune is dedicated to providing you the most current and accurate news and events in Lee's Summit.
-#      profile: https://lstribune.net/
-
 - tier_name: Personal Sponsors
   size: medium
   description: |-
@@ -148,8 +135,3 @@
       Confetti: true
     - name: Team 1987 Mentors
       description: Personal Sponsors
-
-#    - name: Citizens of Lee's Summit
-#      description: Personal Sponsors
-
-

@@ -6,7 +6,6 @@ robot_code: 2015
 layout: robot
 imageicon: "../images/robots/2015robot.png"
 image: "../../images/robots/2015robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Austin Ahern)
       icon: fa-user 
@@ -14,8 +13,14 @@ features:
       icon: fa-circle
     - label: Had an average playoff score of 117.40 at the Buckeye Regional
       icon: fa-arrow-up
-rating: 4
+awardsWon: 4
 hide_hero: true
 ---
+
+<h2>Competitions</h2>
+* Greater Kansas City Regional
+* Buckeye Regional
+* Missouri State Championship
+* CowTown ThrowDown
 
 <h2>Description pending, check back soon!</h2>

@@ -6,7 +6,6 @@ robot_code: 2019
 layout: robot
 imageicon: "../images/robots/2019robot.png"
 image: "../../images/robots/2019robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Team 1987's 2019 robot
       icon: fa-robot
@@ -14,7 +13,7 @@ features:
       icon: fa-rocket
     - label: Winner of the Central Missouri Regional
       icon: fa-trophy
-rating: 4
+awardsWon: 4
 hide_hero: true
 ---
 
@@ -31,3 +30,10 @@ hide_hero: true
 - Can place a hatch and collect another hatch
 <h2>End Game:</h2>
 - A suction cup design for climbing to level 3
+
+<h2>Competitions</h2>
+* Heartland Regional
+* Central Missouri Regional
+* World Championships
+* Missouri State Championship
+* CowTown ThrowDown

@@ -20,8 +20,8 @@
           {{ review.description }}
         </p>
       </div>
-      {% if review.rating %}
-        {% include rating.html rating=review.rating align="has-text-left" %}
+      {% if review.awards %}
+        {% include awards.html awards=review.awards align="has-text-left" %}
       {% endif %}
     </div>
   </article>

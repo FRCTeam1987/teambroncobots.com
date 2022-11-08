@@ -6,7 +6,6 @@ robot_code: 2018
 layout: robot
 imageicon: "../images/robots/2018robot.png"
 image: "../../images/robots/2018robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label:  Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
       icon: fa-user-circle
@@ -14,7 +13,7 @@ features:
       icon: fa-volume-up
     - label: Ranked third in the Oklahoma Regional
       icon: fa-wrench 
-rating: 3
+awardsWon: 3
 hide_hero: true
 ---
 
@@ -32,3 +31,9 @@ hide_hero: true
 - Two cube auto on scale and switch
 <h2>End Game:</h2>
 - Climb alone
+
+<h2>Competitions</h2>
+* Greater Kansas City Regional
+* Oklahoma City Regional
+* Missouri State Championship
+* CowTown ThrowDown
