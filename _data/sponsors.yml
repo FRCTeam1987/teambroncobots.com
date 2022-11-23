@@ -25,7 +25,6 @@
 - tier_name: Company Sponsors
   size: small
   description: |-
-    These are the company's are sponsor us.
   sponsors:
     - name: KC Stem Alliance
       image: ../images/sponsors/kcstem.jpg
@@ -64,7 +63,6 @@
 - tier_name: In-Kind Sponsors
   size: small
   description: |-
-    These are the company's are sponsor us.
   sponsors:
     - name: Brunson
       image: ../images/sponsors/brunson.png
@@ -110,7 +108,6 @@
 - tier_name: Personal Sponsors
   size: medium
   description: |-
-    These are the people that sponsor us.
   sponsors:
     - name: Ted Cahall
       description: Personal Sponsor
