@@ -1,6 +1,6 @@
 ---
 title: 2010 Robot
-subtitle: Breakaway FRC Robot 2010
+subtitle: Breakaway FRC Robot
 description: Breakaway Robot 2007
 robot_code: 2010
 layout: robot

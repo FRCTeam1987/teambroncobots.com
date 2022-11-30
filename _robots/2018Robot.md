@@ -17,23 +17,10 @@ awardsWon: 3
 hide_hero: true
 ---
 
-
-<h2>Drive Train:</h2>
-- Eight 4.625" custom wheels with an 1/8" drop
-- 18 feet per second
-<h2>Manipulators:</h2>
-- A cube collector to intake cubes from floor
-- An elevator to place at all heights of the scale
-- Hopper fuel intake
-<h2>Auto:</h2>
-- Both sides of switch
-- Both sides of scale
-- Two cube auto on scale and switch
-<h2>End Game:</h2>
-- Climb alone
-
 <h2>Competitions</h2>
 * Greater Kansas City Regional
 * Oklahoma City Regional
 * Missouri State Championship
 * CowTown ThrowDown
+
+<h2>Description pending, check back soon!</h2>
