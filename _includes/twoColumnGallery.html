@@ -1,0 +1,25 @@
+{% if page.twoColumnGallery %}
+<div class="columns is-multiline">
+    {% assign twoColumnGalleries=site.data.[page.twoColumnGallery] %}
+    {% for twoColumnGallery in twoColumnGalleries %}
+
+<!--    <div class="column is-12">-->
+        <div class="column is-6-desktop is-12-tablet">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title is-4 has-text-centered">{{ twoColumnGallery.Year }}</p>
+                        {% for award in twoColumnGallery.Awards %}
+                            {{ award.award }}
+                        <br>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endfor %}
+</div>
+{% endif %}
+

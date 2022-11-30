@@ -41,7 +41,7 @@ show_sidebar: false
 </head>
 <body>
     <div class="row">
-        <div class="column" style="background-color:#fafafa;">
+        <div class="column" style="background-color:white;">
             <p>Donations of any amount are greatly appreciated. Your contribution is tax deductible. If you would like to write a check,  it should be written to LSEF and mailed to: </p>
             <br>
             <p>Lee’s Summit Educational Foundation</p>
@@ -68,7 +68,7 @@ show_sidebar: false
             <p>- Thank you so much! If you would like to see if you are eligible now to become an official sponsor then fill out the contact form below.</p>
             
         </div>
-        <div class="column" style="background-color:#bbb;"><center>
+        <div class="column" style="background-color:white;"><center>
             <embed type="text/html" src="https://interland3.donorperfect.net/weblink/weblink.aspx?id=1&name=E332169"  width="650" height="700"> 
             </center>
         </div>

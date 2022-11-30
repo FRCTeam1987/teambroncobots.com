@@ -2,18 +2,28 @@
 layout: default
 ---
 
-<div class="full">
-    <div class="row">
-        {% for resource in site.data.resources %}
-            <center>
-                <b>
-                    <p>
-                        <a href="{{resource.link}}" target="_blank" style="color:#830506;">
-                            {{resource.name}}
-                        </a>
-                    </p>
-                </b>
-            </center>
+    <div class="columns is-multiline">
+        {% for name in site.data.resources %}
+        <!--    <div class="column is-12">-->
+        <a href={{name.link}} target="_blank">
+        <div class="column is-3-desktop is-6-tablet">
+            <div class="card">
+                <div class="card-image">
+                    {% if name.image %}
+                    <img src={{ name.image }} alt=" ">
+                        {% endif %}
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p class="title is-5 has-text-centered">{{name.name}}</p>
+                            {% if name.description %}
+                                <p class="has-text-black has-text-centered"> {{ name.description }}</p>
+                            {% endif %}
+                            <a href={{name.link}} target="_blank" style="color:#830506; font-size: smaller">{{name.link}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
         {% endfor %}
     </div>
-    

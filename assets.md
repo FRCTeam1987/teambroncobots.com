@@ -8,3 +8,4 @@ show_sidebar: false
 --- 
 
 <!--[View the Assets Docs](/bulma-clean-theme/docs/image-gallery/)-->
+ 

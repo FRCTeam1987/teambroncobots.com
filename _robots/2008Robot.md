@@ -6,7 +6,6 @@ robot_code: 2008
 layout: robot
 imageicon: "../images/robots/2008robot.png"
 image: "../../images/robots/2008robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Won the Regional Engineering Inspiration Award at the Minnesota Regional
       icon: fa-road 
@@ -14,8 +13,12 @@ features:
       icon: fa-trophy 
     - label: Won the Autodesk Visualization Award at the Minnesota Regional
       icon: fa-star
-rating: 0
+awardsWon: 3
 hide_hero: true
 ---
+
+<h2>Competitions</h2>
+* Minnesota Regional
+* World Championship
 
 <h2>Description pending, check back soon!</h2>

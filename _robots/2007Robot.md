@@ -6,7 +6,6 @@ robot_code: 2007
 layout: robot
 imageicon: "../images/robots/2007robot.png"
 image: "../../images/robots/2007robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado Regional
       icon: fa-tree
@@ -14,8 +13,11 @@ features:
       icon: fa-leaf 
     - label: Competed in Colorado Regional despite being based in Missouri
       icon: fa-plane 
-rating: 0
+awardsWon: 3
 hide_hero: true
 ---
+
+<h2>Competitions</h2>
+* Colorado Regional
 
 <h2>Description pending, check back soon!</h2>

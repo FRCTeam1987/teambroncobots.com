@@ -6,7 +6,6 @@ robot_code: 2022
 layout: robot
 imageicon: "../images/robots/2022robot.png"
 image: "../../images/robots/2022robot.png"
-<!--price: £3.99 + VAT-->
 features:
     - label: Two time regional winners
       icon: fa-certificate
@@ -14,7 +13,7 @@ features:
       icon: fa-robot
     - label: ~95% high goal shooting accuracy
       icon: fa-crosshairs
-rating: 2
+awardsWon: 4 
 hide_hero: true
 ---
 
@@ -30,7 +29,8 @@ hide_hero: true
 * Two telescoping arms
 
 <h2>Competitions</h2>
-* Heartland Region
+* Heartland Regional
 * Central Missouri Regional
 * Hosted Greater Kansas City Regional
 * 2022 World Championships
+* Indiana Robotics Invitational
