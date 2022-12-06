@@ -2,9 +2,13 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - qa
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - qa
 
 jobs:
   jekyll:
@@ -28,16 +32,37 @@ jobs:
         build_dir: _site
         build_only: true
 
-    - name: Create CNAME file
+    - name: Create CNAME file (prod)
       run: |
         sudo chown -R $USER:$USER _site
         touch _site/CNAME
         echo teambroncobots.com >> '_site/CNAME'
         tree _site
       shell: bash
+      if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
 
-    - name: Deploy 🚀
+    - name: Deploy (prod) 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site # The folder the action should deploy.
       if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+
+    - name: Create CNAME file (qa)
+      run: |
+        sudo chown -R $USER:$USER _site
+        touch _site/CNAME
+        echo dev.teambroncobots.com >> '_site/CNAME'
+        tree _site
+      shell: bash
+      if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
+
+    - name: Deploy (qa) 🚀
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      with:
+        username: 'cecgri'
+        server: 'batroc.dreamhost.com'
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        local_path: './_site/*'
+        remote_path: '/home/cecgri/dev.teambroncobots.com'
+        sftpArgs: '-o ConnectTimeout=5'
+      if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
