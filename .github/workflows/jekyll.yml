@@ -2,9 +2,13 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - qa
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - qa
 
 jobs:
   jekyll:
