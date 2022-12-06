@@ -64,4 +64,5 @@ jobs:
         privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
         localDir: '_site'
         remoteDir: '/home/cecgri/dev.teambroncobots.com'
+        dryRun: false
       if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
