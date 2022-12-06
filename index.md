@@ -59,7 +59,7 @@ We will soon be building our 2023 robot and updating our website with current co
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "inspirational.", "innovators.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
+     data-rotate='["innovators.", "inspirational.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
 </center></h1>
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
