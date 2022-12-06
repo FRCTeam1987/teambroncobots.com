@@ -65,4 +65,5 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
         local-path: './_site'
         remote-path: '/home/cecgri/dev.teambroncobots.com'
+        sync: 'full'
       if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
