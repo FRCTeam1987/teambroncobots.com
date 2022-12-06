@@ -60,7 +60,7 @@ jobs:
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         username: 'cecgri'
-        server: 'batroc.dreamhost.com'
+        server: 'dev.teambroncobots.com'
         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         local_path: './_site/*'
         remote_path: '/home/cecgri/dev.teambroncobots.com'
