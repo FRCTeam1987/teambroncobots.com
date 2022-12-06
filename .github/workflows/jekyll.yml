@@ -57,12 +57,11 @@ jobs:
       if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
 
     - name: Deploy (qa) 🚀
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      uses: wangyucode/sftp-upload-action@v1.4.8
       with:
         username: 'cecgri'
-        server: 'dev.teambroncobots.com'
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        local_path: './_site/*'
-        remote_path: '/home/cecgri/dev.teambroncobots.com'
-        sftpArgs: '-o ConnectTimeout=5'
+        host: 'dev.teambroncobots.com'
+        privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
+        localDir: '_site'
+        remoteDir: '/home/cecgri/dev.teambroncobots.com'
       if: github.ref == 'refs/heads/qa' && github.event_name != 'pull_request'
