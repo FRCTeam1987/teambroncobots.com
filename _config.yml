@@ -65,9 +65,9 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: "Broncobots"
       layout: post
-      image: https://via.placeholder.com/1200x800
+      image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAtJREFUGFdjYAACAAAFAAGq1chRAAAAAElFTkSuQmCC" # blank 1x1 image
       show_sidebar: true
 
 markdown: kramdown
