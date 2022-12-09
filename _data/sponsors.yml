@@ -26,6 +26,10 @@
   size: small
   description: |-
   sponsors:
+    - name: Gene Haas Foundation
+      image: ../images/sponsors/GeneHassFoundation.svg
+      description: The Gene Haas Foundation donates millions of dollars every year to manufacturing education and the community. In 2020, the Gene Haas Foundation provided more than $20 million in grants, bringing the total since inception to more than to $120 million.
+      profile: https://ghaasfoundation.org/
     - name: KC Stem Alliance
       image: ../images/sponsors/kcstem.jpg
       description: The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community.
@@ -38,10 +42,6 @@
       image: ../images/sponsors/SoundWorks.png
       description: Home of Kansas City's leading musical and entertainment professionals. Encompassing all your professional recording and robotion needs.
       profile: https://soundworksrec.com/index.html
-    - name: Intuitive Foundation
-      image: ../images/sponsors/Intuitive_Foundation.png
-      description: The Intuitive Foundation is a proud sponsor of FIRST (For Inspiration and Recognition of Science and Technology) high school robotics teams.
-      profile: https://www.intuitive-foundation.org/
     - name: Grider Orthodontics
       image: ../images/sponsors/grider.jpg
       description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
