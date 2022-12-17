@@ -84,6 +84,10 @@
       image: ../images/sponsors/BrownIndustriesINC.png
       description: Brown Industries provides a turnkey service from ordering the materials to shipment of the finished robot. With over 35 years of experience, they offer the ability to efficiently produce your robot while helping to reduce your overall costs and maximize your profits without adding unnecessary overhead.
       profile: https://www.brownindustries.com/
+    - name: Orange Vise Company
+      image: ../images/sponsors/OrangeViseCompany.png
+      description: They committed themselves to continually creating innovative products and proving that American ingenuity could not only compete, but raise the bar of performance, quality, and value in the modern global marketplace for industrial tooling. Each of our CNC vises meet our exceedingly high standards of quality, performance, and value, and are 100% MADE IN THE USA.
+      profile: https://www.orangevise.com/
     - name: Ken Tinkering
       image: ../images/sponsors/kenTinkering.jpg
       description: Home CNC Woodworker! Let me custom design something for you; Signs, Plaques, Wood Toys, Puzzles, Home Decor, Picture Frames, Wood Boxes, Trays, and Furniture.
