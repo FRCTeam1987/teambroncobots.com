@@ -30,6 +30,10 @@
       image: ../images/sponsors/GeneHassFoundation.svg
       description: The Gene Haas Foundation donates millions of dollars every year to manufacturing education and the community. In 2020, the Gene Haas Foundation provided more than $20 million in grants, bringing the total since inception to more than to $120 million.
       profile: https://ghaasfoundation.org/
+    - name: Baldwin & Vernon
+      image: ../images/sponsors/BandV.png
+      description: No matter if you’re facing criminal charges or defending against discrimination or harassment, you have rights — rights that Baldwin & Vernon has dedicated itself to defending. We work as a team to develop a deep understanding of you and your case, give you an honest assessment, and then develop a strategy to present, in order to reach the best possible outcome.
+      profile: https://baldwinvernon.com/
     - name: KC Stem Alliance
       image: ../images/sponsors/kcstem.jpg
       description: The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community.
