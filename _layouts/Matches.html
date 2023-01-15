@@ -1,0 +1,484 @@
+---
+layout: default
+---
+<style>
+    .card {
+        opacity: 1; /* make the cards transparent by default */
+        transition: opacity 0.2s ease-in-out; /* add a smooth transition effect when the opacity changes */
+    }
+    .card:hover { /* select all cards that are being hovered over with the mouse */
+        opacity: 0.5; /* make the cards fully opaque */
+    }
+    .closeCard {
+        display:block;
+        position:absolute;
+        top:0px;
+        left:1%;
+        color:black;
+        height:30px;
+        width:35px;
+        font-size:4em;
+        text-decoration:none;
+        text-align:center;
+        font-weight:bold;
+    }
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 50%;
+    }
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 4em;
+        font-family: "Roboto", "Rockwell", "Montserrat", sans-serif;
+    }
+    h2 {
+        text-align: center;
+        color: black;
+        font-size: 2em;
+        font-family: "Roboto", "Rockwell", "Montserrat", sans-serif;
+    }
+    #chart-wrapper {
+        display: inline-block;
+        position: relative;
+        width: 95%;
+    }
+    .black_overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 32;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+    }
+    .stopLoading {
+        display:block;
+        position:absolute;
+        top:0px;
+        right:2.5%;
+        color:white;
+        height:30px;
+        width:35px;
+        font-size:4em;
+        text-decoration:none;
+        text-align:center;
+        font-weight:bold;
+    }
+    .logo-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /*height: 100%;*/
+        background: linear-gradient(-45deg, darkred, #ACACAC, #830506, black);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        z-index: 32;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 5%;
+        /*bottom: 2.5%;*/
+        left: 12.5%;
+        width:75%;
+        height:100%;
+        padding: 16px;
+        border:5px solid whitesmoke;
+        border-radius:10px;
+        background-color: white;
+        z-index: 1002;
+        overflow: auto;
+        margin:0 auto;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/TbaApi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<link rel="stylesheet" href="/assets/css/loadingAnimation.css">
+<script>
+    $( document ).ready(function() {
+        if (events()) {
+            // events();
+            // years();
+            // eventsPerYear("2022");
+            // status();
+            // isStillLoading();
+            isWorking();
+            // createChart("2022");
+            // pointsPerYear("2022");
+            // awardsPerYear("2022");
+            // awardNamesPerYear("2022");
+            // averagePointsPerYear("2022");
+        }
+
+    });
+    async function status() {
+        let status = await getStatus();
+        $("#status").html(status.is_datafeed_down?"unavailable":"Available");
+    }
+    async function isStillLoading() {
+        let StillLoading = await isFinished();
+        console.log(Boolean(StillLoading));
+        $("#isStillLoading").html(StillLoading);
+    }
+    async function CurrentProggressStat(stat) {
+        $("#CurrentProggressStat").html(stat);
+    }
+    async function isWorking() {
+
+        let status = await getStatus();
+        let StillLoading = await isFinished();
+
+        if (!status.is_datafeed_down) {
+            $("#isWorking").html("The Blue Alliance API appears to be down. Come Back Later!");
+            console.log("TBAAPI is down");
+            return false;
+        } else {
+            if (Boolean(StillLoading)) {
+                $("#isWorking").html("");
+                return true;
+                console.log("Everything appears to be working!");
+                // document.getElementById('loading').style.display='none';
+            } else {
+                $("#isWorking").html(" ");
+                console.log("Time out error");
+                return false;
+
+            }
+        }
+    }
+    async function currentProgress() {
+        let timeWaiting = 0;
+        let requestCounter = getRequestCounter();
+        while (requestCounter > 0) {
+            return ("There are " + requestCounter + " active call(s).");
+            await new Promise(resolve => setTimeout(resolve, 500)); // wait for 1 second
+            timeWaiting++; //in seconds
+            if (timeWaiting > 15) {
+                console.log(`There are ${requestCounter} active call(s). Timed Out.`);
+                return false;
+            }
+        }
+
+    }
+    async function events() {
+        let events = await getEvents();
+        // FIXME events.name isn't timely. promise is aborting
+        $("#events").html(events.name?"No Events Available":events.map(ev =>
+        {
+            return "<br/>" + ev.name + " " + ev.year;
+        }).toString().replaceAll(",",""));
+    }
+
+    async function eventsPerYear(year) {
+        let eventsPerYear = JSON.parse(sessionStorage.getItem("eventsPerYear" + year));
+        if (eventsPerYear === null) {
+            eventsPerYear = await getEventsPerYear(year);
+            sessionStorage.setItem("eventsPerYear" + year, JSON.stringify(eventsPerYear));
+        }
+        $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html(eventsPerYear.name?"No Events Available":eventsPerYear.map(ev =>
+        {
+            return ev.name + "<br/>";
+        }));
+    }
+    async function awardNamesPerYear(year) {
+        let awardNamesPerYear = JSON.parse(sessionStorage.getItem("awardNamesPerYear" + year));
+        if (awardNamesPerYear === null) {
+            awardNamesPerYear = await getAwardsPerYear(year);
+            sessionStorage.setItem("awardNamesPerYear" + year, JSON.stringify(awardNamesPerYear));
+        }
+        $(("#awardNamesPerYear" + year + ", #awardNamesPerYearCard" + year)).html(awardNamesPerYear.name?"No Awards Available":awardNamesPerYear.map(ev =>
+        {
+            return "<br/>" + ev.name;
+        }));
+    }
+    async function awardsPerYear(year) {
+        // console.log(JSON.parse(sessionStorage.getItem('awardsPerYear')));
+        let awardsPerYear = JSON.parse(sessionStorage.getItem('awardsPerYear' + year));
+        if (awardsPerYear === null) {
+            awardsPerYear = await getAwardsPerYear(year);
+            sessionStorage.setItem('awardsPerYear' + year, JSON.stringify(awardsPerYear));
+        }
+        let numAwards = awardsPerYear.length;
+        let html = "";
+        for (let i = 0; i < numAwards; i++) {
+            html+=`
+            <span class="icon">
+                <i class="fas fa-star"></i>
+            </span>
+            `;
+        }
+        $(("#awardsPerYear" + year + ", #awardsPerYearCard" + year)).html(html);
+    }
+
+    async function averagePointsPerYear(year) {
+        let totalPoints = 0;
+        let numMatches = 0;
+        let numMatchesNoData = 0;
+        let score = 0;
+        // let averagePointsPerYear = await getMatchesPerYear(year);
+        let averagePointsPerYear = JSON.parse(sessionStorage.getItem('averagePointsPerYear' + year));
+        if (averagePointsPerYear === null) {
+            averagePointsPerYear = await getMatchesPerYear(year);
+            sessionStorage.setItem('averagePointsPerYear' + year, JSON.stringify(averagePointsPerYear));
+        };
+        let avgPoints = 0;
+        averagePointsPerYear.forEach(ev =>
+        {
+            score = 0;
+            if (ev.alliances.red.team_keys.includes("frc1987")) {
+                score += ev.alliances.red.score;
+            } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
+                score += ev.alliances.blue.score;
+            };
+            if (score === -1) {
+                score = 0;
+                numMatchesNoData++;
+            } else {
+                numMatches++;
+                totalPoints += score;
+            };
+
+        });
+        if (numMatches !== 0) {
+            avgPoints = Math.round(totalPoints / numMatches);
+        };
+        let noDataMatchNums = "";
+        if (numMatchesNoData > 0) {
+            if (numMatchesNoData === 1) {
+                noDataMatchNums = " (" + numMatchesNoData + " match has no data)";
+            } else {
+                noDataMatchNums = " (" + numMatchesNoData + " matches have no data)";
+            };
+        };
+        let html = totalPoints + " total points\<br\/\>" + (numMatches + numMatchesNoData) + " matches" + noDataMatchNums + "\<br\/\>" + avgPoints + " average points per match";
+        $("#averagePointsPerYear" + year).html((numMatches === 0)?"No Points Available Yet":html);
+    }
+
+    async function pointsPerYear(year) {
+        let totalPoints = 0;
+        let numMatches = 0;
+        let pointsPerYear = await getMatchesPerYear(year);
+        pointsPerYear.forEach(ev =>
+        {
+            if (ev.alliances.red.team_keys.includes("frc1987")) {
+                totalPoints += ev.alliances.red.score;
+            } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
+                totalPoints += ev.alliances.blue.score;
+            };
+            numMatches++;
+        });
+
+        $("#pointsPerYear" + year).html((numMatches === 0)?"No Points Available Yet":totalPoints + " total points");
+    }
+
+    async function pointsPerMatchPerYear(year) {
+        let pointsPerMatchPerYear = await getMatchesPerYear(year);
+        // pointsPerMatchPerYear.forEach(ev => {
+        //     if (ev.alliances.red.team_keys.includes("frc1987")) {
+        //         console.log(ev.alliances.red.score)
+        //     } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
+        //         console.log(ev.alliances.blue.score)
+        //     };
+        // });
+        return pointsPerMatchPerYear;
+    }
+    async function createChart(year) {
+        const data = await pointsPerMatchPerYear(year);
+
+        const ctx = document.getElementById('myChart' + year).getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data.map(match => match.key), // use the match keys as the labels
+                datasets: [{
+                    label: 'Alliance Score',
+                    data: data.map(match => {
+                        // find the score for the team in the match
+                        let teamScore = 0;
+                        if (match.alliances.red.team_keys.includes("frc1987")) {
+                            teamScore = match.alliances.red.score;
+                        } else if (match.alliances.blue.team_keys.includes("frc1987")) {
+                            teamScore = match.alliances.blue.score;
+                        };
+                        if (teamScore === -1) {
+                            teamScore = "No Data";
+                        }
+                        return teamScore;
+                    }),
+                    backgroundColor: '#830506',
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            display: false //this will remove only the label
+                        }
+                    }]
+                }
+            }
+        });
+
+    }
+
+</script>
+
+<div style="text-align: center">
+<!--    <span id="isWorking" >-->
+<!--        loading-->
+<!--    </span>-->
+</div>
+
+
+
+<div class="columns is-multiline" id="years">
+<span id="isWorking" >
+    <div id="loading" class="logo-overlay" style="display:block"  >
+        <div class="loading-container">
+            <a href="/" class="stopLoading">&#x2716;</a>
+            <div class="loading"></div>
+            <div id="loading-image">
+                <img src="/images/Assets/Branding/broncobots.svg">
+            </div>
+            <div id="loading-text">loading</div>
+        </div>
+    </div>
+
+</span>
+
+    <script>
+        async function years() {
+            let years = await getYearsParticipated();
+            Array.from(years).forEach(year =>
+                {
+                    let html = `
+                        <div class="column is-6-desktop is-12-tablet">
+                            <a href="javascript:void(0)" onclick="document.getElementById('match` + year + `').style.display='block';document.getElementById('back').style.display='block'" style="color: black">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p class="title is-4 has-text-centered">` + year + `</p>
+                                            <span id="eventsPerYear` + year + `" >
+                                                loading
+                                            </span>
+                                            <div class="has-text-centered">
+                                                <span id="awardsPerYear` + year + `" >
+                                                    loading
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="match` + year + `" class="white_content">
+                            <a href="javascript:void(0)" onclick="document.getElementById('match` + year + `').style.display='none';document.getElementById('back').style.display='none'" class="closeCard">&#x2716;</a>
+                            <h1>` + year + `</h1>
+                            <div class="row">
+                                <div class="column" style="text-align:center">
+                                    <h2>Events</h2>
+                                    <div style="font-size: 1.5em">
+                                    <span id="eventsPerYearCard` + year + `">
+                                        loading
+                                    </span>
+                                    </div>
+                                    <h2>The Blue Alliance Awards</h2>
+                                    <div style="font-size: 1em">
+                                    <span id="awardsPerYearCard` + year + `">
+                                        loading
+                                    </span>
+                                    <span id="awardNamesPerYearCard` + year + `">
+                                        loading
+                                    </span>
+                                    </div>
+                                    <br/><br/>
+
+                                    <div style="font-size: 0.75em">Team 1987 may choose to recognize additional awards or major achievments, for full list see the <a href="/awards">Awards Page.</a></div>
+                                </div>
+                                <div class="column">
+                                <a href="/robots/` + year + `Robot/">
+                                    <img src="/images/robots/` + year + `robot.png" alt=" " onerror=this.src="/images/robots/pending.png">
+                                </a>
+                                </div>
+                            </div>'
+                            <div style="text-align:center; font-size: 2em">
+                                <span id="averagePointsPerYear` + year + `">
+                                    loading
+                                </span>
+                                <div id="chart-wrapper">
+                                    <canvas id="myChart` + year + `"></canvas>
+                                </div>
+                            </div>
+                            <div style="text-align:center";font-size:1em">
+                            <a href="https://www.thebluealliance.com/team/1987/` + year + `">Click me to see the Blue Alliance page from this year!</a>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                        </div>
+                        <div id="back" class="black_overlay"></div>
+
+                    `;
+                    $("#years").prepend(html);
+                    eventsPerYear( year );
+                    averagePointsPerYear( year );
+                    awardsPerYear( year );
+                    createChart( year );
+                    awardNamesPerYear( year );
+                });
+
+        }
+
+        years();
+        // isWorking();
+        // document.getElementById('loading').style.display = 'none';
+    </script>
+</div>
+
+<div style="text-align:center">
+    Powered by The Blue Alliance
+    <br/>
+    <a href="https://www.thebluealliance.com/">thebluealliance.com</a>
+
+</div>
