@@ -6,6 +6,7 @@ robot_code: 2012
 layout: robot
 imageicon: "../images/robots/2012robot.png"
 image: "../../images/robots/2012robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2012_Rebound_Rumble.png"
 features:
     - label: Won the Engineering Inspiration Award at the St. Louis Regional
       icon: fa-search 
@@ -17,6 +18,15 @@ awardsWon: 4
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* Pneumatic-powered arm “Bridge Tipper”
+* 6 Wheel drive, drop center with 8” AndyMark Plaction wheels
+
+<h2>Capabilities</h2>
+* Pick up and shoot basketballs
+* Tip & balance on The Bridge - both alliance and cooperitition bridges
+* Overcome the bump
+
 <h2>Competitions</h2>
 * Greater Kansas City Regional
 * St. Louis Regional
@@ -24,4 +34,3 @@ hide_hero: true
 * Ozark Mountain Brawl
 * CowTown ThrowDown
 
-<h2>Description pending, check back soon!</h2>

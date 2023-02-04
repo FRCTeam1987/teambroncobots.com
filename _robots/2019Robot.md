@@ -6,6 +6,7 @@ robot_code: 2019
 layout: robot
 imageicon: "../images/robots/2019robot.png"
 image: "../../images/robots/2019robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2019_Destination_Deep_Space.svg"
 features:
     - label: Team 1987's 2019 robot
       icon: fa-robot
@@ -17,19 +18,17 @@ awardsWon: 4
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* 8 wheel West Coast Drive
+* Floor Cargo intake
+* Claw to collect & place game pieces
+* Suction Cup climber
 
-<h2>Drive Train:</h2>
-- Eight 5" custom wheels with an 1/16" drop
-- 14 feet per second
-<h2>Manipulators:</h2>
-- A cargo collector to intake cargo from floor
-- Elevator to place on level 1 and 2
-- Hatch panel collector with 2 "fingers" that hook on
-<h2>Auto:</h2>
-- A camera to help steer
-- Can place a hatch and collect another hatch
-<h2>End Game:</h2>
-- A suction cup design for climbing to level 3
+<h2>Capabilities</h2>
+* Collects Cargo from floor, depot or loading station
+* Collects Hatch from loading station
+* Scores Cargo on Cargo Ship, Level 1 & 2 of Rocket Ship
+* Climbs Level 1 & 3
 
 <h2>Competitions</h2>
 * Heartland Regional

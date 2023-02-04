@@ -6,6 +6,7 @@ robot_code: 2022
 layout: robot
 imageicon: "../images/robots/2022robot.png"
 image: "../../images/robots/2022robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2022_Rapid_React.svg"
 features:
     - label: Two time regional winners
       icon: fa-certificate
@@ -34,3 +35,4 @@ hide_hero: true
 * Hosted Greater Kansas City Regional
 * 2022 World Championships
 * Indiana Robotics Invitational
+* CowTown ThrowDown

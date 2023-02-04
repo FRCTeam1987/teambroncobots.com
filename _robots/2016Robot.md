@@ -6,6 +6,7 @@ robot_code: 2016
 layout: robot
 imageicon: "../images/robots/2016robot.png"
 image: "../../images/robots/2016robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2016_FIRST_Stronghold.svg"
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Connie Wentworth)
       icon: fa-user
@@ -17,6 +18,13 @@ awardsWon: 4
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* Programmed in C++
+* West Coast Chassis
+* Bane Bot Motors
+
+[//]: # (<h2>Capabilities</h2>)
+
 <h2>Competitions</h2>
 * Greater Kansas City Regional
 * Hub City Regional
@@ -24,4 +32,3 @@ hide_hero: true
 * Missouri State Championship
 * CowTown ThrowDown
 
-<h2>Description pending, check back soon!</h2>

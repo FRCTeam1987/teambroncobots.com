@@ -32,7 +32,7 @@
   link: //www.onshape4frc.com/
 - name: Compass Alliance
   image: ../images/resources/CompassAlliance.PNG
-#  description: A Belt Calculator tool.
+  description: The Compass Alliance Pathways are step-by-step guidelines for learning about all FRC topics, at any level.
   link: //www.thecompassalliance.org
 - name: Socket Head Clearance
   image: ../images/resources/SocketHeadClearance.PNG

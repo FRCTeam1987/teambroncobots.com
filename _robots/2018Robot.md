@@ -6,6 +6,7 @@ robot_code: 2018
 layout: robot
 imageicon: "../images/robots/2018robot.png"
 image: "../../images/robots/2018robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2018_FIRST_Power_Up.svg"
 features:
     - label:  Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
       icon: fa-user-circle
@@ -17,10 +18,15 @@ awardsWon: 3
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* West Coast Drive
+* Uses winch for raising/lowering cubes
+
+[//]: # (<h2>Capabilities</h2>)
+
 <h2>Competitions</h2>
 * Greater Kansas City Regional
 * Oklahoma City Regional
 * Missouri State Championship
 * CowTown ThrowDown
 
-<h2>Description pending, check back soon!</h2>

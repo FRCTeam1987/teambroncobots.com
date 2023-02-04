@@ -13,9 +13,9 @@ layout: default
     <div class="column is-6">
         <p class="title is-3">{{ page.title }}</p>
         <p class="subtitle is-3">{{ page.subtitle }}</p>
-        {% if page.description %}
-        <p class="subtitle is-5 has-text-right">{{ page.description }}</p>
-        {% endif %}
+<!--        {% if page.description %}-->
+<!--        <p class="subtitle is-5 has-text-right">{{ page.description }}</p>-->
+<!--        {% endif %}-->
 
         {% if page.awardsWon %}
             {% include awardsWon.html awards=page.awardsWon %}
@@ -34,6 +34,11 @@ layout: default
                 </span>
                 <span>{{ feature.label }}</span></p>
             {% endfor %}
+
+            {% if page.CompetitionLogo %}
+                <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; min-width: 50%; min-height: 50%"/>
+            {% endif %}
+
         </div>
         {% endif %}
     </div>
@@ -41,7 +46,6 @@ layout: default
     <div class="column is-12">
         <p class="title is-4"></p>
         <div class="content">
-
 
             {{ content }}
         </div>

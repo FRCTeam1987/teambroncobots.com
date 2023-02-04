@@ -6,6 +6,7 @@ robot_code: 2009
 layout: robot
 imageicon: "../images/robots/2009robot.png"
 image: "../../images/robots/2009robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2009_Lunacy.png"
 features:
     - label: Made it to the FRC World Championship and competed in the Archimedes Division
       icon: fa-moon
@@ -17,9 +18,17 @@ awardsWon: 2
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* 4 Wheel Drive
+* Toughbox transmission
+* Wheel/ground speed encoders
+
+<h2>Capabilities</h2>
+* Holds six game pieces
+* Herd & refill about 10 sec.
+
 <h2>Competitions</h2>
 * Colorado Regional
 * World Championship
 * CowTown ThrowDown
 
-<h2>Description pending, check back soon!</h2>

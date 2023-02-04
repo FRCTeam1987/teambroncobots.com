@@ -6,6 +6,7 @@ robot_code: 2017
 layout: robot
 imageicon: "../images/robots/2017robot.png"
 image: "../../images/robots/2017robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2017_FIRST_Steamworks.svg"
 features:
     - label: Won the Greater Kansas City Regional
       icon: fa-cog 
@@ -17,6 +18,16 @@ awardsWon: 7
 hide_hero: true
 ---
 
+<h2>Specifications</h2>
+* 8 wheel West Coast Drive
+* Floor intake roller
+* Python programming
+
+<h2>Capabilities</h2>
+* Lift robot in one second
+* Ramp guide fuel to rollers
+* Shoot
+
 <h2>Competitions</h2>
 * Greater Kansas City Regional
 * Iowa Regional
@@ -25,4 +36,3 @@ hide_hero: true
 * Indiana Robotics Invitational
 * CowTown ThrowDown
 
-<h2>Description pending, check back soon!</h2>
