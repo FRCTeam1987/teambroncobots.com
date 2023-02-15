@@ -2,17 +2,21 @@
 layout: default
 ---
 
-<div class='row'>
-    {% for post in site.posts %}
 
-    {% include post-card.html %}
 
-    {% endfor %}
-    {% if forloop.index > 4 %}
-    {% break %}
-    {% endif %}
+
+<div class="columns is-multiline">
+
+    <div class="column is-12">
+        {{ page.content }}
+    </div>
+
+
+        {% for post in site.posts %}
+        <div class="column is-4">
+            {% include post-card.html %}
+        </div>
+        {% endfor %}
 
 </div>
-
-
 
