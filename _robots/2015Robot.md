@@ -16,19 +16,15 @@ features:
       icon: fa-arrow-up
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: Programmed in C++
+- item: West Coast Chassis
+- item: Bane Bot Motors
+Capabilities:
+- item: Can stack up to 6 totes
+Competitions:
+- item: Greater Kansas City Regional
+- item: Buckeye Regional
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
-
-<h2>Specifications</h2>
-* Programmed in C++
-* West Coast Chassis
-* Bane Bot Motors
-
-<h2>Capabilities</h2>
-* Can stack up to 6 totes
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Buckeye Regional
-* Missouri State Championship
-* CowTown ThrowDown
-

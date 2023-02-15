@@ -16,19 +16,15 @@ features:
       icon: fa-plane 
 awardsWon: 3
 hide_hero: true
+Specifications:
+- item: BaneBots Dual CIM Kit
+- item: 12:1 Bane Bots transmission
+- item: IFI Traction wheels
+- item: Arm - .60” Wall Carbon Fiber Tubes
+- item: Vacuum cup - PIAB silicone with screen, angled 45 degrees
+Capabilities:
+- item: Places rings at all heights
+- item: Elevates two maximum sized robots
+Competitions:
+- item: Colorado Regional
 ---
-
-<h2>Specifications</h2>
-* BaneBots Dual CIM Kit
-* 12:1 Bane Bots transmission
-* IFI Traction wheels
-* Arm - .60” Wall Carbon Fiber Tubes
-* Vacuum cup - PIAB silicone with screen, angled 45 degrees
-
-<h2>Capabilities</h2>
-* Places rings at all heights
-* Elevates two maximum sized robots
-
-
-<h2>Competitions</h2>
-* Colorado Regional

@@ -1,7 +1,8 @@
 <div class="card">
     {% if post.image %}
+    <link rel="stylesheet" href="/assets/css/buttonHover.css" />
     <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}">
     </div>
     {% else %}
     <header class="card-header">
@@ -16,11 +17,15 @@
             {% if post.summary %}
                 {{ post.summary | markdownify }}
             {% else %}
-                <p>{{ post.excerpt }}</p>
+<!--                <p>{{ post.excerpt }}</p>-->
             {% endif %}
         </div>
         <div class="has-text-centered">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+            <buttonhover class="full-rounded">
+                <span>Read more</span>
+                <div class="border full-rounded"></div></buttonhover>
+            </a>
         </div>
     </div>
     <footer class="card-footer">

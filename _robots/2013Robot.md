@@ -16,20 +16,15 @@ features:
       icon: fa-leaf 
 awardsWon: 1
 hide_hero: true
+Capabilities:
+- item: Shoot 3 point goals accurately from the back of the pyramid
+- item: Store 4 discs
+- item: Collect discs from the middle feeder slot
+- item: Climb to the first pyramid level
+Competitions:
+- item: Greater Kansas City Regional
+- item: Alamo Regional
+- item: World Championship
+- item: Ozark Mountain Brawl
+- item: CowTown ThrowDown
 ---
-
-[//]: # (<h2>Specifications</h2>)
-
-<h2>Capabilities</h2>
-* Shoot 3 point goals accurately from the back of the pyramid
-* Store 4 discs
-* Collect discs from the middle feeder slot
-* Climb to the first pyramid level
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Alamo Regional
-* World Championship
-* Ozark Mountain Brawl
-* CowTown ThrowDown
-

@@ -16,9 +16,8 @@ features:
       icon: fa-space-shuttle
 awardsWon: 2
 hide_hero: true
+Competitions:
+- item: INFINITE RECHARGE at Home Challenge
 ---
-
-<h2>Competitions</h2>
-* INFINITE RECHARGE at Home Challenge
 
 <h2>Description pending, check back soon!</h2>

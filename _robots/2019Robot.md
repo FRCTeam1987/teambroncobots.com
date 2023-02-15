@@ -16,23 +16,21 @@ features:
       icon: fa-trophy
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: 8 wheel West Coast Drive
+- item: Floor Cargo intake
+- item: Claw to collect & place game pieces
+- item: Suction Cup climber
+Capabilities:
+- item: Collects Cargo from floor, depot or loading station
+- item: Collects Hatch from loading station
+- item: Scores Cargo on Cargo Ship, Level 1 & 2 of Rocket Ship
+- item: Climbs Level 1 & 3
+Competitions:
+- item: Heartland Regional
+- item: Central Missouri Regional
+- item: World Championship
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
 
-<h2>Specifications</h2>
-* 8 wheel West Coast Drive
-* Floor Cargo intake
-* Claw to collect & place game pieces
-* Suction Cup climber
-
-<h2>Capabilities</h2>
-* Collects Cargo from floor, depot or loading station
-* Collects Hatch from loading station
-* Scores Cargo on Cargo Ship, Level 1 & 2 of Rocket Ship
-* Climbs Level 1 & 3
-
-<h2>Competitions</h2>
-* Heartland Regional
-* Central Missouri Regional
-* World Championships
-* Missouri State Championship
-* CowTown ThrowDown

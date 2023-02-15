@@ -16,19 +16,14 @@ features:
       icon: fa-unlock-alt
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: Programmed in C++
+- item: West Coast Chassis
+- item: Bane Bot Motors
+Competitions:
+- item: Greater Kansas City Regional
+- item: Hub City Regional
+- item: World Championship
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
-
-<h2>Specifications</h2>
-* Programmed in C++
-* West Coast Chassis
-* Bane Bot Motors
-
-[//]: # (<h2>Capabilities</h2>)
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Hub City Regional
-* World Championship
-* Missouri State Championship
-* CowTown ThrowDown
-

@@ -16,6 +16,17 @@ features:
       icon: fa-sun
 awardsWon: 2
 hide_hero: true
+Specifications:
+- item: 4 Wheel Drive
+- item: Toughbox transmission
+- item: Wheel/ground speed encoders
+Capabilities:
+- item: Holds six game pieces
+- item: Herd & refill about 10 sec.
+Competitions:
+- item: Colorado Regional
+- item: World Championship
+- item: CowTown ThrowDown
 ---
 
 <h2>Specifications</h2>

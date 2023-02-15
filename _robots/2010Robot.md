@@ -16,19 +16,17 @@ features:
       icon: fa-smile
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: Dayco Serpentine Belt
+- item: Toughbox transmission
+- item: Tread Speed Encoders
+Capabilities:
+- item: Autonomous kicking
+- item: Hanging
+Competitions:
+- item: Oklahoma City Regional
+- item: World Championship
+- item: CowTown ThrowDown
 ---
 
-<h2>Specifications</h2>
-* Dayco Serpentine Belt
-* Toughbox transmission
-* Tread Speed Encoders
-
-<h2>Capabilities</h2>
-* Autonomous kicking
-* Hanging
-
-<h2>Competitions</h2>
-* Oklahoma City Regional
-* World Championship
-* CowTown ThrowDown
 

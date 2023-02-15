@@ -35,11 +35,13 @@ layout: default
                 <span>{{ feature.label }}</span></p>
             {% endfor %}
 
-            {% if page.CompetitionLogo %}
-                <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; min-width: 50%; min-height: 50%"/>
-            {% endif %}
+
 
         </div>
+        {% endif %}
+
+        {% if page.CompetitionLogo %}
+        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; min-width: 50%; min-height: 50%"/>
         {% endif %}
     </div>
 
@@ -59,6 +61,48 @@ layout: default
         {% endfor %}
     </div>
     {% endif %}
+
+<div style="display: block; margin-left: auto; margin-right: auto;">
+    <table>
+        <tr>
+            <td style="padding-right: 12em; padding-left: 12em">
+                {% if page.Specifications %}
+                <div class="content">
+                    <h2>Specifications</h2>
+                    <ul>
+                    {% for Specification in page.Specifications %}
+                    <li>{{ Specification.item }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if page.Capabilities %}
+                <div class="content">
+                    <h2>Capabilities</h2>
+                    <ul>
+                        {% for Capability in page.Capabilities %}
+                        <li>{{ Capability.item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </td>
+            <td style="padding-right: 12em; padding-left: 12em">
+                {% if page.Competitions %}
+                <div class="content">
+                    <h2>Competitions</h2>
+                    <ul>
+                        {% for Competition in page.Competitions %}
+                        <li>{{ Competition.item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
 
 </div>
 

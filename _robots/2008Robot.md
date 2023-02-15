@@ -16,18 +16,15 @@ features:
       icon: fa-star
 awardsWon: 3
 hide_hero: true
+Specifications:
+- item: 4 Wheel Drive
+- item: Toughbox transmissions
+- item: IFI Traction wheels
+Capabilities:
+- item: Removes trackball in Hybrid mode
+- item: Hurdles trackball using catapult
+Competitions:
+- item: Minnesota Regional
+- item: World Championship
 ---
-
-<h2>Specifications</h2>
-* 4 Wheel Drive
-* Toughbox transmissions
-* IFI Traction wheels
-
-<h2>Capabilities</h2>
-* Removes trackball in Hybrid mode
-* Hurdles trackball using catapult
-
-<h2>Competitions</h2>
-* Minnesota Regional
-* World Championship
 

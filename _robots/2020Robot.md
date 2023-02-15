@@ -16,23 +16,20 @@ features:
       icon: fa-thumbs-up
 awardsWon: 1
 hide_hero: true
+Specifications:
+- item: 6 Wheel West Coast Drive
+- item: Two 6” performance wheels
+- item: Four 6” Omni wheels
+- item: Floor power cell intake
+- item: Can hold five balls
+Capabilities:
+- item: One stage elevator
+- item: Shoot 5 balls in 2 seconds
+- item: Manipulate color wheel
+- item: Cross the line in auto
+- item: Can travel under trench & over bumps
+Competitions:
+- item: Attended & Hosted Greater Kansas City Regional
+- item: Planned to attend Heartland Regional
+- item: Planned to attend Central Missouri Regional
 ---
-
-<h2>Specifications</h2>
-* 6 Wheel West Coast Drive
-* Two 6” performance wheels
-* Four 6” Omni wheels
-* Floor power cell intake
-* Can hold five balls
-
-<h2>Capabilities</h2>
-* One stage elevator
-* Shoot 5 balls in 2 seconds
-* Manipulate color wheel
-* Cross the line in auto
-* Can travel under trench & over bumps
-
-<h2>Competitions</h2>
-* Attended & Hosted Greater Kansas City Regional
-* Planned to attend Heartland Regional
-* Planned to attend Central Missouri Regional

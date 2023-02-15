@@ -16,11 +16,10 @@ features:
       icon: fa-battery-full 
 awardsWon: 3
 hide_hero: true
+Competitions:
+- item: Greater Kansas City Regional
+- item: Colorado Regional
+- item: CowTown ThrowDown
 ---
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Colorado Regional
-* CowTown ThrowDown
 
 <h2>Description pending, check back soon!</h2>

@@ -16,17 +16,12 @@ features:
       icon: fa-wrench 
 awardsWon: 3
 hide_hero: true
+Specifications:
+- item: West Coast Drive
+- item: Uses winch for raising/lowering cubes
+Competitions:
+- item: Greater Kansas City Regional
+- item: Oklahoma City Regional
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
-
-<h2>Specifications</h2>
-* West Coast Drive
-* Uses winch for raising/lowering cubes
-
-[//]: # (<h2>Capabilities</h2>)
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Oklahoma City Regional
-* Missouri State Championship
-* CowTown ThrowDown
-
