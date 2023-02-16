@@ -62,6 +62,7 @@ jobs:
       uses: milanmk/actions-file-deployer@master
       env:
         TBA_API_KEY: ${{ secrets.TBA_API_KEY }}
+        run: TBA_API_KEY = $TBA_API_KEY node script.js
       with:
         remote-protocol: 'sftp'
         remote-host: 'dev.teambroncobots.com'
