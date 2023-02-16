@@ -1,5 +1,5 @@
 const tbaUrl = "https://www.thebluealliance.com/api/v3";
-const apiKey = process.env.TBA_API_KEY; //FglzQyQwA2VhUenZ1BcfuFGR2xA6lVWMtyvVaOjMTfjJUgz1ozF6j9GO71GlirLV
+const apiKey = jekyll.env.TBA_API_KEY; //FglzQyQwA2VhUenZ1BcfuFGR2xA6lVWMtyvVaOjMTfjJUgz1ozF6j9GO71GlirLV
 let requestCounter = 0;
 let timeWaiting = 0; //in seconds
 let error = "";
