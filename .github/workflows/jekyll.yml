@@ -43,6 +43,8 @@ jobs:
 
     - name: Deploy (prod) 🚀
       uses: JamesIves/github-pages-deploy-action@v4
+      env:
+        TBA_API_KEY : ${{ secrets.TBA_API_KEY }}
       with:
         folder: _site # The folder the action should deploy.
       if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
@@ -58,6 +60,8 @@ jobs:
 
     - name: Deploy (qa) 🚀
       uses: milanmk/actions-file-deployer@master
+      env:
+        TBA_API_KEY: ${{ secrets.TBA_API_KEY }}
       with:
         remote-protocol: 'sftp'
         remote-host: 'dev.teambroncobots.com'
