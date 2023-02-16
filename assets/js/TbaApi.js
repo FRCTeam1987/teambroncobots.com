@@ -1,14 +1,7 @@
 const tbaUrl = "https://www.thebluealliance.com/api/v3";
-// const apiKey = env.TBA_API_KEY; //FglzQyQwA2VhUenZ1BcfuFGR2xA6lVWMtyvVaOjMTfjJUgz1ozF6j9GO71GlirLV
-const yaml = require('js-yaml');
-const fs = require('fs');
+const apiKey = process.env.TBA_API_KEY; //FglzQyQwA2VhUenZ1BcfuFGR2xA6lVWMtyvVaOjMTfjJUgz1ozF6j9GO71GlirLV
 
-try {
-    const apiKey = yaml.load(fs.readFileSync('/TBAAPIKEY.yaml', 'utf8'));
-    console.log(doc);
-} catch (e) {
-    console.log(e);
-}
+
 let requestCounter = 0;
 let timeWaiting = 0; //in seconds
 let error = "";
