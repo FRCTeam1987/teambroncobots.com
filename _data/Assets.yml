@@ -52,12 +52,12 @@
 
 - title: Robot Gallery
   images:
-#    - image: ../images/robots/2022robot.png
-#      description: The Bronocbots 2022 Robot!
+    - image: ../images/robots/2022robot.png
+      description: The Bronocbots 2022 Robot!
     - image: ../images/robots/2021robot.png
       description: The Bronocbots 2021 Robot!
-#    - image: ../images/robots/2020robot.png
-#      description: The Bronocbots 2020 Robot!
+    - image: ../images/robots/2020robot.png
+      description: The Bronocbots 2020 Robot!
     - image: ../images/robots/2019robot.png
       description: The Bronocbots 2019 Robot!
     - image: ../images/robots/2018robot.png
