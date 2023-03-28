@@ -10,7 +10,7 @@ CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
     - label: Rectangular Robot
       icon: fa-certificate
-    - label: Has 2 Limelight™ 3's
+    - label: Has 3 Limelight™ 3's
       icon: fa-robot
     - label: Won as alliance 1 team captain at the Heartland Regional
       icon: fa-crosshairs
@@ -28,7 +28,7 @@ Capabilities:
 - item: Collect, handle, and score Cones and Cubes.
 - item: Arm rotates 240° and extends up to 42 inches.
 - item: Claw detects game piece collection with NEO 550 current sensing and remembers if it's a cone or cube.
-- item: Two outward-facing Limelight™ 3's provide front views for periodic robot pose updates.
+- item: Three outward-facing Limelight™ 3's provide front views for periodic robot pose updates.
 - item: Co-driver can set scoring height with three buttons for single-button scoring.
 - item: Driver can reset gyro while driving for easy field orientation with single button press.
 Competitions:
