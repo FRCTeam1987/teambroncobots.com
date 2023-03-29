@@ -61,9 +61,9 @@ We will soon be building our 2023 robot and updating our website with current co
 <h2 style="color:maroon;text-align:center">About us</h2>
 
 <div style="text-align: center">
-<buttonhover class="full-rounded" onclick="missionStatement()"><span>Mission Statement</span><div class="border full-rounded"></div></buttonhover>
-<buttonhover class="full-rounded" onclick="teamFocus()"><span>Team Focus</span><div class="border full-rounded"></div></buttonhover>
-<buttonhover class="full-rounded" onclick="teamHistory()"><span>Team History</span><div class="border full-rounded"></div></buttonhover>
+<buttonhover class="full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
+<buttonhover class="full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
+<buttonhover class="full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
 </div>
 
 <div id="missStat" style="display:none">
