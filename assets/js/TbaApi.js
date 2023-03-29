@@ -1,5 +1,5 @@
 const tbaUrl = "https://www.thebluealliance.com/api/v3";
-const apiKey = "FglzQyQwA2VhUenZ1BcfuFGR2xA6lVWMtyvVaOjMTfjJUgz1ozF6j9GO71GlirLV";
+const apiKey = "Who Knows?";
 
 
 let requestCounter = 0;
