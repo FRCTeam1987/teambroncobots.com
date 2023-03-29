@@ -6,6 +6,7 @@ robot_code: 2015
 layout: robot
 imageicon: "../images/robots/2015robot.png"
 image: "../../images/robots/2015robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2015_Recycle_Rush.svg"
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Austin Ahern)
       icon: fa-user 
@@ -15,12 +16,15 @@ features:
       icon: fa-arrow-up
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: Programmed in C++
+- item: West Coast Chassis
+- item: Bane Bot Motors
+Capabilities:
+- item: Can stack up to 6 totes
+Competitions:
+- item: Greater Kansas City Regional
+- item: Buckeye Regional
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
-
-<h2>Competitions</h2>
-* Greater Kansas City Regional
-* Buckeye Regional
-* Missouri State Championship
-* CowTown ThrowDown
-
-<h2>Description pending, check back soon!</h2>

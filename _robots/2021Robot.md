@@ -6,6 +6,7 @@ robot_code: 2021
 layout: robot
 imageicon: "../images/robots/2021robot.png"
 image: "../../images/robots/2021robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2021_Infinite_Recharge.png"
 features:
     - label: Won the Excellence in Engineering Award at the at home challenge
       icon: fa-rocket 
@@ -15,9 +16,8 @@ features:
       icon: fa-space-shuttle
 awardsWon: 2
 hide_hero: true
+Competitions:
+- item: INFINITE RECHARGE at Home Challenge
 ---
-
-<h2>Competitions</h2>
-* INFINITE RECHARGE at Home Challenge
 
 <h2>Description pending, check back soon!</h2>

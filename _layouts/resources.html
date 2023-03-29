@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+    <link rel="stylesheet" href="/assets/css/animatedLink.css">
 
     <div class="columns is-multiline">
         {% for name in site.data.resources %}
@@ -19,7 +20,17 @@ layout: default
                             {% if name.description %}
                                 <p class="has-text-black has-text-centered"> {{ name.description }}</p>
                             {% endif %}
-                            <a href={{name.link}} target="_blank" style="color:#830506; font-size: smaller">{{name.link}}</a>
+
+                            <button class="cta">
+                                <a href={{name.link}} target="_blank" style="color:#830506; font-size: smaller">
+                                <span class="hover-underline-animation"> Go There Now </span>
+                                </a>
+                                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                                </svg>
+                            </button>
+
+<!--                            <a href={{name.link}} target="_blank" style="color:#830506; font-size: smaller">{{name.link}}</a>-->
                     </div>
                 </div>
             </div>

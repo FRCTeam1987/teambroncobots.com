@@ -6,6 +6,7 @@ robot_code: 2011
 layout: robot
 imageicon: "../images/robots/2011robot.png"
 image: "../../images/robots/2011robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2011_Logo_Motion.png"
 features:
     - label: Ranked third in the Midwest Regional
       icon: fa-lemon
@@ -15,10 +16,15 @@ features:
       icon: fa-laptop 
 awardsWon: 2
 hide_hero: true
+Specifications:
+- item: Mecanum wheels
+- item: Gripper powered by pneumatics
+- item: Window motor powered winch using two pulleys
+- item: Elevator raised by winch
+Capabilities:
+- item: Strafe side to side driving
+- item: Pick up tubes from the ground and/or feeder
+Competitions:
+- item: Midwest Regional
+- item: CowTown ThrowDown
 ---
-
-<h2>Competitions</h2>
-* Midwest Regional
-* CowTown ThrowDown
-
-<h2>Description pending, check back soon!</h2>

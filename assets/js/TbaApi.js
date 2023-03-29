@@ -1,5 +1,7 @@
 const tbaUrl = "https://www.thebluealliance.com/api/v3";
-const apiKey = "Not Here";
+const apiKey = "Who Knows?";
+
+
 let requestCounter = 0;
 let timeWaiting = 0; //in seconds
 let error = "";

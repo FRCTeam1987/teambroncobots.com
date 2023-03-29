@@ -6,6 +6,7 @@ robot_code: 2008
 layout: robot
 imageicon: "../images/robots/2008robot.png"
 image: "../../images/robots/2008robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2008_FIRST_Overdrive.jpeg"
 features:
     - label: Won the Regional Engineering Inspiration Award at the Minnesota Regional
       icon: fa-road 
@@ -15,10 +16,15 @@ features:
       icon: fa-star
 awardsWon: 3
 hide_hero: true
+Specifications:
+- item: 4 Wheel Drive
+- item: Toughbox transmissions
+- item: IFI Traction wheels
+Capabilities:
+- item: Removes trackball in Hybrid mode
+- item: Hurdles trackball using catapult
+Competitions:
+- item: Minnesota Regional
+- item: World Championship
 ---
 
-<h2>Competitions</h2>
-* Minnesota Regional
-* World Championship
-
-<h2>Description pending, check back soon!</h2>

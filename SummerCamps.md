@@ -23,9 +23,9 @@ hero_height: is-medium
         <p style="color:grey;">
             Age Group - incoming 2nd, 3rd, and 4th graders.
             <br>
-            Dates - 2023 Dates TBD
+            Dates - 2023 Dates June 19 - 22
             <br>
-            Time -1:30 P.M. - 4:00 P.M.
+            Time - 1:00 P.M. - 4:00 P.M.
             <br>
             Prerequisites - None
             <br>
@@ -48,7 +48,7 @@ hero_height: is-medium
         <p style="color:grey;">
             Age Group - 4th, 5th, and 6th graders.
             <br>
-            Dates - 2023 Dates TBD
+            Dates - 2023 Dates June 5 - 9 & June 12 - 16
             <br>
             Times - 9 A.M. to 3 P.M. each day.
             <br>

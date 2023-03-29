@@ -27,21 +27,5 @@
       link: /videos/
 - name: Summer Camps
   link: /SummerCamps/
-#- name: Example Pages
-#  link: /#
-#  dropdown:
-#    - name: Landing Page With Callouts
-#      link: /landing/
-#    - name: Sponsors Page
-#      link: /sponsors/
-#    - name: Assets
-#      link: /gallery/
-#    - name: Robots
-#      link: /robots/
-#    - name: Recipe Page
-#      link: /example-recipe/
-#    - name: Showcase
-#      link: /showcase/
-#- name: Blog
-#  link: /blog/
-
+- name: Posts
+  link: /allPosts/

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+
+
+<div class="columns is-multiline">
+
+    <div class="column is-12">
+        {{ page.content }}
+    </div>
+
+
+        {% for post in site.posts %}
+        <div class="column is-4">
+            {% include post-card.html %}
+        </div>
+        {% endfor %}
+
+</div>
+

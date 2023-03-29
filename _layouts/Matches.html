@@ -137,7 +137,6 @@ layout: default
             // awardNamesPerYear("2022");
             // averagePointsPerYear("2022");
         }
-
     });
     async function status() {
         let status = await getStatus();
@@ -157,14 +156,15 @@ layout: default
         let StillLoading = await isFinished();
 
         if (!status.is_datafeed_down) {
-            $("#isWorking").html("The Blue Alliance API appears to be down. Come Back Later!");
+            $("#isWorking").html(" ");
             console.log("TBAAPI is down");
             return false;
         } else {
             if (Boolean(StillLoading)) {
                 $("#isWorking").html("");
-                return true;
                 console.log("Everything appears to be working!");
+                return true;
+
                 // document.getElementById('loading').style.display='none';
             } else {
                 $("#isWorking").html(" ");

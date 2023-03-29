@@ -13,12 +13,12 @@ layout: default
     <div class="column is-6">
         <p class="title is-3">{{ page.title }}</p>
         <p class="subtitle is-3">{{ page.subtitle }}</p>
-        {% if page.description %}
-        <p class="subtitle is-5 has-text-right">{{ page.description }}</p>
-        {% endif %}
+        <!--        {% if page.description %}-->
+        <!--        <p class="subtitle is-5 has-text-right">{{ page.description }}</p>-->
+        <!--        {% endif %}-->
 
         {% if page.awardsWon %}
-            {% include awardsWon.html awards=page.awardsWon %}
+        {% include awardsWon.html awards=page.awardsWon %}
         {% endif %}
 
         {% if page.features %}
@@ -36,13 +36,15 @@ layout: default
             {% endfor %}
         </div>
         {% endif %}
+
+        {% if page.CompetitionLogo %}
+        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em"/>
+        {% endif %}
     </div>
 
     <div class="column is-12">
         <p class="title is-4"></p>
         <div class="content">
-
-
             {{ content }}
         </div>
     </div>
@@ -56,5 +58,42 @@ layout: default
     </div>
     {% endif %}
 
-</div>
+    <div class="column is-6">
+        {% if page.Specifications %}
+        <div class="content">
+            <h2>Specifications</h2>
+            <ul>
+                {% for Specification in page.Specifications %}
+                <li>{{ Specification.item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if page.Capabilities %}
+        <div class="content">
+            <h2>Capabilities</h2>
+            <ul>
+                {% for Capability in page.Capabilities %}
+                <li>{{ Capability.item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
 
+    <div class="column is-6">
+
+
+        {% if page.Competitions %}
+        <div class="content">
+            <h2>Competitions</h2>
+            <ul>
+                {% for Competition in page.Competitions %}
+                <li>{{ Competition.item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+</div>

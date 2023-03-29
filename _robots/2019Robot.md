@@ -6,6 +6,7 @@ robot_code: 2019
 layout: robot
 imageicon: "../images/robots/2019robot.png"
 image: "../../images/robots/2019robot.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2019_Destination_Deep_Space.svg"
 features:
     - label: Team 1987's 2019 robot
       icon: fa-robot
@@ -15,25 +16,21 @@ features:
       icon: fa-trophy
 awardsWon: 4
 hide_hero: true
+Specifications:
+- item: 8 wheel West Coast Drive
+- item: Floor Cargo intake
+- item: Claw to collect & place game pieces
+- item: Suction Cup climber
+Capabilities:
+- item: Collects Cargo from floor, depot or loading station
+- item: Collects Hatch from loading station
+- item: Scores Cargo on Cargo Ship, Level 1 & 2 of Rocket Ship
+- item: Climbs Level 1 & 3
+Competitions:
+- item: Heartland Regional
+- item: Central Missouri Regional
+- item: World Championship
+- item: Missouri State Championship
+- item: CowTown ThrowDown
 ---
 
-
-<h2>Drive Train:</h2>
-- Eight 5" custom wheels with an 1/16" drop
-- 14 feet per second
-<h2>Manipulators:</h2>
-- A cargo collector to intake cargo from floor
-- Elevator to place on level 1 and 2
-- Hatch panel collector with 2 "fingers" that hook on
-<h2>Auto:</h2>
-- A camera to help steer
-- Can place a hatch and collect another hatch
-<h2>End Game:</h2>
-- A suction cup design for climbing to level 3
-
-<h2>Competitions</h2>
-* Heartland Regional
-* Central Missouri Regional
-* World Championships
-* Missouri State Championship
-* CowTown ThrowDown

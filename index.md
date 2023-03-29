@@ -3,11 +3,12 @@ title: Broncobots
 subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
-show_sidebar: false
+show_sidebar: true
 hero_image: images/Homeimg.jpg
 hero_darken: true
 hero_height: is-large
 ---
+<link rel="stylesheet" href="/assets/css/buttonHover.css">
 
  <style>
 .zoom {
@@ -18,28 +19,13 @@ hero_height: is-large
 /*  height: 200px;*/
   margin: 0 auto;
 }
+@import "TextAnimationEffect.scss";
 
 .zoom:hover {
   backface-visibility: hidden; 
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   
 }
-@import "TextAnimationEffect.scss";
-
-.button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer
-    background-color: white
-}
-
-
 
 </style>
 
@@ -66,25 +52,27 @@ We will soon be building our 2023 robot and updating our website with current co
 
 ---
 <div style="text-align:center; vertical-align: middle; padding:0px 0;">
-    <img src="images/2022TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
+    <img src="images/2023TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
 </div>
 ---
 
 <div class="zoom"></div> 
 
-<center><h2 style="color:maroon">About us</h2></center>
+<h2 style="color:maroon;text-align:center">About us</h2>
 
-<center>
-    <button class="button" onclick="missionStatement()">Mission Statement</button>
-    <button class="button" onclick="teamFocus()">Team Focus</button>
-    <button class="button" onclick="teamHistory()">Team History</button>
-</center>
+<div style="text-align: center">
+<buttonhover class="noWrap full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
+<buttonhover class="noWrap full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
+<buttonhover class="noWrap full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
+</div>
 
 <div id="missStat" style="display:none">
+<br>
       The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success.  
 </div>
 
 <div id="teamFoc" style="display:none">
+<br>
       <p>
          The focus of our team has been to reach out to our community in every way possible. We have attended school carnivals, school presentations, bingo raffles, Boy Scout meetings, school board meetings, and business meetings. We have been featured numerous times in publications, including three local newspapers, Honeywell newsletters, and even two books: FIRST Robotics: Rack N Roll and FIRST Robots: Behind The Design. The team created a video as an introduction to FIRST for the Lee's Summit community that aired on the local government channel and published a book about our team and our history.
     <br><br>
@@ -97,6 +85,7 @@ We will soon be building our 2023 robot and updating our website with current co
 </div>
 
 <div id="teamHist" style="display:none">
+<br>
   <p>
      Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and an out-of-state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's CowTown ThrowDown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 
   </p>
