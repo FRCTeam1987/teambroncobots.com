@@ -1,0 +1,60 @@
+<a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+<style>
+    .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        z-index: 9999;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        background-color: #111010;
+        color: #f8f8f8;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 100%;
+    }
+
+    .scroll-to-top:hover {
+        background-color: #830506;
+        color: #f8f8f8;
+    }
+
+    .scroll-to-top--show {
+        display: block;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+</style>
+
+<script>
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+            scrollToTopButton.classList.add('scroll-to-top--show');
+        } else {
+            scrollToTopButton.classList.remove('scroll-to-top--show');
+        }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+        let scrollInterval = setInterval(() => {
+            let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+            if (scrollTopValue <= 0) {
+                clearInterval(scrollInterval);
+            }
+            scrollTopValue -= scrollTopValue / 0.2;
+            // Change the 0.2 value to adjust the scrolling speed.
+            if (scrollTopValue >= 0) {
+                document.documentElement.scrollTop = scrollTopValue;
+                document.body.scrollTop = scrollTopValue;
+            }
+        }, 16);
+    });
+</script>

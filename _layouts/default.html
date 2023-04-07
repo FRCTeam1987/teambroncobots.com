@@ -10,11 +10,14 @@
 {% else %}
 {% assign content_width = 'is-12' %}
 {% endif %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <html
  dir="{{ site.direction | default: 'ltr' }}"
  lang="{{ site.lang | default: 'en' }}"
- {% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
+
+
+{% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
   {% include head.html %}
   <body>
     {% include header.html %}
@@ -56,5 +59,10 @@
     {% endunless %}
     <script src="{{ site.baseurl }}/assets/js/app.js" type="text/javascript"></script>
     {%- include footer-scripts.html -%}
+
+    {% unless page.hide_goto_top %}
+        {% include goto_top.html %}
+    {% endunless %}
+
   </body>
 </html>
