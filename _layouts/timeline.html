@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/assets/css/timeline.css">
+
+
+<div id="team-history">
+    {% for event in site.data.TeamHistory reversed %}
+    <div class="event" style="width: 100%">
+        <h2>{{ event.Date }}</h2>
+        <p>{{ event.Descriptor }}</p>
+<!--        {% if event.image %}-->
+<!--            <img src="{{ event.image }}" style="max-width: 75%" alt="">-->
+<!--        {% endif %}-->
+    </div>
+    {% endfor %}
+</div>
+
+
+<script type="text/javascript" src="/assets/js/team_history.js"></script>

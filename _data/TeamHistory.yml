@@ -1,0 +1,1031 @@
+#Use this code to convert the whole document, uses java, works as of 4/4/2023
+#  import java.io.*;
+#
+#  public class FileConverter {
+#  public static void main(String[] args) {
+#  try {
+#  String inputFileName = "input.txt";
+#  String outputFileName = "output.txt";
+#  BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
+#  BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName));
+#
+#  String line = reader.readLine();
+#  while (line != null) {
+#  int dashIndex = line.indexOf("- ");
+#  if (dashIndex != -1) {
+#  String date = line.substring(0, dashIndex);
+#  String descriptor = line.substring(dashIndex + 2);
+#writer.write("- Date: " + date + "\n");
+#writer.write("  Descriptor: " + descriptor + "\n");
+#}
+#  line = reader.readLine();
+#}
+#
+#  reader.close();
+#  writer.close();
+#} catch (IOException e) {
+#System.err.println("Error: " + e.getMessage());
+#}
+#}
+#}
+
+- Date: October 31, 2006
+  Descriptor: Hosted table at Lee’s Summit North’s Safe Halloween Event
+- Date: January 10, 2007
+  Descriptor: Began R-7 Alliance (3 Lee’s Summit High School Robotics Teams) meetings
+- Date: January 20, 2007
+  Descriptor: Began mailing campaign to government officials
+- Date: February 20, 2007
+  Descriptor: Attended three-team pre-ship gathering
+- Date: February 22, 2007
+  Descriptor: Presented at Lee’s Summit Rotary Club meeting
+- Date: March 15-17, 2007
+  Descriptor: Attended Greater Kansas City Regional, with 5 Volunteers/15 Guests
+- Date: March 29-31, 2007
+  Descriptor: Competed at Denver Regional
+- Date: April 20, 2007
+  Descriptor: Presented at Lawler Gear for National Tool and Machining Association meeting
+- Date: April 21
+  Descriptor: May 19, 2007- Set up robot for display at Lee’s Summit North
+- Date: May 23, 2007
+  Descriptor: Presented at Bernard C. Campbell Middle School
+- Date: May 20, 2007
+  Descriptor: Featured in Lee’s Summit Journal’s article, “LSN Robotics Team Competes in CO Regional”
+- Date: June 6, 2007
+  Descriptor: Presented at Lee’s Summit Economic Development Council
+- Date: Summer 2007
+  Descriptor: Hosted weekly summer VEX team practices
+- Date: August 2, 2007
+  Descriptor: Sponsored Special Mentor Appreciation Day (Rex Luchtel)
+- Date: August 15, 2007
+  Descriptor: Presented at Freshman Orientation Day at Lee’s Summit North
+- Date: September 20, 2007
+  Descriptor: Presented at Lee’s Summit School Board meeting
+- Date: September 27, 2007
+  Descriptor: Presented at Honeywell
+- Date: October & November 2007
+  Descriptor: Volunteered at home football games at LSN
+- Date: October 19, 2007
+  Descriptor: Demonstrated at Richardson Elementary and Hazel Grove Elementary Carnivals
+- Date: October 31, 2007
+  Descriptor: Hosted table at Lee’s Summit North’s Safe Halloween Event
+- Date: November 30, 2007
+  Descriptor: Helped with FIRST Lego League (FLL) field construction
+- Date: December 21, 2007
+  Descriptor: Presented at Gayle’s Harley Davidson
+- Date: January 7, 2008
+  Descriptor: Began weekly email updates
+- Date: January 18, 2008
+  Descriptor: Hosted a visit from Shawnee Mission High School
+- Date: January 20, 2008
+  Descriptor: Began food drive for Lee’s Summit Social Services
+- Date: February 1, 2008
+  Descriptor: Participated in three-school Lee’s Summit Robotics Open Houses
+- Date: February 3, 2008
+  Descriptor: Presented at Summit Lakes Middle School
+- Date: February 10, 2008
+  Descriptor: Hosted a visit for Honeywell President (KC Plant)
+- Date: February 12, 2008
+  Descriptor: Featured in Lee’s Summit Tribune article
+- Date: February 13, 2008
+  Descriptor: Began food drive for Lee’s Summit Social Services
+- Date: February 15, 2008
+  Descriptor: Presented at Bernard C. Campbell Middle School
+- Date: February 24, 2008
+  Descriptor: Featured in Lee’s Summit Tribune article, “Students Bond Through Robotics”
+- Date: March 6-8, 2008
+  Descriptor: Attended Greater Kansas City Regional, with 8 Volunteers/20 Guests
+- Date: March 9, 2008
+  Descriptor: Featured in Lee’s Summit Tribune article, “LSN Robotics Team Featured in Book”
+- Date: March 14, 2008
+  Descriptor: Shown in Lee’s Summit Journal article
+- Date: March 16, 2008
+  Descriptor: Welcomed home sister school team, Team Driven (1730)
+- Date: March 27-29, 2008
+  Descriptor: Competed in Minneapolis Regional
+- Date: April 6, 2008
+  Descriptor: Presented at Lotawana Baptist Church
+- Date: April 6, 2008
+  Descriptor: Presented at local Bingo raffle
+- Date: April 8, 2008
+  Descriptor: Featured in book, “FIRST Robotics, with Rack N Roll”
+- Date: April 8, 2008
+  Descriptor: Presented at Westview Elementary
+- Date: April 10, 2008
+  Descriptor: Hosted three-school picnic and food drive
+- Date: April 17-19, 2008
+  Descriptor: Competed at FIRST Championships in Atlanta
+- Date: April 28, 2008
+  Descriptor: Presented at Boy Scouts meeting
+- Date: May 15, 2008
+  Descriptor: Presented at Lee’s Summit Chalk Walk
+- Date: May 21, 2008
+  Descriptor: Featured in Lee’s Summit Tribune article
+- Date: May 22-23, 2008
+  Descriptor: Presented at LSHS and LSNHS feeder elementary schools
+- Date: May 28, 2008
+  Descriptor: Presented at Kauffman Foundation Banquet
+- Date: May 30, 2008
+  Descriptor: Demonstrated at Engineering and Science Summer Institute at Kansas State University
+- Date: June 6-8, 2008
+  Descriptor: Hosted booth at Lee’s Summit Downtown Days
+- Date: June 8-12, 2008
+  Descriptor: Hosted one week of robotics camp
+- Date: June 9, 2008
+  Descriptor: Participated in Kauffman Student Day
+- Date: July 8-12, 2008
+  Descriptor: Hosted one week of robotics camp
+- Date: August 15, 2008
+  Descriptor: Presented at Freshman Orientation Day at Lee’s Summit North
+- Date: September 25, 2008
+  Descriptor: Presented at Honeywell
+- Date: September 26, 2008
+  Descriptor: Sponsored a float in Lee’s Summit North Homecoming Parade
+- Date: October 11, 2008
+  Descriptor: Attended Liberty seminar
+- Date: October 18, 2008
+  Descriptor: Demonstrated at Hazel Grove Elementary Carnival
+- Date: October 31, 2008
+  Descriptor: Hosted table at Lee’s Summit North’s Safe Halloween Event
+- Date: October 31
+  Descriptor: November 1, 2008- Helped plan, competed in, and volunteered at CowTown ThrowDown
+- Date: November 9, 2008
+  Descriptor: Demonstrated at Mason Elementary Carnival
+- Date: November 24, 2008
+  Descriptor: Volunteered with FLL and Jr.FLL
+- Date: December 14, 2008
+  Descriptor: Volunteered with FLL and Jr. Robotics
+- Date: December 17, 2008
+  Descriptor: Presented at Honeywell
+- Date: December 25, 2008
+  Descriptor: Adopted a family for the holidays
+- Date: December 27, 2008
+  Descriptor: Featured in Kansas City Star article
+- Date: January 3, 2009
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 5, 2009
+  Descriptor: Nominated mentor Tom Hand for US Weekend “Coach of the Year”
+- Date: January 8, 2009
+  Descriptor: Featured in Lee’s Summit Journal article “Friendly Robots in Lee’s Summit”
+- Date: January 9, 2009
+  Descriptor: Began mailing campaign to government officials
+- Date: January 10
+  Descriptor: Began food drive
+- Date: January 11, 2009
+  Descriptor: Began weekly newsletters
+- Date: January 12, 2009
+  Descriptor: Began ‘Flat Mammoth’ campaign
+- Date: January 12, 2009
+  Descriptor: Featured in Honeywell newsletter article
+- Date: January 24, 2009
+  Descriptor: Started mentoring Team 2894- ACECC team from Kansas City
+- Date: January 27, 2009
+  Descriptor: Received reply from Senator Kit Bond
+- Date: January 29, 2009
+  Descriptor: Hosted a visit for Honeywell bosses, Brad and Kurt
+- Date: January 29 – February 1, 2009
+  Descriptor: Began showing Broncobots Blast 2009 video on local government channel
+- Date: February 1, 2009
+  Descriptor: Participated in three-school Lee’s Summit Robotics Open Houses
+- Date: February 3, 2009
+  Descriptor: Received reply from Senator Matt Bartle
+- Date: February 6, 2009
+  Descriptor: Presented at Meadow Lane Elementary carnival
+- Date: February 20, 2009
+  Descriptor: Presented at Our Lady of Lourdes School
+- Date: February 26-29, 2009
+  Descriptor: Attended Greater Kansas City Regional, with 15 Volunteers/15 Guests
+- Date: March 2, 2009
+  Descriptor: Received reply from United States Department of Education
+- Date: March 8, 2009
+  Descriptor: Co-hosted Lee’s Summit Robotics Banquet
+- Date: March 20, 2009
+  Descriptor: Met with Senator Matt Bartle
+- Date: March 26-28, 2009
+  Descriptor: Competed at Denver Regional
+- Date: April 5, 2009
+  Descriptor: Welcomed home sister school team, Team Titanium (#1986)
+- Date: April 9, 2009
+  Descriptor: Participated in Spring Sports Assembly at Lee’s Summit North
+- Date: April 16-18, 2009
+  Descriptor: Competed at FIRST Championships in Atlanta
+- Date: May 3, 2009
+  Descriptor: Volunteered at Special Olympics
+- Date: May 6, 2009
+  Descriptor: Presented at Lee’s Summit Economic Development Council meeting
+- Date: May 9, 2009
+  Descriptor: Presented at Lee’s Summit Chalk Walk
+- Date: May 20, 2009
+  Descriptor: Presented at Kokam America
+- Date: May 21, 2009
+  Descriptor: Presented at R-7 Board Meeting
+- Date: June 4, 2009
+  Descriptor: Presented at Lee’s Summit City Council Meeting
+- Date: June 8-12, 2009
+  Descriptor: Hosted one week of robotics camp
+- Date: June 11, 2009
+  Descriptor: Held a meeting with Candid Marketing
+- Date: June 12, 2009
+  Descriptor: Held a meeting with Trustee, with Mr. Rhone
+- Date: June 13, 2009
+  Descriptor: Participated in RoboFest at Union Station
+- Date: June 17, 2009
+  Descriptor: Held a meeting with Roy Temper and Lisa Keel
+- Date: June 19, 2009
+  Descriptor: Presented at Grainger
+- Date: June 24, 2009
+  Descriptor: Presented at STARBASE
+- Date: June 29-July 1, 2009
+  Descriptor: Hosted one week of robotics camp
+- Date: July 1, 2009
+  Descriptor: Presented at Economic Development Council Meeting
+- Date: July 28, 2009
+  Descriptor: Three-team Sustain meeting
+- Date: August 12, 2009
+  Descriptor: Began planning for CowTown ThrowDown
+- Date: August 18, 2009
+  Descriptor: Held meeting with Candid Marketing
+- Date: August 20, 2009
+  Descriptor: Presented at Missouri State Fair
+- Date: September 10, 2009
+  Descriptor: Presented at Back-to-School night
+- Date: September 11, 2009
+  Descriptor: Sponsored a float in Lee’s Summit North Homecoming Parade
+- Date: October 6, 2009
+  Descriptor: Presented at Blackburn Elementary School
+- Date: October 16, 2009
+  Descriptor: Participated in Cerner Friday Event
+- Date: October 16, 2009
+  Descriptor: Presented at Hazel Grove Carnival
+- Date: October 17, 2009
+  Descriptor: Presented at Honeywell 60th Anniversary Family Day
+- Date: October 31, 2009
+  Descriptor: Hosted table at Lee’s Summit North’s Safe Halloween Event
+- Date: November 3, 2009
+  Descriptor: Presented at Lake Lotawana Optimist Meeting
+- Date: November 7, 2009
+  Descriptor: Help plan, volunteered, and participated in CowTown ThrowDown
+- Date: November 14, 2009
+  Descriptor: Participated in Kansas City FIRST mentor video
+- Date: November 19, 2009
+  Descriptor: Started working with Time Warner Cable’s “Connect a Million Minds”
+- Date: December 4, 2009
+  Descriptor: Presented at Honeywell
+- Date: December 5, 2009
+  Descriptor: Volunteered at FLL Rumble at Summit Lakes Middle School
+- Date: December 17, 2009
+  Descriptor: Started work with Time Warner Cable’s Christie Nitsche
+- Date: December 25, 2009
+  Descriptor: Adopted a family for the holidays
+- Date: January 2, 2010
+  Descriptor: Featured in Lee’s Summit Tribune article
+- Date: January 12, 2010
+  Descriptor: Started build season with ACE Robotics
+- Date: January 15, 2010
+  Descriptor: Hosted a visit for Time Warner Cable’s Christie Nitsche
+- Date: January 16, 2010
+  Descriptor: Began a food drive
+- Date: January 17, 2010
+  Descriptor: Started weekly YouTube updates
+- Date: January 19, 2010
+  Descriptor: Began mailing campaign to government officials
+- Date: January 23, 2010
+  Descriptor: Created and donated 30 Haiti care packages
+- Date: January 29, 2010
+  Descriptor: Sent handmade Valentines to Walter Reed Army Medical Center
+- Date: January 30, 2010
+  Descriptor: Created and sent 5 large soldier care packages
+- Date: February 7, 2010
+  Descriptor: Participated in three-school Lee’s Summit Robotics Open Houses
+- Date: February 10, 2010
+  Descriptor: Featured in Lee’s Summit Journal article “Robotics-It’s Not What You Think”
+- Date: February 13, 2010
+  Descriptor: Received reply from Senator Matt Bartle
+- Date: February 17, 2010
+  Descriptor: Featured in Lee’s Summit Journal article “The Robots of Robotics”
+- Date: February 24, 2010
+  Descriptor: Pictured in Robot Magazine article for May/June 2010 issue
+- Date: February 27, 2010
+  Descriptor: Volunteered with FLL
+- Date: February 27-March 9, 2010
+  Descriptor: Began showing Broncobots Blast 2010 video on local government channel
+- Date: March 3, 2010
+  Descriptor: Co-wrote Lee’s Summit Journal article “Lee’s Summit Robotics Teams Rock the KC Regionals”
+- Date: March 16, 2010
+  Descriptor: Volunteered at Operation International Children
+- Date: March 17, 2010
+  Descriptor: Volunteered at Warehouse Restore
+- Date: March 18, 2010
+  Descriptor: Volunteered at Harvesters Food Pantry
+- Date: March 19,2010
+  Descriptor: Volunteered at Lee’s Summit Social Services
+- Date: March 25-27, 2010
+  Descriptor: Competed at Oklahoma Regional
+- Date: April 9, 2010
+  Descriptor: Participated in Spring Sports Assembly at Lee’s Summit North
+- Date: April 14-17, 2010
+  Descriptor: Competed at FIRST Championships in Atlanta
+- Date: June 21-25, 2010
+  Descriptor: Hosted one week of robotics camp
+- Date: August 16, 2010
+  Descriptor: Presented at Missouri State Fair
+- Date: September 16, 2010
+  Descriptor: Sponsored a float in Lee’s Summit North Homecoming Parade
+- Date: September 17, 2010
+  Descriptor: Presented at Missouri Chamber of Commerce
+- Date: September 18, 2010
+  Descriptor: Presented at Overland Park Balloon Fest
+- Date: September 25, 2010
+  Descriptor: Presented at Oktoberfest
+- Date: October 14, 2010
+  Descriptor: Presented at Lee’s Summit Rotary Club Meetings
+- Date: October 15, 2010
+  Descriptor: Presented at Hazel Grove Elementary Carnival
+- Date: October 31, 2010
+  Descriptor: Hosted table at Lee’s Summit North’s Safe Halloween Event
+- Date: November 5-6, 2010
+  Descriptor: Volunteered and participated in CowTown ThrowDown
+- Date: January 8, 2011
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 23, 2011
+  Descriptor: Began food drive
+- Date: February 8, 2011
+  Descriptor: Donated over 150 Valentine’s Day cards to local nursing homes
+- Date: February 9, 2011
+  Descriptor: Began mailing campaign to government officials
+- Date: March 4-6, 2011
+  Descriptor: Attended Greater Kansas City Regional, with 15 Volunteers/15 Guests
+- Date: March 22, 2011
+  Descriptor: Team featured in Oklahoma City Regional advertisement poster
+- Date: March 23-26, 2011
+  Descriptor: Competed at Midwest Regional
+- Date: April 10, 2011
+  Descriptor: Hosted Bob Sight Ford’s Drive One 4 UR School fundraiser
+- Date: April 16, 2011
+  Descriptor: Participated in spring pep assembly
+- Date: June 4, 2011
+  Descriptor: Moved all equipment and materials from build site provided from Metcraft Industries to new LSR-7 Robotics Center at Lee’s Summit High School
+- Date: June 6, 2011
+  Descriptor: Began implementing management team for administrative decisions
+- Date: June 20-July 1, 2011
+  Descriptor: Co-Hosted 2 Level 1 Robotics Camps for grades 4-6 with Team Driven, 1730, from Lee’s Summit High School
+- Date: June 26, 2011
+  Descriptor: Hosted a booth at Kansas City Maker Faire
+- Date: July 28, 2011
+  Descriptor: Co-featured in Lee’s Summit Journal article “Move Over, R2-D2” with Team Driven, 1730, about Robotics Camps
+- Date: August 15, 2011
+  Descriptor: Hosted booth at Freshman Transition Day at LSNHS
+- Date: August 15, 2011
+  Descriptor: Hosted booth at Back-to-School Night at LSNHS
+- Date: September 8, 2011
+  Descriptor: Sponsored a float in the Homecoming Parade
+- Date: October 31, 2011
+  Descriptor: Hosted booth at LSN’s Safe Halloween
+- Date: November 4-5, 2011
+  Descriptor: Competed at CowTown ThrowDown
+- Date: November 19, 2011
+  Descriptor: Volunteered at Summit Lakes FLL Rumble
+- Date: November 27, 2011
+  Descriptor: Participated in Holiday for Heroes card campaign
+- Date: December 25, 2011
+  Descriptor: Adopted a family for the holidays
+- Date: January 7, 2012
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 9, 2012
+  Descriptor: Presented for Boy Scout Troop #264
+- Date: January 12, 2012
+  Descriptor: Launched food drive for Lee’s Summit Social Services, with emphasis on peanut butter and jelly
+- Date: January 14, 2012
+  Descriptor: Volunteered at Union Station FLL Regional
+- Date: January 14, 21, and 28, 2012
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 27, 2012
+  Descriptor: Team featured in school’s newspaper, Northern Exposure
+- Date: February 5, 2012
+  Descriptor: Held Three-team open house at new robotics facility
+- Date: February 5, 2012
+  Descriptor: Three-team open house featured on local news station
+- Date: February 8, 2012
+  Descriptor: Presented with teams 1730 – Lee’s Summit High School and 1986 – Lee’s Summit West to Lee’s Summit Chamber of Commerce
+- Date: February 12, 2012
+  Descriptor: Sent 100 valentines to Whiteman Air Force Base
+- Date: February 13, 2012
+  Descriptor: Launched light bulb campaign
+- Date: February 14, 2012
+  Descriptor: Sent 150 valentines to local nursing homes
+- Date: February 18, 2012
+  Descriptor: Sent 250 letters to government officials
+- Date: February 22, 2012
+  Descriptor: Volunteered with the Just a Sandwich Program
+- Date: March 1-3, 2012
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 6, 2012
+  Descriptor: Volunteered at local “Senior” Ball
+- Date: March 17, 2012
+  Descriptor: Volunteered with Harvesters Food Pantry
+- Date: March 22-24, 2012
+  Descriptor: Competed at St. Louis Regional
+- Date: June 15-16, 2012
+  Descriptor: Competed at Ozark Mountain Brawl
+- Date: June 23-24, 2012
+  Descriptor: Hosted booth at Kansas City Maker Faire
+- Date:  June 26, 2012
+  Descriptor: Presented for Odessa Puddle Jumper committee
+- Date: July 16-27, 2012
+  Descriptor: Hosted 2 weeks of robotics camp
+- Date: July 28, 2012
+  Descriptor: Hosted booth at Odessa, MO’s Puddle Jumper Days
+- Date: August 1-2, 2012
+  Descriptor: Hosted booth at Lee’s Summit North Registration
+- Date: August 13, 2012
+  Descriptor: Presented and competed at Missouri State Fair
+- Date: August 13, 2012
+  Descriptor: Presented at Freshman Orientation Day at Lee’s Summit North
+- Date: October 4, 2012
+  Descriptor: Sponsored a float in Lee’s Summit North Homecoming Parade
+- Date: October 31, 2012
+  Descriptor: Hosted table at Lee’s Summit North Safe Halloween Event
+- Date: September 15, 2012
+  Descriptor: Hosted Bob Sight Ford’s Drive One 4 Ur School fundraiser
+- Date: November 5, 2012
+  Descriptor: Presented for Raytown Chapter of The American Association of University Women
+- Date: November 2-3, 2012
+  Descriptor: Volunteered at and competed in CowTown ThrowDown
+- Date: December 11, 2012
+  Descriptor: Volunteered with Harvester’s Food Pantry
+- Date: December 25, 2012
+  Descriptor: Adopted a family for the holidays
+- Date: January 5, 2013
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 10, 2013
+  Descriptor: Launched Toilet Paper Drive for Hope House of Lee’s Summit
+- Date: January 12, 2013
+  Descriptor: Volunteered at FLL Kansas City Championship at Union Station
+- Date: January 12 & 19, 2013
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 14, 2013
+  Descriptor: Launched Peanut Butter and Jelly Drive for Lee’s Summit Social Services
+- Date: January 16, 2013
+  Descriptor: Volunteered making sandwiches with Just a Sandwich
+- Date: March 14-16, 2013
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 19, 2013
+  Descriptor: Organized Papa Murphy’s Fundraiser Night
+- Date: March 28-30, 2013
+  Descriptor: Competed at Alamo Regional
+- Date: April 20, 2013
+  Descriptor: Hosted Bob Sight Ford’s Drive One 4 UR School fundraiser
+- Date: April 24-27, 2013
+  Descriptor: Competed at FIRST Championships in St. Louis
+- Date: June 7-9, 2013
+  Descriptor: Hosted joint booth at Lee’s Summit Downtown Days with R-7 Alliance
+- Date: June 17-21 & 24-28, 2013
+  Descriptor: Hosted two weeks of Robotics Camp for grades 4-6
+- Date: June 28-30, 2013
+  Descriptor: Hosted booth at Kansas City Maker Faire
+- Date: August 2 & 4, 2013
+  Descriptor: Hosted Girl Scouts day camp
+- Date: August 11, 2013
+  Descriptor: Hosted booth at Missouri State Fair
+- Date: August 12, 2013
+  Descriptor: Hosted booth at Freshman Orientation Day at Lee’s Summit North
+- Date: August 22, 2013
+  Descriptor: Hosted booth at Back-to-School Night at Lee’s Summit North
+- Date: September 5, 2013
+  Descriptor: Sponsored a float in the Homecoming parade
+- Date: September 13-14, 2013
+  Descriptor: Competed at Ozark Mountain Brawl
+- Date: September 21, 2013
+  Descriptor: Organized Car Wash fundraiser at local Sonic
+- Date: September 30, 2013
+  Descriptor: Featured in local radio high school sports interview.
+- Date: October 24, 2013
+  Descriptor: Organized Papa Murphy’s Fundraiser Night
+- Date: October 31, 2013
+  Descriptor: Hosted booth at Lee’s Summit North Safe Halloween Event
+- Date: November 1-2, 2013
+  Descriptor: Competed at CowTown Throwdown
+- Date: November 8, 2013
+  Descriptor: Presented at Hazel Grove carnival
+- Date: November 14, 2013
+  Descriptor: Organized Sonic Fundraiser Night
+- Date: November 21, 2013
+  Descriptor: Organized Planet Sub Fundraiser Night
+- Date: November 15, 2013
+  Descriptor: Organized Celebrating Home Fundraiser
+- Date: December 3, 2013
+  Descriptor: Organized McAlister’s Fundraiser Night
+- Date: December 10, 2013
+  Descriptor: Volunteered at Harvester’s Food Pantry
+- Date: December 11, 2013
+  Descriptor: Organized Culver’s Fundraiser Night
+- Date: December 13, 2013
+  Descriptor: Organized Celebrating Home Fundraising Night
+- Date: December 25, 2013
+  Descriptor: Adopted a family for the holidays
+- Date: January 4, 2014
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 9, 2014
+  Descriptor: Began Government Letter Campaign and ‘Flat Dennis’ Campaign
+- Date: January 11, 18, 2014
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 22, 2014
+  Descriptor: Hosted booth at 8th Grade Parent Enrollment Night
+- Date: January 28, 2014
+  Descriptor: Organized Culver’s Fundraiser Night
+- Date: February 1, 2014
+  Descriptor: Launched Food Drive for Lee’s Summit Social Services
+- Date: February 8, 2014
+  Descriptor: Launched Toilet Paper Drive for Hope House of Lee’s Summit
+- Date: February 9, 2014
+  Descriptor: Held three-team open house
+- Date: February 13, 2014
+  Descriptor: Sent valentines to local nursing homes, Whiteman Air Force Base, and Lee’s Summit North Staff
+- Date: February 14, 2014
+  Descriptor: Hosted booth at Lee’s Summit North Courtwarming Carnival
+- Date: February 15, 2014
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: February 27, 2014
+  Descriptor: Organized Papa Murphy’s Fundraiser Night
+- Date: March 13-15, 2014
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: April 3-5, 2014
+  Descriptor: Competed at Colorado Regional
+- Date: May 17, 2014
+  Descriptor: Demonstrations at Scouting 500
+- Date: May 20-22, 2014
+  Descriptor: Presentations at Richardson, Meadow Lane, and Mason      Elementary Schools
+- Date: June 6-8, 2014
+  Descriptor: Hosted joint booth at Lee’s Summit Downtown Days with R-7 Alliance
+- Date: June 20, 2014
+  Descriptor: Presentation at Boy Scout Day Camp
+- Date: June 28-29, 2014
+  Descriptor: Hosted booth at Kansas City Maker Faire
+- Date: July 7-11 & 14-18, 2014
+  Descriptor: Hosted two weeks of Robotics Camp for grades 4-6
+- Date: July 25-26. 2014
+  Descriptor: Competed at Ozark Mountain Brawl
+- Date: August 6-7, 2014
+  Descriptor: Hosted booth at Lee’s Summit North Registration
+- Date: August 10, 2014
+  Descriptor: Hosted booth at Missouri State Fair
+- Date: August 18, 2014
+  Descriptor: Hosted booth at Freshman Transition Day at Lee’s Summit North
+- Date: October 31 & November 1, 2014
+  Descriptor: Competed at CowTown Throwdown
+- Date: November 8, 2014
+  Descriptor: Hosted Use Your Noodle Mother & Son Engineering Night for local Boy Scouts
+- Date: November 13, 2014
+  Descriptor: Presentation at Meadow Lane Elementary School
+- Date: November 17, 2014
+  Descriptor: Hosted Use Your Noodle Family Engineering Night for local elementary students
+- Date: December 25, 2014
+  Descriptor: Adopted a family for the holidays
+- Date: January 3, 2015
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 10 & 24, 2015
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 15-21, 2015
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: January 21, 2015
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: February 8, 2015
+  Descriptor: Held three-team open house
+- Date: February 13, 2015
+  Descriptor: Sent valentines to local nursing homes, Whiteman Air Force Base, and Lee’s Summit North staff
+- Date: February 14, 2015
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: February 20, 2015
+  Descriptor: Hosted booth at Lee’s Summit North Carnival
+- Date: March 4, 2015
+  Descriptor: Organized Papa Murphy’s Fundraiser Night
+- Date: March 7, 2015
+  Descriptor: Served dinner and presented to Boy Scouts at Blue and Gold Banquet
+- Date: March 12-14, 2015
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 26-28, 2015
+  Descriptor: Competed at Buckeye Regional
+- Date: May 9, 2015
+  Descriptor: Competed at MO State Championships
+- Date: June 5-7, 2015
+  Descriptor: Hosted joint booth at Lee’s Summit Downtown Days with R-7 Alliance
+- Date: June 8-12 & 15-19, 2015
+  Descriptor: Hosted two weeks of Robotics Camp for grades 4-6
+- Date: June 22-26, 2015
+  Descriptor: Hosted 2 sessions each day, engineering camp for grades 1-3
+- Date: June 27 & 28, 2015
+  Descriptor: Hosted booth at Kansas City Maker Faire
+- Date: August 5 & 6, 2015
+  Descriptor: Hosted booth at Lee’s Summit North Registration
+- Date: August 17, 2015
+  Descriptor: Hosted booth at Freshman Transition Day at Lee’s Summit North
+- Date: August 25, 2015
+  Descriptor: Visit from mentor and team member from team 2230, Israel
+- Date: September 12, 2015
+  Descriptor: Demonstrated the robot and held engineering challenge at H. ROE Bartle Scout Camp for Boy Scouts of America STEM weekend
+- Date: October 1, 2015
+  Descriptor: Sponsored a float in the Homecoming Parade
+- Date: October 7, 2015
+  Descriptor: Hosted first girls only night in the shop
+- Date: October 26, 2015
+  Descriptor: Organized and held Community Impact Fundraising Event at Pizza Ranch
+- Date: October 30 & 31, 2015
+  Descriptor: Competed in the CowTown ThrowDown
+- Date: November 4, 2015
+  Descriptor: Hosted girls only night in the shop
+- Date: November 16, 2015
+  Descriptor: Hosted Use Your Noodle Mother & Daughter Engineering Night for local girl scouts
+- Date: November 19, 2015
+  Descriptor: Hosted Use Your Noodle Family Engineering Night
+- Date: December 25, 2015
+  Descriptor: Adopted a family for the holidays
+- Date: January 9, 2016
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 16 & 23, 2016
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 20, 2016
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: January 25-February 2, 2016
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: February 7-16, 2016
+  Descriptor: Launched Feed A Need Drive for school’s food pantry
+- Date: February 9, 2016
+  Descriptor: Sent valentines to local nursing homes and Whiteman Air Force Base
+- Date: February 14, 2016
+  Descriptor: Held LSR-7 Alliance open house
+- Date: February 20, 2016
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: March 10-12, 2016
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 31-April 3, 2016
+  Descriptor: Competed at Hub City Regional
+- Date: April 17-30, 2016
+  Descriptor: Competed at FIRST Championships in St. Louis
+- Date: May 14, 2016
+  Descriptor: Competed at MO State Championships
+- Date: June 3-5, 2016
+  Descriptor: Hosted a joint booth at Lee’s Summit Downtown Days with R-7 Alliance
+- Date: June 6-10 &13-17, 2016
+  Descriptor: Hosted sessions of Robotics Camp for grades 4-6
+- Date: June 20-24, 2016
+  Descriptor: Hosted two sessions each day, engineering camp for grades 1-3
+- Date: June 25&26, 2016
+  Descriptor: Hosted a booth at Kansas City Maker Faire
+- Date: August 15, 2016
+  Descriptor: Hosted a booth at Freshman Transition Day at Lee’s Summit North
+- Date: September 23 & 24, 2016
+  Descriptor: Worked an Oktoberfest Fundraiser at Dr. Grider Orthodontics parking lot
+- Date: October 9, 2016
+  Descriptor: Attended Mighty Matt’s charity MDA walk
+- Date: October 15, 2016
+  Descriptor: Stonehaus Winery parking lot fundraiser
+- Date: October 22, 2016
+  Descriptor: Boy Scout Steam Punk Camporee
+- Date: October 28 & 29, 2016
+  Descriptor: Competed and won at Cowtown ThrowDown
+- Date: November 19, 2016
+  Descriptor: Volunteered at FLL concession stand
+- Date: December 13, 2016
+  Descriptor: Adopted a family for the holidays
+- Date: January 7, 2017
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 19, 2017
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: January 21, 2017
+  Descriptor: Held R-7 Alliance dinners with alliance teams in shared site space
+- Date: January 25
+  Descriptor: February 24, 2017- Launched supply drive for Hope House of Lee’s Summit with R-7 alliance
+- Date: February 11, 2017
+  Descriptor: Sent Valentines to local nursing homes and Whiteman Air Force Base
+- Date: February 12, 2017
+  Descriptor: Held three-team open house
+- Date: February 15-25, 2017
+  Descriptor: Launched Feed A need Drive for school’s food pantry
+- Date: February 18, 2017
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: February 18, 2017
+  Descriptor: Ran a concession stand for Week Zero Scrimmage
+- Date: March 16-18, 2017
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 23-25, 2017
+  Descriptor: Competed at Iowa Regional
+- Date: April 27-29, 2017
+  Descriptor: Competed at FIRST Championships in St. Louis
+- Date: May 13, 2017
+  Descriptor: Competed at MO State Championships
+- Date: June 2, 2017
+  Descriptor: Demo at Rotary BBQ with R-7 Alliance
+- Date: June 4, 2017
+  Descriptor: Demo at Downtown Days with R-7 Alliance
+- Date: June 5-9 &12-16, 2017
+  Descriptor: Hosted sessions of Robotics Camp for grades 4-6
+- Date: June 19-23, 2017
+  Descriptor: Hosted two sessions each day, engineering camp for grades 1-3
+- Date: June 24 & 25, 2017
+  Descriptor: Hosted a booth at Kansas City Maker Faire
+- Date: June 27, 2017
+  Descriptor: Presented at Boy Scout Day Camp
+- Date: July 13-15, 2017
+  Descriptor: Competed at Indiana Robotics Invitational
+- Date: August 3, 2017
+  Descriptor: Hosted a booth at Registration at Lee’s Summit North
+- Date: August 14, 2017
+  Descriptor: Hosted a booth at Freshman Transition Day at Lee’s Summit North
+- Date: September 29 & 30, 2017
+  Descriptor: Worked an Oktoberfest Fundraiser at Dr. Grider Orthodontics parking lot
+- Date: October 14, 2017
+  Descriptor: Stonehaus Winery parking lot fundraiser
+- Date: October 15, 2017
+  Descriptor: Attended Mighty Matt’s charity MDA walk
+- Date: October 22-November 15, 2017
+  Descriptor: Mentored Junior Robotics League Team
+- Date: October 27 & 28, 2017
+  Descriptor: Competed and won at Cowtown ThrowDown
+- Date: November 11, 2017
+  Descriptor: Competed and won at K-Cup, Lawrence, KS
+- Date: November 18, 2017
+  Descriptor: Ran the concession stand and volunteered at an FLL Event
+- Date: December 9, 2017
+  Descriptor: Volunteered at an FLL Event
+- Date: December 9, 2017
+  Descriptor: Volunteered at an FTC Event
+- Date: January 6, 2018
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 13 & 20, 2018
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 15-February 10, 2018
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: January 20, 2018
+  Descriptor: Volunteered at an FLL Event
+- Date: January 25, 2018
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: February 11, 2018
+  Descriptor: Held three-team open house
+- Date: February 13, 2018
+  Descriptor: Sent Valentines to local nursing homes
+- Date: February 17, 2018
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: February 17, 2018
+  Descriptor: Ran a concession stand for Week Zero Scrimmage
+- Date: March 9-11, 2018
+  Descriptor: Attended Heartland Regional, with 15 Volunteers
+- Date: March 14-17, 2018
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: March 28-31, 2018
+  Descriptor: Competed at Oklahoma Regional
+- Date: April 7, 2018
+  Descriptor: Two sessions of Boy Scout Noodle Nights
+- Date: April 27, 2018
+  Descriptor: Demo at Highland Park Elementary School Carnival
+- Date: June 2, 2018
+  Descriptor: Ran concession stand fundraiser for Rockfest
+- Date: June 9, 2018
+  Descriptor: Competed at MO State Championships
+- Date: June 4-8 &11-15, 2018
+  Descriptor: Hosted sessions of Robotics Camp for grades 4-6
+- Date: June 15 & 16, 2018
+  Descriptor: Held Broncobot Build Challenge
+- Date: June 18-22, 2018
+  Descriptor: Hosted two sessions each day, engineering camp for grades 1-3
+- Date: August 2, 2018
+  Descriptor: Hosted a booth at Registration at Lee’s Summit North
+- Date: August 13, 2018
+  Descriptor: Hosted a booth at Freshman Transition Day at Lee’s Summit North
+- Date: September 7 & 8, 2018
+  Descriptor: Held a garage sale fundraiser
+- Date: September 28 & 29, 2018
+  Descriptor: Worked an Oktoberfest Fundraiser at Dr. Grider Orthodontics parking lot
+- Date: October 13, 2018
+  Descriptor: Stonehaus Winery parking lot fundraiser
+- Date: October 26 & 27, 2018
+  Descriptor: Competed at Cowtown ThrowDown
+- Date: October 31, 2018
+  Descriptor: Participated in LSN’s Safe Halloween
+- Date: November 17, 2018
+  Descriptor: Ran the concession stand and volunteered at an FLL Event
+- Date: December 19, 2018
+  Descriptor: Volunteered at Harvesters
+- Date: January 5, 2019
+  Descriptor: Hosted pancake breakfast & kickoff
+- Date: January 19, 2019
+  Descriptor: Held R-7 Robotics Alliance dinners with alliance teams in shared site space
+- Date: January 21-February 12, 2019
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: January 23, 2019
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: January 26, 2019
+  Descriptor: Volunteered at an FLL Event
+- Date: February 13, 2019
+  Descriptor: Sent Valentines to local nursing homes
+- Date: March 14-16, 2019
+  Descriptor: Competed at Heartland Regional
+- Date: March 21-23, 2019
+  Descriptor: Attended Greater Kansas City Regional, with 16 Volunteers
+- Date: April 5-7, 2019
+  Descriptor: Competed at Central Missouri Regional
+- Date: April 18-21, 2019
+  Descriptor: Competed at FIRST Championships in Houston
+- Date: May 18, 2019
+  Descriptor: Competed at MO State Championships
+- Date: June 10-14, 2019
+  Descriptor: Hosted Robotics Camp for grades 4-6
+- Date: June 14 & 15, 2019
+  Descriptor: Held Broncobot Build Challenge
+- Date: June 17-21, 2019
+  Descriptor: Hosted two sessions each day, Engineering Camp for grades 1-3
+- Date: June 22 & 23, 2019
+  Descriptor: Hosted a booth at Kansas City Maker Faire
+- Date: July 20, 2019
+  Descriptor: Hosted a booth at KC Kids Conference
+- Date: August 1, 2019
+  Descriptor: Hosted a booth at Registration at Lee’s Summit North
+- Date: August 12, 2019
+  Descriptor: Hosted a booth at Freshman Transition Day at Lee’s Summit North
+- Date: September 20 & 21, 2019
+  Descriptor: Held a garage sale fundraiser
+- Date: September 27 & 28, 2019
+  Descriptor: Worked an Oktoberfest Fundraiser at Dr. Grider Orthodontics parking lot
+- Date: September 28, 2019
+  Descriptor: Hosted a booth at Honeywell Family Day
+- Date: October 12, 2019
+  Descriptor: Stonehaus Winery parking lot fundraiser
+- Date: October 17 & 19, 2019
+  Descriptor: Provided a crew for set up and tear down of a Quilt Show
+- Date: October 24, 2019
+  Descriptor: Presented at the Lee’s Summit Rotary Club
+- Date: November 1 & 2, 2019
+  Descriptor: Competed at Cowtown ThrowDown
+- Date: November 16, 2019
+  Descriptor: Volunteered at FLL Event Center Middle School, with 2 Volunteers
+- Date: November 23, 2019
+  Descriptor: Volunteered at FLL Event Bingham Middle School, with 1 Volunteer
+- Date: November 23, 2019
+  Descriptor: Built a modified powered car for a child at GoBabyGo Event, with 6 Volunteers
+- Date: January 4, 2020
+  Descriptor: Hosted pancake breakfast and kickoff
+
+- Date: January 18, 2020
+  Descriptor: Held R-7 Robotics Alliance dinner with alliance teams in shared site space
+- Date: January 22, 2020
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: January 25, 2020
+  Descriptor: Volunteered at FTC Event Lee’s Summit High School, with 7 Volunteers
+- Date: January 25, 2020
+  Descriptor: Volunteered at local FLL Championship Event, with 3 Volunteers
+- Date: January 25-February 6, 2020
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: February 1, 2020
+  Descriptor: Volunteered at FTC Event Belton Middle School, with 4 Volunteers
+- Date: February 1, 2020
+  Descriptor: Held R-7 Robotics Alliance dinner with alliance teams in shared site space
+- Date: February 10, 2020
+  Descriptor: Sent Valentines to Whiteman Airforce Base
+- Date: February 13, 2020
+  Descriptor: Sent Valentines to local nursing homes
+- Date: February 15, 2020
+  Descriptor: Volunteered at FTC Event Blue Springs High School, with 4 Volunteers
+- Date: February 15, 2020
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field, ran concession stand
+- Date: January 25-February 6, 2020
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: February 1, 2020
+  Descriptor: Volunteered at FTC Event Belton Middle School, with 4 Volunteers
+- Date: February 4, 2020
+  Descriptor: Held R-7 Robotics Alliance dinner with alliance teams in shared site space
+- Date: Febuary 4, 2023
+  Descriptor: FTC KC East League Tournament, with 6 Volunteers
+- Date: February 10, 2020
+  Descriptor: Sent Valentines to Whiteman Airforce Base
+- Date: February 13, 2020
+  Descriptor: Sent Valentines to local nursing homes
+- Date: February 15, 2020
+  Descriptor: Volunteered at FTC Event Blue Springs High School, with 4 Volunteers
+- Date: February 15, 2020
+  Descriptor: Helped organize scrimmage using R-7 Alliance Field
+- Date: February 15, 2020
+  Descriptor: Ran a concession stand for Week Zero Scrimmage
+- Date: February 28-March 1, 2020
+  Descriptor: Competed at Greater Kansas City Regional
+- Date: February 28-March 1, 2020
+  Descriptor: Ran concession stand at Greater Kansas City Regional
+- Date: March 8, 2020
+  Descriptor: Held three-team open house
+
+- Date: November 17 & 19, 2020
+  Descriptor: Hosted New Student Open House at the Robot shop
+- Date: November 28, 2020
+  Descriptor: Hosted Programming Workshop
+- Date: December 12 & 19, 2020
+  Descriptor: Hosted Programming Workshop
+- Date: April 10 & 17, 2021
+  Descriptor: Competed at Hangar Games
+- Date: May 8, 2021
+  Descriptor: Competed at Hangar Games Champs
+- Date: July 5-9, 2021
+  Descriptor: Hosted one session each day, Engineering Camp for grades 1-3
+- Date: July 12-16 & 19-23, 2021
+  Descriptor: Hosted Robotics Camp for grades 4-6
+- Date: August 12, 2021
+  Descriptor: Hosted a booth at Registration at Lee’s Summit North
+- Date: August 23, 2021
+  Descriptor: Hosted a booth at Freshman Transition Day at Lee’s Summit North
+- Date: September 20 & 22, 2021
+  Descriptor: Hosted New Student Open House at the Robot shop
+- Date: September 24 & 25, 2021
+  Descriptor: Worked an Oktoberfest Fundraiser at Dr. Grider Orthodontics parking lot
+- Date: October 14, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: October 16 & 17, 2021
+  Descriptor: Held a garage sale fundraiser
+- Date: October 18 & 21, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: October 25 & 28, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: November 5 & 6, 2021
+  Descriptor: Competed at Cowtown ThrowDown
+- Date: November 8 & 11, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: November 15 & 18, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: November 21, 2021
+  Descriptor: Hosted a Girl Scout Daisy Event
+- Date: November 22, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: November 29 & December 2, 2021
+  Descriptor: Mentored FLL team at LSE
+- Date: December 5, 2021
+  Descriptor: Hosted a Mock Kickoff Event
+- Date: December 18, 2021
+  Descriptor: Volunteered at FLL Event Summit Lakes Middle School, with 6 Volunteers
+- Date: January 29, 2022
+  Descriptor: Volunteered at FLL Championship Event Crown Center, with 3 Volunteers
+- Date: January 29, 2022
+  Descriptor: Volunteered at FTC Belton, with 2 Volunteers
+- Date: February 7, 2022
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: March 1-March 12, 2022
+  Descriptor: Launched Supply Drive for Hope House of Lee’s Summit with R-7 Alliance
+- Date: March 13, 2022
+  Descriptor: Held three-team open house
+- Date: March 17-19, 2022
+  Descriptor: Competed at Heartland Regional
+- Date: March 24-26, 2022
+  Descriptor: Volunteered at Greater Kansas City Regional
+- Date: March 24-26, 2022
+  Descriptor: Ran concession stand at Greater Kansas City Regional
+- Date: April 1-3, 2022
+  Descriptor: Competed at Central Missouri Regional
+- Date: April 20-23, 2022
+  Descriptor: Competed at World Champs in Houston
+- Date: May 10, 2022
+  Descriptor: City Council Meeting to decide new shop space
+- Date: June 13-17, 2022
+  Descriptor: Hosted one session each day, Engineering Camp for grades 1-3
+- Date: June 20-24, 2022
+  Descriptor: Hosted Robotics Camp for grades 4-6
+- Date: June 27-July 1, 2022
+  Descriptor: Hosted Robotics Camp for grades 4-6
+- Date: July 15-18 2022
+  Descriptor: Competed at Indiana Robotics Invitational(IRI)
+- Date: September 16-17, 2022
+  Descriptor: Held a garage sale fundraiser
+- Date: October 22, 2022
+  Descriptor: Provided a crew for tear down of a Quilt Show
+- Date: November 12, 2022
+  Descriptor: Volunteered at FLL Troost Elementary, with 3 Volunteers
+- Date: November 19, 2022
+  Descriptor: FRC F L Schlagle High School, with 3 Volunteers
+- Date: November 19, 2022
+  Descriptor: Hosted KC Area Student Workshops
+- Date: December 3, 2022
+  Descriptor: FLL Manual Career Center, with 2 Volunteers
+- Date: December 3, 2022
+  Descriptor: FTC Pleasant Lea Middle School, with 5 Volunteers
+- Date: December 7, 2022
+  Descriptor: Engineering Presentation at Discovery Homeschool Academy
+- Date: December 10, 2022
+  Descriptor: FTC Heritage Christian Academy
+- Date: December 17, 2022
+  Descriptor: FLL North Kansas City High School, with 1 Volunteer
+- Date: December 17, 2022
+  Descriptor: Attended WPILib Workshop
+- Date: December 23, 2022
+  Descriptor: Hosted a holiday party for team members
+- Date: January 7, 2023
+  Descriptor: Hosted pancake breakfast and kickoff
+- Date: January 14, 2023
+  Descriptor: FTC East Trails Middle School, with 6 Volunteers
+- Date: January 18, 2023
+  Descriptor: Held R-7 Robotics Alliance dinner with alliance teams in shared site space
+- Date: January 21, 2023
+  Descriptor: FTC Yeokum Center of Innovation, with 4 Volunteers
+- Date: January 28, 2023
+  Descriptor: FLL Championship, with 4 Volunteers
+- Date: January 21, 2023
+  Descriptor: Held R-7 Robotics Alliance dinner with alliance teams in shared site space
+- Date: January 22, 2023
+  Descriptor: Presented at 8th Grade Orientation Night at Lee’s Summit North
+- Date: January 25, 2023
+  Descriptor: Volunteered at FTC Event Lee’s Summit High School, with 7 Volunteers
+- Date: January 25, 2023
+  Descriptor: Volunteered at local FLL Championship Event, with 3 Volunteers
