@@ -73,17 +73,16 @@ layout: default
         display: none;
         position: fixed;
         top: 5%;
-        /*bottom: 2.5%;*/
         left: 12.5%;
-        width:75%;
-        height:100%;
+        width: 75%;
+        height: 90%; /* Adjust the height to 90% of the viewport height */
         padding: 16px;
-        border:5px solid whitesmoke;
-        border-radius:10px;
+        border: 5px solid whitesmoke;
+        border-radius: 10px;
         background-color: white;
         z-index: 1002;
-        overflow: auto;
-        margin:0 auto;
+        overflow: auto; /* Enable scroll when content exceeds the height */
+        margin: 0 auto;
     }
     @keyframes spin {
         0% { transform: rotate(0deg); }
@@ -110,6 +109,25 @@ layout: default
         //     // awardNamesPerYear("2022");
         //     // averagePointsPerYear("2022");
         // }
+        $(".white_content").click(function (event) {
+            event.stopPropagation();
+        });
+
+        // Add a click event listener to the X button in the card
+        $(".closeCard").click(function () {
+            // Get the year from the card's ID (match + year)
+            const year = this.id.replace("match", "");
+            // Hide the card and overlay when X button is clicked
+            document.getElementById('match' + year).style.display = 'none';
+            document.getElementById('back').style.display = 'none';
+        });
+
+        // Add a click event listener to the black_overlay element to close the card
+        $(".black_overlay").click(function () {
+            // Hide the opened card and overlay when clicked outside the card
+            $(".white_content").hide();
+            $(".black_overlay").hide();
+        });
     });
 
 
@@ -150,7 +168,7 @@ layout: default
                 + "Better than " + (total_epa_percentile * 100).toFixed(2) + "% of teams\<br\/\>\<br\/\>"
             + '</div>'
             + '<div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">' +
-                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
+                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
                 '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#830506;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' + country_epa_rank + '/' + country_team_count + '\<br\/\> in the USA </div>' +
                 '<div style=" font-size: 1.5em ;display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\>' + total_epa_rank  + '/' + total_team_count + '\<br\/\> in the world </div>' +
             '</div>';
@@ -327,7 +345,8 @@ layout: default
                                             loading
                                         </span>
                                         <br/>
-                                        <a href="https://teambroncobots.com/awards/">Click me to see the Awards page!</a>
+                                        <a href="https://teambroncobots.com/awards/">Click me to see the Awards page!</a> <br/>
+                                        <a href="https://www.statbotics.io/team/1987#overview">or here to see the Statbotics page!</a>
 
                                     </div>
                                     <br/><br/>
@@ -337,7 +356,7 @@ layout: default
                                     <img src="/images/robots/` + year + `robot.png" alt=" " onerror=this.src="/images/robots/pending.png">
                                 </a>
                                 </div>
-                            </div>'
+                            </div>
                             <div style="text-align:center; font-size: 2em">
                                 <div id="chart-wrapper">
                                     <canvas id="myChart` + year + `"></canvas>
