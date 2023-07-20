@@ -110,6 +110,22 @@ layout: default
         .closeCard {
             font-size: 2em;
         }
+
+        #mobile-warning {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #f7b6b6;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
+
+    /* Desktop-specific styles */
+    @media screen and (min-width: 601px) {
+        #mobile-warning {
+            display: none;
+        }
     }
 </style>
 
@@ -324,7 +340,9 @@ layout: default
 <div style="text-align: center">
 </div>
 
-
+<div id="mobile-warning">
+    Some information may not display properly on mobile devices. For a better experience, please use a computer.
+</div>
 
 <div class="columns is-multiline" id="years">
 
