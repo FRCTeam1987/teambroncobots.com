@@ -1,3 +1,21 @@
+<style>
+    /* Add a media query for smaller screens */
+    @media screen and (max-width: 768px) {
+        /* Adjust the breakpoint (768px) based on your preference */
+
+        /* Center the "Read more" button */
+        .has-text-centered {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Adjust the button's font size for better visibility */
+        .full-rounded {
+            font-size: 16px;
+        }
+    }
+</style>
+
 <div class="card">
     {% if post.image %}
     <link rel="stylesheet" href="/assets/css/buttonHover.css" />
@@ -15,16 +33,17 @@
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
             {% if post.summary %}
-                {{ post.summary | markdownify }}
+            {{ post.summary | markdownify }}
             {% else %}
-<!--                <p>{{ post.excerpt }}</p>-->
+            <!-- <p>{{ post.excerpt }}</p> -->
             {% endif %}
         </div>
         <div class="has-text-centered">
             <a href="{{ site.baseurl }}{{ post.url }}">
-            <buttonhover class="full-rounded">
-                <span>Read more</span>
-                <div class="border full-rounded"></div></buttonhover>
+                <buttonhover class="full-rounded">
+                    <span>Read more</span>
+                    <div class="border full-rounded"></div>
+                </buttonhover>
             </a>
         </div>
     </div>
