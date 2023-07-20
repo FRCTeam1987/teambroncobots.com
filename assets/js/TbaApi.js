@@ -5,25 +5,33 @@ let timeWaiting = 0; //in seconds
 let error = "";
 
 function getYearsParticipated() {
-    return [
-        2007,
-        2008,
-        2009,
-        2010,
-        2011,
-        2012,
-        2013,
-        2014,
-        2015,
-        2016,
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023
-    ];
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            method: "GET",
+            url: statboticsUrl + `team_events/team/1987`,
+            headers: {
+                "accept": "application/json",
+            },
+            success: (response) => {
+                // Extract the unique "year" values from the API response
+                const uniqueYears = {};
+                response.forEach(item => {
+                    const year = item.year;
+                    if (!uniqueYears[year]) {
+                        uniqueYears[year] = true;
+                    }
+                });
+
+                // Convert the keys of the uniqueYears object into an array of unique "year" values
+                const uniqueYearsArray = Object.keys(uniqueYears).map(Number);
+
+                resolve(uniqueYearsArray);
+            },
+            error: (error) => {
+                reject(error);
+            },
+        });
+    });
 }
 
 function getEventsPerYear(year) {
