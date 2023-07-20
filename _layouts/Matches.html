@@ -88,11 +88,34 @@ layout: default
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
+
+    /* Mobile-specific styles */
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        #chart-wrapper {
+            width: 100%;
+        }
+
+        .closeCard {
+            font-size: 2em;
+        }
+    }
 </style>
 
 
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
-<script src="../assets/js/TbaApi.js"></script>
+<script src="../assets/js/StatBoticsRESTApi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
     $( document ).ready(function() {
