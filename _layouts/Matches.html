@@ -71,19 +71,19 @@ layout: default
         text-align:center;
         font-weight:bold;
     }
-    .logo-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /*height: 100%;*/
-        background: linear-gradient(-45deg, darkred, #ACACAC, #830506, black);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-        z-index: 32;
-    }
+    /*.logo-overlay {*/
+    /*    display: none;*/
+    /*    position: fixed;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    !*height: 100%;*!*/
+    /*    background: linear-gradient(-45deg, darkred, #ACACAC, #830506, black);*/
+    /*    background-size: 400% 400%;*/
+    /*    animation: gradient 15s ease infinite;*/
+    /*    height: 100vh;*/
+    /*    z-index: 32;*/
+    /*}*/
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -121,81 +121,81 @@ layout: default
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/TbaApi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<link rel="stylesheet" href="/assets/css/loadingAnimation.css">
+<!--<link rel="stylesheet" href="/assets/css/loadingAnimation.css">-->
 <script>
     $( document ).ready(function() {
-        if (events()) {
-            // events();
-            // years();
-            // eventsPerYear("2022");
-            // status();
-            // isStillLoading();
-            isWorking();
-            // createChart("2022");
-            // pointsPerYear("2022");
-            // awardsPerYear("2022");
-            // awardNamesPerYear("2022");
-            // averagePointsPerYear("2022");
-        }
+        // if (events()) {
+        //     // events();
+        //     // years();
+        //     // eventsPerYear("2022");
+        //     // status();
+        //     // isStillLoading();
+        //     // isWorking();
+        //     // createChart("2022");
+        //     // pointsPerYear("2022");
+        //     // awardsPerYear("2022");
+        //     // awardNamesPerYear("2022");
+        //     // averagePointsPerYear("2022");
+        // }
     });
-    async function status() {
-        let status = await getStatus();
-        $("#status").html(status.is_datafeed_down?"unavailable":"Available");
-    }
-    async function isStillLoading() {
-        let StillLoading = await isFinished();
-        console.log(Boolean(StillLoading));
-        $("#isStillLoading").html(StillLoading);
-    }
-    async function CurrentProggressStat(stat) {
-        $("#CurrentProggressStat").html(stat);
-    }
-    async function isWorking() {
-
-        let status = await getStatus();
-        let StillLoading = await isFinished();
-
-        if (!status.is_datafeed_down) {
-            $("#isWorking").html(" ");
-            console.log("TBAAPI is down");
-            return false;
-        } else {
-            if (Boolean(StillLoading)) {
-                $("#isWorking").html("");
-                console.log("Everything appears to be working!");
-                return true;
-
-                // document.getElementById('loading').style.display='none';
-            } else {
-                $("#isWorking").html(" ");
-                console.log("Time out error");
-                return false;
-
-            }
-        }
-    }
-    async function currentProgress() {
-        let timeWaiting = 0;
-        let requestCounter = getRequestCounter();
-        while (requestCounter > 0) {
-            return ("There are " + requestCounter + " active call(s).");
-            await new Promise(resolve => setTimeout(resolve, 500)); // wait for 1 second
-            timeWaiting++; //in seconds
-            if (timeWaiting > 15) {
-                console.log(`There are ${requestCounter} active call(s). Timed Out.`);
-                return false;
-            }
-        }
-
-    }
-    async function events() {
-        let events = await getEvents();
-        // FIXME events.name isn't timely. promise is aborting
-        $("#events").html(events.name?"No Events Available":events.map(ev =>
-        {
-            return "<br/>" + ev.name + " " + ev.year;
-        }).toString().replaceAll(",",""));
-    }
+    // async function status() {
+    //     let status = await getStatus();
+    //     $("#status").html(status.is_datafeed_down?"unavailable":"Available");
+    // }
+    // async function isStillLoading() {
+    //     let StillLoading = await isFinished();
+    //     console.log(Boolean(StillLoading));
+    //     $("#isStillLoading").html(StillLoading);
+    // }
+    // async function CurrentProggressStat(stat) {
+    //     $("#CurrentProggressStat").html(stat);
+    // }
+    // async function isWorking() {
+    //
+    //     let status = await getStatus();
+    //     let StillLoading = await isFinished();
+    //
+    //     if (!status.is_datafeed_down) {
+    //         $("#isWorking").html(" ");
+    //         console.log("TBAAPI is down");
+    //         return false;
+    //     } else {
+    //         if (Boolean(StillLoading)) {
+    //             $("#isWorking").html("");
+    //             console.log("Everything appears to be working!");
+    //             return true;
+    //
+    //             // document.getElementById('loading').style.display='none';
+    //         } else {
+    //             $("#isWorking").html(" ");
+    //             console.log("Time out error");
+    //             return false;
+    //
+    //         }
+    //     }
+    // }
+    // async function currentProgress() {
+    //     let timeWaiting = 0;
+    //     let requestCounter = getRequestCounter();
+    //     while (requestCounter > 0) {
+    //         return ("There are " + requestCounter + " active call(s).");
+    //         await new Promise(resolve => setTimeout(resolve, 500)); // wait for 1 second
+    //         timeWaiting++; //in seconds
+    //         if (timeWaiting > 15) {
+    //             console.log(`There are ${requestCounter} active call(s). Timed Out.`);
+    //             return false;
+    //         }
+    //     }
+    //
+    // }
+    // async function events() {
+    //     let events = await getEvents();
+    //     // FIXME events.name isn't timely. promise is aborting
+    //     $("#events").html(events.name?"No Events Available":events.map(ev =>
+    //     {
+    //         return "<br/>" + ev.name + " " + ev.year;
+    //     }).toString().replaceAll(",",""));
+    // }
 
     async function eventsPerYear(year) {
         let eventsPerYear = JSON.parse(sessionStorage.getItem("eventsPerYear" + year));
@@ -203,151 +203,151 @@ layout: default
             eventsPerYear = await getEventsPerYear(year);
             sessionStorage.setItem("eventsPerYear" + year, JSON.stringify(eventsPerYear));
         }
-        $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html(eventsPerYear.name?"No Events Available":eventsPerYear.map(ev =>
-        {
-            return ev.name + "<br/>";
-        }));
-    }
-    async function awardNamesPerYear(year) {
-        let awardNamesPerYear = JSON.parse(sessionStorage.getItem("awardNamesPerYear" + year));
-        if (awardNamesPerYear === null) {
-            awardNamesPerYear = await getAwardsPerYear(year);
-            sessionStorage.setItem("awardNamesPerYear" + year, JSON.stringify(awardNamesPerYear));
+
+        // Check if eventsPerYear is an array and has length greater than 0
+        if (Array.isArray(eventsPerYear) && eventsPerYear.length > 0) {
+            // Display event names
+            $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html(
+                eventsPerYear.map(ev => {
+                    return ev.event_name + "<br/>";
+                })
+            );
+        } else {
+            // Display "No Events Available"
+            $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html("No Events Available");
         }
-        $(("#awardNamesPerYear" + year + ", #awardNamesPerYearCard" + year)).html(awardNamesPerYear.name?"No Awards Available":awardNamesPerYear.map(ev =>
-        {
-            return "<br/>" + ev.name;
-        }));
     }
-    async function awardsPerYear(year) {
-        // console.log(JSON.parse(sessionStorage.getItem('awardsPerYear')));
-        let awardsPerYear = JSON.parse(sessionStorage.getItem('awardsPerYear' + year));
-        if (awardsPerYear === null) {
-            awardsPerYear = await getAwardsPerYear(year);
-            sessionStorage.setItem('awardsPerYear' + year, JSON.stringify(awardsPerYear));
+
+
+    async function scoreData(year) {
+        let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
+        if (scoreData === null) {
+            scoreData = await TeamInfoPerYear(year);
+            sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData)); // Store scoreData instead of eventsPerYear
         }
-        let numAwards = awardsPerYear.length;
-        let html = "";
-        for (let i = 0; i < numAwards; i++) {
-            html+=`
-            <span class="icon">
-                <i class="fas fa-star"></i>
-            </span>
-            `;
-        }
-        $(("#awardsPerYear" + year + ", #awardsPerYearCard" + year)).html(html);
+        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank } = scoreData;
+
+        const html = wins + " wins - " + total_epa_rank + " World Wide rank\<br\/\>"
+            + losses + " losses - " + country_epa_rank + " Country rank\<br\/\>"
+            + epa_end + " end epa - " + state_epa_rank + " State Rank\<br\/\>"
+            + (winrate * 100).toFixed(2) + "% Win Rate";
+        $("#scoreData" + year).html(html);
     }
 
-    async function averagePointsPerYear(year) {
-        let totalPoints = 0;
-        let numMatches = 0;
-        let numMatchesNoData = 0;
-        let score = 0;
-        // let averagePointsPerYear = await getMatchesPerYear(year);
-        let averagePointsPerYear = JSON.parse(sessionStorage.getItem('averagePointsPerYear' + year));
-        if (averagePointsPerYear === null) {
-            averagePointsPerYear = await getMatchesPerYear(year);
-            sessionStorage.setItem('averagePointsPerYear' + year, JSON.stringify(averagePointsPerYear));
-        };
-        let avgPoints = 0;
-        averagePointsPerYear.forEach(ev =>
-        {
-            score = 0;
-            if (ev.alliances.red.team_keys.includes("frc1987")) {
-                score += ev.alliances.red.score;
-            } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
-                score += ev.alliances.blue.score;
-            };
-            if (score === -1) {
-                score = 0;
-                numMatchesNoData++;
-            } else {
-                numMatches++;
-                totalPoints += score;
-            };
-
-        });
-        if (numMatches !== 0) {
-            avgPoints = Math.round(totalPoints / numMatches);
-        };
-        let noDataMatchNums = "";
-        if (numMatchesNoData > 0) {
-            if (numMatchesNoData === 1) {
-                noDataMatchNums = " (" + numMatchesNoData + " match has no data)";
-            } else {
-                noDataMatchNums = " (" + numMatchesNoData + " matches have no data)";
-            };
-        };
-        let html = totalPoints + " total points\<br\/\>" + (numMatches + numMatchesNoData) + " matches" + noDataMatchNums + "\<br\/\>" + avgPoints + " average points per match";
-        $("#averagePointsPerYear" + year).html((numMatches === 0)?"No Points Available Yet":html);
-    }
-
-    async function pointsPerYear(year) {
-        let totalPoints = 0;
-        let numMatches = 0;
-        let pointsPerYear = await getMatchesPerYear(year);
-        pointsPerYear.forEach(ev =>
-        {
-            if (ev.alliances.red.team_keys.includes("frc1987")) {
-                totalPoints += ev.alliances.red.score;
-            } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
-                totalPoints += ev.alliances.blue.score;
-            };
-            numMatches++;
-        });
-
-        $("#pointsPerYear" + year).html((numMatches === 0)?"No Points Available Yet":totalPoints + " total points");
-    }
 
     async function pointsPerMatchPerYear(year) {
-        let pointsPerMatchPerYear = await getMatchesPerYear(year);
-        // pointsPerMatchPerYear.forEach(ev => {
-        //     if (ev.alliances.red.team_keys.includes("frc1987")) {
-        //         console.log(ev.alliances.red.score)
-        //     } else if (ev.alliances.blue.team_keys.includes("frc1987")) {
-        //         console.log(ev.alliances.blue.score)
-        //     };
+        let matchesPerYear = await getMatchesPerYear(year);
+
+
+        // Log the scores for matches with team 1987
+        // matchesPerYear.forEach(match => {
+        //     if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+        //         // console.log(match.red_score);
+        //         matchesWithTeam1987 = match.red_score;
+        //     } else if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+        //         // console.log(match.blue_score);
+        //         matchesWithTeam1987 = match.blue_score;
+        //     } else {
+        //         return -1;
+        //     }
         // });
-        return pointsPerMatchPerYear;
+
+        return matchesPerYear;
     }
+
     async function createChart(year) {
         const data = await pointsPerMatchPerYear(year);
 
+        // Sort the data array by the "time" property
+        data.sort((a, b) => a.time - b.time);
+
         const ctx = document.getElementById('myChart' + year).getContext('2d');
+
+        const redColor = '#FF0000';
+        const blueColor = '#0000FF';
 
         const chart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: data.map(match => match.key), // use the match keys as the labels
+                labels: data?.map(match => match.key), // use the match keys as the labels
                 datasets: [{
-                    label: 'Alliance Score',
-                    data: data.map(match => {
-                        // find the score for the team in the match
-                        let teamScore = 0;
-                        if (match.alliances.red.team_keys.includes("frc1987")) {
-                            teamScore = match.alliances.red.score;
-                        } else if (match.alliances.blue.team_keys.includes("frc1987")) {
-                            teamScore = match.alliances.blue.score;
-                        };
-                        if (teamScore === -1) {
-                            teamScore = "No Data";
+                    label: 'Auto',
+                    data: data?.map(match => {
+                        // find the auto score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_auto !== undefined ? match.red_auto : null;
                         }
-                        return teamScore;
+                        return null;
                     }),
-                    backgroundColor: '#830506',
+                    backgroundColor: '#FF6666', // Light red color for auto segment
+                    stack: 'composite',
+                }, {
+                    label: 'Teleop',
+                    data: data?.map(match => {
+                        // find the teleop score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_teleop !== null ? match.red_teleop : match.red_score;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#FF0000', // Red color for teleop segment
+                    stack: 'composite',
+                }, {
+                    label: 'Endgame',
+                    data: data?.map(match => {
+                        // find the endgame score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_endgame !== undefined ? match.red_endgame : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#CC0000', // Dark red color for endgame segment
+                    stack: 'composite',
+                }, {
+                    label: 'Auto',
+                    data: data?.map(match => {
+                        // find the auto score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_auto !== undefined ? match.blue_auto : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#6666FF', // Light blue color for blue auto segment
+                    stack: 'composite',
+                }, {
+                    label: 'Teleop',
+                    data: data?.map(match => {
+                        // find the teleop score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_teleop !== null ? match.blue_teleop : match.blue_score;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#0000FF', // Blue color for blue teleop segment
+                    stack: 'composite',
+                }, {
+                    label: 'Endgame',
+                    data: data?.map(match => {
+                        // find the endgame score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_endgame !== undefined ? match.blue_endgame : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#0000CC', // Dark blue color for blue endgame segment
+                    stack: 'composite',
                 }]
             },
             options: {
-                legend: {
-                    display: false
-                },
                 scales: {
                     yAxes: [{
+                        stacked: true, // Stacked bars
                         ticks: {
                             beginAtZero: true
                         }
                     }],
                     xAxes: [{
+                        stacked: true, // Stacked bars
                         ticks: {
                             display: false //this will remove only the label
                         }
@@ -355,8 +355,9 @@ layout: default
                 }
             }
         });
-
     }
+
+
 
 </script>
 
@@ -369,19 +370,19 @@ layout: default
 
 
 <div class="columns is-multiline" id="years">
-<span id="isWorking" >
-    <div id="loading" class="logo-overlay" style="display:block"  >
-        <div class="loading-container">
-            <a href="/" class="stopLoading">&#x2716;</a>
-            <div class="loading"></div>
-            <div id="loading-image">
-                <img src="/images/Assets/Branding/broncobots.svg">
-            </div>
-            <div id="loading-text">loading</div>
-        </div>
-    </div>
+<!--<span id="isWorking" >-->
+<!--    <div id="loading" class="logo-overlay" style="display:block"  >-->
+<!--        <div class="loading-container">-->
+<!--            <a href="/" class="stopLoading">&#x2716;</a>-->
+<!--            <div class="loading"></div>-->
+<!--            <div id="loading-image">-->
+<!--                <img src="/images/Assets/Branding/broncobots.svg">-->
+<!--            </div>-->
+<!--            <div id="loading-text">loading</div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-</span>
+<!--</span>-->
 
     <script>
         async function years() {
@@ -398,11 +399,6 @@ layout: default
                                             <span id="eventsPerYear` + year + `" >
                                                 loading
                                             </span>
-                                            <div class="has-text-centered">
-                                                <span id="awardsPerYear` + year + `" >
-                                                    loading
-                                                </span>
-                                        </div>
                                     </div>
                                 </div>
                                 </a>
@@ -420,18 +416,12 @@ layout: default
                                         loading
                                     </span>
                                     </div>
-                                    <h2>The Blue Alliance Awards</h2>
-                                    <div style="font-size: 1em">
-                                    <span id="awardsPerYearCard` + year + `">
-                                        loading
-                                    </span>
-                                    <span id="awardNamesPerYearCard` + year + `">
-                                        loading
-                                    </span>
+                                    <div style="text-align:center; font-size: 2em">
+                                        <span id="scoreData` + year + `">
+                                            loading
+                                        </span>
                                     </div>
                                     <br/><br/>
-
-                                    <div style="font-size: 0.75em">Team 1987 may choose to recognize additional awards or major achievments, for full list see the <a href="/awards">Awards Page.</a></div>
                                 </div>
                                 <div class="column">
                                 <a href="/robots/` + year + `Robot/">
@@ -440,9 +430,6 @@ layout: default
                                 </div>
                             </div>'
                             <div style="text-align:center; font-size: 2em">
-                                <span id="averagePointsPerYear` + year + `">
-                                    loading
-                                </span>
                                 <div id="chart-wrapper">
                                     <canvas id="myChart` + year + `"></canvas>
                                 </div>
@@ -462,10 +449,8 @@ layout: default
                     `;
                     $("#years").prepend(html);
                     eventsPerYear( year );
-                    averagePointsPerYear( year );
-                    awardsPerYear( year );
+                    scoreData( year );
                     createChart( year );
-                    awardNamesPerYear( year );
                 });
 
         }
