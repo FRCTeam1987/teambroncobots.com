@@ -58,32 +58,6 @@ layout: default
         opacity: .80;
         filter: alpha(opacity=80);
     }
-    .stopLoading {
-        display:block;
-        position:absolute;
-        top:0px;
-        right:2.5%;
-        color:white;
-        height:30px;
-        width:35px;
-        font-size:4em;
-        text-decoration:none;
-        text-align:center;
-        font-weight:bold;
-    }
-    /*.logo-overlay {*/
-    /*    display: none;*/
-    /*    position: fixed;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*    width: 100%;*/
-    /*    !*height: 100%;*!*/
-    /*    background: linear-gradient(-45deg, darkred, #ACACAC, #830506, black);*/
-    /*    background-size: 400% 400%;*/
-    /*    animation: gradient 15s ease infinite;*/
-    /*    height: 100vh;*/
-    /*    z-index: 32;*/
-    /*}*/
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
@@ -121,7 +95,6 @@ layout: default
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/TbaApi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<!--<link rel="stylesheet" href="/assets/css/loadingAnimation.css">-->
 <script>
     $( document ).ready(function() {
         // if (events()) {
@@ -138,64 +111,7 @@ layout: default
         //     // averagePointsPerYear("2022");
         // }
     });
-    // async function status() {
-    //     let status = await getStatus();
-    //     $("#status").html(status.is_datafeed_down?"unavailable":"Available");
-    // }
-    // async function isStillLoading() {
-    //     let StillLoading = await isFinished();
-    //     console.log(Boolean(StillLoading));
-    //     $("#isStillLoading").html(StillLoading);
-    // }
-    // async function CurrentProggressStat(stat) {
-    //     $("#CurrentProggressStat").html(stat);
-    // }
-    // async function isWorking() {
-    //
-    //     let status = await getStatus();
-    //     let StillLoading = await isFinished();
-    //
-    //     if (!status.is_datafeed_down) {
-    //         $("#isWorking").html(" ");
-    //         console.log("TBAAPI is down");
-    //         return false;
-    //     } else {
-    //         if (Boolean(StillLoading)) {
-    //             $("#isWorking").html("");
-    //             console.log("Everything appears to be working!");
-    //             return true;
-    //
-    //             // document.getElementById('loading').style.display='none';
-    //         } else {
-    //             $("#isWorking").html(" ");
-    //             console.log("Time out error");
-    //             return false;
-    //
-    //         }
-    //     }
-    // }
-    // async function currentProgress() {
-    //     let timeWaiting = 0;
-    //     let requestCounter = getRequestCounter();
-    //     while (requestCounter > 0) {
-    //         return ("There are " + requestCounter + " active call(s).");
-    //         await new Promise(resolve => setTimeout(resolve, 500)); // wait for 1 second
-    //         timeWaiting++; //in seconds
-    //         if (timeWaiting > 15) {
-    //             console.log(`There are ${requestCounter} active call(s). Timed Out.`);
-    //             return false;
-    //         }
-    //     }
-    //
-    // }
-    // async function events() {
-    //     let events = await getEvents();
-    //     // FIXME events.name isn't timely. promise is aborting
-    //     $("#events").html(events.name?"No Events Available":events.map(ev =>
-    //     {
-    //         return "<br/>" + ev.name + " " + ev.year;
-    //     }).toString().replaceAll(",",""));
-    // }
+
 
     async function eventsPerYear(year) {
         let eventsPerYear = JSON.parse(sessionStorage.getItem("eventsPerYear" + year));
@@ -225,33 +141,27 @@ layout: default
             scoreData = await TeamInfoPerYear(year);
             sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData)); // Store scoreData instead of eventsPerYear
         }
-        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank } = scoreData;
+        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile} = scoreData;
 
-        const html = wins + " wins - " + total_epa_rank + " World Wide rank\<br\/\>"
-            + losses + " losses - " + country_epa_rank + " Country rank\<br\/\>"
-            + epa_end + " end epa - " + state_epa_rank + " State Rank\<br\/\>"
-            + (winrate * 100).toFixed(2) + "% Win Rate";
+        const html = '<div style=" font-size: 1.5em"'
+                + wins + " wins\<br\/\>"
+                + losses + " losses\<br\/\>"
+                + epa_end + " end epa\<br\/\>"
+                + (winrate * 100).toFixed(2) + "% Win Rate\<br\/\>"
+                + "Better than " + (total_epa_percentile * 100).toFixed(2) + "% of teams\<br\/\>\<br\/\>"
+            + '</div>'
+            + '<div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">' +
+                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
+                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#830506;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' + country_epa_rank + '/' + country_team_count + '\<br\/\> in the USA </div>' +
+                '<div style=" font-size: 1.5em ;display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\>' + total_epa_rank  + '/' + total_team_count + '\<br\/\> in the world </div>' +
+            '</div>'
+        ;
         $("#scoreData" + year).html(html);
     }
 
 
     async function pointsPerMatchPerYear(year) {
         let matchesPerYear = await getMatchesPerYear(year);
-
-
-        // Log the scores for matches with team 1987
-        // matchesPerYear.forEach(match => {
-        //     if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
-        //         // console.log(match.red_score);
-        //         matchesWithTeam1987 = match.red_score;
-        //     } else if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
-        //         // console.log(match.blue_score);
-        //         matchesWithTeam1987 = match.blue_score;
-        //     } else {
-        //         return -1;
-        //     }
-        // });
-
         return matchesPerYear;
     }
 
@@ -352,6 +262,17 @@ layout: default
                             display: false //this will remove only the label
                         }
                     }]
+                },
+                legend: {
+                    display: false // Hide the color labels from the legend
+                },
+                tooltips: {
+                    callbacks: {
+                        // Show the label name in the tooltip when hovering over the bar
+                        label: function (tooltipItem, data) {
+                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
+                        }
+                    }
                 }
             }
         });
@@ -362,27 +283,11 @@ layout: default
 </script>
 
 <div style="text-align: center">
-<!--    <span id="isWorking" >-->
-<!--        loading-->
-<!--    </span>-->
 </div>
 
 
 
 <div class="columns is-multiline" id="years">
-<!--<span id="isWorking" >-->
-<!--    <div id="loading" class="logo-overlay" style="display:block"  >-->
-<!--        <div class="loading-container">-->
-<!--            <a href="/" class="stopLoading">&#x2716;</a>-->
-<!--            <div class="loading"></div>-->
-<!--            <div id="loading-image">-->
-<!--                <img src="/images/Assets/Branding/broncobots.svg">-->
-<!--            </div>-->
-<!--            <div id="loading-text">loading</div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--</span>-->
 
     <script>
         async function years() {
@@ -416,7 +321,10 @@ layout: default
                                         loading
                                     </span>
                                     </div>
-                                    <div style="text-align:center; font-size: 2em">
+                                    <br/>
+                                    <br/>
+                                    <h2>Year Statistics</h2>
+                                    <div style="text-align:center;">
                                         <span id="scoreData` + year + `">
                                             loading
                                         </span>
@@ -462,8 +370,8 @@ layout: default
 </div>
 
 <div style="text-align:center">
-    Powered by The Blue Alliance
+    Powered by Statbotics REST API
     <br/>
-    <a href="https://www.thebluealliance.com/">thebluealliance.com</a>
+    <a href="https://www.statbotics.io/">statbotics.io</a>
 
 </div>
