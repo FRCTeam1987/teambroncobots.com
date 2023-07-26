@@ -2,7 +2,8 @@
 
 
 <style>
-    .scroll-to-top {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                                                                                                                 .scroll-to-top {
         display: none;
         position: fixed;
         bottom: 2em;
@@ -13,7 +14,14 @@
         cursor: pointer;
         padding: 1rem;
         border-radius: 100%;
-        aspect-ratio: 1 / 1;
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        text-align: center;
+    }
+
+    .scroll-to-top i {
+        line-height: 2.5em;
     }
 
     .scroll-to-top:hover {
@@ -24,11 +32,13 @@
     .scroll-to-top--show {
         display: block;
     }
+
     html {
         scroll-behavior: smooth;
     }
-
 </style>
+
+<a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
 
 <script>
     const scrollToTopButton = document.querySelector('.scroll-to-top');
