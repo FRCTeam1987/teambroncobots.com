@@ -8,13 +8,13 @@ imageicon: "../images/robots/2023robot.png"
 image: "../../images/robots/2023robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
-    - label: 24" x 27"
+    - label: Ranked 1st in the State and 27th in the world
       icon: fa-certificate
-    - label: Weighs 110 lbs.
+    - label: Won every attended regional as captain of Alliance 1
       icon: fa-robot
-    - label: Won the Heartland Regional as captain of Alliance 1 
+    - label: Invited to IRI and played on Alliance 2
       icon: fa-crosshairs
-awardsWon: 2
+awardsWon: 5
 hide_hero: true
 Specifications:
 - item: 4 MK4i Swerve Drive Modules
@@ -35,23 +35,10 @@ Competitions:
 - item: Heartland Regional
 - item: Hosting and Participating in Greater Kansas City Regional
 - item: World Championship
+- item: Indiana Robotics Invitational
+Links:
+- item: CAD
+  link: https://cad.onshape.com/documents/161f53c7e7c1d5a50fee0d60/w/e3abc8177a33b2a9d11c6c4c/e/e01990c9971fd2c87bd7c4a2?renderMode=0&uiState=64c04c93651fae04d82b37a3
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2023
 ---
-
-[//]: # (<h2>Robot capabilities</h2>)
-
-[//]: # (* Four wheel highly maneuverable swerve drive capabilities.)
-
-[//]: # (* Double high-speed climber arm capabilities. &#40;Able to climb to the traversal rung, 7.58ft. in about 5.5 seconds&#41;)
-
-[//]: # (* High speed shooting capabilities of accurately scoring high ~95% of the time.)
-
-[//]: # (* Triple roller bar collecting system)
-
-
-[//]: # ()
-[//]: # (<h2>Robot facts</h2>)
-
-[//]: # (* Weight: 119 lbs.)
-
-[//]: # (* Two telescoping arms)
-
