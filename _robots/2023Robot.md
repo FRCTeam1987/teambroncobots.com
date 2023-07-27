@@ -8,11 +8,11 @@ imageicon: "../images/robots/2023robot.png"
 image: "../../images/robots/2023robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
-    - label: Ranked 1st in the State and 27th in the world
+    - label: Achieved 1st Position in the State and Ranked 27th Worldwide
       icon: fa-certificate
-    - label: Won every attended regional as captain of Alliance 1
+    - label: Undefeated Captain of Alliance 1 in all Regional Events
       icon: fa-robot
-    - label: Invited to IRI and played on Alliance 2
+    - label: Competed at IRI on Alliance 2
       icon: fa-crosshairs
 awardsWon: 5
 hide_hero: true

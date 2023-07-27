@@ -94,18 +94,14 @@ layout: default
             </ul>
         </div>
         {% endif %}
-        {% if page.Capabilities %}
+        {% if page.Links %}
         <div class="content">
             <h2>Links</h2>
-            <ul>
-                <div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">
-
-                {% for Item in page.Links %}
-                    <a href="{{ Item.link }}"><div style="text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">{{ Item.item }}</div></a>
-                {% endfor %}
-                </div>
-
-            </ul>
+            <div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">
+            {% for Item in page.Links %}
+                <a href="{{ Item.link }}"><div style="text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">{{ Item.item }}</div></a>
+            {% endfor %}
+            </div>
         </div>
         {% endif %}
     </div>

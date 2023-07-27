@@ -16,6 +16,14 @@ features:
       icon: fa-crosshairs
 awardsWon: 4 
 hide_hero: true
+Specifications:
+- item: Weight 119 lbs.
+- item: Two telescoping arms
+Capabilities:
+- item: Four wheel highly maneuverable swerve drive capabilities.
+- item: Double high-speed climber arm capabilities. (Able to climb to the traversal rung, 7.58ft. in about 5.5 seconds)
+- item: High speed shooting capabilities of accurately scoring high ~95% of the time.
+- item: Triple roller bar collecting system
 Competitions:
 - item: Heartland Regional
 - item: Central Missouri Regional
@@ -24,22 +32,3 @@ Competitions:
 - item: Indiana Robotics Invitational
 - item: CowTown ThrowDown
 ---
-
-[//]: # (<h2>Robot capabilities</h2>)
-
-[//]: # (* Four wheel highly maneuverable swerve drive capabilities.)
-
-[//]: # (* Double high-speed climber arm capabilities. &#40;Able to climb to the traversal rung, 7.58ft. in about 5.5 seconds&#41;)
-
-[//]: # (* High speed shooting capabilities of accurately scoring high ~95% of the time.)
-
-[//]: # (* Triple roller bar collecting system)
-
-
-[//]: # ()
-[//]: # (<h2>Robot facts</h2>)
-
-[//]: # (* Weight: 119 lbs.)
-
-[//]: # (* Two telescoping arms)
-
