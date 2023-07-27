@@ -1,11 +1,8 @@
 ---
-title: Broncobots
-subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
 show_sidebar: true
 hero_image: images/Homeimg.jpg
-hero_darken: true
 hero_height: is-large
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
