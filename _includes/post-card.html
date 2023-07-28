@@ -3,13 +3,13 @@
         /* Adjust the breakpoint (768px) based on your preference */
 
         /* Center the "Read more" button */
-        .has-text-centered {
+        .has-text-centered-mobile {
             display: flex;
             justify-content: center;
         }
 
         /* Adjust the button's font size for better visibility */
-        .full-rounded {
+        .full-rounded-mobile {
             font-size: 16px;
         }
 
@@ -37,11 +37,11 @@
             <!-- <p>{{ post.excerpt }}</p> -->
             {% endif %}
         </div>
-        <div class="has-text-centered">
+        <div class="has-text-centered-mobile">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                <buttonhover class="full-rounded">
+                <buttonhover class="full-rounded-mobile">
                     <span>Read more</span>
-                    <div class="border full-rounded"></div>
+                    <div class="border full-rounded-mobile"></div>
                 </buttonhover>
             </a>
         </div>
