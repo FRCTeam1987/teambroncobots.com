@@ -177,6 +177,7 @@ layout: default
         //     // awardNamesPerYear("2022");
         //     // averagePointsPerYear("2022");
         // }
+        showLoading();
         $(".white_content").click(function (event) {
             event.stopPropagation();
         });
@@ -386,7 +387,6 @@ layout: default
         }
 
         async function years() {
-            showLoading();
             let years = await getYearsParticipated();
             Array.from(years).forEach(year =>
                 {
