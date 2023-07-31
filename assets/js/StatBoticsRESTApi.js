@@ -41,17 +41,19 @@ function getEventsPerYear(year) {
         url: statboticsUrl + `team_events/team/1987/year/${year}`,
         headers: {
             "accept": "application/json",
-
         },
         success: function(response) {
+            // Process the response here as needed
             requestCounter--;
-            if (requestCounter === 0) {
-                isFinished()
-            }
-        }
+            isFinished();
+        },
+        error: function(error) {
+            // Handle errors and decrease the counter even if there's an error
+            requestCounter--;
+            isFinished();
+        },
     });
 }
-
 
 function getMatchesPerYear(year) {
     requestCounter++;
@@ -60,14 +62,17 @@ function getMatchesPerYear(year) {
         url: statboticsUrl + `matches/team/1987/year/${year}`,
         headers: {
             "accept": "application/json",
-
         },
         success: function(response) {
+            // Process the response here as needed
             requestCounter--;
-            if (requestCounter === 0) {
-                isFinished()
-            }
-        }
+            isFinished();
+        },
+        error: function(error) {
+            // Handle errors and decrease the counter even if there's an error
+            requestCounter--;
+            isFinished();
+        },
     });
 }
 
@@ -78,42 +83,46 @@ function TeamInfoPerYear(year) {
         url: statboticsUrl + `team_year/1987/${year}`,
         headers: {
             "accept": "application/json",
-
         },
         success: function(response) {
+            // Process the response here as needed
             requestCounter--;
-            if (requestCounter === 0) {
-                isFinished()
-            }
-        }
+            isFinished();
+        },
+        error: function(error) {
+            // Handle errors and decrease the counter even if there's an error
+            requestCounter--;
+            isFinished();
+        },
     });
 }
 
-async function getRequestCounter() {
-    return requestCounter;
-}
-
-async function getError() {
-    return error;
-}
-
 async function isFinished() {
-    while (requestCounter > 0) {
-        if (requestCounter === -1) {
-            error = "StatBotics API appears to be down.";
-            return false;
-        }
-        console.log(`There are ${requestCounter} active call(s). Waiting...`);
-        await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
-        timeWaiting++; //in seconds
-        if (timeWaiting > 15) {
-            console.log(`There are ${requestCounter} active call(s). Timed Out.`);
-            error = `There are ${requestCounter} active call(s). Timed Out.`;
-            return false;
-        }
-    }
     if (requestCounter === 0) {
         error = "";
         return true;
     }
+
+    return Promise.race([
+        new Promise(resolve => setTimeout(resolve, 15000)), // 15 seconds timeout
+        new Promise(resolve => {
+            const interval = setInterval(() => {
+                if (requestCounter === 0) {
+                    clearInterval(interval);
+                    error = "";
+                    resolve(true);
+                } else if (requestCounter === -1) {
+                    clearInterval(interval);
+                    error = "StatBotics API appears to be down.";
+                    resolve(false);
+                } else {
+                    console.log(`There are ${requestCounter} active call(s). Waiting...`);
+                }
+            }, 500); // Check every 0.5 seconds
+        })
+    ]);
+}
+
+function getRequestCounterRemaining() {
+    return requestCounter;
 }
