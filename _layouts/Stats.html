@@ -236,10 +236,10 @@ layout: default
                 + (winrate * 100).toFixed(2) + "% Win Rate\<br\/\>"
                 + "Better than " + (total_epa_percentile * 100).toFixed(2) + "% of teams\<br\/\>\<br\/\>"
             + '</div>'
-            + '<div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">' +
-                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
-                '<div style=" font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#830506;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' + country_epa_rank + '/' + country_team_count + '\<br\/\> in the USA </div>' +
-                '<div style=" font-size: 1.5em ;display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\>' + total_epa_rank  + '/' + total_team_count + '\<br\/\> in the world </div>' +
+            + '<div style="display: flex;flex-wrap: wrap; flex-direction: row;display: flex; justify-content: center; align-items: center;">' +
+                '<div style=" font-size: 1.5em; margin-right: 1.25rem;margin-left: 1.25rem;margin-bottom: 1.25rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
+                '<div style=" font-size: 1.5em; margin-right: 1.25rem;margin-left: 1.25rem;margin-bottom: 1.25rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#830506;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\> ' + country_epa_rank + '/' + country_team_count + '\<br\/\> in the USA </div>' +
+                '<div style=" font-size: 1.5em ;margin-right: 1.25rem;margin-left: 1.25rem;margin-bottom: 1.25rem; display: flex; justify-content: center; align-items: center;width:7em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">Ranked \<br\/\>' + total_epa_rank  + '/' + total_team_count + '\<br\/\> in the world </div>' +
             '</div>';
         $("#scoreData" + year).html(html);
     }
