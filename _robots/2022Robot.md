@@ -31,4 +31,9 @@ Competitions:
 - item: 2022 World Championships
 - item: Indiana Robotics Invitational
 - item: CowTown ThrowDown
+Links:
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2022
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2022.pdf
 ---

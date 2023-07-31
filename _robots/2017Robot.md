@@ -31,4 +31,7 @@ Competitions:
     - item: Missouri State Championship
     - item: Indiana Robotics Invitational
     - item: CowTown ThrowDown
+Links:
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2017
 ---
