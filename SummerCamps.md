@@ -4,28 +4,27 @@ title: Summer Camps
 subtitle: First Through Sixth Grade
 description: Broncobots Summer Camps
 show_sidebar: false
-hero_image: ../images/camps.jpg
-hero_darken: true
+hero_image: ../images/camps.png
+
+[//]: # (hero_darken: true)
 hero_height: is-medium
 ---
 
 <div class="centered">
-        <p style="color:grey;">
-             Each summer, the Lee's Summit North Broncobots host robotics camps for elementary and middle school aged students to begin exploring and developing an interest in engineering and technology. Much like the high school FIRST Robotics Competition (FRC) league, the students at camp are given a game task and one week to build a functional robot out of VEX parts that is capable of competing in the game designed for that camp. Students are divided into teams of two or three and go from brainstorming to competition as a team throughout the week of camp. Students are also given the chance to design flyers and websites for their team in some level, much like the high school students. The campers work closely with each other, as well as with high school mentors, to design the best robot they can. Throughout the week of camp, students come away with knowledge and new friendships. In addition, the team hosts an engineering camp for elementary students during which students learn about a different type of engineering every day. The Broncobots would like to thank all the students who participate in their camps for their hard work.
+    <p style="color:grey; display: inline-block; text-align: center;">             Each summer, the Lee's Summit North Broncobots host robotics camps for elementary and middle school aged students to begin exploring and developing an interest in engineering and technology. Much like the high school FIRST Robotics Competition (FRC) league, the students at camp are given a game task and one week to build a functional robot out of VEX parts that is capable of competing in the game designed for that camp. Students are divided into teams of two or three and go from brainstorming to competition as a team throughout the week of camp. Students are also given the chance to design flyers and websites for their team in some level, much like the high school students. The campers work closely with each other, as well as with high school mentors, to design the best robot they can. Throughout the week of camp, students come away with knowledge and new friendships. In addition, the team hosts an engineering camp for elementary students during which students learn about a different type of engineering every day. The Broncobots would like to thank all the students who participate in their camps for their hard work.
         </p>
 </div>
 
 ## Engineering Camp
 {: style="font-size: 45px; text-align: center; color:#830506;"}
 ***
-<div class="centered">
-    <center>
-        <p style="color:grey;">
+<div style="text-align: center;">
+    <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - incoming 2nd, 3rd, and 4th graders.
             <br>
-            Dates - 2023 Dates June 19 - 22
+            Dates - 2024 TBD
             <br>
-            Time - 1:00 P.M. - 4:00 P.M.
+            Time - 2024 TBD
             <br>
             Prerequisites - None
             <br>
@@ -35,7 +34,6 @@ hero_height: is-medium
             Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
             <br>Campers will learn about Safety, Architectural, Software, Chemical, Mechanical, and Aerospace Engineering throughout the week.
         </p>
-    </center>
 </div>
 
 
@@ -43,14 +41,13 @@ hero_height: is-medium
 {: style="font-size: 45px; text-align: center; color:#830506;"}
 ***
 
-<div class="centered">
-    <center>
-        <p style="color:grey;">
+<div style="text-align: center;">
+            <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - 4th, 5th, and 6th graders.
             <br>
-            Dates - 2023 Dates June 5 - 9 & June 12 - 16
+            Dates - 2024 TBD
             <br>
-            Times - 9 A.M. to 3 P.M. each day.
+            Times - 2024 TBD
             <br>
             Prerequisites - None
             <br>
@@ -62,7 +59,6 @@ hero_height: is-medium
             <br>They also have the opportunity to design websites and flyers for their team. 
             <br>At the end of the week, teams will compete to be the Grand Champion of the Robotics Camp. 
         </p>
-    </center>
 </div>
 
 
