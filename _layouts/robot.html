@@ -97,9 +97,9 @@ layout: default
         {% if page.Links %}
         <div class="content">
             <h2>Links</h2>
-            <div style="display: flex; flex-direction: row;display: flex; justify-content: center; align-items: center;">
-            {% for Item in page.Links %}
-                <a href="{{ Item.link }}"><div style="text-align: center;text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; display: flex; justify-content: center; align-items: center;width:6em;height:6em;background-color:#990202;border-radius:24%;color:#F2F2F2;">{{ Item.item }}</div></a>
+            <div style="display: flex; flex-wrap: wrap;">
+                {% for Item in page.Links %}
+                <a href="{{ Item.link }}"><div style="text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">{{ Item.item }}</div></a>
             {% endfor %}
             </div>
         </div>
