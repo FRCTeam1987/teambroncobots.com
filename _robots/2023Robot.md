@@ -8,7 +8,7 @@ imageicon: "../images/robots/2023robot.png"
 image: "../../images/robots/2023robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
-    - label: Used limelights to automatically collect and score game pieces
+    - label: Used object detection to automatically collect and score game pieces
       icon: fa-certificate
     - label: Two time regional winners
       icon: fa-robot
