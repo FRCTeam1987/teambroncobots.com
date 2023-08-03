@@ -1,0 +1,59 @@
+#team-history {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.event {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease-out;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.event:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #830506, #ACACAC, #f8f8f8, #111010, #D90000);
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-out;
+}
+
+.event .descriptor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: font-size 0.5s ease-out;
+}
+
+.event:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.event:hover:before {
+    opacity: 0.8;
+}
+
+.event h2 {
+    margin-top: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+}

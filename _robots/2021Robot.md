@@ -18,6 +18,9 @@ awardsWon: 2
 hide_hero: true
 Competitions:
 - item: INFINITE RECHARGE at Home Challenge
+Links:
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2021
 ---
 
 <h2>Description pending, check back soon!</h2>

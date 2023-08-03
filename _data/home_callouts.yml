@@ -1,24 +1,24 @@
 style: is-light
 items:
-  - title: 15
+  - title: 17
     subtitle: Seasons Competed
     icon: fa-superpowers
     icon_brand: true
-  - title: 59
+  - title: 60
 # 58? ^^^
     subtitle: Competitions
     icon: fa-arrows-alt
-  - title: 10
+  - title: 12
     subtitle: Blue Banners
     icon: fa-flag
-  - title: 682
+  - title: 770
     subtitle: Future Engineers Inspired
 #    summer camp kids ^^^
     icon: fa-bullseye
-  - title: 55
+  - title: 59
     subtitle: Awards Won
     icon: fa-bolt
-  - title: 31+
+  - title: 38+
     subtitle: Sponsors
     icon: fa-user-plus
 #    icon_brand: true

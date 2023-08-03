@@ -32,4 +32,9 @@ Competitions:
 - item: Attended & Hosted Greater Kansas City Regional
 - item: Planned to attend Heartland Regional
 - item: Planned to attend Central Missouri Regional
+Links:
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2020
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2020.pdf
 ---

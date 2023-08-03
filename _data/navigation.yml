@@ -10,8 +10,8 @@
   dropdown:
     - name: Our Awards
       link: /awards/
-#    - name: Matches
-#      link: /Matches/
+    - name: Stats
+      link: /Stats/
     - name: R7 Alliance
       link: /R7Alliance/
     - name: Branding
