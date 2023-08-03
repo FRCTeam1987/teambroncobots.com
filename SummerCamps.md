@@ -16,6 +16,13 @@ hero_height: is-medium
     </p>
 </div>
 
+<div class="centered">
+    <p style="text-decoration: bold; font-size: 1.25em; color:black;">
+        2024 Summer Camp sign-ups will open in the Spring!
+    </p>
+</div>
+
+
 ## Engineering Camp
 {: style="font-size: 45px; text-align: center; color:#830506;"}
 ***
@@ -29,7 +36,7 @@ hero_height: is-medium
             <br>
             Prerequisites - None
             <br>
-            Price - $100 (Includes 15 hours of camp, t-shirt, and snacks).
+            Price - TDB
             <br><br>
             Engineering Camp is for incoming 2nd - 4th graders who have an interest in all things STEM. <br>
             Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
@@ -37,6 +44,7 @@ hero_height: is-medium
         </p>
 </div>
 
+[//]: # (&#40;Includes 15 hours of camp, t-shirt, and snacks&#41;.)
 
 ## VEX Robotics Camp
 {: style="font-size: 45px; text-align: center; color:#830506;"}
@@ -52,7 +60,7 @@ hero_height: is-medium
             <br>
             Prerequisites - None
             <br>
-            Price - $200 (Includes 30 hours of camp, t-shirt, snacks, and lunch on Friday)
+            Price - TBD
             <br><br>
             Robotics Camp is an introductory level camp for incoming 5th - 7th graders.
             <br>It allows students to build a VEX robot to compete in a game and achieve certain tasks. 
@@ -62,7 +70,7 @@ hero_height: is-medium
         </p>
 </div>
 
-
+[//]: # (&#40;Includes 30 hours of camp, t-shirt, snacks, and lunch on Friday&#41;)
 
 ## Registration
 {: style="font-size: 45px; text-align: center; color:#830506;"}
