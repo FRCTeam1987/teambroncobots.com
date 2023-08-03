@@ -2,11 +2,14 @@
 
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <html
  dir="ltr"
  lang="en"
- >
+
+
+>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,12 +35,12 @@
 <meta property="og:site_name" content="Broncobots FRC Team 1987" />
 <meta property="og:image" content="https://teambroncobots.com//images/robots/2007robot.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-03-29T19:56:58+00:00" />
+<meta property="article:published_time" content="2023-08-03T18:54:25+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://teambroncobots.com//images/robots/2007robot.png" />
 <meta property="twitter:title" content="2007 Robot" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T19:56:58+00:00","datePublished":"2023-03-29T19:56:58+00:00","description":"Rack N Roll Robot 2007","headline":"2007 Robot","image":"https://teambroncobots.com//images/robots/2007robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2007Robot/"},"url":"https://teambroncobots.com//robots/2007Robot/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-08-03T18:54:25+00:00","datePublished":"2023-08-03T18:54:25+00:00","description":"Rack N Roll Robot 2007","headline":"2007 Robot","image":"https://teambroncobots.com//images/robots/2007robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2007Robot/"},"url":"https://teambroncobots.com//robots/2007Robot/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts --></head>
@@ -86,6 +89,8 @@
                         <div class="navbar-dropdown">
                             
                             <a href="/awards/" class="navbar-item ">Our Awards</a>
+                            
+                            <a href="/Stats/" class="navbar-item ">Stats</a>
                             
                             <a href="/R7Alliance/" class="navbar-item ">R7 Alliance</a>
                             
@@ -285,7 +290,199 @@
             </ul>
         </div>
         
+        
     </div>
+
+</div>
+
+<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../../../assets/js/StatBoticsRESTApi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        scoreData(2007);
+        createChart(2007);
+    });
+
+
+    async function scoreData(year) {
+        let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
+        if (scoreData === null) {
+            scoreData = await TeamInfoPerYear(year);
+            sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
+        }
+        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
+
+        const html =
+            '<div style="font-size: 1.5em; display: flex; flex-wrap: wrap;">' +
+            '<div style="flex: 1; min-width: 250px; margin-right: 1rem;">' +
+            wins + ' wins - ' + losses + ' losses<br/>' +
+            epa_end + ' EPA<br/>' +
+            (winrate * 100).toFixed(2) + '% Win Rate<br/>' +
+            'Better than ' + (total_epa_percentile * 100).toFixed(2) + '% of teams<br/><br/>' +
+            '</div>' +
+            '<div style="display: flex; flex-wrap: wrap;">' +
+            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
+            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
+            '<div style="font-size: 1em; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
+            '</div>' +
+            '</div>';
+
+        $("#scoreData").html(html);
+    }
+
+
+
+
+
+
+    async function pointsPerMatchPerYear(year) {
+        let matchesPerYear = await getMatchesPerYear(year);
+        return matchesPerYear;
+    }
+
+    async function createChart(year) {
+        const data = await pointsPerMatchPerYear(year);
+
+        // Sort the data array by the "time" property
+        data.sort((a, b) => a.time - b.time);
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        const redColor = '#FF0000';
+        const blueColor = '#0000FF';
+
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: data?.map(match => match.key), // use the match keys as the labels
+                datasets: [{
+                    label: 'Auto',
+                    data: data?.map(match => {
+                        // find the auto score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_auto !== undefined ? match.red_auto : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#FF6666', // Light red color for auto segment
+                    stack: 'composite',
+                }, {
+                    label: 'Teleop',
+                    data: data?.map(match => {
+                        // find the teleop score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_teleop !== null ? match.red_teleop : match.red_score;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#FF0000', // Red color for teleop segment
+                    stack: 'composite',
+                }, {
+                    label: 'Endgame',
+                    data: data?.map(match => {
+                        // find the endgame score for the red alliance in the match
+                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
+                            return match.red_endgame !== undefined ? match.red_endgame : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#CC0000', // Dark red color for endgame segment
+                    stack: 'composite',
+                }, {
+                    label: 'Auto',
+                    data: data?.map(match => {
+                        // find the auto score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_auto !== undefined ? match.blue_auto : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#6666FF', // Light blue color for blue auto segment
+                    stack: 'composite',
+                }, {
+                    label: 'Teleop',
+                    data: data?.map(match => {
+                        // find the teleop score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_teleop !== null ? match.blue_teleop : match.blue_score;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#0000FF', // Blue color for blue teleop segment
+                    stack: 'composite',
+                }, {
+                    label: 'Endgame',
+                    data: data?.map(match => {
+                        // find the endgame score for the blue alliance in the match
+                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
+                            return match.blue_endgame !== undefined ? match.blue_endgame : null;
+                        }
+                        return null;
+                    }),
+                    backgroundColor: '#0000CC', // Dark blue color for blue endgame segment
+                    stack: 'composite',
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        stacked: true, // Stacked bars
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        stacked: true, // Stacked bars
+                        ticks: {
+                            display: false //this will remove only the label
+                        }
+                    }]
+                },
+                legend: {
+                    display: false // Hide the color labels from the legend
+                },
+                tooltips: {
+                    callbacks: {
+                        // Show the label name in the tooltip when hovering over the bar
+                        label: function (tooltipItem, data) {
+                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }
+        });
+    }
+</script>
+
+<div class="column is-12">
+    <p class="title is-3">Score Data</p>
+    <div id="scoreData" class="content">
+        loading...
+    </div>
+    <div id="chart-wrapper">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+
+<div style="text-align:center">
+    Want more? Check out this year's
+    <a href="https://www.thebluealliance.com/team/1987/2007" target="_blank">
+        Blue Alliance
+    </a>
+    Page!
+</div>
+<br/>
+<br/>
+
+
+
+
+
+<div style="text-align:center">
+    Powered by Statbotics REST API
+    <br/>
+    <a href="https://www.statbotics.io/">statbotics.io</a>
 
 </div>
 
@@ -397,5 +594,77 @@ input[type=animated]:focus {
 </footer>
 
     
-    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts -->
+        <a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+<style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                                                                                                                 .scroll-to-top {
+        display: none;
+        position: fixed;
+        bottom: 2em;
+        right: 2em;
+        z-index: 9999;
+        background-color: #111010;
+        color: #f8f8f8;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 100%;
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        text-align: center;
+    }
+
+    .scroll-to-top i {
+        line-height: 2.5em;
+    }
+
+    .scroll-to-top:hover {
+        background-color: #830506;
+        color: #f8f8f8;
+    }
+
+    .scroll-to-top--show {
+        display: block;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
+
+<script>
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+            scrollToTopButton.classList.add('scroll-to-top--show');
+        } else {
+            scrollToTopButton.classList.remove('scroll-to-top--show');
+        }
+    });
+
+    scrollToTopButton.addEventListener('click', () => {
+        let scrollInterval = setInterval(() => {
+            let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+            if (scrollTopValue <= 0) {
+                clearInterval(scrollInterval);
+            }
+            scrollTopValue -= scrollTopValue / 0.2;
+            // Change the 0.2 value to adjust the scrolling speed.
+            if (scrollTopValue >= 0) {
+                document.documentElement.scrollTop = scrollTopValue;
+                document.body.scrollTop = scrollTopValue;
+            }
+        }, 16);
+    });
+</script>
+
+    
+
+  </body>
 </html>
