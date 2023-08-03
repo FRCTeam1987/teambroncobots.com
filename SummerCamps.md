@@ -36,7 +36,7 @@ hero_height: is-medium
             <br>
             Prerequisites - None
             <br>
-            Price - TDB
+            Price - TBD
             <br><br>
             Engineering Camp is for incoming 2nd - 4th graders who have an interest in all things STEM. <br>
             Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
