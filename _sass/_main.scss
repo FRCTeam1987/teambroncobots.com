@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Rockwell'); 
-@import url('https://fonts.googleapis.com/css?family=Roboto'); 
-@import url('https://fonts.googleapis.com/css?family=Montserrat'); 
+@import url('https://fonts.googleapis.com/css?family=Rockwell');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 $family-sans-serif: 'Roboto', 'Rockwell', 'Montserrat', sans-serif;
 $primary: #830506 !default;
@@ -13,7 +13,7 @@ $tabs-link-active-border-bottom-color: $primary;
 $modal-content-width: 800px;
 
 @import "../node_modules/bulma/bulma.sass";
-$hero-darken: $dark !default;
+$hero-darken: #202020 !default;
 
 @import "layout";
 @import "syntax";
