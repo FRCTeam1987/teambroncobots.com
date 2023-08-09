@@ -25,12 +25,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    - name: Setup Ruby environment
-      run: |
-        bundle update
-        bundle install
-      shell: bash
-
     - name: Setup Node environment
       run: npm install
       working-directory: ./
