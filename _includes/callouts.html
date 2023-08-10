@@ -49,12 +49,12 @@
         const countUpElements = document.querySelectorAll('[data-final-count]');
 
         const startCountUpAnimation = (entries, observer) => {
+            const minDuration = 2500; // 2.5 seconds
+            const maxDuration = 5000; // 5 seconds
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     const element = entry.target;
                     const finalCount = parseInt(element.getAttribute('data-final-count').replace(/,/g, ''));
-                    const minDuration = 2500; // 2.5 seconds
-                    const maxDuration = 5000; // 5 seconds
                     const randomDuration = Math.random() * (maxDuration - minDuration) + minDuration;
                     const step = finalCount / (randomDuration / 10);
                     let currentCount = 0;
