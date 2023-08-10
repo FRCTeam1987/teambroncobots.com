@@ -25,7 +25,7 @@
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Notifications | Broncobots FRC Team 1987</title>
-<meta name="generator" content="Jekyll v4.2.2" />
+<meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Notifications" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Broncobots webste FRC Team 1987" />
@@ -374,7 +374,7 @@
 
 <p>Use the following code to include a simple notification.</p>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> </span><span class="na">message</span><span class="o">=</span><span class="s2">"This is the message for the notification"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> </span><span class="na">message</span><span class="o">=</span><span class="s2">"This is the message for the notification"</span><span class="w"> </span><span class="cp">%}</span>
 </code></pre></div></div>
 
 <h2 id="overriding-defaults">Overriding Defaults</h2>
@@ -398,9 +398,9 @@
     </div>
 </div>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> </span><span class="na">message</span><span class="o">=</span><span class="s2">"This is the message for the notification"</span><span class="w"> </span><span class="err">
-</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-danger"</span><span class="w"> </span><span class="err">
-</span><span class="na">icon</span><span class="o">=</span><span class="s2">"fas fa-exclamation-triangle"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> </span><span class="na">message</span><span class="o">=</span><span class="s2">"This is the message for the notification"</span><span class="w"> 
+</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-danger"</span><span class="w"> 
+</span><span class="na">icon</span><span class="o">=</span><span class="s2">"fas fa-exclamation-triangle"</span><span class="w"> </span><span class="cp">%}</span>
 </code></pre></div></div>
 
 <h2 id="markdown-message">Markdown message</h2>
@@ -431,14 +431,14 @@
     </div>
 </div>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> </span><span class="err">
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w"> 
 </span><span class="na">message</span><span class="o">=</span><span class="s2">"This **message** contains _markdown_ and a [link](https://www.csrhymes.com).
 
 It also contains a second paragraph.
 
 * List item
 * List item
-"</span><span class="w">  </span><span class="p">%}</span>
+"</span><span class="w">  </span><span class="cp">%}</span>
 </code></pre></div></div>
 
 <h2 id="dismissible-notifications">Dismissible Notifications</h2>
@@ -464,10 +464,10 @@ It also contains a second paragraph.
     </div>
 </div>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="err">
-</span><span class="na">message</span><span class="o">=</span><span class="s2">"This notification is dismissable"</span><span class="err">
-</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-info"</span><span class="err">
-</span><span class="na">dismissable</span><span class="o">=</span><span class="s2">"true"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w">
+</span><span class="na">message</span><span class="o">=</span><span class="s2">"This notification is dismissable"</span><span class="w">
+</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-info"</span><span class="w">
+</span><span class="na">dismissable</span><span class="o">=</span><span class="s2">"true"</span><span class="w"> </span><span class="cp">%}</span>
 </code></pre></div></div>
 
 <h2 id="iconless-notifications">Iconless Notifications</h2>
@@ -487,10 +487,10 @@ It also contains a second paragraph.
     </div>
 </div>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="err">
-</span><span class="na">message</span><span class="o">=</span><span class="s2">"This notification does not have an icon."</span><span class="err">
-</span><span class="na">icon</span><span class="o">=</span><span class="s2">"false"</span><span class="err">
-</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-success"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>notification.html<span class="w">
+</span><span class="na">message</span><span class="o">=</span><span class="s2">"This notification does not have an icon."</span><span class="w">
+</span><span class="na">icon</span><span class="o">=</span><span class="s2">"false"</span><span class="w">
+</span><span class="na">status</span><span class="o">=</span><span class="s2">"is-success"</span><span class="w"> </span><span class="cp">%}</span>
 </code></pre></div></div>
 
 </div>
