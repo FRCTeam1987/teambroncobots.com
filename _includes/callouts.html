@@ -5,35 +5,78 @@
             <div class="container">
                 <div class="columns is-multiline is-centered">
                     {% for callout in callouts.items %}
-                        <div class="column is-4 has-text-centered">
-                            {% if callout.icon %}
-                            <div class="icon callout-icon">
+                    <div class="column is-4 has-text-centered">
+                        {% if callout.icon %}
+                        <div class="icon callout-icon">
                             {% if callout.icon_brand %}
-                                <i class="fab {{ callout.icon }} fa-4x"></i>
+                            <i class="fab {{ callout.icon }} fa-4x"></i>
                             {% else %}
-                                <i class="fas {{ callout.icon }} fa-4x"></i>
-                            {% endif %}
-                            </div>
-                            {% endif %}
-                            <p class="title is-5">{{ callout.title }}</p>
-                            <p class="subtitle is-5">{{ callout.subtitle }}</p>
-                            
-                            {% if callout.description %}
-                            <div class="content">
-                                <p>{{ callout.description | newline_to_br }}</p>
-                            </div>
-                            {% endif %}
-
-                            {% if callout.call_to_action_name %}
-                            <a href="{{ callout.call_to_action_link | relative_url }}" class="button is-primary">
-                                {{ callout.call_to_action_name }}
-                            </a>
+                            <i class="fas {{ callout.icon }} fa-4x"></i>
                             {% endif %}
                         </div>
+                        {% endif %}
+                        <p class="title is-5">
+                            <span id="countup_{{ forloop.index }}" data-final-count="{{ callout.title | remove: ',' }}">{{ callout.title }}</span>
+                        </p>
+                        <p class="subtitle is-5">{{ callout.subtitle }}</p>
+
+                        {% if callout.description %}
+                        <div class="content">
+                            <p>{{ callout.description | newline_to_br }}</p>
+                        </div>
+                        {% endif %}
+
+                        {% if callout.call_to_action_name %}
+                        <a href="{{ callout.call_to_action_link | relative_url }}" class="button is-primary">
+                            {{ callout.call_to_action_name }}
+                        </a>
+                        {% endif %}
+                    </div>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </section>
+
+<script>
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5, // The element will start counting when at least 50% visible
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const countUpElements = document.querySelectorAll('[data-final-count]');
+
+        const startCountUpAnimation = (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const finalCount = parseInt(element.getAttribute('data-final-count').replace(/,/g, ''));
+                    const minDuration = 2500; // 2.5 seconds
+                    const maxDuration = 5000; // 5 seconds
+                    const randomDuration = Math.random() * (maxDuration - minDuration) + minDuration;
+                    const step = finalCount / (randomDuration / 10);
+                    let currentCount = 0;
+                    const updateCount = () => {
+                        currentCount += step;
+                        if (currentCount < finalCount) {
+                            element.textContent = Math.round(currentCount).toLocaleString();
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            element.textContent = finalCount.toLocaleString();
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(element); // Once counted, stop observing this element
+                }
+            });
+        };
+
+        const intersectionObserver = new IntersectionObserver(startCountUpAnimation, observerOptions);
+        countUpElements.forEach((element) => intersectionObserver.observe(element));
+    });
+</script>
+
 {% endif %}
 
