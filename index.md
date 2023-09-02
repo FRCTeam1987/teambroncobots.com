@@ -1,4 +1,6 @@
 ---
+title: Broncobots
+subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
 show_sidebar: true

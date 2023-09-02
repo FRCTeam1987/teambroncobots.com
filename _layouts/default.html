@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 {% if page.menubar or page.menubar_toc %}
-{% assign has_left_sidebar = true %}
+    {% assign has_left_sidebar = true %}
 {% endif %}
 
 {% if page.show_sidebar and has_left_sidebar  %}
-{% assign content_width = 'is-4' %}
+    {% assign content_width = 'is-4' %}
 {% elsif page.show_sidebar or has_left_sidebar %}
-{% assign content_width = 'is-8' %}
+    {% assign content_width = 'is-8' %}
 {% else %}
-{% assign content_width = 'is-12' %}
+    {% assign content_width = 'is-12' %}
 {% endif %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="{{ site.baseurl }}/assets/js/navigationBar.js"></script>
 
 <html
- dir="{{ site.direction | default: 'ltr' }}"
- lang="{{ site.lang | default: 'en' }}"
+    dir="{{ site.direction | default: 'ltr' }}"
+    lang="{{ site.lang | default: 'en' }}"
 
 
-{% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    {% unless page.hide_hero %}
+    {% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
+
+{% include head.html %}
+<body>
+    <div id="hero-container">
+        {% unless page.hide_hero %}
         {% include hero.html %}
-    {% endunless %}
+        {% endunless %}
+    </div>
+    {% include header.html %}
+
     {% include callouts.html %}
     <section class="section">
         <div class="container">
@@ -64,5 +69,5 @@
         {% include goto_top.html %}
     {% endunless %}
 
-  </body>
+</body>
 </html>
