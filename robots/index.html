@@ -3,17 +3,19 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="/assets/js/navigationBar.js"></script>
 
 <html
- dir="ltr"
- lang="en"
+    dir="ltr"
+    lang="en"
 
 
->
-  <head>
+    >
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content=#ffffff> 
+    <meta name="theme-color" content=#ffffff>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
            href="/broncobots.svg" 
@@ -42,23 +44,72 @@
 
     <!-- head scripts --></head>
 
-  <body>
-    <nav class="navbar is-primary " x-data="{ openNav: false }">
+<body>
+    <div id="hero-container">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/navigationBar.css">
+
+
+<div class="hero-wrapper">
+
+
+    <section class="hero  is-medium  is-bold is-primary"  style="background: url('../images/robots.jpg') no-repeat center center; background-size: cover; height: 100%;" >
+        <div class="hero-body  hero-darken ">
+            <div class="container">
+                <h1 class="title is-2">Robots</h1>
+                <p class="subtitle is-3">Check out our past Robots!</p>
+                
+            </div>
+        </div>
+
+        
+        <div class="arrow-container">
+            <!-- Use Font Awesome arrow icon -->
+            <i class="fa fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
+            <!-- Add the "Scroll Down!" text -->
+            <div class="scroll-down-text">Scroll Down!</div>
+        </div>
+        
+    </section>
+
+    <!-- Add a target section that you want to scroll to -->
+    <div id="target-section" style="height: 100vh; background-color: #f5f5f5;"></div>
+</div>
+
+
+<script>
+        function scrollToNextSection() {
+            const targetSection = document.getElementById("target-section");
+            const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
+        }
+
+    
+        document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
+    
+</script>
+
+        
+    </div>
+    <link rel="stylesheet" href="/assets/css/navigationBar.css">
+
+
+<nav class="navbar is-primary sticky " x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
             <img src="/broncobots.svg" alt=" " width="40">
-<!--                Broncobots FRC Team 1987--> 
             </a>
-            
+
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start"> 
+            <div class="navbar-start">
                 <a href="/" class="navbar-item ">Home</a>
                 
                 
@@ -141,17 +192,6 @@
 </nav>
 
 
-    
-        <section class="hero  is-medium  is-bold is-primary"  style="background: url('../images/robots.jpg') no-repeat center center; background-size: cover;" >
-    <div class="hero-body  hero-darken ">
-        <div class="container">
-            <h1 class="title is-2">Robots</h1>
-            <p class="subtitle is-3">Check out our past Robots!</p>
-            
-        </div>
-    </div>
-</section>
-    
     
 
 
@@ -786,5 +826,5 @@ input[type=animated]:focus {
 
     
 
-  </body>
+</body>
 </html>

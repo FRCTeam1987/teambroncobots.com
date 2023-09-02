@@ -3,17 +3,19 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="/assets/js/navigationBar.js"></script>
 
 <html
- dir="ltr"
- lang="en"
+    dir="ltr"
+    lang="en"
 
 
->
-  <head>
+    >
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content=#ffffff> 
+    <meta name="theme-color" content=#ffffff>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
            href="/broncobots.svg" 
@@ -42,23 +44,57 @@
 
     <!-- head scripts --></head>
 
-  <body>
-    <nav class="navbar is-primary " x-data="{ openNav: false }">
+<body>
+    <div id="hero-container">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/navigationBar.css">
+
+
+
+    <section class="hero  is-medium  is-bold is-primary" >
+        <div class="hero-body ">
+            <div class="container">
+                <h1 class="title is-2">Robot Reviews</h1>
+                <p class="subtitle is-3">Robots</p>
+                
+            </div>
+        </div>
+
+        
+    </section>
+
+
+<script>
+        function scrollToNextSection() {
+            const targetSection = document.getElementById("target-section");
+            const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
+        }
+
+    
+</script>
+
+        
+    </div>
+    <link rel="stylesheet" href="/assets/css/navigationBar.css">
+
+
+<nav class="navbar is-primary sticky " x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
             <img src="/broncobots.svg" alt=" " width="40">
-<!--                Broncobots FRC Team 1987--> 
             </a>
-            
+
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start"> 
+            <div class="navbar-start">
                 <a href="/" class="navbar-item ">Home</a>
                 
                 
@@ -141,17 +177,6 @@
 </nav>
 
 
-    
-        <section class="hero  is-medium  is-bold is-primary" >
-    <div class="hero-body ">
-        <div class="container">
-            <h1 class="title is-2">Robot Reviews</h1>
-            <p class="subtitle is-3">Robots</p>
-            
-        </div>
-    </div>
-</section>
-    
     
 
 
@@ -569,5 +594,5 @@ input[type=animated]:focus {
 
     
 
-  </body>
+</body>
 </html>

@@ -3,17 +3,19 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="/assets/js/navigationBar.js"></script>
 
 <html
- dir="ltr"
- lang="en"
+    dir="ltr"
+    lang="en"
 
 
->
-  <head>
+    >
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content=#ffffff> 
+    <meta name="theme-color" content=#ffffff>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
            href="/broncobots.svg" 
@@ -42,23 +44,57 @@
 
     <!-- head scripts --></head>
 
-  <body>
-    <nav class="navbar is-primary " x-data="{ openNav: false }">
+<body>
+    <div id="hero-container">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/navigationBar.css">
+
+
+
+    <section class="hero  is-medium  is-bold is-primary" >
+        <div class="hero-body ">
+            <div class="container">
+                <h1 class="title is-2">Stats</h1>
+                <p class="subtitle is-3">Data drawn from Statbotics</p>
+                
+            </div>
+        </div>
+
+        
+    </section>
+
+
+<script>
+        function scrollToNextSection() {
+            const targetSection = document.getElementById("target-section");
+            const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
+        }
+
+    
+</script>
+
+        
+    </div>
+    <link rel="stylesheet" href="/assets/css/navigationBar.css">
+
+
+<nav class="navbar is-primary sticky " x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
             <img src="/broncobots.svg" alt=" " width="40">
-<!--                Broncobots FRC Team 1987--> 
             </a>
-            
+
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start"> 
+            <div class="navbar-start">
                 <a href="/" class="navbar-item ">Home</a>
                 
                 
@@ -142,17 +178,6 @@
 
 
     
-        <section class="hero  is-medium  is-bold is-primary" >
-    <div class="hero-body ">
-        <div class="container">
-            <h1 class="title is-2">Stats</h1>
-            <p class="subtitle is-3">Data drawn from Statbotics</p>
-            
-        </div>
-    </div>
-</section>
-    
-    
 
 
     <section class="section">
@@ -169,170 +194,7 @@
                     
 
 
-                    <style>
-    .card {
-        opacity: 1; /* make the cards transparent by default */
-        transition: opacity 0.2s ease-in-out; /* add a smooth transition effect when the opacity changes */
-    }
-    .card:hover { /* select all cards that are being hovered over with the mouse */
-        opacity: 0.5; /* make the cards fully opaque */
-    }
-    .closeCard {
-        display:block;
-        position:absolute;
-        top:0px;
-        left:1%;
-        color:black;
-        height:30px;
-        width:35px;
-        font-size:4em;
-        text-decoration:none;
-        text-align:center;
-        font-weight:bold;
-    }
-    .row {
-        display: flex;
-    }
-    .column {
-        flex: 50%;
-    }
-    h1 {
-        text-align: center;
-        color: black;
-        font-size: 4em;
-        font-family: "Roboto", "Rockwell", "Montserrat", sans-serif;
-    }
-    h2 {
-        text-align: center;
-        color: black;
-        font-size: 2em;
-        font-family: "Roboto", "Rockwell", "Montserrat", sans-serif;
-    }
-    #chart-wrapper {
-        display: inline-block;
-        position: relative;
-        width: 95%;
-    }
-    .black_overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        z-index: 32;
-        -moz-opacity: 0.8;
-        opacity: .80;
-        filter: alpha(opacity=80);
-    }
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    .white_content {
-        display: none;
-        position: fixed;
-        top: 5%;
-        left: 12.5%;
-        width: 75%;
-        height: 90%; /* Adjust the height to 90% of the viewport height */
-        padding: 16px;
-        border: 5px solid whitesmoke;
-        border-radius: 10px;
-        background-color: white;
-        z-index: 1002;
-        overflow: auto; /* Enable scroll when content exceeds the height */
-        margin: 0 auto;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-
-    /* Mobile-specific styles */
-    @media screen and (max-width: 600px) {
-        .column {
-            flex: 100%;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-        }
-
-        #chart-wrapper {
-            width: 100%;
-        }
-
-        .closeCard {
-            font-size: 2em;
-        }
-
-        #mobile-warning {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            background-color: #f7b6b6;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    }
-
-    /* Desktop-specific styles */
-    @media screen and (min-width: 601px) {
-        #mobile-warning {
-            display: none;
-        }
-    }
-
-    /* Loading overlay */
-    .loading-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-    }
-
-    /* Loading spinner */
-    .loading-spinner {
-        border: 4px solid rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        border-top: 4px solid #ffffff;
-        width: 50px;
-        height: 50px;
-        animation: spin 2s linear infinite;
-    }
-
-    .RankButton{
-        font-size: 1.4em;
-        margin-bottom: 1.25rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width:7em;
-        height:6em;
-        background-color:#990202;
-        border-radius:24%;
-        color:#F2F2F2;
-    }
-</style>
+                    <link rel="stylesheet" href="/assets/css/statsPage.css">
 
 <!-- Loading spinner -->
 <div class="loading-overlay" id="loadingOverlay">
@@ -834,5 +696,5 @@ input[type=animated]:focus {
 
     
 
-  </body>
+</body>
 </html>

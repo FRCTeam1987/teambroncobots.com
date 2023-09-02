@@ -3,17 +3,19 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="/assets/js/navigationBar.js"></script>
 
 <html
- dir="ltr"
- lang="en"
+    dir="ltr"
+    lang="en"
 
 
->
-  <head>
+    >
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content=#ffffff> 
+    <meta name="theme-color" content=#ffffff>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
            href="/broncobots.svg" 
@@ -35,33 +37,38 @@
 <meta property="og:site_name" content="Broncobots FRC Team 1987" />
 <meta property="og:image" content="https://teambroncobots.com//images/robots/2018robot.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-02T01:14:16+00:00" />
+<meta property="article:published_time" content="2023-09-02T01:41:01+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://teambroncobots.com//images/robots/2018robot.png" />
 <meta property="twitter:title" content="2018 Robot" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-02T01:14:16+00:00","datePublished":"2023-09-02T01:14:16+00:00","description":"POWER UP Robot 2018","headline":"2018 Robot","image":"https://teambroncobots.com//images/robots/2018robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2018Robot/"},"url":"https://teambroncobots.com//robots/2018Robot/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-02T01:41:01+00:00","datePublished":"2023-09-02T01:41:01+00:00","description":"POWER UP Robot 2018","headline":"2018 Robot","image":"https://teambroncobots.com//images/robots/2018robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2018Robot/"},"url":"https://teambroncobots.com//robots/2018Robot/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts --></head>
 
-  <body>
-    <nav class="navbar is-primary " x-data="{ openNav: false }">
+<body>
+    <div id="hero-container">
+        
+    </div>
+    <link rel="stylesheet" href="/assets/css/navigationBar.css">
+
+
+<nav class="navbar is-primary sticky " x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
             <img src="/broncobots.svg" alt=" " width="40">
-<!--                Broncobots FRC Team 1987--> 
             </a>
-            
+
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span> 
+                <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start"> 
+            <div class="navbar-start">
                 <a href="/" class="navbar-item ">Home</a>
                 
                 
@@ -144,7 +151,6 @@
 </nav>
 
 
-    
     
 
 
@@ -664,5 +670,5 @@ input[type=animated]:focus {
 
     
 
-  </body>
+</body>
 </html>
