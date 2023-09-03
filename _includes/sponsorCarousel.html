@@ -1,0 +1,45 @@
+{% if page.sponsorCarousel %}
+{% assign tiers = site.data.[page.sponsorCarousel] %}
+<div class="columns is-multiline is-centered" id="sponsorCarousel">
+    {% for tier in tiers %}
+    {% for sponsor in tier.sponsors %}
+    <div class="column {% if tier.size == 'large' %} is-4-desktop is-6-tablet {% else %} is-3-desktop is-4-tablet {% endif %}">
+        <div class="box has-text-centered sponsor-item">
+            <p class="title {% if tier.size == 'large' %} is-4 {% elsif tier.size == 'small' %} is-6 {% else %} is-5 {% endif %}">
+                {{ sponsor.name }}
+            </p>
+            {% if sponsor.image %}
+            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
+            {% endif %}
+            <p class="subtitle is-6">
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>
+
+<style>
+    #sponsorCarousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .sponsor-item {
+        flex: 0 0 25%; /* Display 4 items at a time */
+        animation: carousel 120s linear infinite; /* 4 seconds per slide, repeat infinitely */
+    }
+
+    @keyframes carousel {
+        0% {
+            transform: translateX(1800%);
+        }
+        95% {
+            transform: translateX(-1650%);
+        }
+        100% {
+            transform: translateX(1800%);
+        }
+    }
+</style>
+{% endif %}

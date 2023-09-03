@@ -3,11 +3,14 @@ title: Broncobots
 subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
-show_sidebar: true
+show_sidebar: false
 hero_image: images/Homeimg.jpg
 hero_height: is-large
+sponsorCarousel: sponsors
+
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
+<link rel="stylesheet" href="/assets/css/animatedLink.css">
 
  <style>
 .zoom {
@@ -26,26 +29,98 @@ hero_height: is-large
   
 }
 
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 50%; /* 1:1 aspect ratio (height equals width) */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: row; /* Default: side by side */
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements on top of each other */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: right;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .split-screen {
+        flex-direction: column; /* Stack elements on top of each other */
+    }
+    
+    .left,
+    .right {
+        text-align: center;
+        flex: none; /* Disable equal width for stacking */
+    }
+
+    .iframe-container {
+        padding-top: 100%; /* 1:2 aspect ratio */
+    }
+}
+
+
 </style>
 
-<p><h1><center>
-    Welcome!
-</center></h1></p>
-
- We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students attending [Lee's Summit North High School](https://lsnhs.lsr7.org/), 5 coaches, several amazing mentors, and multiple gracious, corporate sponsors! Our team is dedicated to [FIRST](https://www.firstinspires.org/) (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage [STEM](https://www.kcstem.org/) (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!
-
-We will soon be building our 2023 robot and updating our website with current content.
-
-**Check back here often for events, competitions, and general team information!**
-
-<div class="descriptors">
-<h1 style="font-size:64px;"><center>
+<h1 style="font-size:64px;text-align: center;">
     Broncobots are
   <span
      class="txt-rotate"
      data-period="2000"
      data-rotate='["innovators.", "inspirational.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
-</center></h1>
+</h1>
+
+<div class="split-screen">
+    <div class="left">
+        <h2 style="font-size: 3.75rem">We are the Broncobots <br> FRC Team 1987!</h2>
+        <p>Based out of Lee's Summit, Missouri. The team is made up of many students and 5 coaches from <a href="https://lsnhs.lsr7.org/" target="_blank">Lee's Summit North High School</a></p>
+    </div>
+    <div class="right">
+        <div class="iframe-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.8072996290653!2d-94.3791996235168!3d38.928381744874386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4e0f9bf16fb459af%3A0x3c12c65ddeb2e600!2sLSN%20Broncobots!5e0!3m2!1sen!2sus!4v1693766080380!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+<p style="text-align: center; font-size: 3rem; margin-bottom: 0.1rem;">
+    We are dedicated to 
+    <a href="https://www.firstinspires.org/" target="_blank" style="display: inline-block; vertical-align: middle;">
+        <img width="350" src="./images/Assets/Branding/firstinspires.svg" alt="First" style="vertical-align: middle;">
+    </a>
+</p>
+<p style="text-align: center;font-size: 0.9rem;margin-bottom: 0.4rem;">(For Inspiration and Recognition of Science and Technology)</p>
+
+<p style="text-align: center; font-size: 3rem; margin-bottom: 0.1rem;">
+    and encouraging  
+    <a href="https://www.kcstem.org/" target="_blank" style="display: inline-block; vertical-align: middle;">
+        <img width="350" src="./images/Assets/Branding/kcSTEM_logo.svg" alt="First" style="vertical-align: middle;">
+    </a>
+</p><p style="text-align: center;font-size: 0.9rem">(Science, Technology, Engineering, and Math)</p>
+
+<div class="descriptors">
+
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
 
