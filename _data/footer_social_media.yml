@@ -1,19 +1,15 @@
 - name: Facebook
   link: http://www.facebook.com/pages/The-Broncobots-Team-1987/140870239300622
-  icon: fa-facebook
-  company: true
+  icon: fa-brands fa-facebook
 - name: Twitter
   link: http://www.twitter.com/Broncobots1987
-  icon: fa-twitter
-  company: true
+  icon: fa-brands fa-x-twitter
 - name: Mail
   link: mailto:broncobots@gmail.com
-  icon: fa-inbox
+  icon: fa-solid fa-envelope
 - name: Instragram
   link: https://www.instagram.com/broncobots1987/
-  icon: fa-instagram
-  company: true
+  icon: fa-brands fa-instagram
 - name: YouTube
   link: http://www.youtube.com/user/Broncobots1987
-  icon: fa-youtube
-  company: true
+  icon: fa-brands fa-youtube
