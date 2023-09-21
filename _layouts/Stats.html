@@ -76,23 +76,30 @@ layout: default
         let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
         if (scoreData === null) {
             scoreData = await TeamInfoPerYear(year);
-            sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData)); // Store scoreData instead of eventsPerYear
+            sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
         }
-        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile} = scoreData;
+        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
 
-        const html = '<div style=" font-size: 1.5em;">'
-                + wins + " wins - " + losses + " losses\<br\/\>"
-                + epa_end + " EPA\<br\/\>"
-                + (winrate * 100).toFixed(2) + "% Win Rate\<br\/\>"
-                + "Better than " + (total_epa_percentile * 100).toFixed(2) + "% of teams\<br\/\>\<br\/\>"
-            + '</div>'
-            + '<div style="display: flex;flex-wrap: wrap; flex-direction: row; justify-content: space-around; align-items: center;">' +
-                '<div class="RankButton">Ranked \<br\/\> ' +  state_epa_rank + '/' + state_team_count + '\<br\/\> in Missouri \<br\/\> </div>' +
-                '<div class="RankButton">Ranked \<br\/\> ' + country_epa_rank + '/' + country_team_count + '\<br\/\> in the USA </div>' +
-                '<div class="RankButton">Ranked \<br\/\>' + total_epa_rank  + '/' + total_team_count + '\<br\/\> in the world </div>' +
+        const percentileFormatted = (total_epa_percentile * 100).toFixed(0);
+        const ordinalSuffix = getOrdinalSuffix(Math.floor(total_epa_percentile * 100));
+
+        const html =
+            '<div style="font-size: 1.5em;">' +
+            wins + " wins - " + losses + " losses<br/>" +
+            epa_end + " EPA<br/>" +
+            (winrate * 100).toFixed(2) + "% Win Rate<br/>" +
+            percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
+            '</div>' +
+            '<div style="display: flex;flex-wrap: wrap; flex-direction: row; justify-content: space-around; align-items: center;">' +
+            '<div class="RankButton">Ranked <br/> ' + state_epa_rank + '/' + state_team_count + '<br/> in Missouri <br/> </div>' +
+            '<div class="RankButton">Ranked <br/> ' + country_epa_rank + '/' + country_team_count + '<br/> in the USA </div>' +
+            '<div class="RankButton">Ranked <br/>' + total_epa_rank + '/' + total_team_count + '<br/> in the world </div>' +
             '</div>';
+
         $("#scoreData" + year).html(html);
     }
+
+
 
 
     async function pointsPerMatchPerYear(year) {
@@ -239,7 +246,7 @@ layout: default
         async function years() {
             let years = await getYearsParticipated();
             Array.from(years).forEach(async year => { // Use async here to use await inside forEach
-                    let html = `
+                let html = `
                         <div class="column is-6-desktop is-12-tablet">
                             <a href="javascript:void(0)" onclick="document.getElementById('match` + year + `').style.display='block';document.getElementById('back').style.display='block'" style="color: black">
                             <div class="card">
@@ -299,11 +306,11 @@ layout: default
                         <div id="back" class="black_overlay"></div>
 
                     `;
-                    $("#years").prepend(html);
-                    eventsPerYear( year );
-                    scoreData( year );
-                    createChart( year );
-                });
+                $("#years").prepend(html);
+                eventsPerYear( year );
+                scoreData( year );
+                createChart( year );
+            });
 
 // Wait for all AJAX requests to finish before hiding the loading
             await isFinished();
