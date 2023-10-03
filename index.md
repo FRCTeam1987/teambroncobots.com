@@ -109,26 +109,25 @@ sponsorCarousel: sponsors
     <a href="https://www.firstinspires.org/" target="_blank" style="display: inline-block; vertical-align: middle;">
         <img width="350" src="./images/Assets/Branding/firstinspires.svg" alt="First" style="vertical-align: middle;">
     </a>
-</p>
-<p style="text-align: center;font-size: 0.9rem;margin-bottom: 0.4rem;">(For Inspiration and Recognition of Science and Technology)</p>
+    <i class="fa-solid fa-circle-info fa-bounce" style="font-size:0.3em" onclick="FIRSTinfo()"></i>
+    <p id="FIRSTinfo" style="display:none;text-align: center;font-size: 0.9rem;margin-bottom: 0.4rem;">(For Inspiration and Recognition of Science and Technology)</p>
 
-<p style="text-align: center; font-size: 3rem; margin-bottom: 0.1rem;">
+
+<p style="text-align: center; font-size: 3rem; margin-bottom: 1.5rem;">
     and encouraging  
     <a href="https://www.kcstem.org/" target="_blank" style="display: inline-block; vertical-align: middle;">
         <img width="350" src="./images/Assets/Branding/kcSTEM_logo.svg" alt="First" style="vertical-align: middle;">
     </a>
-</p><p style="text-align: center;font-size: 0.9rem">(Science, Technology, Engineering, and Math)</p>
-
+   <i class="fa-solid fa-circle-info fa-bounce" style="font-size:0.3em;mar: translate(0,90%);" onclick="KCstem()" data-fa-transform="left-10"></i>
+    <p id="KCstem" style="display:none;text-align: center;font-size: 0.9rem;margin-bottom: 1.25rem;">(Science, Technology, Engineering, and Math)</p>
 <div class="descriptors">
 
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
 
----
 <div style="text-align:center; vertical-align: middle; padding:0px 0;">
     <img src="images/2023TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
 </div>
----
 
 <div class="zoom"></div> 
 
@@ -166,6 +165,26 @@ sponsorCarousel: sponsors
 </div>
 
 <script>
+
+function FIRSTinfo() {
+    let FIRSTinfo = document.getElementById("FIRSTinfo");
+  if (FIRSTinfo.style.display === "none") {
+    FIRSTinfo.style.display = "block";
+  } else {
+    FIRSTinfo.style.display = "none";
+  }
+}
+
+function KCstem() {
+    let KCstem = document.getElementById("KCstem");
+  if (KCstem.style.display === "none") {
+    KCstem.style.display = "block";
+  } else {
+    KCstem.style.display = "none";
+  }
+}
+
+
 function missionStatement() {
     let m = document.getElementById("missStat");
     let f = document.getElementById("teamFoc");
@@ -177,7 +196,7 @@ function missionStatement() {
     } else {
         m.style.display = "none";
     }
-} 
+}
 function teamFocus() {
     let m = document.getElementById("missStat");
     let f = document.getElementById("teamFoc");
