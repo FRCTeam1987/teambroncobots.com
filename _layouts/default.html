@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 {% if page.menubar or page.menubar_toc %}
-    {% assign has_left_sidebar = true %}
+{% assign has_left_sidebar = true %}
 {% endif %}
 
 {% if page.show_sidebar and has_left_sidebar  %}
-    {% assign content_width = 'is-4' %}
+{% assign content_width = 'is-4' %}
 {% elsif page.show_sidebar or has_left_sidebar %}
-    {% assign content_width = 'is-8' %}
+{% assign content_width = 'is-8' %}
 {% else %}
-    {% assign content_width = 'is-12' %}
+{% assign content_width = 'is-12' %}
 {% endif %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<script src="{{ site.baseurl }}/assets/js/navigationBar.js"></script>
 
 <html
     dir="{{ site.direction | default: 'ltr' }}"
@@ -22,51 +21,78 @@
 
 {% include head.html %}
 <body>
-    <div id="hero-container">
-        {% unless page.hide_hero %}
-        {% include hero.html %}
-        {% endunless %}
-    </div>
-    {% include header.html %}
+<div id="hero-container">
+    {% unless page.hide_hero %}
+    {% include hero.html %}
+    {% endunless %}
+</div>
+{% include header.html %}
 
-    {% include callouts.html %}
-    <section class="section">
-        <div class="container">
-            <div class="columns is-multiline">
-                {% if page.menubar_toc %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
-                    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
-                </div>
-                {% elsif page.menubar %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% include menubar.html %}
-                </div>
-                {% endif %}
-                <div class="column {{ content_width }}">
-                    {% include tabs.html %}
-                    {% include showcase.html %}
-                    {% include sponsors.html %}
-                    {% include gallery.html %}
-                    {% include twoColumnGallery.html %}
-                    {{ content }}
-                </div>
-                {% if site.posts and page.show_sidebar %}
-                <div class="column is-4-desktop is-4-tablet">
-                    {% include latest-posts.html %}
-                </div>
-                {% endif %}
+{% include callouts.html %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {% if page.menubar_toc %}
+            <div class="column is-4-desktop is-4-tablet">
+                {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+                {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
             </div>
+            {% elsif page.menubar %}
+            <div class="column is-4-desktop is-4-tablet">
+                {% include menubar.html %}
+            </div>
+            {% endif %}
+            <div class="column {{ content_width }}">
+                {% include tabs.html %}
+                {% include showcase.html %}
+                {% include sponsors.html %}
+                {% include gallery.html %}
+                {% include twoColumnGallery.html %}
+                {{ content }}
+            </div>
+            {% if site.posts and page.show_sidebar %}
+            <div class="column is-4-desktop is-4-tablet">
+                {% include latest-posts.html %}
+            </div>
+            {% endif %}
         </div>
-    </section>
-    {% unless page.hide_footer %}
-        {% include footer.html %}
-    {% endunless %}
-    {%- include footer-scripts.html -%}
+    </div>
+</section>
+{% unless page.hide_footer %}
+{% include footer.html %}
+{% endunless %}
+<script src="{{ site.baseurl }}/assets/js/app.js" type="text/javascript"></script>
+{%- include footer-scripts.html -%}
 
-    {% unless page.hide_goto_top %}
-        {% include goto_top.html %}
-    {% endunless %}
+{% unless page.hide_goto_top %}
+{% include goto_top.html %}
+{% endunless %}
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const heroContainer = document.getElementById("hero-container");
+        const navbar = document.querySelector(".navbar");
+        const navbarHeight = navbar.offsetHeight;
+        const heroContainerBottom = heroContainer.offsetTop + heroContainer.offsetHeight;
+        const navbarPlaceholder = document.createElement("div");
+        navbarPlaceholder.classList.add("navbar-placeholder");
+        navbar.parentNode.insertBefore(navbarPlaceholder, navbar.nextSibling);
+
+        function updateNavbarPosition() {
+            if (window.scrollY >= heroContainerBottom) {
+                navbar.classList.add("sticky");
+                navbarPlaceholder.style.display = "block";
+                document.body.style.paddingTop = `${navbarHeight}px`;
+            } else {
+                navbar.classList.remove("sticky");
+                navbarPlaceholder.style.display = "none";
+                document.body.style.paddingTop = "0";
+            }
+        }
+
+        window.addEventListener("scroll", updateNavbarPosition);
+        updateNavbarPosition(); // Initial check in case the user loads the page at a scrolled position
+    });
+</script>
 </body>
 </html>
