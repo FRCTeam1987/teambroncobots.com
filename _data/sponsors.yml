@@ -30,14 +30,6 @@
       image: ../images/sponsors/GeneHassFoundation.svg
       description: The Gene Haas Foundation donates millions of dollars every year to manufacturing education and the community. In 2020, the Gene Haas Foundation provided more than $20 million in grants, bringing the total since inception to more than to $120 million.
       profile: https://ghaasfoundation.org/
-    - name: Baldwin & Vernon
-      image: ../images/sponsors/BandV.png
-      description: No matter if you’re facing criminal charges or defending against discrimination or harassment, you have rights — rights that Baldwin & Vernon has dedicated itself to defending. We work as a team to develop a deep understanding of you and your case, give you an honest assessment, and then develop a strategy to present, in order to reach the best possible outcome.
-      profile: https://baldwinvernon.com/
-    - name: Catalent
-      image: ../images/sponsors/catalent.svg
-      description: Catalent is a global leader in providing integrated services, superior drug delivery technologies and manufacturing solutions to help life science innovators develop and launch successful pharmaceuticals, biologics and consumer health robots.
-      profile: https://www.catalent.com/
     - name: SoundWorks
       image: ../images/sponsors/SoundWorks.png
       description: Home of Kansas City's leading musical and entertainment professionals. Encompassing all your professional recording and robotion needs.
@@ -46,27 +38,10 @@
       image: ../images/sponsors/grider.jpg
       description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
       profile: https://griderorthodontics.com/
-    - name: United States of America Navy
-      image: ../images/sponsors/Navy.jpg
-      description: In America's Navy, water and salt flow through our veins in the same proportion as the sea. That mighty force is the lifeblood of the greatest Navy ever to sail upon it, slip beneath it or fly above it. It shapes Americans from every corner of the nation into Sailors with the courage to protect liberty back home. Bonding us with the commitment to serve with honor. The sea propels every one of our men and women to defeat or defend. To comfort or to awe. To victory or to the rescue.
-      profile: https://www.navy.mil/
-    - name: KC Stem Alliance
-      image: ../images/sponsors/kcstem.jpg
-      description: The KC STEM Alliance is a collaborative network of educators, business partners, and affiliates that inspires interest in Science, Technology, Engineering, and Math careers to generate a robust force of related professionals for our community.
-      profile: https://www.kcstem.org/
     - name: FrontStream
       image: ../images/sponsors/FrontStream.png
       description: FrontStream helps charities and socially-responsible corporations raise and process funds. Simply put, we help our customers raise more for their causes, and do more good in their communities.
       profile: https://www.frontstream.com/
-    - name: Brainstorm Media, INC
-      image : ../images/sponsors/BrainstormMedia.png
-      description: At Brainstorm Media, BIG IDEAS are no problem. But what, exactly, is the BIG IDEA, that your company needs? That's where the BRAINSTORM begins. We're great at talking, but even better at listening.
-      profile: https://bsmedia.net/index.html
-    - name: Veterans of Foreign Wars
-      image: ../images/sponsors/VFW.png
-      description: The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
-      profile: https://www.vfw.org/
-
 
 - tier_name: In-Kind Sponsors
   size: small
@@ -122,7 +97,7 @@
       Confetti: true
     - name: Tracy Bornman PC
       description: Personal Sponsor
-    - name: Dautenhahn Family
+    - name: Michelle and Zane Dautenhahn
       description: Personal Sponsor
     - name: Kirby and Angie DeMoss
       description: Personal Sponsor
@@ -142,3 +117,76 @@
       description: Personal Sponsor
     - name: Team 1987 Mentors
       description: Personal Sponsors
+
+- tier_name: 2024 Silent Auction Sponsors
+  size: medium
+  description: |-
+  sponsors:
+    - name: Amber Zubeck
+      description: 2024 Silent Auction Sponsor
+    - name: Cooper's Hawk
+      description: 2024 Silent Auction Sponsor
+    - name: Crumbl Cookies
+      description: 2024 Silent Auction Sponsor
+    - name: DeMoss
+      description: 2024 Silent Auction Sponsor
+    - name: First Watch
+      description: 2024 Silent Auction Sponsor
+    - name: Gourmet Gift Baskets
+      description: 2024 Silent Auction Sponsor
+    - name: Greg and Mary Hunsucker
+      description: 2024 Silent Auction Sponsor
+    - name: Hollie Zabroski
+      description: 2024 Silent Auction Sponsor
+    - name: KC Current
+      description: 2024 Silent Auction Sponsor
+    - name: KC Mavericks
+      description: 2024 Silent Auction Sponsor
+    - name: KC Rep
+      description: 2024 Silent Auction Sponsor
+    - name: KC Zoo
+      description: 2024 Silent Auction Sponsor
+    - name: Kendra Scott
+      description: 2024 Silent Auction Sponsor
+    - name: Konrads
+      description: 2024 Silent Auction Sponsor
+    - name: Llywelyn's
+      description: 2024 Silent Auction Sponsor
+    - name: Lynn Griffith
+      description: 2024 Silent Auction Sponsor
+    - name: Mark Sommerhauser
+      description: 2024 Silent Auction Sponsor
+    - name: Pearl Tavern
+      description: 2024 Silent Auction Sponsor
+    - name: Powell Gardens
+      description: 2024 Silent Auction Sponsor
+    - name: Red Door
+      description: 2024 Silent Auction Sponsor
+    - name: Rex Brown
+      description: 2024 Silent Auction Sponsor
+    - name: Roots
+      description: 2024 Silent Auction Sponsor
+    - name: Science City
+      description: 2024 Silent Auction Sponsor
+    - name: Sky Zone
+      description: 2024 Silent Auction Sponsor
+    - name: Smoke/Calaveras
+      description: 2024 Silent Auction Sponsor
+    - name: Soundworks Recording
+      description: 2024 Silent Auction Sponsor
+    - name: Team 1987
+      description: 2024 Silent Auction Sponsor
+    - name: The Coterie
+      description: 2024 Silent Auction Sponsor
+    - name: The Culinary Center of KC
+      description: 2024 Silent Auction Sponsor
+    - name: Top Golf
+      description: 2024 Silent Auction Sponsor
+    - name: Twisted Fresh
+      description: 2024 Silent Auction Sponsor
+    - name: Union Station Planetarium
+      description: 2024 Silent Auction Sponsor
+    - name: Urban Air Adventure Park
+      description: 2024 Silent Auction Sponsor
+    - name: WW1 Museum
+      description: 2024 Silent Auction Sponsor

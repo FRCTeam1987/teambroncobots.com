@@ -11,6 +11,11 @@
 
 - title: Summer Camps Gallery
   images:
+    - image: ../images/Assets/SummerCamps/Logos/2023Logo.png
+      description: 2023 Robotics Camp Logo
+    - image: ../images/Assets/SummerCamps/Manuals/manual.png
+      description: 2023 Robotics Camp Manual
+      altdownload: ../images/Assets/SummerCamps/Manuals/2023ConstructionCrazeManual.docx
     - image: ../images/Assets/SummerCamps/Logos/2022Logo.png
       description: 2022 Robotics Camp Logo
     - image: ../images/Assets/SummerCamps/Manuals/manual.png
@@ -52,6 +57,8 @@
 
 - title: Robot Gallery
   images:
+    - image: ../images/robots/2023robot.png
+      description: The Broncobots 2023 Robot!
     - image: ../images/robots/2022robot.png
       description: The Broncobots 2022 Robot!
     - image: ../images/robots/2021robot.png

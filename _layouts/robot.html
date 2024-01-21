@@ -100,7 +100,7 @@ layout: default
             <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
                 {% for Item in page.Links %}
                 <a href="{{ Item.link }}"><div style="text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">{{ Item.item }}</div></a>
-            {% endfor %}
+                {% endfor %}
             </div>
         </div>
         {% endif %}
@@ -126,13 +126,16 @@ layout: default
         }
         const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
 
+        const percentileFormatted = (total_epa_percentile * 100).toFixed(0);
+        const ordinalSuffix = getOrdinalSuffix(Math.floor(total_epa_percentile * 100));
+
         const html =
             '<div style="font-size: 1.5em; display: flex; flex-wrap: wrap;">' +
             '<div style="flex: 1; min-width: 250px; margin-right: 1rem;">' +
             wins + ' wins - ' + losses + ' losses<br/>' +
             epa_end + ' EPA<br/>' +
             (winrate * 100).toFixed(2) + '% Win Rate<br/>' +
-            'Better than ' + (total_epa_percentile * 100).toFixed(2) + '% of teams<br/><br/>' +
+            percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
             '</div>' +
             '<div style="display: flex; flex-wrap: wrap;">' +
             '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
