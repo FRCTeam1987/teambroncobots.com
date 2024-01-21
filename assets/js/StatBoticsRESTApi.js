@@ -4,6 +4,21 @@ let requestCounter = 0;
 let timeWaiting = 0; //in seconds
 let error = "";
 
+// Inside StatBoticsRESTApi.js
+console.log("StatBoticsRESTApi.js loaded");
+
+function getOrdinalSuffix(number) {
+    const suffixes = ["th", "st", "nd", "rd"];
+    const lastDigit = number % 10;
+    const lastTwoDigits = number % 100;
+
+    if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
+        return "th";
+    }
+
+    return suffixes[lastDigit] || "th";
+}
+
 function getYearsParticipated() {
     return new Promise((resolve, reject) => {
         $.ajax({
