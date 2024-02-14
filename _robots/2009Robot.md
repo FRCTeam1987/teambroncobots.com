@@ -1,6 +1,6 @@
 ---
 title: 2009 Robot
-subtitle: Lunacy FRC Robot
+subtitle: Lunar Launcher
 description: Lunacy Robot 2009
 robot_code: 2009
 layout: robot
