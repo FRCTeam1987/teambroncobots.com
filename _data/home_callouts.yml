@@ -11,14 +11,14 @@ items:
   - title: 12
     subtitle: Blue Banners
     icon: fa-flag
-  - title: 770
+  - title: 780
     subtitle: Future Engineers Inspired
 #    summer camp kids ^^^
     icon: fa-bullseye
   - title: 60
     subtitle: Awards Won
     icon: fa-bolt
-  - title: 38
+  - title: 21
     subtitle: Sponsors
     icon: fa-user-plus
 #    icon_brand: true

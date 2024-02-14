@@ -1,27 +1,3 @@
-#- tier_name: Platinum Sponsors
-#  size: large
-#  description: |-
-#    This is the description for the Platinum Tiers.
-#
-#    It can contain multiple lines. It has the size set to 'large'.
-#  sponsors:
-#    - name: Dave McDave
-#      profile: https://github.com/
-#    - name: Sarah Lee-Cheesecake
-#      profile: https://github.com/
-#
-#- tier_name: Gold Sponsors
-#  description: |-
-#    This is the description for the Gold Tier
-#  sponsors:
-#    - name: Dave McDave
-#      profile: https://github.com/
-#    - name: Sarah Lee-Cheesecake
-#      profile: https://github.com/
-#    - name: John Smith
-#      profile: https://github.com/
-
-
 - tier_name: Company Sponsors
   size: small
   description: |-
@@ -34,14 +10,26 @@
       image: ../images/sponsors/SoundWorks.png
       description: Home of Kansas City's leading musical and entertainment professionals. Encompassing all your professional recording and robotion needs.
       profile: https://soundworksrec.com/index.html
-    - name: Grider Orthodontics
-      image: ../images/sponsors/grider.jpg
-      description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
-      profile: https://griderorthodontics.com/
+    - name: JE Dunn
+      image: ../images/sponsors/JEDunn.svg
+      description: Founded in 1924, JE Dunn is the 8th largest domestic general building contractor in the United States with offices in 26 locations and hundreds of project sites across the country. Our work touches nearly every facet of the industry, and our portfolio of projects spans dozens of industries, including healthcare, aviation, corporate environments, Federal and military, industrial, education, mission critical, science and technology, and more.
+      profile: https://www.jedunn.com/
     - name: FrontStream
       image: ../images/sponsors/FrontStream.png
       description: FrontStream helps charities and socially-responsible corporations raise and process funds. Simply put, we help our customers raise more for their causes, and do more good in their communities.
       profile: https://www.frontstream.com/
+    - name: Grider Orthodontics
+      image: ../images/sponsors/grider.jpg
+      description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
+      profile: https://griderorthodontics.com/
+    - name: HCA Corporate
+      image: ../images/sponsors/HCACorporate.png
+      description: At HCA Healthcare, we are driven by a single mission. Above all else, we are committed to the care and improvement of human life.
+      profile: https://hcahealthcare.com/
+    - name: Veterans of Foreign Wars
+      image: ../images/sponsors/VFW.png
+      description: The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
+      profile: https://www.vfw.org/
 
 - tier_name: In-Kind Sponsors
   size: small
@@ -71,6 +59,10 @@
       image: ../images/sponsors/kenTinkering.jpg
       description: Home CNC Woodworker! Let me custom design something for you; Signs, Plaques, Wood Toys, Puzzles, Home Decor, Picture Frames, Wood Boxes, Trays, and Furniture.
       profile:
+    - name: Venture Industrial Products
+      image: ../images/sponsors/Venture.png
+      description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
+      profile: https://www.ventureindustrial.com/
     - name: Harbor Freight
       image: ../images/sponsors/Harbor_Freight.jpg
       description: We have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!
@@ -88,32 +80,14 @@
   size: medium
   description: |-
   sponsors:
-    - name: Charles, Melanie, and  Scott Hasek
-      description: Personal Sponsor
-    - name: Denise Talley
-      description: Personal Sponsor
     - name: Jonathan Smith
       description: Personal Sponsor
       Confetti: true
-    - name: Tracy Bornman PC
+    - name: Levi Madden
       description: Personal Sponsor
     - name: Michelle and Zane Dautenhahn
       description: Personal Sponsor
-    - name: Kirby and Angie DeMoss
-      description: Personal Sponsor
-    - name: Linda Pickett
-      description: Personal Sponsor
-    - name: Erika Vega
-      description: Personal Sponsor
-    - name: Chuck Stephenson
-      description: Personal Sponsor
-    - name: Chris Hope
-      description: Personal Sponsors
-    - name: JoAnn Crabtree
-      description: Personal Sponsors
-    - name: Harvey Oxman
-      description: Personal Sponsors
-    - name: Monica Vega
+    - name: Jared Saxon
       description: Personal Sponsor
     - name: Team 1987 Mentors
       description: Personal Sponsors
