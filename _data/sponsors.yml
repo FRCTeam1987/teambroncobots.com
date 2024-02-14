@@ -59,6 +59,10 @@
       image: ../images/sponsors/kenTinkering.jpg
       description: Home CNC Woodworker! Let me custom design something for you; Signs, Plaques, Wood Toys, Puzzles, Home Decor, Picture Frames, Wood Boxes, Trays, and Furniture.
       profile:
+    - name: Venture Industrial Products
+      image: ../images/sponsors/Venture.png
+      description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
+      profile: https://www.ventureindustrial.com/
     - name: Harbor Freight
       image: ../images/sponsors/Harbor_Freight.jpg
       description: We have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!

@@ -52,7 +52,7 @@ show_sidebar: false
             <br>
             <p>This can also be done online at <a href="https://www.lsedfoundation.org/">https://www.lsedfoundation.org/</a>. Again, be sure to choose the Lee’s Summit North Robotics Team as the location of your donation.</p>
             <br>
-            <p>Online donations are additionally available to the right, simple follow the instructions below.</p>
+            <p>Online donations are additionally available to the right, simply follow the instructions below.</p>
             <br>
             <h2><center>Make an online donation!</center></h2>
             <p>- Start by scrolling down to "One-Time Donation" and enter a dollar amount or click on one of the preset defaults.</p>
