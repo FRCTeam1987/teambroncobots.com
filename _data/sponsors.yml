@@ -63,6 +63,14 @@
       image: ../images/sponsors/Venture.png
       description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
       profile: https://www.ventureindustrial.com/
+    - name: Bledsoe's Equipment
+      image: ../images/sponsors/Bledsoes.png
+      description: Your number one Source for Quality Equipment Rental and Sales in the Kansas City Metro
+      profile: https://bledsoerentals.com/
+    - name: Earle M. Jorgensen Company
+      image: ../images/sponsors/EMJ.png
+      description: EMJ is a leading supplier of Steel and Aluminum Bar, Tubing, and Plate to manufacturing companies in North America and around the world. Our broad network of facilities, superior inventories, extensive value-added processing capabilities, and world-class technology enables EMJ to provide unsurpassed service to our customers.
+      profile: https://www.emjmetals.com/
     - name: Harbor Freight
       image: ../images/sponsors/Harbor_Freight.jpg
       description: We have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!
@@ -90,6 +98,8 @@
     - name: Charles, Melanie, and Scott Hasek
       description: Personal Sponsor
     - name: Sean Ahern
+      description: Personal Sponsor
+    - name: Edwina Smith
       description: Personal Sponsor
     - name: Jared Saxon
       description: Personal Sponsor
