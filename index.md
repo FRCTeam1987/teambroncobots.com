@@ -51,7 +51,7 @@ We are building our 2024 robot and updating our website with current content.
 
 ---
 <div style="text-align:center; vertical-align: middle; padding:0px 0;">
-    <img src="images/2023TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
+    <img src="images/2024TeamPic.jpg" alt=" " class="zoom" width="800" height="auto" >
 </div>
 ---
 
