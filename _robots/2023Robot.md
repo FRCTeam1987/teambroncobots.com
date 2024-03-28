@@ -10,11 +10,11 @@ CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
     - label: Used object detection to automatically collect and score game pieces
       icon: fa-certificate
-    - label: Two time regional winners
+    - label: Three time regional winners (and CowTown Throwdown)
       icon: fa-robot
     - label: Used a 3 stage telescoping arm
       icon: fa-crosshairs
-awardsWon: 5
+awardsWon: 6
 hide_hero: true
 Specifications:
 - item: 4 MK4i Swerve Drive Modules
@@ -33,9 +33,10 @@ Capabilities:
 - item: Driver can reset gyro while driving for easy field orientation with single button press.
 Competitions:
 - item: Heartland Regional
-- item: Hosting and Participating in Greater Kansas City Regional
+- item: Hosted and Participated in Greater Kansas City Regional
 - item: World Championship
 - item: Indiana Robotics Invitational
+- item: CowTown ThrowDown
 Links:
 - item: CAD
   link: https://cad.onshape.com/documents/161f53c7e7c1d5a50fee0d60/w/e3abc8177a33b2a9d11c6c4c/e/e01990c9971fd2c87bd7c4a2?renderMode=0&uiState=64c04c93651fae04d82b37a3
