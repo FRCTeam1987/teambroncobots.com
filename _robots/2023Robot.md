@@ -10,7 +10,7 @@ CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 features:
     - label: Used object detection to automatically collect and score game pieces
       icon: fa-certificate
-    - label: Three time regional winners (and CowTown Throwdown)
+    - label: Two time regional winners (and CowTown Throwdown)
       icon: fa-robot
     - label: Used a 3 stage telescoping arm
       icon: fa-crosshairs

@@ -25,8 +25,8 @@ Specifications:
 - item: Elevator lifts robot at end-of-match in 0.87 seconds.
 - item: Intake uses independent Falcon 500 motors for belt-driven rollers.
 - item: Magnetic encoders and CANCoders measure the swerve module steering position.
-- item: Orange Pi 5+ processors for AprilTag and object detection in conjunction with two Limelight 3g’s.
-- item: Photon vision is used for faster and fluid Note detection, while the Limelight 3g’s are used for accurate Apriltag detection.
+- item: Orange Pi 5+ processors for AprilTag and object detection in conjunction with two Limelight 3G’s.
+- item: Photon vision is used for faster and fluid Note detection, while the Limelight 3G’s are used for accurate Apriltag detection.
 Capabilities:
 - item: Shoots through the elevator with low launch height for consistency.
 - item: Feeder holds Note prepared to shoot, allowing Trap scoring.

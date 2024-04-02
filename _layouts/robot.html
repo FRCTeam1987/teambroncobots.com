@@ -38,7 +38,7 @@ layout: default
         {% endif %}
 
         {% if page.CompetitionLogo %}
-        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em"/>
+        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;"/>
         {% endif %}
     </div>
 
@@ -146,12 +146,6 @@ layout: default
 
         $("#scoreData").html(html);
     }
-
-
-
-
-
-
     async function pointsPerMatchPerYear(year) {
         let matchesPerYear = await getMatchesPerYear(year);
         return matchesPerYear;
