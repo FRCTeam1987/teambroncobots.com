@@ -61,8 +61,12 @@
       profile:
     - name: Venture Industrial Products
       image: ../images/sponsors/Venture.png
-      description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
+      description: iPlanTables is the nation’s leading supplier of wide-format touchscreen display workstations for plan reviewers, plans examiners, and managers. We design different touch screen monitor models to help view and markup construction plans, specs, spreadsheets, and images for clients wanting to move from a paper-based workflow to a digital one. They are ideal for desktops, sit-stand workstations, conference rooms, and job trailers.
       profile: https://www.ventureindustrial.com/
+    - name: iPlanTables
+      image: ../images/sponsors/iPlanTables.svg
+      description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
+      profile: https://www.iplantables.com/
     - name: Bledsoe's Equipment
       image: ../images/sponsors/Bledsoes.png
       description: Your number one Source for Quality Equipment Rental and Sales in the Kansas City Metro

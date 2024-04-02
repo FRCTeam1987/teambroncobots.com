@@ -8,3 +8,4 @@ Gemfile.lock
 .jekyll-cache
 vendor
 node_modules/
+.jekyll-metadata
