@@ -16,11 +16,15 @@ hero_height: is-medium
     </p>
 </div>
 
-<div class="centered">
-    <p style="text-decoration: bold; font-size: 1.25em; color:black;">
-        2024 Summer Camp sign-ups will open in the Spring!
-    </p>
-</div>
+[//]: # (<div class="centered">)
+
+[//]: # (    <p style="text-decoration: bold; font-size: 1.25em; color:black;">)
+
+[//]: # (        2025 Summer Camp sign-ups will open in the Spring!)
+
+[//]: # (    </p>)
+
+[//]: # (</div>)
 
 
 ## Engineering Camp
@@ -30,13 +34,13 @@ hero_height: is-medium
     <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - incoming 2nd, 3rd, and 4th graders.
             <br>
-            Dates - 2024 TBD
+            Dates - June 3-6
             <br>
-            Time - 2024 TBD
+            Time - 1:00pm - 4:00pm
             <br>
             Prerequisites - None
             <br>
-            Price - TBD
+            Price - $125
             <br><br>
             Engineering Camp is for incoming 2nd - 4th graders who have an interest in all things STEM. <br>
             Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
@@ -54,13 +58,13 @@ hero_height: is-medium
             <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - 4th, 5th, and 6th graders.
             <br>
-            Dates - 2024 TBD
+            Dates - June 17-21 & June 24-28
             <br>
-            Times - 2024 TBD
+            Times - 9:00am - 3:00 pm
             <br>
             Prerequisites - None
             <br>
-            Price - TBD
+            Price - $250
             <br><br>
             Robotics Camp is an introductory level camp for incoming 5th - 7th graders.
             <br>It allows students to build a VEX robot to compete in a game and achieve certain tasks. 
