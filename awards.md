@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Our Awards 
+title: Our Awards 
 subtitle: Over the Seasons
 description: Team 1987's awards over the years!
 show_sidebar: false

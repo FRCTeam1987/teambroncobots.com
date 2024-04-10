@@ -8,7 +8,7 @@ imageicon: "../images/robots/2018robot.png"
 image: "../../images/robots/2018robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2018_FIRST_Power_Up.svg"
 features:
-    - label:  Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
+    - label: Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
       icon: fa-user-circle
     - label: Won the Quality Award sponsored by Motorola Solutions Foundation at the GKC Regional
       icon: fa-volume-up

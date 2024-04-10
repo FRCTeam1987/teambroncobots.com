@@ -1,6 +1,6 @@
 ---
 title: 2013 Robot
-subtitle:  Dennis The Menace 
+subtitle: Dennis The Menace 
 description: Ultimate Ascent Robot 2013
 robot_code: 2013
 layout: robot

@@ -1,6 +1,6 @@
 ---
 title: 2010 Robot
-subtitle: Breakaway FRC Robot
+subtitle: Lance-A-Lot
 description: Breakaway Robot 2007
 robot_code: 2010
 layout: robot

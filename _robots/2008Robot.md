@@ -10,7 +10,7 @@ CompetitionLogo : "../../images/robots/Competition Logos/2008_FIRST_Overdrive.jp
 features:
     - label: Won the Regional Engineering Inspiration Award at the Minnesota Regional
       icon: fa-road 
-    - label:  Made it to the FRC World Championship and competed in the Archimedes Division
+    - label: Made it to the FRC World Championship and competed in the Archimedes Division
       icon: fa-trophy 
     - label: Won the Autodesk Visualization Award at the Minnesota Regional
       icon: fa-star

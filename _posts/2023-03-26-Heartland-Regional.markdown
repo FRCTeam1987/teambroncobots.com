@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Heartland Regional Special Addition"
-date:   2023-03-26
+title: "Heartland Regional Special Addition"
+date:  2023-03-26
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/Heartland2023.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png

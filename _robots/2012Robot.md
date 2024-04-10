@@ -1,7 +1,7 @@
 ---
 title: 2012 Robot
-subtitle:  Drill Sergeant
-description:  Rebound Rumble Robot 2012
+subtitle: Drill Sargent
+description: Rebound Rumble Robot 2012
 robot_code: 2012
 layout: robot
 imageicon: "../images/robots/2012robot.png"

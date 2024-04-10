@@ -1,6 +1,6 @@
 ---
 title: 2007 Robot
-subtitle: Rack N Roll FRC Robot
+subtitle: The Broncobot
 description: Rack N Roll Robot 2007
 robot_code: 2007
 layout: robot

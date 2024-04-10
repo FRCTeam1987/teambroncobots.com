@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Broncobots Are Charged Up"
-date:   2023-01-15
+title: "Broncobots Are Charged Up"
+date: 2023-01-15
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week1.png
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png
