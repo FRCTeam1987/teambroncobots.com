@@ -14,7 +14,7 @@ features:
       icon: fa-robot
     - label: Dual Photon vision and Limelight image processing
       icon: fa-crosshairs
-awardsWon: 2
+awardsWon: 4
 hide_hero: true
 Specifications:
 - item: MK4i L3 Swerve Drive with Kraken Drive Motors enables 18.9ft/s speed.
@@ -40,7 +40,8 @@ Capabilities:
 Competitions:
 - item: Central Missouri Regional
 - item: Heartland Regional
-- item: Hosting and Participating in Greater Kansas City Regional
+- item: Hosted and Participated in Greater Kansas City Regional
+- item: Missouri State Championship
 Links:
 
 [//]: # (- item: CAD)
