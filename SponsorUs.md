@@ -3,6 +3,9 @@ title: Sponsor us
 subtitle: We apreciate any and every donation torwards our team!
 layout: default
 show_sidebar: false
+hero_image: ../images/SponsorUs.jpg
+hero_darken: false
+down_breaks: false
 ---
 
 <head>
