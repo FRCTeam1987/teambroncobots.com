@@ -28,9 +28,9 @@ hero_height: is-large
     }
 </style>
 
-<p><h1><center>
+<p><h1 style="text-align:center">
     Welcome!
-</center></h1></p>
+</h1></p>
 
  We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students attending [Lee's Summit North High School](https://lsnhs.lsr7.org/), 5 coaches, several amazing mentors, and multiple gracious corporate sponsors! Our team is dedicated to [FIRST](https://www.firstinspires.org/) (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage [STEM](https://www.kcstem.org/) (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!
 
@@ -39,13 +39,13 @@ hero_height: is-large
 **Check back here often for events, competitions, and general team information!**
 
 <div class="descriptors">
-<h1 style="font-size:64px;"><center>
+<h1 style="font-size:64px;font-family:Rockwell; text-align:center">
     Broncobots are
   <span
      class="txt-rotate"
      data-period="2000"
      data-rotate='["innovators.", "inspirational.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
-</center></h1>
+</h1>
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
 
@@ -57,9 +57,9 @@ hero_height: is-large
 
 <div class="zoom"></div> 
 
-<h2 style="color:maroon;text-align:center">About us</h2>
+<h2 style="color:maroon;text-align:center;font-family:Rockwell">About us</h2>
 
-<div style="text-align: center">
+<div style="text-align: center;font-family:Rockwell;">
 <buttonhover class="noWrap full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
