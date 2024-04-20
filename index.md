@@ -3,7 +3,8 @@ title: Broncobots
 subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
-show_sidebar: true
+show_sidebar: false
+[//]: # (If true, then post page appears)
 hero_image: images/Homeimg.jpg
 hero_height: is-large
 ---
