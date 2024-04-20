@@ -65,7 +65,7 @@ input[type=animated]:focus {
            {% for item in site.data[site.footer_social_media] %}
             <div class="column has-text-centered">
                 {% if item.company %}
-                    <a href="{{ item.link | relative_url }}" class="link"><i class="fab {{ item.icon }}"></i></a>
+                    <a href="{{ item.link | relative_url }}" class="link"><i class="fa-brands {{ item.icon }}"></i></a>
                 {% else %}
                     <a href="{{ item.link | relative_url }}" class="link"><i class="fas {{ item.icon }}"></i></a>
                 {% endif %}
