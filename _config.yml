@@ -9,14 +9,9 @@ baseurl: ""
 url: "https://teambroncobots.com/"
 permalink: pretty
 #favicon: /path/to/favicon.png
-#hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
-
-
-paginate: 5
-paginate_path: "/blog/page:num"
 
 # Disqus Comments
 disqus:
@@ -28,7 +23,6 @@ disqus:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
   - kramdown-parser-gfm
