@@ -9,23 +9,22 @@ hero_height: is-large
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
 
- <style>
-.zoom {
-/*  padding: 50px;*/
-/*  background-color: green;*/
-  transition: transform .2s; /* Animation */
-/*  width: 200px;*/
-/*  height: 200px;*/
-  margin: 0 auto;
-}
-@import "TextAnimationEffect.scss";
-
-.zoom:hover {
-  backface-visibility: hidden; 
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  
-}
-
+<style>
+    .zoom {
+        /*  padding: 50px;*/
+        /*  background-color: green;*/
+          transition: transform .2s; /* Animation */
+        /*  width: 200px;*/
+        /*  height: 200px;*/
+          margin: 0 auto;
+    }
+    @import "TextAnimationEffect.scss";
+    
+    .zoom:hover {
+      backface-visibility: hidden; 
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      
+    }
 </style>
 
 <p><h1><center>
@@ -34,7 +33,7 @@ hero_height: is-large
 
  We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students attending [Lee's Summit North High School](https://lsnhs.lsr7.org/), 5 coaches, several amazing mentors, and multiple gracious corporate sponsors! Our team is dedicated to [FIRST](https://www.firstinspires.org/) (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage [STEM](https://www.kcstem.org/) (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!
 
-We are building our 2024 robot and updating our website with current content.
+[//]: # (We are building our 2024 robot and updating our website with current content.)
 
 **Check back here often for events, competitions, and general team information!**
 
