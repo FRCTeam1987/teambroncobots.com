@@ -44,7 +44,6 @@
             {% endif %}
             <div class="column {{ content_width }}">
                 {% include tabs.html %}
-                {% include showcase.html %}
                 {% include sponsors.html %}
                 {% include gallery.html %}
                 {% include twoColumnGallery.html %}
@@ -60,8 +59,6 @@
     {% unless page.hide_footer %}
         {% include footer.html %}
     {% endunless %}
-    {%- include footer-scripts.html -%}
-
 
 {% unless page.hide_goto_top %}
 {% include goto_top.html %}

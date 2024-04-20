@@ -9,7 +9,6 @@ baseurl: ""
 url: "https://teambroncobots.com/"
 permalink: pretty
 #favicon: /path/to/favicon.png
-gh_sponsor: chrisrhymes
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
@@ -50,8 +49,6 @@ livereload: true
 sass:
   style: compressed
   source_dir: _sass
-
-#google_analytics: UA-code-here
 
 defaults:
   -

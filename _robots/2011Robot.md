@@ -1,6 +1,6 @@
 ---
 title: 2011 Robot
-subtitle: Logo Motion FRC Robot
+subtitle: Dr. Claw
 description: Logo Motion Robot 2011
 robot_code: 2011
 layout: robot

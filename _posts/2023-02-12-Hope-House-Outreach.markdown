@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Hope House Outreach"
-date:   2023-02-12
+title: "Hope House Outreach"
+date:  2023-02-12
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week5.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png
