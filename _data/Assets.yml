@@ -57,6 +57,8 @@
 
 - title: Robot Gallery
   images:
+    - image: ../images/robots/2024robot.png
+      description: The Broncobots 2024 Robot!
     - image: ../images/robots/2023robot.png
       description: The Broncobots 2023 Robot!
     - image: ../images/robots/2022robot.png
