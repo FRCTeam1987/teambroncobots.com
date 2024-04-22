@@ -16,7 +16,6 @@ hero_height: is-large
 
 <p>We offer a scalable svg file, used when possible.</p>
 
-<!--<img width="300px" src="../images/Assets/Branding/broncobots.svg" alt="../images/NoImage.png">-->
 <a href="../images/Assets/Branding/broncobots.svg" download>
     <img width="300px" src="../images/Assets/Branding/broncobots.svg" alt="../images/NoImage.png">
 </a>
