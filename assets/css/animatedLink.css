@@ -4,15 +4,15 @@
 }
 
 .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 14px;
-    padding-right: 15px;
+    padding-bottom: 0.4375em;
+    letter-spacing: 0.25em;
+    font-size: 0.875em;
+    padding-right: 0.9375em;
     text-transform: uppercase;
 }
 
 .cta svg {
-    transform: translateX(-8px);
+    transform: translateX(-0.5em);
     transition: all 0.3s ease;
 }
 
@@ -27,7 +27,7 @@
 .hover-underline-animation {
     position: relative;
     color: black;
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 
 .hover-underline-animation:after {
@@ -35,7 +35,7 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125em;
     bottom: 0;
     left: 0;
     background-color: #000000;

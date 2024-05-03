@@ -1,68 +1,68 @@
 <style>
-input[type=animated] {
-  width: 300px;
-  height: 50px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 12px;
-  transition: height,width 0.4s ease-in-out;
-/*  transition:  0.4s ease-in-out;*/
+    input[type=animated] {
+        width: 10em;
+        height: 2em;
+        box-sizing: border-box;
+        border: 0.125em solid #ccc;
+        border-radius: 1%;
+        font-size: 1em;
+        background-color: white;
+        background-position: 0.7em 0.7em;
+        background-repeat: no-repeat;
+        padding: 0.8em 1.125em 0.8em 0.8em;
+        /*transition: height,width 0.4s ease-in-out;*/
+    }
 
-}
-input[type=animated]:focus {
-  width: 500px;
-  height: 55px;
-}
-.button {
-  background-color: #830506;
-  border: none;
-  color: white;
-  padding: 0px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-.buttonRed {
-  background-color: #830506;
-  color: white;
-}
+    input[type=animated]:focus {
+        width: 35em;
+        height: 3.5em;
+    }
 
-.buttonRed:hover {
+    .button {
+        background-color: #830506;
+        border: none;
+        color: white;
+        padding: 0 2em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        margin: 0.25em 0.125em;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
 
-  background-color: white;
-  color: black;
-  border: 2px solid #830506;
-}
+    .buttonRed {
+        background-color: #830506;
+        color: white;
+    }
+
+    .buttonRed:hover {
+        background-color: white;
+        color: black;
+        border: 0.125em solid #830506;
+    }
 </style>
+
 <footer class="footer">
     <div class="container">
         <div class="columns is-multiline">
         </div>
         <div class="columns is-multiline">
-           {% for item in site.data[site.footer_social_media] %}
+            {% for item in site.data[site.footer_social_media] %}
             <div class="column has-text-centered">
                 {% if item.company %}
-                    <a href="{{ item.link | relative_url }}" class="link"><i class="fa-brands {{ item.icon }}"></i></a>
+                <a href="{{ item.link | relative_url }}" class="link"><i class="fa-brands {{ item.icon }}"></i></a>
                 {% else %}
-                    <a href="{{ item.link | relative_url }}" class="link"><i class="fas {{ item.icon }}"></i></a>
+                <a href="{{ item.link | relative_url }}" class="link"><i class="fas {{ item.icon }}"></i></a>
                 {% endif %}
             </div>
             {% endfor %}
         </div>
 
-
         <div class="content is-small has-text-centered">
             <a href='{{ site.baseurl }}/'>
-              <img src="{{ site.baseurl }}/broncobots.svg" alt="" width="150" height="200" >
+                <img src="{{ site.baseurl }}/broncobots.svg" alt="" width="150" height="200">
             </a>
             <p>© The Broncobots. All rights reserved.</p>
         </div>

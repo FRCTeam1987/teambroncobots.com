@@ -12,7 +12,7 @@ hero_height: is-large
 
 <style>
     .zoom {
-        /*  padding: 50px;*/
+        /*  padding: 3.125em;*/
         /*  background-color: green;*/
           transition: transform .2s; /* Animation */
         /*  width: 200px;*/
