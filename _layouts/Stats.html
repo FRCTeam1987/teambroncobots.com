@@ -1,49 +1,58 @@
 ---
 layout: default
 ---
+
 <style>
     .card {
-        opacity: 1; /* make the cards transparent by default */
-        transition: opacity 0.2s ease-in-out; /* add a smooth transition effect when the opacity changes */
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
     }
-    .card:hover { /* select all cards that are being hovered over with the mouse */
-        opacity: 0.5; /* make the cards fully opaque */
+
+    .card:hover {
+        opacity: 0.5;
     }
+
     .closeCard {
-        display:block;
-        position:absolute;
-        top:0px;
-        left:1%;
-        color:black;
-        height:30px;
-        width:35px;
-        font-size:4em;
-        text-decoration:none;
-        text-align:center;
-        font-weight:bold;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 1%;
+        color: black;
+        height: 1.875em;
+        width: 2.1875em;
+        font-size: 4em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
     }
+
     .row {
         display: flex;
     }
+
     .column {
         flex: 50%;
     }
+
     h1 {
         color: black;
         font-size: 4em;
         font-family: "Rockwell", "Roboto", "Montserrat", sans-serif;
     }
+
     h2 {
         text-align: center;
         color: black;
         font-size: 2em;
         font-family: "Rockwell", "Roboto", "Montserrat", sans-serif;
     }
+
     #chart-wrapper {
         display: inline-block;
         position: relative;
         width: 95%;
     }
+
     .black_overlay {
         display: none;
         position: fixed;
@@ -57,38 +66,47 @@ layout: default
         opacity: .80;
         filter: alpha(opacity=80);
     }
+
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
         }
+
         50% {
             background-position: 100% 50%;
         }
+
         100% {
             background-position: 0% 50%;
         }
     }
+
     .white_content {
         display: none;
         position: fixed;
         top: 5%;
         left: 12.5%;
         width: 75%;
-        height: 90%; /* Adjust the height to 90% of the viewport height */
-        padding: 16px;
-        border: 5px solid whitesmoke;
-        border-radius: 10px;
+        height: 90%;
+        padding: 1em;
+        border: 0.3125em solid whitesmoke;
+        border-radius: 0.625em;
         background-color: white;
         z-index: 1002;
-        overflow: auto; /* Enable scroll when content exceeds the height */
+        overflow: auto;
         margin: 0 auto;
     }
+
     @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
-    /* Mobile-specific styles */
     @media screen and (max-width: 600px) {
         .column {
             flex: 100%;
@@ -113,21 +131,19 @@ layout: default
         #mobile-warning {
             display: block;
             text-align: center;
-            padding: 10px;
+            padding: 0.625em;
             background-color: #f7b6b6;
             font-size: 1.2em;
             font-weight: bold;
         }
     }
 
-    /* Desktop-specific styles */
     @media screen and (min-width: 601px) {
         #mobile-warning {
             display: none;
         }
     }
 
-    /* Loading overlay */
     .loading-overlay {
         position: fixed;
         top: 0;
@@ -141,76 +157,54 @@ layout: default
         z-index: 9999;
     }
 
-    /* Loading spinner */
     .loading-spinner {
-        border: 4px solid rgba(255, 255, 255, 0.3);
+        border: 0.25em solid rgba(255, 255, 255, 0.3);
         border-radius: 50%;
-        border-top: 4px solid #ffffff;
-        width: 50px;
-        height: 50px;
+        border-top: 0.25em solid #ffffff;
+        width: 3.125em;
+        height: 3.125em;
         animation: spin 2s linear infinite;
     }
 
-    .RankButton{
+    .RankButton {
         font-size: 1.4em;
         margin-bottom: 1.25rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width:7em;
-        height:6em;
-        background-color:#990202;
-        border-radius:24%;
-        color:#F2F2F2;
+        width: 7em;
+        height: 6em;
+        background-color: #990202;
+        border-radius: 24%;
+        color: #F2F2F2;
     }
 </style>
 
-<!-- Loading spinner -->
 <div class="loading-overlay" id="loadingOverlay">
     <div class="loading-spinner"></div>
 </div>
-
 
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/StatBoticsRESTApi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
-    $( document ).ready(function() {
-        // if (events()) {
-        //     // events();
-        //     // years();
-        //     // eventsPerYear("2022");
-        //     // status();
-        //     // isStillLoading();
-        //     // isWorking();
-        //     // createChart("2022");
-        //     // pointsPerYear("2022");
-        //     // awardsPerYear("2022");
-        //     // awardNamesPerYear("2022");
-        //     // averagePointsPerYear("2022");
-        // }
+    $(document).ready(function () {
         showLoading();
         $(".white_content").click(function (event) {
             event.stopPropagation();
         });
 
-        // Add a click event listener to the X button in the card
         $(".closeCard").click(function () {
-            // Get the year from the card's ID (match + year)
             const year = this.id.replace("match", "");
-            // Hide the card and overlay when X button is clicked
             document.getElementById('match' + year).style.display = 'none';
             document.getElementById('back').style.display = 'none';
         });
 
-        // Add a click event listener to the black_overlay element to close the card
         $(".black_overlay").click(function () {
-            // Hide the opened card and overlay when clicked outside the card
             $(".white_content").hide();
             $(".black_overlay").hide();
         });
     });
-
 
     async function eventsPerYear(year) {
         let eventsPerYear = JSON.parse(sessionStorage.getItem("eventsPerYear" + year));
@@ -219,20 +213,16 @@ layout: default
             sessionStorage.setItem("eventsPerYear" + year, JSON.stringify(eventsPerYear));
         }
 
-        // Check if eventsPerYear is an array and has length greater than 0
         if (Array.isArray(eventsPerYear) && eventsPerYear.length > 0) {
-            // Display event names
             $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html(
                 eventsPerYear.map(ev => {
                     return ev.event_name + "<br/>";
                 })
             );
         } else {
-            // Display "No Events Available"
             $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html("No Events Available");
         }
     }
-
 
     async function scoreData(year) {
         let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
@@ -261,9 +251,6 @@ layout: default
         $("#scoreData" + year).html(html);
     }
 
-
-
-
     async function pointsPerMatchPerYear(year) {
         let matchesPerYear = await getMatchesPerYear(year);
         return matchesPerYear;
@@ -271,8 +258,6 @@ layout: default
 
     async function createChart(year) {
         const data = await pointsPerMatchPerYear(year);
-
-        // Sort the data array by the "time" property
         data.sort((a, b) => a.time - b.time);
 
         const ctx = document.getElementById('myChart' + year).getContext('2d');
@@ -283,96 +268,89 @@ layout: default
         const chart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: data?.map(match => match.key), // use the match keys as the labels
+                labels: data?.map(match => match.key),
                 datasets: [{
                     label: 'Auto',
                     data: data?.map(match => {
-                        // find the auto score for the red alliance in the match
                         if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
                             return match.red_auto !== undefined ? match.red_auto : null;
                         }
                         return null;
                     }),
-                    backgroundColor: '#FF6666', // Light red color for auto segment
+                    backgroundColor: '#FF6666',
                     stack: 'composite',
                 }, {
                     label: 'Teleop',
                     data: data?.map(match => {
-                        // find the teleop score for the red alliance in the match
                         if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
                             return match.red_teleop !== null ? match.red_teleop : match.red_score;
                         }
                         return null;
                     }),
-                    backgroundColor: '#FF0000', // Red color for teleop segment
+                    backgroundColor: '#FF0000',
                     stack: 'composite',
                 }, {
                     label: 'Endgame',
                     data: data?.map(match => {
-                        // find the endgame score for the red alliance in the match
                         if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
                             return match.red_endgame !== undefined ? match.red_endgame : null;
                         }
                         return null;
                     }),
-                    backgroundColor: '#CC0000', // Dark red color for endgame segment
+                    backgroundColor: '#CC0000',
                     stack: 'composite',
                 }, {
                     label: 'Auto',
                     data: data?.map(match => {
-                        // find the auto score for the blue alliance in the match
                         if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
                             return match.blue_auto !== undefined ? match.blue_auto : null;
                         }
                         return null;
                     }),
-                    backgroundColor: '#6666FF', // Light blue color for blue auto segment
+                    backgroundColor: '#6666FF',
                     stack: 'composite',
                 }, {
                     label: 'Teleop',
                     data: data?.map(match => {
-                        // find the teleop score for the blue alliance in the match
                         if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
                             return match.blue_teleop !== null ? match.blue_teleop : match.blue_score;
                         }
                         return null;
                     }),
-                    backgroundColor: '#0000FF', // Blue color for blue teleop segment
+                    backgroundColor: '#0000FF',
                     stack: 'composite',
                 }, {
                     label: 'Endgame',
                     data: data?.map(match => {
-                        // find the endgame score for the blue alliance in the match
                         if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
                             return match.blue_endgame !== undefined ? match.blue_endgame : null;
                         }
                         return null;
                     }),
-                    backgroundColor: '#0000CC', // Dark blue color for blue endgame segment
+                    backgroundColor: '#0000CC',
                     stack: 'composite',
                 }]
             },
             options: {
                 scales: {
                     yAxes: [{
-                        stacked: true, // Stacked bars
+                        stacked: true,
                         ticks: {
                             beginAtZero: true
                         }
                     }],
                     xAxes: [{
-                        stacked: true, // Stacked bars
+                        stacked: true,
                         ticks: {
-                            display: false //this will remove only the label
+                            display: false
                         }
                     }]
                 },
                 legend: {
-                    display: false // Hide the color labels from the legend
+                    display: false
                 },
                 tooltips: {
                     callbacks: {
-                        // Show the label name in the tooltip when hovering over the bar
                         label: function (tooltipItem, data) {
                             return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
                         }
@@ -381,8 +359,6 @@ layout: default
             }
         });
     }
-
-
 
 </script>
 
@@ -400,14 +376,13 @@ layout: default
             document.getElementById('loadingOverlay').style.display = 'flex';
         }
 
-        // Hide loading overlay
         function hideLoading() {
             document.getElementById('loadingOverlay').style.display = 'none';
         }
 
         async function years() {
             let years = await getYearsParticipated();
-            Array.from(years).forEach(async year => { // Use async here to use await inside forEach
+            Array.from(years).forEach(async year => {
                 let html = `
                         <div class="column is-6-desktop is-12-tablet">
                             <a href="javascript:void(0)" onclick="document.getElementById('match` + year + `').style.display='block';document.getElementById('back').style.display='block'" style="color: black">
@@ -469,19 +444,16 @@ layout: default
 
                     `;
                 $("#years").prepend(html);
-                eventsPerYear( year );
-                scoreData( year );
-                createChart( year );
+                eventsPerYear(year);
+                scoreData(year);
+                createChart(year);
             });
 
-// Wait for all AJAX requests to finish before hiding the loading
             await isFinished();
             hideLoading();
         }
 
         years();
-        // isWorking();
-        // document.getElementById('loading').style.display = 'none';
     </script>
 </div>
 
@@ -489,5 +461,4 @@ layout: default
     Powered by Statbotics REST API
     <br/>
     <a href="https://www.statbotics.io/">statbotics.io</a>
-
 </div>

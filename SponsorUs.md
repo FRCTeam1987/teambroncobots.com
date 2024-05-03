@@ -21,7 +21,7 @@ down_breaks: false
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 0.625em;
 <!--    height: 300px; /* Should be removed. Only for demonstration */-->
 }
 
