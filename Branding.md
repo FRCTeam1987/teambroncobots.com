@@ -7,8 +7,8 @@ hero_image: ../images/Assets/Branding/HighResBroncobotLogo.png
 hero_darken: true 
 hero_height: is-large
 --- 
-<div class="full">
-<center><p>Branding is a vital and crucial part of Team 1987. Below you can find our standards in branding.</p>
+<div class="full" style="text-align: center">
+<p>Branding is a vital and crucial part of Team 1987. Below you can find our standards in branding.</p>
 
 <h2><center>Logo</center></h2>
 
@@ -37,10 +37,7 @@ hero_height: is-large
 
 <h2>Fonts</h2>
 <p>We use Rockwell as our team font. Used in all logos, when available.</p>
-</center>
 <p style="color:black;font-family:Rockwell;font-size:64px;">Rockwell</p>
 <p style="color:black;font-family:Rockwell;font-size:28px;">"The quick brown fox jumps over the lazy dog."</p>
-<center>
 <p>When Rockwell is not available there is no offical backup font however Roboto is typically used next.</p>
-</center>
 </div>

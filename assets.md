@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Assets
-subtitle: Our teams assets!
-description: Our teams assets
+subtitle: Our team's assets!
+description: Our team's assets
 gallery: Assets
 hero_image: ../images/Assets.jpg
 hero_darken: false
