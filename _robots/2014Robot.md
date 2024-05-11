@@ -20,6 +20,9 @@ Competitions:
 - item: Greater Kansas City Regional
 - item: Colorado Regional
 - item: CowTown ThrowDown
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2014.pdf
 ---
 
 <h2>Description pending, check back soon!</h2>

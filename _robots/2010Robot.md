@@ -27,6 +27,9 @@ Competitions:
 - item: Oklahoma City Regional
 - item: World Championship
 - item: CowTown ThrowDown
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2010.pdf
 ---
 
 

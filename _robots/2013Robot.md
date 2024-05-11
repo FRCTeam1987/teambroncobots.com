@@ -27,4 +27,7 @@ Competitions:
 - item: World Championship
 - item: Ozark Mountain Brawl
 - item: CowTown ThrowDown
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2013.pdf
 ---
