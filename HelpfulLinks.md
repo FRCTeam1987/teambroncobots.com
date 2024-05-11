@@ -5,6 +5,7 @@ subtitle: Technical Resources
 description: Broncobots Helpful Links 
 show_sidebar: false
 hero_image: ../images/HelpfullLinks.jpg
-hero_darken: true
+hero_darken: false
+hero_black_text: false
 hero_height: is-large 
 ---

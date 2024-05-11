@@ -1,6 +1,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
-    .arrow-container {
+    @media screen and (max-width: 600px) {
+        #mobile-warning {
+            {% if page.hero_black_text %}
+                color: #FFFFFF;
+            {% else %}
+                color: #0a0a0a;
+            {% endif %}
+        }
+    }
+    @media screen and (min-width: 601px) {
+        #mobile-warning {
+            {% if page.hero_black_text %}
+                color: #0a0a0a;
+            {% else %}
+                color: #FFFFFF;
+            {% endif %}
+        }
+    }
+
+        .arrow-container {
         position: relative;
     }
 
@@ -49,6 +68,7 @@
     .hero-wrapper {
         height: calc(100vh - 3.25em);
         overflow: hidden;
+
     }
 </style>
 
@@ -56,16 +76,11 @@
 <div class="hero-wrapper">
     {% endif %}
 
-    <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover; height: 100%;" {% endif %}>
+    <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover; height: 100%; " {% endif %}>
         <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
             <div class="container">
-                {% if page.down_breaks %}
-                <h1 class="title is-2" style="padding-top: 5em; font-family:Rockwell">{{ page.title }}</h1>
-                <p class="subtitle is-3" style="font-family:Rockwell;">{{ page.subtitle }}</p>
-                {% else %}
-                <h1 class="title is-2" style="font-family:Rockwell;">{{ page.title }}</h1>
-                <p class="subtitle is-3" style="font-family:Rockwell;">{{ page.subtitle }}</p>
-                {% endif %}
+                <h1 class="title is-2" id="mobile-warning" style="font-family:Rockwell; {% if page.down_breaks %} padding-top: 5em;{% endif %} " >{{ page.title }}</h1>
+                <p class="subtitle is-3" id="mobile-warning" style="font-family:Rockwell; {% if page.hero_black_text %} color: #000000; {% endif %}">{{ page.subtitle }}</p>
 
                 {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
