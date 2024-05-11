@@ -48,4 +48,6 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2024
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2024.pdf
+- item: gif
+  link: ../../images/robots/DownloadableImages/schockwave2024.gif
 ---

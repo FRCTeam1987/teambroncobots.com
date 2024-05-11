@@ -213,7 +213,9 @@ layout: default
             sessionStorage.setItem("eventsPerYear" + year, JSON.stringify(eventsPerYear));
         }
 
-        if (Array.isArray(eventsPerYear) && eventsPerYear.length > 0) {
+        if (year === 2021) {
+            $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html("No Data Available");
+        } else if (Array.isArray(eventsPerYear) && eventsPerYear.length > 0) {
             $(("#eventsPerYear" + year + ", #eventsPerYearCard" + year)).html(
                 eventsPerYear.map(ev => {
                     return ev.event_name + "<br/>";
@@ -230,25 +232,29 @@ layout: default
             scoreData = await TeamInfoPerYear(year);
             sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
         }
-        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
+        if (year === 2021) {
+            $("#scoreData" + year).html("No Data Available");
+        } else {
+            const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
 
-        const percentileFormatted = (total_epa_percentile * 100).toFixed(0);
-        const ordinalSuffix = getOrdinalSuffix(Math.floor(total_epa_percentile * 100));
+            const percentileFormatted = (total_epa_percentile * 100).toFixed(0);
+            const ordinalSuffix = getOrdinalSuffix(Math.floor(total_epa_percentile * 100));
 
-        const html =
-            '<div style="font-size: 1.5em;">' +
-            wins + " wins - " + losses + " losses<br/>" +
-            epa_end + " EPA<br/>" +
-            (winrate * 100).toFixed(2) + "% Win Rate<br/>" +
-            percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
-            '</div>' +
-            '<div style="display: flex;flex-wrap: wrap; flex-direction: row; justify-content: space-around; align-items: center;">' +
-            '<div class="RankButton">Ranked <br/> ' + state_epa_rank + '/' + state_team_count + '<br/> in Missouri <br/> </div>' +
-            '<div class="RankButton">Ranked <br/> ' + country_epa_rank + '/' + country_team_count + '<br/> in the USA </div>' +
-            '<div class="RankButton">Ranked <br/>' + total_epa_rank + '/' + total_team_count + '<br/> in the world </div>' +
-            '</div>';
+            const html =
+                '<div style="font-size: 1.5em;">' +
+                wins + " wins - " + losses + " losses<br/>" +
+                epa_end + " EPA<br/>" +
+                (winrate * 100).toFixed(2) + "% Win Rate<br/>" +
+                percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
+                '</div>' +
+                '<div style="display: flex;flex-wrap: wrap; flex-direction: row; justify-content: space-around; align-items: center;">' +
+                '<div class="RankButton">Ranked <br/> ' + state_epa_rank + '/' + state_team_count + '<br/> in Missouri <br/> </div>' +
+                '<div class="RankButton">Ranked <br/> ' + country_epa_rank + '/' + country_team_count + '<br/> in the USA </div>' +
+                '<div class="RankButton">Ranked <br/>' + total_epa_rank + '/' + total_team_count + '<br/> in the world </div>' +
+                '</div>';
 
-        $("#scoreData" + year).html(html);
+            $("#scoreData" + year).html(html);
+        }
     }
 
     async function pointsPerMatchPerYear(year) {
@@ -258,6 +264,10 @@ layout: default
 
     async function createChart(year) {
         const data = await pointsPerMatchPerYear(year);
+        if (year === 2021 || data.length === 0) {
+            $("#chart-wrapper").html("No Data Available");
+            return;
+        }
         data.sort((a, b) => a.time - b.time);
 
         const ctx = document.getElementById('myChart' + year).getContext('2d');

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
     @media screen and (max-width: 600px) {
-        #mobile-warning {
+        #mobile-darkness {
             {% if page.hero_black_text %}
                 color: #FFFFFF;
             {% else %}
@@ -10,7 +10,7 @@
         }
     }
     @media screen and (min-width: 601px) {
-        #mobile-warning {
+        #mobile-darkness {
             {% if page.hero_black_text %}
                 color: #0a0a0a;
             {% else %}
@@ -79,12 +79,10 @@
     <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover; height: 100%; " {% endif %}>
         <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
             <div class="container">
-                <h1 class="title is-2" id="mobile-warning" style="font-family:Rockwell; {% if page.down_breaks %} padding-top: 5em;{% endif %} " >{{ page.title }}</h1>
-                <p class="subtitle is-3" id="mobile-warning" style="font-family:Rockwell; {% if page.hero_black_text %} color: #000000; {% endif %}">{{ page.subtitle }}</p>
+                <h1 class="title is-2" id="mobile-darkness" style="font-family:Rockwell; {% if page.down_breaks %} padding-top: 5em;{% endif %} " >{{ page.title }}</h1>
+                <p class="subtitle is-3" id="mobile-darkness" style="font-family:Rockwell; {% if page.hero_black_text %} color: #000000; {% endif %}">{{ page.subtitle }}</p>
 
-                {% if page.hero_link %}
-                <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
-                {% endif %}
+
             </div>
         </div>
 
