@@ -5,6 +5,7 @@ layout: default
 show_sidebar: false
 hero_image: ../images/SponsorUs.jpg
 hero_darken: false
+hero_black_text: true
 down_breaks: false
 ---
 
