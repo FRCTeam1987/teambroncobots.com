@@ -54,10 +54,10 @@
             </div>
             {% endif %}
         </div>
-    </section>
-    {% unless page.hide_footer %}
-        {% include footer.html %}
-    {% endunless %}
+</section>
+{% unless page.hide_footer %}
+{% include footer.html %}
+{% endunless %}
 
 {% unless page.hide_goto_top %}
 {% include goto_top.html %}
@@ -98,9 +98,9 @@
 
 <script>
     const bodyElement = document.getElementById('body-element');
+    const currentDate = new Date();
 
     function isAprilFools() {
-        const currentDate = new Date();
         const month = currentDate.getMonth();
         const day = currentDate.getDate();
 
@@ -108,9 +108,15 @@
     }
 
     if (isAprilFools()) {
-        bodyElement.classList.add('april-fools-body');
+        const year = currentDate.getFullYear();
+        const isOddYear = year % 2 !== 0;
+        if (isOddYear) {
+            bodyElement.classList.add('april-fools-body');
+        } else {
+            const randomRotation = Math.floor(Math.random() * 15) - 7;
+            bodyElement.style.transform = `rotate(${randomRotation}deg)`;
+        }
     }
 </script>
-
 </body>
 </html>
