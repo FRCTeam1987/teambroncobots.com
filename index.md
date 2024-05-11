@@ -7,7 +7,7 @@ show_sidebar: false
 [//]: # (If true, then post page appears)
 hero_image: images/Homeimg.jpg
 hero_height: is-large
-hero_black_text: false
+mobile_black_text: true
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
 
