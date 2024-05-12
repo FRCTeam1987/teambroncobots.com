@@ -17,13 +17,21 @@ features:
 awardsWon: 7
 hide_hero: true
 Specifications:
-    - item: 8 wheel West Coast Drive
-    - item: Floor intake roller
-    - item: Python programming
+- item: West coast drive with 10 wheels - 6 outer 8" pneumatics, 4 inner 5" BaneBots
+- item: Wheels chain driven from gearboxes
+- item: Drive has encoder sensors for position tracking
+- item: Fuel collector uses chain-driven roller at end of manipulator arm
+- item: Manipulator arm uses 2 pneumatic cylinders for positioning
+- item: Line break sensor stops intake roller when target position reached
+- item: Shooter uses 2 BaneBot wheels, aluminum flywheel, 3:1 planetary 775 Pro
+- item: Main programming in C++ with autonomous sequences
 Capabilities:
-    - item: Lift robot in one second
-    - item: Ramp guide fuel to rollers
-    - item: Shoot
+- item: Can breach all defenses
+- item: Scores in high goal
+- item: Intakes and shoots fuel efficiently
+- item: Autonomous defense crossing and shooting sequences
+- item: Sensor-based decision making and positioning
+- item: Repositions fuel into shooter with intake roller
 Competitions:
     - item: Greater Kansas City Regional
     - item: Iowa Regional
