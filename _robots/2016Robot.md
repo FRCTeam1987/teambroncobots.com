@@ -17,9 +17,20 @@ features:
 awardsWon: 4
 hide_hero: true
 Specifications:
-- item: Programmed in C++
-- item: West Coast Chassis
-- item: Bane Bot Motors
+- item: West coast drive with 10 wheels - 6 outer 8" pneumatics, 4 inner 5" BaneBots
+- item: Wheels are chain driven from gearboxes
+- item: Drive has encoder sensors for position tracking
+- item: Shooter uses 2 BaneBot wheels, aluminum flywheel, 3 tot 1 planetary 775 Pro motor
+- item: Intake roller driven by chain at end of manipulator arm
+- item: Manipulator arm uses 2 pneumatic cylinders for positioning
+- item: Main programming in C++ with autonomous sequences
+Capabilities:
+- item: Can breach all defenses
+- item: Scores in high and low goals
+- item: Efficient boulder intake
+- item: Autonomous defense crossing and shooting in 15 seconds
+- item: Sensor-based decision making and positioning
+- item: Repositions boulder into shooter with intake roller
 Competitions:
 - item: Greater Kansas City Regional
 - item: Hub City Regional

@@ -16,11 +16,22 @@ features:
       icon: fa-leaf 
 awardsWon: 1
 hide_hero: true
+Specifications:
+- item: 6-wheel drop center drive, custom 2" aluminum C-channel frame
+- item: Frame is 26"x30" for maneuverability and construction space
+- item: Linear 2-wheel shooter with pneumatic Frisbee feed
+- item: Adjustable shooter angle with 2 pneumatic cylinders
+- item: Hopper holds 4 discs, feeds directly to indexer
+- item: Hopper made from welded sheet metal and polycarbonate extension
+- item: Climbers use actuators with hooks, string pots, and limit switches
+- item: LED light strips, RGB decorative lights, high power aiming light
 Capabilities:
-- item: Shoot 3 point goals accurately from the back of the pyramid
-- item: Store 4 discs
-- item: Collect discs from the middle feeder slot
-- item: Climb to the first pyramid level
+- item: Accurate 3-point shooting from behind pyramids
+- item: Stores 4 discs in hopper
+- item: Collects discs from center feed slot
+- item: Climbs to first pyramid level
+- item: Shoots 3 discs autonomously into 3-point goal
+- item: Quick release hopper/shooter for maintenance
 Competitions:
 - item: Greater Kansas City Regional
 - item: Alamo Regional
@@ -28,6 +39,8 @@ Competitions:
 - item: Ozark Mountain Brawl
 - item: CowTown ThrowDown
 Links:
+- item: Code
+  link: ../../robots/Code/Robot2013.zip
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2013.pdf
 ---
