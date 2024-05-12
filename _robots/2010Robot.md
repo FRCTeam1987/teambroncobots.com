@@ -17,16 +17,25 @@ features:
 awardsWon: 4
 hide_hero: true
 Specifications:
-- item: Dayco Serpentine Belt
-- item: Toughbox transmission
-- item: Tread Speed Encoders
+- item: Robot uses mecanum wheels for omnidirectional drive
+- item: Elevator constructed from 1.5" T-slots, 53" bottom and 43" top sections
+- item: Elevator raised by winch with two window motors and polymer pulleys
+- item: Tube gripper uses pneumatics and rubber bands for gripping
+- item: Gripper has polymer/rubber rollers to prevent snagging
+- item: Minibot deployed from drawer slides with pneumatic cylinders/latches
 Capabilities:
-- item: Autonomous kicking
-- item: Hanging
+- item: Can drive forward, backward, left, right, and strafe sideways
+- item: Picks up tubes from ground or feeder slot
+- item: Scores on top two rows autonomously
+- item: Deploys custom minibot
+- item: Tracks lines on field during autonomous
 Competitions:
 - item: Oklahoma City Regional
 - item: World Championship
 - item: CowTown ThrowDown
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2010.pdf
 ---
 
 

@@ -27,4 +27,9 @@ Capabilities:
 Competitions:
 - item: Midwest Regional
 - item: CowTown ThrowDown
+Links:
+- item: Code
+  link: ../../robots/Code/Robot2011.zip
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2011.pdf
 ---

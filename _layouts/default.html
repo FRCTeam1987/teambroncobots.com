@@ -20,7 +20,7 @@
     {% if site.fixed_navbar %}class="has-navbar-fixed-{{ site.fixed_navbar }}"{% endif %}>
 
 {% include head.html %}
-<body id="body-element">
+<body>
 <div id="hero-container">
     {% unless page.hide_hero %}
     {% include hero.html %}
@@ -88,35 +88,6 @@
         window.addEventListener("scroll", updateNavbarPosition);
         updateNavbarPosition(); // Initial check in case the user loads the page at a scrolled position
     });
-</script>
-
-<style>
-    .april-fools-body {
-        transform: scaleY(-1) scaleX(-1);
-    }
-</style>
-
-<script>
-    const bodyElement = document.getElementById('body-element');
-    const currentDate = new Date();
-
-    function isAprilFools() {
-        const month = currentDate.getMonth();
-        const day = currentDate.getDate();
-
-        return month === 3 && day === 1; // April 1
-    }
-
-    if (isAprilFools()) {
-        const year = currentDate.getFullYear();
-        const isOddYear = year % 2 !== 0;
-        if (isOddYear) {
-            bodyElement.classList.add('april-fools-body');
-        } else {
-            const randomRotation = Math.floor(Math.random() * 15) - 7;
-            bodyElement.style.transform = `rotate(${randomRotation}deg)`;
-        }
-    }
 </script>
 </body>
 </html>
