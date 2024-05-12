@@ -38,9 +38,6 @@ Capabilities:
 - item: U-shaped ramps with side support rails
 - item: Gradual entry ramp incline
 - item: Drives up steep and various ramp styles
-Capabilities:
-- item: Places rings at all heights
-- item: Elevates two maximum sized robots
 Competitions:
 - item: Colorado Regional
 Links:
