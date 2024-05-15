@@ -9,4 +9,3 @@ hero_darken: false
 down_breaks: true
 show_sidebar: false
 --- 
-
