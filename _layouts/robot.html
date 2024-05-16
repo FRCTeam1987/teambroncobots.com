@@ -2,6 +2,53 @@
 layout: default
 ---
 
+<style>
+    .responsive-video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .responsive-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .game-video {
+        width: 75%;
+        margin: auto;
+    }
+
+    .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    @media (max-width: 1000px) {
+        .videos-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .game-video {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .responsive-video-wrapper {
+            padding-bottom: 75%; /* 4:3 aspect ratio for smaller screens */
+        }
+    }
+</style>
+
 <div class="columns is-multiline">
 
     <div class="column is-6">
@@ -310,8 +357,8 @@ layout: default
 {% if page.GameVideo %}
 <div class="content">
     <h2>Game Animation</h2>
-    <div style="text-align: center;">
-        <iframe style="border: 0;" width="700em" height="500em" src="https://www.youtube.com/embed/{{page.GameVideo}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">text</iframe>
+    <div class="responsive-video-wrapper game-video">
+        <iframe src="https://www.youtube.com/embed/{{page.GameVideo}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 {% endif %}
@@ -319,9 +366,11 @@ layout: default
 {% if page.Videos %}
 <div class="content">
     <h2>Videos</h2>
-    <div style="text-align: center;">
+    <div class="videos-grid">
         {% for item in page.Videos %}
-        <iframe style="border: 0;" width="600em" height="400em" src="https://www.youtube.com/embed/{{item.item}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="responsive-video-wrapper">
+            <iframe src="https://www.youtube.com/embed/{{item.item}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         {% endfor %}
     </div>
 </div>
