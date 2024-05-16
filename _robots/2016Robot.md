@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2016robot.png"
 image: "../../images/robots/2016robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2016_FIRST_Stronghold.svg"
+GameVideo: VqOKzoHJDjA
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Connie Wentworth)
       icon: fa-user
@@ -42,4 +43,11 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2016
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2016.pdf
+Videos:
+- item: EJK5-eDIEcE
+- item: q3xILAXGnSo
+- item: T9Hlws8VAeQ
+- item: W-1qV5Sl-RA
+- item: Wa0Ttv1DCUY
+- item: 1uicI_nyIfI
 ---

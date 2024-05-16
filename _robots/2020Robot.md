@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2020robot.png"
 image: "../../images/robots/2020robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2020_Infinite_Recharge.png"
+GameVideo: gmiYWTmFRVE
 features:
     - label: Ranked 4 in the Greater Kansas City Regional
       icon: fa-thumbs-up 

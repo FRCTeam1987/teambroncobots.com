@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2015robot.png"
 image: "../../images/robots/2015robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2015_Recycle_Rush.svg"
+GameVideo: W6UYFKNGHJ8
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Austin Ahern)
       icon: fa-user 
@@ -43,4 +44,14 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2015
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2015.pdf
+Videos:
+- item: asXnFhjXffw
+- item: WJLwpse74Ls
+- item: 0lfsBiTuy-4
+- item: 9XRvl7GykeE
+- item: eYiC8Tu9bYg
+- item: GrnjbyjjeqI
+- item: Wuoe8Ot4hZ0
+- item: 8QNuugDPDgk
+- item: Gcr47f4zJqk
 ---

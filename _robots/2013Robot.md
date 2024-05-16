@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2013robot.png"
 image: "../../images/robots/2013robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2013_Ultimate_Ascent.png"
+GameVideo: itHNW2OFr4Y
 features:
     - label: Made it to the FRC World Championship and competed in the Galileo Division
       icon: fa-exclamation 
@@ -43,4 +44,11 @@ Links:
   link: ../../robots/Code/Robot2013.zip
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2013.pdf
+Videos:
+- item: Yt9-GNx9fYs
+- item: KnNF6sWPPgE
+- item: M-_hN2FIa3U
+- item: I0gHTlJbYuQ
+- item: jbTVF6L5qzI
+- item: PDh-6yRC95c
 ---

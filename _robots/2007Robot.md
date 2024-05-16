@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2007robot.png"
 image: "../../images/robots/2007robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2007_Rack_n_Roll.jpeg"
+GameVideo: khTGSKvDyS4
 features:
     - label: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado Regional
       icon: fa-tree

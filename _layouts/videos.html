@@ -3,13 +3,13 @@ layout: page
 ---
 {{ content }}
 
-<div class='row'> 
+<div class='row'>
     {% if forloop.index > 4 %}
         {% break %}
     {% endif %}
     {% for Video in site.data.videos %}
 <!--    {% assign vid = site.data.videos.yml %}-->
-        <iframe width="325" height="325" src="https://www.youtube.com/embed/{{Video.Video}}" title="{{Video.description}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <iframe style="border: 0;" width="325" height="325" src="https://www.youtube.com/embed/{{Video.Video}}" title="{{Video.description}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     {% endfor %}
 </div>

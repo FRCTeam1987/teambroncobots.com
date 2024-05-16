@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2022robot.png"
 image: "../../images/robots/2022robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2022_Rapid_React.svg"
+GameVideo: LgniEjI9cCM
 features:
     - label: Two time regional winners
       icon: fa-certificate
@@ -47,4 +48,6 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2022
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2022.pdf
+Videos:
+- item: WErLk-A_kgw
 ---

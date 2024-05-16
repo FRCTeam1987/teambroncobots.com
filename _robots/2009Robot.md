@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2009robot.png"
 image: "../../images/robots/2009robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2009_Lunacy.png"
+GameVideo: nEh3Wzd1jDI
 features:
     - label: Made it to the FRC World Championship and competed in the Archimedes Division
       icon: fa-moon
@@ -35,4 +36,23 @@ Competitions:
 - item: Colorado Regional
 - item: World Championship
 - item: CowTown ThrowDown
+Videos:
+- item: rXI1SaBKkJ0
+- item: 7Vfrw8HfFXY
+- item: YCIS-0eWLxc
+- item: NXT-nSuM8pw
+- item: NMRoSk2a_JM
+- item: pq37aSKUQ7Q
+- item: IFX17PUKHWA
+- item: 4isF61TgvQc
+- item: f_QZQ1qksvM
+- item: tLgY33lTjlc
+- item: 3x1Iqp0YOLI
+- item: f3P0-urfQU8
+- item: Ul7Cg1E9BRU
+- item: i0RzTMMu5U8
+- item: BKeRPzoef7Y
+- item: ok0vlr885wk
+- item: 5zLljThiin0
+- item: vUO-i_LtkxM
 ---

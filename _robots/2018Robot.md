@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2018robot.png"
 image: "../../images/robots/2018robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2018_FIRST_Power_Up.svg"
+GameVideo: HZbdwYiCY74
 features:
     - label: Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
       icon: fa-user-circle
@@ -41,4 +42,6 @@ Competitions:
 Links:
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2018
+Videos:
+- item: uI5w6rwAvxg
 ---

@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2014robot.png"
 image: "../../images/robots/2014robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2014_Aerial_Assist.svg"
+GameVideo: oxp4dkMQ1Vo
 features:
     - label: Won the Industrial Design Award sponsored by General Motors at the GKC Regional
       icon: fa-desktop 
@@ -45,4 +46,12 @@ Links:
   link: ../../robots/Code/Robot2014.zip
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2014.pdf
+Videos:
+- item: u4VTzCjN880
+- item: p_3uX1kUN7Q
+- item: xxFYj5jS4hA
+- item: bpWBV3UXldI
+- item: lE3nSYTLAj8
+- item: ZwI5CVOxeYw
+- item: jH1JiGfxMyM
 ---

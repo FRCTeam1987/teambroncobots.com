@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2023robot.png"
 image: "../../images/robots/2023robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
+GameVideo: 0zpflsYc4PA
 features:
     - label: Used object detection to automatically collect and score game pieces
       icon: fa-certificate
@@ -44,4 +45,15 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2023
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2023.pdf
+Videos:
+- item: acPyU8cmutY
+- item: 8FxVwQNSVMg
+- item: PVuAVsHdg2A
+- item: kNwH6nfHuvU
+- item: iQqJcUmKoYw
+- item: Ss4auP1_TcY
+- item: UyCQjtCFufU
+- item: o5aFqNtjkLM
+- item: RDfN_2mthdk
+- item: W_FEYzDaHiM
 ---

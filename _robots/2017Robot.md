@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2017robot.png"
 image: "../../images/robots/2017robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2017_FIRST_Steamworks.svg"
+GameVideo: EMiNmJW7enI
 features:
     - label: Won the Greater Kansas City Regional
       icon: fa-cog 
@@ -44,4 +45,12 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2017
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2017.pdf
+Videos:
+- item: gsGJqDo8Un8
+- item: EKsAmQms9Bg
+- item: btdnwlDAYsM
+- item: Hj5vvt3VYLg
+- item: 5pUis31aw8s
+- item: kecLxF2HrzQ
+- item: YHNSak9zQVQ
 ---

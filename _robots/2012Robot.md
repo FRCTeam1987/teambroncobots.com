@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2012robot.png"
 image: "../../images/robots/2012robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2012_Rebound_Rumble.png"
+GameVideo: nOXsdhZZSdM
 features:
     - label: Won the Engineering Inspiration Award at the St. Louis Regional
       icon: fa-search 
@@ -39,4 +40,13 @@ Competitions:
 Links:
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2012.pdf
+Videos:
+- item: JbfFi6QA-Yk
+- item: C0LjAFFm5VE
+- item: _dkBH2rjTKo
+- item: 3wtWiFIZ_UI
+- item: RtPB62MmVZQ
+- item: OzZSuaFA1PQ
+- item: 9fqozA-nXK4
+- item: qDOjI15Xxzk
 ---

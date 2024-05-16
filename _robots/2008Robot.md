@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2008robot.png"
 image: "../../images/robots/2008robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2008_FIRST_Overdrive.jpeg"
+GameVideo: D5oL7aLH0T4
 features:
     - label: Won the Regional Engineering Inspiration Award at the Minnesota Regional
       icon: fa-road 
@@ -35,5 +36,27 @@ Capabilities:
 Competitions:
 - item: Minnesota Regional
 - item: World Championship
+Videos:
+- item: pTePEmhGfbk
+- item: _11R3or58vQ
+- item: 7GdZ44IJ81w
+- item: zYKj6yHFAKo
+- item: Sexxun2KBBw
+- item: q2oXOGdbhp4
+- item: 4BDNuKJTC7E
+- item: _nTob7i6Njc
+- item: 8PmO9uIRekI
+- item: VTEaeDWfYbo
+- item: TE6mcjSrloM
+- item: 2muNiXFGoR8
+- item: pIV7yEc4xD0
+- item: 4KYLA40wWPA
+- item: 1P83c8cnsB8
+- item: Gq6VUYjpojM
+- item: btvMRxuBXVo
+- item: l0P0LXmE8bI
+- item: zc5y_mAc6YE
+- item: 61a21JdaIvE
+- item: y_UTtb3v_H4
 ---
 

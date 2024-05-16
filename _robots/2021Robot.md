@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2021robot.png"
 image: "../../images/robots/2021robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2021_Infinite_Recharge.png"
+GameVideo: gmiYWTmFRVE
 features:
     - label: Won the Excellence in Engineering Award at the at home challenge
       icon: fa-rocket 

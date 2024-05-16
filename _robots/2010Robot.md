@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2010robot.png"
 image: "../../images/robots/2010robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2010_Breakaway.svg"
+GameVideo: Bb1P43OSfOU
 features:
     - label: Made it to the FRC World Championship and competed in the Archimedes Division
       icon: fa-arrow-right
@@ -36,6 +37,25 @@ Competitions:
 Links:
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2010.pdf
+Videos:
+- item: 2xmL1nPlgRc
+- item: aZZQKyUZN-s
+- item: pHrItbUhdsY
+- item: 7T4RBG3pTNg
+- item: RiPchtwG5uc
+- item: oM8TpMng89Y
+- item: PkOKauIpx5U
+- item: Z4bUOwZvBfg
+- item: EtsvOyF-QeQ
+- item: Zg_AfM6HiSI
+- item: L2QpMKpgBu8
+- item: H1F_vmLdPT8
+- item: m69_zLNZesM
+- item: 50gi2QprqcE
+- item: DvvuIuaoKLE
+- item: 8mbH0jigf24
+- item: lZROdO7zdcI
+- item: 8EgFi8TFBfg
 ---
 
 

@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2019robot.png"
 image: "../../images/robots/2019robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2019_Destination_Deep_Space.svg"
+GameVideo: Mew6G_og-PI
 features:
     - label: Team 1987's 2019 robot
       icon: fa-robot
@@ -44,5 +45,7 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2019
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2019.pdf
+Videos:
+- item: ffqoO8EyDMM
 ---
 
