@@ -36,6 +36,9 @@ Capabilities:
 Competitions:
 - item: Minnesota Regional
 - item: World Championship
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2009.pdf
 Videos:
 - item: pTePEmhGfbk
 - item: _11R3or58vQ

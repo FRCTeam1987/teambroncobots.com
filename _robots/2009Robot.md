@@ -36,6 +36,9 @@ Competitions:
 - item: Colorado Regional
 - item: World Championship
 - item: CowTown ThrowDown
+Links:
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2009.pdf
 Videos:
 - item: rXI1SaBKkJ0
 - item: 7Vfrw8HfFXY
@@ -53,6 +56,5 @@ Videos:
 - item: i0RzTMMu5U8
 - item: BKeRPzoef7Y
 - item: ok0vlr885wk
-- item: 5zLljThiin0
 - item: vUO-i_LtkxM
 ---
