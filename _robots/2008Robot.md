@@ -17,12 +17,21 @@ features:
 awardsWon: 3
 hide_hero: true
 Specifications:
-- item: 4 Wheel Drive
-- item: Toughbox transmissions
-- item: IFI Traction wheels
+- item: Kit-of-parts chassis with aluminum fasteners for low weight
+- item: 4 CIM motors with 2 AndyMark Toughbox transmissions
+- item: 13.4 to 1 combined gear ratio to wheels
+- item: Front 2" IFI Traction wheels, rear AndyMark omni wheels
+- item: Trackball removal arm with telescoping fiberglass beams
+- item: 36" leadscrew and 48 to 1 Banebots gearbox extends inner arm beam
+- item: "Herder" arms use Globe motor, chain drive, position transducer
+- item: Launcher uses latex tubes, winch, pneumatic differential/gearing
+- item: Pneumatic cylinder latches/releases launcher arms
 Capabilities:
-- item: Removes trackball in Hybrid mode
-- item: Hurdles trackball using catapult
+- item: Removes trackballs from overpass with paddle arm
+- item: Telescoping arm can extend to heights in 4 seconds
+- item: "Herder" arms can scoop and lift trackballs
+- item: Launcher can fire trackballs approximately 12' high, 8' away
+- item: Launcher can arm in 7 seconds, fire while driving
 Competitions:
 - item: Minnesota Regional
 - item: World Championship
