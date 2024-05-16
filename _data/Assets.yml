@@ -8,10 +8,10 @@
       description: The Official Broncobots logo
     - image: ../images/Assets/Branding/colors.png
       description: The Official Team colors
-    - image: ../images/Assets/Branding/Buttons/TeamClassic.png
+    - image: ../images/Assets/Branding/Buttons/2024Specific.png
       description: 2024 Buttons
       altdownload: ../images/Assets/Branding/Buttons/2024Buttons.zip
-    - image: ../images/Assets/Branding/Buttons/TeamClassic.png
+    - image: ../images/Assets/Branding/Buttons/2023WhiteClassic.png
       description: 2023 Buttons
       altdownload: ../images/Assets/Branding/Buttons/2023Buttons.zip
 
