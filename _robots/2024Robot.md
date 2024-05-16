@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2024robot.png"
 image: "../../images/robots/2024robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2024_Crescendo.svg"
+GameVideo: 9keeDyFxzY4
 features:
     - label: Two-time Innovation in Control winners
       icon: fa-certificate
@@ -50,4 +51,12 @@ Links:
   link: ../../robots/Technical Books/Technical Book 2024.pdf
 - item: gif
   link: ../../images/robots/DownloadableImages/schockwave2024.gif
+Videos:
+- item: 72AxnVR9yzg
+- item: lliPVuqGlFk
+- item: oIIn2sNtHTQ
+- item: zD3T0I5nMwM
+- item: hwme6ksjEyM
+- item: Q2u3z5pdn40
+- item: jFwftSsUFqE
 ---

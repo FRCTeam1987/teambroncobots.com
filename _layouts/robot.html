@@ -83,7 +83,6 @@ layout: default
 
     <div class="column is-6">
 
-
         {% if page.Competitions %}
         <div class="content">
             <h2>Competitions</h2>
@@ -301,12 +300,29 @@ layout: default
 <br/>
 
 
-
-
-
 <div style="text-align:center">
     Powered by Statbotics REST API
     <br/>
     <a href="https://www.statbotics.io/">statbotics.io</a>
 
 </div>
+
+{% if page.GameVideo %}
+<div class="content">
+    <h2>Game Animation</h2>
+    <div style="text-align: center;">
+        <iframe style="border: 0;" width="700em" height="500em" src="https://www.youtube.com/embed/{{page.GameVideo}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">text</iframe>
+    </div>
+</div>
+{% endif %}
+
+{% if page.Videos %}
+<div class="content">
+    <h2>Videos</h2>
+    <div style="text-align: center;">
+        {% for item in page.Videos %}
+        <iframe style="border: 0;" width="600em" height="400em" src="https://www.youtube.com/embed/{{item.item}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2011robot.png"
 image: "../../images/robots/2011robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2011_Logo_Motion.png"
+GameVideo: aH_9QHZpsfs
 features:
     - label: Ranked third in the Midwest Regional
       icon: fa-lemon
@@ -37,4 +38,14 @@ Links:
   link: ../../robots/Code/Robot2011.zip
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2011.pdf
+Videos:
+- item: hXpKCQoYcvw
+- item: e1xuGX7l4j8
+- item: 8FSYWm3tei4
+- item: zTGAh1N2zWM
+- item: LmIryo8dKZM
+- item: hPfqhSUwdvA
+- item: K2Bb9BqQnkM
+- item: xNGronkp8-4
+- item: b_ToyIQRLxw
 ---
