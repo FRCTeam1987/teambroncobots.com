@@ -42,6 +42,8 @@ Competitions:
 Links:
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2018
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2018.pdf
 Videos:
 - item: uI5w6rwAvxg
 ---
