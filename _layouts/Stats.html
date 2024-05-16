@@ -3,6 +3,11 @@ layout: default
 ---
 
 <style>
+
+    .hide-column {
+        display: none;
+    }
+
     .card {
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
@@ -370,6 +375,26 @@ layout: default
         });
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        function checkWidth() {
+            if (window.innerWidth < 1000) {
+                document.querySelectorAll('.column-to-hide').forEach(function(column) {
+                    column.classList.add('hide-column');
+                });
+            } else {
+                document.querySelectorAll('.column-to-hide').forEach(function(column) {
+                    column.classList.remove('hide-column');
+                });
+            }
+        }
+
+        checkWidth(); // Check width on page load
+
+        window.addEventListener('resize', function() {
+            checkWidth(); // Check width on resize
+        });
+    });
+
 </script>
 
 <div style="text-align: center">
@@ -434,7 +459,7 @@ layout: default
                                     </div>
                                     <br/><br/>
                                 </div>
-                                <div class="column">
+                                <div class="column column-to-hide">
                                 <a href="/robots/` + year + `Robot/">
                                     <img src="/images/robots/` + year + `robot.png" alt=" " onerror=this.src="/images/robots/pending.png">
                                 </a>
