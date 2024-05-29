@@ -40,7 +40,7 @@ mobile_black_text: true
 **Check back here often for events, competitions, and general team information!**
 
 <div class="descriptors">
-<h1 style="font-size:64px;font-family:Rockwell; text-align:center">
+<h1 style="font-size:64px;font-family:Rockwell, Roboto, sans-serif; text-align:center">
     Broncobots are
   <span
      class="txt-rotate"
@@ -58,9 +58,9 @@ mobile_black_text: true
 
 <div class="zoom"></div> 
 
-<h2 style="color:maroon;text-align:center;font-family:Rockwell">About us</h2>
+<h2 style="color:maroon; text-align:center; font-family:Rockwell, Roboto, sans-serif;">About us</h2>
 
-<div style="text-align: center;font-family:Rockwell;">
+<div style="text-align: center;font-family:Rockwell, Roboto, sans-serif;">
 <buttonhover class="noWrap full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
