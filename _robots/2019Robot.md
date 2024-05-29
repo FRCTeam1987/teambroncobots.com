@@ -45,6 +45,8 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2019
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2019.pdf
+- item: CAD
+  link: ../../robots/CAD/2019.zip
 Videos:
 - item: ffqoO8EyDMM
 ---

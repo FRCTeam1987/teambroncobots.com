@@ -41,6 +41,8 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2021
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2021.pdf
+- item: CAD
+  link: ../../robots/CAD/2021.zip
 - item: gif
   link: ../../images/robots/DownloadableImages/2021RobotGif.gif
 ---
