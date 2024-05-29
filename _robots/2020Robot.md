@@ -43,4 +43,6 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2020
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2020.pdf
+- item: CAD
+  link: ../../robots/CAD/2020.zip
 ---
