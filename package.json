@@ -1,16 +1,17 @@
 {
-  "name": "bulma-clean-theme",
-  "description": "This is a clean and simple Jekyll Theme built with the Bulma framework, providing a modern looking site to start with.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "chrisrhymes",
-  "license": "MIT",
-  "dependencies": {
-    "bulma": "^0.9.4",
-    "bulma-block-list": "^0.7"
-  }
+    "name": "bulma-clean-theme",
+    "description": "This is a clean and simple Jekyll Theme built with the Bulma framework, providing a modern looking site to start with.",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "rmdir /s /q D:\\GitHub\\teambroncobots.com\\_site && rmdir /s /q D:\\GitHub\\teambroncobots.com\\.jekyll-cache && npm update -g && npm install && bundle update && bundle install && npm install && bundle exec jekyll serve --incremental --trace --watch"
+    },
+    "author": "chrisrhymes",
+    "license": "MIT",
+    "dependencies": {
+        "bulma": "^0.9.4",
+        "bulma-block-list": "^0.7"
+    }
 }
