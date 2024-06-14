@@ -6,7 +6,7 @@
     "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "rmdir /s /q D:\\GitHub\\teambroncobots.com\\_site && rmdir /s /q D:\\GitHub\\teambroncobots.com\\.jekyll-cache && npm update -g && npm install && bundle update && bundle install && npm install && bundle exec jekyll serve --incremental --trace --watch"
+        "start": "rmdir /s /q .\\_site && rmdir /s /q .\\.jekyll-cache && npm update -g && npm install && bundle update && bundle install && npm install && bundle exec jekyll serve --incremental --trace --watch"
     },
     "author": "chrisrhymes",
     "license": "MIT",
