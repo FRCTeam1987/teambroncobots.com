@@ -1,23 +1,21 @@
-<a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                                                                                                                 .scroll-to-top {
+    .scroll-to-top {
         display: none;
         position: fixed;
-        bottom: 2em;
-        right: 2em;
-        z-index: 9999;
-        background-color: #111010;
+        bottom: 5%;
+        right: 4%;
+        z-index: 9998;
         color: #f8f8f8;
         cursor: pointer;
-        padding: 1rem;
-        border-radius: 100%;
+        padding-left: 0.8em;
         width: 2.5em;
         height: 2.5em;
         line-height: 2.5em;
-        text-align: center;
+        background-color: rgba(17, 16, 16, 0.75); /* Semi-transparent grey color */
+        border-radius: 50%;
+        animation: bounce 2s infinite;
     }
 
     .scroll-to-top i {
@@ -30,39 +28,49 @@
     }
 
     .scroll-to-top--show {
-        display: block;
+        display: inline-block;
+    }
+
+    .scroll-to-top--hide {
+        display: none;
     }
 
     html {
         scroll-behavior: smooth;
     }
 </style>
-
+<body>
 <a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
 
 <script>
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-            scrollToTopButton.classList.add('scroll-to-top--show');
-        } else {
-            scrollToTopButton.classList.remove('scroll-to-top--show');
-        }
-    });
+        window.addEventListener('scroll', () => {
+            const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
 
-    scrollToTopButton.addEventListener('click', () => {
-        let scrollInterval = setInterval(() => {
-            let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
-            if (scrollTopValue <= 0) {
-                clearInterval(scrollInterval);
+            if (scrolledPercentage > 4.5) {
+                scrollToTopButton.classList.add('scroll-to-top--show');
+                scrollToTopButton.classList.remove('scroll-to-top--hide');
+            } else {
+                scrollToTopButton.classList.remove('scroll-to-top--show');
+                scrollToTopButton.classList.add('scroll-to-top--hide');
             }
-            scrollTopValue -= scrollTopValue / 0.2;
-            // Change the 0.2 value to adjust the scrolling speed.
-            if (scrollTopValue >= 0) {
-                document.documentElement.scrollTop = scrollTopValue;
-                document.body.scrollTop = scrollTopValue;
-            }
-        }, 16);
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            let scrollInterval = setInterval(() => {
+                let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                if (scrollTopValue <= 0) {
+                    clearInterval(scrollInterval);
+                }
+                scrollTopValue -= scrollTopValue / 0.2;
+                if (scrollTopValue >= 0) {
+                    document.documentElement.scrollTop = scrollTopValue;
+                    document.body.scrollTop = scrollTopValue;
+                }
+            }, 16);
+        });
     });
 </script>
+</body>

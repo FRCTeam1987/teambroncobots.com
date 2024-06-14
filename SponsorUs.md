@@ -3,6 +3,10 @@ title: Sponsor us
 subtitle: We apreciate any and every donation torwards our team!
 layout: default
 show_sidebar: false
+hero_image: ../images/SponsorUs.jpg
+hero_darken: false
+mobile_black_text: true
+down_breaks: false
 ---
 
 <head>
@@ -18,7 +22,7 @@ show_sidebar: false
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 0.625em;
 <!--    height: 300px; /* Should be removed. Only for demonstration */-->
 }
 

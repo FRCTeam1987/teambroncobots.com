@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Broncobots in the Community"
-date:   2023-02-05
+title: "Broncobots in the Community"
+date: 2023-02-05
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week4.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png

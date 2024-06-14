@@ -3,17 +3,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 3.125em 0;
 }
 
 .event {
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25em;
+    padding: 1.25em;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.625em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease-out;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 1.5;
     text-align: center;
     position: relative;
@@ -30,7 +30,7 @@
     background: linear-gradient(to right, #830506, #ACACAC, #f8f8f8, #111010, #D90000);
     z-index: -1;
     opacity: 0.5;
-    border-radius: 10px;
+    border-radius: 0.625em;
     transition: opacity 0.5s ease-out;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .event:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.625em);
     cursor: pointer;
 }
 

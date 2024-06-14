@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "2023 Scrimmage"
-date:   2023-02-19
+title: "2023 Scrimmage"
+date:  2023-02-19
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week6.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png

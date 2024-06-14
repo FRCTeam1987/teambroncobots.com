@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2020robot.png"
 image: "../../images/robots/2020robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2020_Infinite_Recharge.png"
+GameVideo: gmiYWTmFRVE
 features:
     - label: Ranked 4 in the Greater Kansas City Regional
       icon: fa-thumbs-up 
@@ -17,17 +18,22 @@ features:
 awardsWon: 1
 hide_hero: true
 Specifications:
-- item: 6 Wheel West Coast Drive
-- item: Two 6” performance wheels
-- item: Four 6” Omni wheels
-- item: Floor power cell intake
-- item: Can hold five balls
+- item: West coast drive, 4 Falcon 500 motors, 16.35 ft/s
+- item: 2 6" performance wheels, 4 6" omni wheels
+- item: Falcon 500 integrated encoders for drive distance
+- item: Collector has Neo 550, compliant wheels, pneumatic pivot
+- item: Hopper uses poly belt, NeveRest motor, agitator wheel
+- item: Elevator has 2 pneumatics, timing belts, Andymark 9015 motor
+- item: Shooter has 2 Falcon 500s (2 to 3), 5" Fairlane wheels, Limelight
+- item: Control panel has motor (30 to 1), LED ring, pneumatic vertical motion
+- item: Climber has extending arms, winch motors, constant force springs
 Capabilities:
-- item: One stage elevator
-- item: Shoot 5 balls in 2 seconds
-- item: Manipulate color wheel
-- item: Cross the line in auto
-- item: Can travel under trench & over bumps
+- item: Automated hopper/elevator loading and ball counting
+- item: Automated control panel rotation/positioning
+- item: Autonomous uses spline driving paths
+- item: Fast/accurate shooter aiming with Limelight
+- item: Shooter PID RPM control with feedforward
+- item: State machine integration of hopper, elevator, shooter
 Competitions:
 - item: Attended & Hosted Greater Kansas City Regional
 - item: Planned to attend Heartland Regional
@@ -37,4 +43,6 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2020
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2020.pdf
+- item: CAD
+  link: ../../robots/CAD/2020.zip
 ---

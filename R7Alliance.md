@@ -1,6 +1,6 @@
 ---
 layout: page
-title:   R7 Alliance 
+title:  R7 Alliance 
 subtitle: Lee's Summit Robotics
 description: The LSR7 robototics alliance!
 show_sidebar: false

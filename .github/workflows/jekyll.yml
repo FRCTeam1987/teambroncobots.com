@@ -30,7 +30,7 @@ jobs:
       working-directory: ./
 
     # Standard usage
-    - uses:  helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         jekyll_src: './'

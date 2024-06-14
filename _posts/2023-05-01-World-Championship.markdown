@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "World Championship Special Edition"
-date:   2023-05-01
+title: "World Championship Special Edition"
+date:  2023-05-01
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/WorldChamps2023.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png

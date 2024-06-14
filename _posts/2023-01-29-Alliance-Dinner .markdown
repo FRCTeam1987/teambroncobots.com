@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Alliance Dinner"
-date:   2023-01-29
+title: "Alliance Dinner"
+date: 2023-01-29
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week3.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "If You Build It, They Will Come"
-date:   2023-01-22
+title: "If You Build It, They Will Come"
+date:  2023-01-22
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week2.jpg
 hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png
