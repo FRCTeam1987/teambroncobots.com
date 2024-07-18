@@ -45,6 +45,8 @@ Competitions:
 - item: Indiana Robotics Invitational
 - item: CowTown ThrowDown
 Links:
+- item: IRI Recode
+  link: https://github.com/FRCTeam1987/Robot2024_2
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2024
 - item: Technical Book
