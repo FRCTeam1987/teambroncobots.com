@@ -8,7 +8,6 @@ description: >
 baseurl: ""
 url: "https://teambroncobots.com/"
 permalink: pretty
-#favicon: /path/to/favicon.png
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr

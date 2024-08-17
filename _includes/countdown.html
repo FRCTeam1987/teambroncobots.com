@@ -1,0 +1,147 @@
+<style>
+    .countdown {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .countdown-element {
+        text-align: center;
+        font-size: 2rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        min-width: 8rem;
+    }
+
+    .countdown-element div {
+        font-size: 0.6em;
+        color: #000000;
+    }
+
+    .countdown-element span {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .countdown {
+            gap: 0.5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .countdown-element {
+            width: calc(50% - 1rem);
+            font-size: 1.5rem;
+        }
+
+        .countdown-element span {
+            font-size: 2em;
+        }
+
+        .countdown-element div {
+            font-size: 0.5em;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .countdown-element {
+            width: calc(50% - 0.5rem);
+            font-size: 2rem;
+        }
+
+        .countdown-element span {
+            font-size: 2.5em;
+        }
+
+        .countdown-element div {
+            font-size: 0.4em;
+        }
+    }
+
+    @media (max-width: 20rem) {
+        .countdown, .text {
+            display: none;
+        }
+    }
+</style>
+
+<h1 style="font-size:3rem;font-family:Rockwell, Roboto, sans-serif; text-align:center" class="text hidden">
+    Countdown to the Next Event!
+</h1>
+<div class="countdown hidden">
+    <div class="countdown-element">
+        <span id="days">00</span>
+        <div>Days</div>
+    </div>
+    <div class="countdown-element">
+        <span id="hours">00</span>
+        <div>Hours</div>
+    </div>
+    <div class="countdown-element">
+        <span id="minutes">00</span>
+        <div>Minutes</div>
+    </div>
+    <div class="countdown-element">
+        <span id="seconds">00</span>
+        <div>Seconds</div>
+    </div>
+</div>
+
+<script>
+    const countdowns = [
+        { date: new Date("January 4, 2025 11:00:00"), text: "Countdown to the 2025 FRC Season!" },
+        { date: new Date("April 16, 2025 17:00:00"), text: "Countdown to the 2025 FIRST Championship!" },
+        { date: new Date("April 19, 2025 18:00:00"), text: "Countdown to the End of the 2025 FIRST Championship!" },
+        { date: new Date("April 29, 2026 17:00:00"), text: "Countdown to the 2026 FIRST Championship!" },
+        { date: new Date("May 2, 2026 18:00:00"), text: "Countdown to the End of the 2026 FIRST Championship!" },
+        { date: new Date("April 28, 2027 17:00:00"), text: "Countdown to the 2027 FIRST Championship!" },
+        { date: new Date("May 1, 2027 18:00:00"), text: "Countdown to the End of the 2027 FIRST Championship!" },
+    ];
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        let closestCountdown = null;
+
+        for (const countdown of countdowns) {
+            if (countdown.date.getTime() > now) {
+                if (!closestCountdown || countdown.date < closestCountdown.date) {
+                    closestCountdown = countdown;
+                }
+            }
+        }
+
+        if (closestCountdown) {
+            document.querySelector(".text").textContent = closestCountdown.text;
+            document.querySelector(".text").classList.remove('hidden');
+            document.querySelector(".countdown").classList.remove('hidden');
+
+            const timeDifference = closestCountdown.date.getTime() - now;
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = String(days).padStart(2, '0');
+            document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+        } else {
+            document.querySelector(".text").classList.add('hidden');
+            document.querySelector(".countdown").classList.add('hidden');
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+
+    updateCountdown();
+</script>
