@@ -66,6 +66,11 @@
 <body>
 <footer class="footer">
     <div class="container">
+        {% unless page.hide_countdown %}
+        {% include countdown.html %}
+        {% endunless %}
+    </div>
+    <div class="container">
         <div class="social-media">
             {% for item in site.data[site.footer_social_media] %}
             <div class="icon-wrapper">
