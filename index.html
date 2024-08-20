@@ -2,7 +2,7 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <html
     dir="ltr"
@@ -14,15 +14,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content=#ffffff>
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
-           href="/broncobots.svg" 
-    />
-    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+           href="/broncobots.svg"  />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@x/css/all.min.css">
     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@x/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Broncobots | Broncobots FRC Team 1987</title>
@@ -41,141 +40,138 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Broncobots webste FRC Team 1987","headline":"Broncobots","name":"Broncobots FRC Team 1987","url":"https://teambroncobots.com//"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <!-- head scripts --></head>
+    
+</head>
 
 <body>
 <div id="hero-container">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
-    /* Add custom CSS to style the arrow container */
-    .arrow-container {
+    @media screen and (max-width: 770px) {
+        #mobile-darkness {
+            color: #FFFFFF;
+            
+                color: #0a0a0a;
+            
+        }
+    }
+    @media screen and (min-width: 771px) {
+        #mobile-darkness {
+            color: #FFFFFF;
+        }
+    }
+
+        .arrow-container {
         position: relative;
     }
 
-    /* Add custom CSS for the semi-transparent grey circle */
     .arrow-container::before {
         content: "";
         position: absolute;
-        bottom: calc(2.5% + 65px);
-        right: calc(7.9% - 9px);
-        width: 40px;
-        height: 40px;
-        background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey color */
+        bottom: calc(2.5% + 4em);
+        right: calc(7.9% - 0.5em);
+        width: 2.3em;
+        height: 2.3em;
+        background-color: rgba(128, 128, 128, 0.5);
         border-radius: 50%;
         animation: bounce 2s infinite;
     }
 
-    /* Add custom CSS to style the arrow */
     .arrow-down {
         position: absolute;
-        bottom: calc(2.5% + 72px);
+        bottom: calc(2.5% + 3em);
         right: 8%;
-        font-size: 24px;
-        color: #fff; /* Change color if needed */
+        font-size: 1.5em;
+        color: #fff;
         animation: bounce 2s infinite;
         cursor: pointer;
     }
 
-    /* Bounce animation same as before */
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
             transform: translateY(0);
         }
         40% {
-            transform: translateY(-20px);
+            transform: translateY(-1.25rem);
         }
         60% {
-            transform: translateY(-10px);
+            transform: translateY(-0.625rem);
         }
     }
 
-    /* Add custom CSS for the "Scroll Down!" text */
     .scroll-down-text {
         position: absolute;
-        bottom: calc(5% + 30px);
+        bottom: calc(5% + 1.4em);
         right: 5.3%;
         color: #fff;
-        font-size: 18px;
+        font-size: 1.125em;
     }
 
-    /* Add custom CSS for the hero section wrapper */
     .hero-wrapper {
-        height: calc(100vh - 52px);
+        height: calc(100vh - 3.25em);
         overflow: hidden;
+
     }
 </style>
 
 
 <div class="hero-wrapper">
+    
 
-
-    <section class="hero  is-large  is-bold is-primary"  style="background: url('images/Homeimg.jpg') no-repeat center center; background-size: cover; height: 100%;" >
+    <section class="hero  is-large  is-bold is-primary"  style="background: url('images/Homeimg.jpg') no-repeat center center; background-size: cover; height: 100%; " >
         <div class="hero-body ">
             <div class="container">
-                <h1 class="title is-2">Broncobots</h1>
-                <p class="subtitle is-3">FRC Team 1987</p>
-                
+                <h1 class="title is-2" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif;  " >Broncobots</h1>
+                <p class="subtitle is-3" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif;">FRC Team 1987</p>
+
+
             </div>
         </div>
 
         
         <div class="arrow-container">
-            <!-- Use Font Awesome arrow icon -->
             <i class="fa fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
-            <!-- Add the "Scroll Down!" text -->
             <div class="scroll-down-text">Scroll Down!</div>
         </div>
         
     </section>
-
-    <!-- Add a target section that you want to scroll to -->
+    
     <div id="target-section" style="height: 100vh; background-color: #f5f5f5;"></div>
 </div>
 
 
 <script>
     
-        function scrollToNextSection() {
-            const targetSection = document.getElementById("target-section");
-            const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
-        }
+    function scrollToNextSection() {
+        const targetSection = document.getElementById("target-section");
+        const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: scrollOffset, behavior: "smooth" });
+    }
 
-
-        document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
+    document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
     
 </script>
 
     
 </div>
 <style>
-    /* Updated sticky class with transition and placeholder */
     .sticky {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1000;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
         transition: top 0.3s ease-in-out;
     }
-
-    /* Placeholder for the non-sticky navbar */
-    .navbar-placeholder {
-        display: none;
-        height: 0;
-        visibility: hidden;
-    }
-
 </style>
 
 <nav class="navbar is-primary sticky " x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="navbar-item">
-            <img src="/broncobots.svg" alt=" " width="40">
-<!--                Broncobots FRC Team 1987-->
+                <img src="/broncobots.svg" alt="" width="40">
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
@@ -189,204 +185,195 @@
                 <a href="/" class="navbar-item is-active">Home</a>
                 
                 
-                    
-                        
-                            <a href="/sponsors/" class="navbar-item ">Sponsors</a>
-                        
-                    
                 
-                    
-                        
-                            <a href="/robots/" class="navbar-item ">Robots</a>
-                        
-                    
                 
-                    
-                        
-                            <a href="https://www.firstinspires.org/" class="navbar-item " target="_blank">FIRST</a>
-                        
-                    
+                <a href="/sponsors/" class="navbar-item ">Sponsors</a>
                 
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/" class="navbar-link ">About Us</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/awards/" class="navbar-item ">Our Awards</a>
-                            
-                            <a href="/Stats/" class="navbar-item ">Stats</a>
-                            
-                            <a href="/R7Alliance/" class="navbar-item ">R7 Alliance</a>
-                            
-                            <a href="/Branding/" class="navbar-item ">Branding</a>
-                            
-                        </div>
+                
+                
+                
+                
+                <a href="/robots/" class="navbar-item ">Robots</a>
+                
+                
+                
+                
+                
+                <a href="https://www.firstinspires.org/" class="navbar-item " target="_blank">FIRST</a>
+                
+                
+                
+                
+                <div class="navbar-item has-dropdown is-hoverable ">
+                    <a href="/" class="navbar-link ">About Us</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/awards/" class="navbar-item ">Our Awards</a>
+                        
+                        <a href="/Stats/" class="navbar-item ">Stats</a>
+                        
+                        <a href="/R7Alliance/" class="navbar-item ">R7 Alliance</a>
+                        
+                        <a href="/Branding/" class="navbar-item ">Branding</a>
+                        
                     </div>
-                    
+                </div>
                 
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/" class="navbar-link ">Resources</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/HelpfulLinks/" class="navbar-item ">Helpful Links</a>
-                            
-                            <a href="/assets/" class="navbar-item ">Assets</a>
-                            
-                            <a href="/videos/" class="navbar-item ">Videos</a>
-                            
-                        </div>
+                
+                
+                <div class="navbar-item has-dropdown is-hoverable ">
+                    <a href="/" class="navbar-link ">Resources</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/HelpfulLinks/" class="navbar-item ">Helpful Links</a>
+                        
+                        <a href="/assets/" class="navbar-item ">Assets</a>
+                        
+                        <a href="/videos/" class="navbar-item ">Videos</a>
+                        
                     </div>
-                    
+                </div>
                 
-                    
-                        
-                            <a href="/SummerCamps/" class="navbar-item ">Summer Camps</a>
-                        
-                    
                 
-                    
-                        
-                            <a href="/allPosts/" class="navbar-item ">Posts</a>
-                        
-                    
+                
+                
+                <a href="/SummerCamps/" class="navbar-item ">Summer Camps</a>
+                
+                
                 
                 
             </div>
 
             <div class="navbar-end">
-                
                 <a class="navbar-item" href="/SponsorUs">
                     <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
                     <span>Sponsor</span>
                 </a>
-                
             </div>
-
         </div>
     </div>
 </nav>
 
 
 
-    
-    <section class="hero  is-medium  is-light">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-multiline is-centered">
+
+<section class="hero  is-medium  is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                
+                <div class="column is-4 has-text-centered">
                     
-                    <div class="column is-4 has-text-centered">
+                    <div class="icon callout-icon">
                         
-                        <div class="icon callout-icon">
-                            
-                            <i class="fab fa-superpowers fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_1" data-final-count="17">17</span>
-                        </p>
-                        <p class="subtitle is-5">Seasons Competed</p>
-
-                        
-
+                        <i class="fab fa-superpowers fa-4x"></i>
                         
                     </div>
                     
-                    <div class="column is-4 has-text-centered">
-                        
-                        <div class="icon callout-icon">
-                            
-                            <i class="fas fa-arrows-alt fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_2" data-final-count="65">65</span>
-                        </p>
-                        <p class="subtitle is-5">Competitions</p>
+                    <p class="title is-5">
+                        <span id="countup_1" data-final-count="17">17</span>
+                    </p>
+                    <p class="subtitle is-5">Seasons Competed</p>
 
-                        
-
-                        
-                    </div>
                     
-                    <div class="column is-4 has-text-centered">
-                        
-                        <div class="icon callout-icon">
-                            
-                            <i class="fas fa-flag fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_3" data-final-count="12">12</span>
-                        </p>
-                        <p class="subtitle is-5">Blue Banners</p>
 
-                        
-
-                        
-                    </div>
-                    
-                    <div class="column is-4 has-text-centered">
-                        
-                        <div class="icon callout-icon">
-                            
-                            <i class="fas fa-bullseye fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_4" data-final-count="780">780</span>
-                        </p>
-                        <p class="subtitle is-5">Future Engineers Inspired</p>
-
-                        
-
-                        
-                    </div>
-                    
-                    <div class="column is-4 has-text-centered">
-                        
-                        <div class="icon callout-icon">
-                            
-                            <i class="fas fa-bolt fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_5" data-final-count="62">62</span>
-                        </p>
-                        <p class="subtitle is-5">Awards Won</p>
-
-                        
-
-                        
-                    </div>
-                    
-                    <div class="column is-4 has-text-centered">
-                        
-                        <div class="icon callout-icon">
-                            
-                            <i class="fas fa-user-plus fa-4x"></i>
-                            
-                        </div>
-                        
-                        <p class="title is-5">
-                            <span id="countup_6" data-final-count="33">33</span>
-                        </p>
-                        <p class="subtitle is-5">Sponsors</p>
-
-                        
-
-                        
-                    </div>
                     
                 </div>
+                
+                <div class="column is-4 has-text-centered">
+                    
+                    <div class="icon callout-icon">
+                        
+                        <i class="fas fa-arrows-alt fa-4x"></i>
+                        
+                    </div>
+                    
+                    <p class="title is-5">
+                        <span id="countup_2" data-final-count="66">66</span>
+                    </p>
+                    <p class="subtitle is-5">Competitions</p>
+
+                    
+
+                    
+                </div>
+                
+                <div class="column is-4 has-text-centered">
+                    
+                    <div class="icon callout-icon">
+                        
+                        <i class="fas fa-flag fa-4x"></i>
+                        
+                    </div>
+                    
+                    <p class="title is-5">
+                        <span id="countup_3" data-final-count="12">12</span>
+                    </p>
+                    <p class="subtitle is-5">Blue Banners</p>
+
+                    
+
+                    
+                </div>
+                
+                <div class="column is-4 has-text-centered">
+                    
+                    <div class="icon callout-icon">
+                        
+                        <i class="fas fa-bullseye fa-4x"></i>
+                        
+                    </div>
+                    
+                    <p class="title is-5">
+                        <span id="countup_4" data-final-count="780">780</span>
+                    </p>
+                    <p class="subtitle is-5">Future Engineers Inspired</p>
+
+                    
+
+                    
+                </div>
+                
+                <div class="column is-4 has-text-centered">
+                    
+                    <div class="icon callout-icon">
+                        
+                        <i class="fas fa-bolt fa-4x"></i>
+                        
+                    </div>
+                    
+                    <p class="title is-5">
+                        <span id="countup_5" data-final-count="65">65</span>
+                    </p>
+                    <p class="subtitle is-5">Awards Won</p>
+
+                    
+
+                    
+                </div>
+                
+                <div class="column is-4 has-text-centered">
+                    
+                    <div class="icon callout-icon">
+                        
+                        <i class="fas fa-user-plus fa-4x"></i>
+                        
+                    </div>
+                    
+                    <p class="title is-5">
+                        <span id="countup_6" data-final-count="33">33</span>
+                    </p>
+                    <p class="subtitle is-5">Sponsors</p>
+
+                    
+
+                    
+                </div>
+                
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <script>
     const observerOptions = {
@@ -430,14 +417,11 @@
 
 
 
-
 <section class="section">
     <div class="container">
         <div class="columns is-multiline">
             
-            <div class="column is-8">
-                
-                
+            <div class="column is-12">
                 
 
                 
@@ -450,39 +434,36 @@
     <link rel="stylesheet" href="/assets/css/buttonHover.css" />
 
 <style>
-.zoom {
-/*  padding: 50px;*/
-/*  background-color: green;*/
-  transition: transform .2s; /* Animation */
-/*  width: 200px;*/
-/*  height: 200px;*/
-  margin: 0 auto;
-}
-@import "TextAnimationEffect.scss";
-
-.zoom:hover {
-  backface-visibility: hidden; 
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  
-}
-
+    .zoom {
+        /*  padding: 3.125em;*/
+        /*  background-color: green;*/
+          transition: transform .2s; /* Animation */
+        /*  width: 200px;*/
+        /*  height: 200px;*/
+          margin: 0 auto;
+    }
+    @import "TextAnimationEffect.scss";
+    
+    .zoom:hover {
+      backface-visibility: hidden; 
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      
+    }
 </style>
 
-<p><h1><center>
+<p><h1 style="text-align:center">
     Welcome!
-</center></h1></p>
+</h1></p>
 
 <p>We are the Broncobots, Team 1987, based out of Lee’s Summit, Missouri. The team is made up of many students attending <a href="https://lsnhs.lsr7.org/">Lee’s Summit North High School</a>, 5 coaches, several amazing mentors, and multiple gracious corporate sponsors! Our team is dedicated to <a href="https://www.firstinspires.org/">FIRST</a> (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage <a href="https://www.kcstem.org/">STEM</a> (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!</p>
-
-<p>We are building our 2024 robot and updating our website with current content.</p>
 
 <p><strong>Check back here often for events, competitions, and general team information!</strong></p>
 
 <div class="descriptors">
-<h1 style="font-size:64px;"><center>
+<h1 style="font-size:64px;font-family:Rockwell, Roboto, sans-serif; text-align:center">
     Broncobots are
   <span class="txt-rotate" data-period="2000" data-rotate="[&quot;innovators.&quot;, &quot;inspirational.&quot;, &quot;engineers.&quot;, &quot;designers.&quot;, &quot;accepting.&quot;, &quot;listeners.&quot;, &quot;thinkers.&quot;, &quot;a family.&quot; ]"></span>
-</center></h1>
+</h1>
 <script src="/assets/js/TextAnimation.js"></script>
 </div>
 
@@ -494,9 +475,9 @@
 
 <div class="zoom"></div>
 
-<h2 style="color:maroon;text-align:center">About us</h2>
+<h2 style="color:maroon; text-align:center; font-family:Rockwell, Roboto, sans-serif;">About us</h2>
 
-<div style="text-align: center">
+<div style="text-align: center;font-family:Rockwell, Roboto, sans-serif;">
 <buttonhover class="noWrap full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
@@ -523,7 +504,7 @@
 <div id="teamHist" style="display:none">
 <br />
   <p>
-     Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and an out-of-state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's CowTown ThrowDown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 
+     Over the years, the Broncobots have had many significant achievements. We've attended over 66 competitions over the years, from Regionals to World Championship. Team 1987 has also competed in Off-Season competitions such as Ozark Mountain Brawl, Lee's Summit's CowTown ThrowDown and Indiana Robotics Invitational (IRI). We haven't kept quiet about what we do either. You can find the Broncobots spreading the message of FIRST within our community by hosting booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, Kansas City Maker Faire, School Registration day, Freshmen Transition Day and You Belong Club event. The team has been featured in countless newspaper articles, been on TV, and have had two robots written about and published in two books. We've also initiated letter campaigns, media broadcasts, toiletry drives for a Domestic Abuse shelter, and much more. Team 1987, The Broncobots has accomplished much since our founding year.
   </p>
 </div>
 
@@ -570,299 +551,293 @@ function teamHistory() {
 </div>
             </div>
             
-            <div class="column is-4-desktop is-4-tablet">
-                <p class="title is-4">Latest Posts</p>
+        </div>
+</section>
 
-<div class="columns is-multiline">
-    
-    <div class="column is-12">
-        <style>
-    /* Add a media query for smaller screens */
-        /* Adjust the breakpoint (768px) based on your preference */
+<style>
+    .footer {
+        background-color: #f8f8f8;
+        padding: 1em 0;
+    }
 
-        /* Center the "Read more" button */
-        .has-text-centered-mobile {
-            display: flex;
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social-media {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .footer .social-media .icon-wrapper {
+        margin: 1em;
+    }
+
+    .footer .social-media .icon-wrapper a {
+        font-size: 2em;
+        color: #830506;
+        transition: transform 0.3s;
+    }
+
+    .footer .social-media .icon-wrapper a:hover {
+        transform: scale(1.2);
+    }
+
+    .footer .content {
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        .footer .social-media {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 770px) {
+        .footer .social-media {
             justify-content: center;
         }
 
-        /* Adjust the button's font size for better visibility */
-        .full-rounded-mobile {
-            font-size: 16px;
+        .footer .social-media .icon-wrapper {
+            flex: 1 1 30%;
+            margin: 0.5em;
         }
 
+        .footer .social-media .icon-wrapper a {
+            font-size: 1.5em;
+        }
+
+        .footer .content img {
+            width: 100px;
+            height: 133px;
+        }
+    }
 </style>
-
-<div class="card">
-    
-    <link rel="stylesheet" href="/assets/css/buttonHover.css" />
-    <div class="card-image">
-        <img src="/images/Posts/weeklyNewsletter/week16.png" alt="Not Just Robots - A Force For Good">
-    </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-            <a class="title is-4" href="/weeklynewsletter/2024/02/11/Not-Just-Robots-A-Force-For-Good/">Not Just Robots - A Force For Good</a>
-            
-            
-            <!-- <p><iframe src="/BroncoBulletin/Broncobots Bulletin 16.pdf" width="100%" height="1300em">
-    </iframe>
-</p> -->
-            
-        </div>
-        <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2024/02/11/Not-Just-Robots-A-Force-For-Good/">
-                <buttonhover class="full-rounded-mobile">
-                    <span>Read more</span>
-                    <div class="border full-rounded-mobile"></div>
-                </buttonhover>
-            </a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Feb 11, 2024</p>
-    </footer>
-</div>
-
-    </div>
-    
-    <div class="column is-12">
-        <style>
-    /* Add a media query for smaller screens */
-        /* Adjust the breakpoint (768px) based on your preference */
-
-        /* Center the "Read more" button */
-        .has-text-centered-mobile {
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Adjust the button's font size for better visibility */
-        .full-rounded-mobile {
-            font-size: 16px;
-        }
-
-</style>
-
-<div class="card">
-    
-    <link rel="stylesheet" href="/assets/css/buttonHover.css" />
-    <div class="card-image">
-        <img src="/images/Posts/weeklyNewsletter/week15.png" alt="Win Big With The Broncobots">
-    </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-            <a class="title is-4" href="/weeklynewsletter/2024/02/04/Win-Big-With-The-Broncobots/">Win Big With The Broncobots</a>
-            
-            
-            <!-- <p><iframe src="/BroncoBulletin/Broncobots Bulletin 15.pdf" width="100%" height="1300em">
-    </iframe>
-</p> -->
-            
-        </div>
-        <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2024/02/04/Win-Big-With-The-Broncobots/">
-                <buttonhover class="full-rounded-mobile">
-                    <span>Read more</span>
-                    <div class="border full-rounded-mobile"></div>
-                </buttonhover>
-            </a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Feb 4, 2024</p>
-    </footer>
-</div>
-
-    </div>
-    
-    <div class="column is-12">
-        <style>
-    /* Add a media query for smaller screens */
-        /* Adjust the breakpoint (768px) based on your preference */
-
-        /* Center the "Read more" button */
-        .has-text-centered-mobile {
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Adjust the button's font size for better visibility */
-        .full-rounded-mobile {
-            font-size: 16px;
-        }
-
-</style>
-
-<div class="card">
-    
-    <link rel="stylesheet" href="/assets/css/buttonHover.css" />
-    <div class="card-image">
-        <img src="/images/Posts/weeklyNewsletter/week14.JPG" alt="Media Grant!">
-    </div>
-    
-    <div class="card-content">
-        <div class="content">
-            
-            <a class="title is-4" href="/weeklynewsletter/2024/01/28/Media-Grant/">Media Grant!</a>
-            
-            
-            <!-- <p><iframe src="/BroncoBulletin/Broncobots Bulletin 14.pdf" width="100%" height="1300em">
-    </iframe>
-</p> -->
-            
-        </div>
-        <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2024/01/28/Media-Grant/">
-                <buttonhover class="full-rounded-mobile">
-                    <span>Read more</span>
-                    <div class="border full-rounded-mobile"></div>
-                </buttonhover>
-            </a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: Jan 28, 2024</p>
-    </footer>
-</div>
-
-    </div>
-    
-</div>
-
-
-
-
-            </div>
-            
-        </div>
-    </section>
-    
-        <style>
-input[type=animated] {
-  width: 300px;
-  height: 50px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 12px;
-  transition: height,width 0.4s ease-in-out;
-/*  transition:  0.4s ease-in-out;*/
-
-}
-input[type=animated]:focus {
-  width: 500px;
-  height: 55px;
-}
-.button {
-  background-color: #830506;
-  border: none;
-  color: white;
-  padding: 0px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-.buttonRed {
-  background-color: #830506;
-  color: white;
-}
-
-.buttonRed:hover {
-
-  background-color: white;
-  color: black;
-  border: 2px solid #830506;
-}
-</style>
+</head>
+<body>
 <footer class="footer">
     <div class="container">
+        
+        <style>
+    .countdown {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-<!--TODO FIND BETTER ALTERNATIVE TO FORMSUBMIT.CO-->
-<!--INSERT ALTERNATIVE HERE-->
+    .countdown-element {
+        text-align: center;
+        font-size: 2rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        min-width: 8rem;
+    }
 
+    .countdown-element div {
+        font-size: 0.6em;
+        color: #000000;
+    }
 
-        <div class="columns is-multiline">
-<!--
+    .countdown-element span {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .countdown {
+            gap: 0.5rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .countdown-element {
+            width: calc(50% - 1rem);
+            font-size: 1.5rem;
+        }
+
+        .countdown-element span {
+            font-size: 2em;
+        }
+
+        .countdown-element div {
+            font-size: 0.5em;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .countdown-element {
+            width: calc(50% - 0.5rem);
+            font-size: 2rem;
+        }
+
+        .countdown-element span {
+            font-size: 2.5em;
+        }
+
+        .countdown-element div {
+            font-size: 0.4em;
+        }
+    }
+
+    @media (max-width: 20rem) {
+        .countdown, .text {
+            display: none;
+        }
+    }
+</style>
+
+<h1 style="font-size:3rem;font-family:Rockwell, Roboto, sans-serif; text-align:center" class="text hidden">
+    Countdown to the Next Event!
+</h1>
+<div class="countdown hidden">
+    <div class="countdown-element">
+        <span id="days">00</span>
+        <div>Days</div>
+    </div>
+    <div class="countdown-element">
+        <span id="hours">00</span>
+        <div>Hours</div>
+    </div>
+    <div class="countdown-element">
+        <span id="minutes">00</span>
+        <div>Minutes</div>
+    </div>
+    <div class="countdown-element">
+        <span id="seconds">00</span>
+        <div>Seconds</div>
+    </div>
+</div>
+
+<script>
+    const countdowns = [
+        { date: new Date("January 4, 2025 11:00:00"), text: "Countdown to the 2025 FRC Season!" },
+        { date: new Date("April 16, 2025 17:00:00"), text: "Countdown to the 2025 FIRST Championship!" },
+        { date: new Date("April 19, 2025 18:00:00"), text: "Countdown to the End of the 2025 FIRST Championship!" },
+        { date: new Date("April 29, 2026 17:00:00"), text: "Countdown to the 2026 FIRST Championship!" },
+        { date: new Date("May 2, 2026 18:00:00"), text: "Countdown to the End of the 2026 FIRST Championship!" },
+        { date: new Date("April 28, 2027 17:00:00"), text: "Countdown to the 2027 FIRST Championship!" },
+        { date: new Date("May 1, 2027 18:00:00"), text: "Countdown to the End of the 2027 FIRST Championship!" },
+    ];
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        let closestCountdown = null;
+
+        for (const countdown of countdowns) {
+            if (countdown.date.getTime() > now) {
+                if (!closestCountdown || countdown.date < closestCountdown.date) {
+                    closestCountdown = countdown;
+                }
+            }
+        }
+
+        if (closestCountdown) {
+            document.querySelector(".text").textContent = closestCountdown.text;
+            document.querySelector(".text").classList.remove('hidden');
+            document.querySelector(".countdown").classList.remove('hidden');
+
+            const timeDifference = closestCountdown.date.getTime() - now;
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = String(days).padStart(2, '0');
+            document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+        } else {
+            document.querySelector(".text").classList.add('hidden');
+            document.querySelector(".countdown").classList.add('hidden');
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+
+    updateCountdown();
+</script>
+
+        
+    </div>
+    <div class="container">
+        <div class="social-media">
             
--->
+            <div class="icon-wrapper">
+                
+                <a href="http://www.facebook.com/pages/The-Broncobots-Team-1987/140870239300622" class="link"><i class="fa-brands fa-facebook"></i></a>
+                
+            </div>
+            
+            <div class="icon-wrapper">
+                
+                <a href="http://www.twitter.com/Broncobots1987" class="link"><i class="fa-brands fa-x-twitter"></i></a>
+                
+            </div>
+            
+            <div class="icon-wrapper">
+                
+                <a href="mailto:broncobots@gmail.com" class="link"><i class="fas fa-inbox"></i></a>
+                
+            </div>
+            
+            <div class="icon-wrapper">
+                
+                <a href="https://www.instagram.com/broncobots1987/" class="link"><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+            
+            <div class="icon-wrapper">
+                
+                <a href="http://www.youtube.com/user/Broncobots1987" class="link"><i class="fa-brands fa-youtube"></i></a>
+                
+            </div>
+            
         </div>
-        <div class="columns is-multiline">
-           
-            <div class="column has-text-centered">
-                
-                    <a href="http://www.facebook.com/pages/The-Broncobots-Team-1987/140870239300622" class="link"><i class="fab fa-facebook"></i></a>
-                
-            </div>
-            
-            <div class="column has-text-centered">
-                
-                    <a href="http://www.twitter.com/Broncobots1987" class="link"><i class="fab fa-twitter"></i></a>
-                
-            </div>
-            
-            <div class="column has-text-centered">
-                
-                    <a href="mailto:broncobots@gmail.com" class="link"><i class="fas fa-inbox"></i></a>
-                
-            </div>
-            
-            <div class="column has-text-centered">
-                
-                    <a href="https://www.instagram.com/broncobots1987/" class="link"><i class="fab fa-instagram"></i></a>
-                
-            </div>
-            
-            <div class="column has-text-centered">
-                
-                    <a href="http://www.youtube.com/user/Broncobots1987" class="link"><i class="fab fa-youtube"></i></a>
-                
-            </div>
-            
-        </div>
-
 
         <div class="content is-small has-text-centered">
             <a href='/'>
-              <img src="/broncobots.svg" alt="" width="150" height="200" >
+                <img src="/broncobots.svg" alt="Broncobots Logo" width="150" height="200">
             </a>
             <p>© The Broncobots. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
-    <!-- footer scripts -->
-<a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-                                                                                                                 .scroll-to-top {
+    .scroll-to-top {
         display: none;
         position: fixed;
-        bottom: 2em;
-        right: 2em;
-        z-index: 9999;
-        background-color: #111010;
+        bottom: 5%;
+        right: 4%;
+        z-index: 9998;
         color: #f8f8f8;
         cursor: pointer;
-        padding: 1rem;
-        border-radius: 100%;
+        padding-left: 0.8em;
         width: 2.5em;
         height: 2.5em;
         line-height: 2.5em;
-        text-align: center;
+        background-color: rgba(17, 16, 16, 0.75); /* Semi-transparent grey color */
+        border-radius: 50%;
+        animation: bounce 2s infinite;
     }
 
     .scroll-to-top i {
@@ -875,42 +850,52 @@ input[type=animated]:focus {
     }
 
     .scroll-to-top--show {
-        display: block;
+        display: inline-block;
+    }
+
+    .scroll-to-top--hide {
+        display: none;
     }
 
     html {
         scroll-behavior: smooth;
     }
 </style>
-
+<body>
 <a href="#" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
 
 <script>
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-            scrollToTopButton.classList.add('scroll-to-top--show');
-        } else {
-            scrollToTopButton.classList.remove('scroll-to-top--show');
-        }
-    });
+        window.addEventListener('scroll', () => {
+            const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
 
-    scrollToTopButton.addEventListener('click', () => {
-        let scrollInterval = setInterval(() => {
-            let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
-            if (scrollTopValue <= 0) {
-                clearInterval(scrollInterval);
+            if (scrolledPercentage > 4.5) {
+                scrollToTopButton.classList.add('scroll-to-top--show');
+                scrollToTopButton.classList.remove('scroll-to-top--hide');
+            } else {
+                scrollToTopButton.classList.remove('scroll-to-top--show');
+                scrollToTopButton.classList.add('scroll-to-top--hide');
             }
-            scrollTopValue -= scrollTopValue / 0.2;
-            // Change the 0.2 value to adjust the scrolling speed.
-            if (scrollTopValue >= 0) {
-                document.documentElement.scrollTop = scrollTopValue;
-                document.body.scrollTop = scrollTopValue;
-            }
-        }, 16);
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            let scrollInterval = setInterval(() => {
+                let scrollTopValue = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                if (scrollTopValue <= 0) {
+                    clearInterval(scrollInterval);
+                }
+                scrollTopValue -= scrollTopValue / 0.2;
+                if (scrollTopValue >= 0) {
+                    document.documentElement.scrollTop = scrollTopValue;
+                    document.body.scrollTop = scrollTopValue;
+                }
+            }, 16);
+        });
     });
 </script>
+</body>
 
 
 
