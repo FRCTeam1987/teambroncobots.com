@@ -37,8 +37,6 @@ Competitions:
 Links:
 - item: Code
   link: ../../robots/Code/Robot2010.zip
-- item: Technical Book
-  link: ../../robots/Technical Books/Technical Book 2010.pdf
 Videos:
 - item: 2xmL1nPlgRc
 - item: aZZQKyUZN-s
