@@ -7,14 +7,15 @@ layout: robot
 imageicon: "../images/robots/2024robot.png"
 image: "../../images/robots/2024robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2024_Crescendo.svg"
+GameVideo: 9keeDyFxzY4
 features:
     - label: Two-time Innovation in Control winners
       icon: fa-certificate
     - label: Shooter wrist 120-degree herringbone rack motion
       icon: fa-robot
-    - label: Dual Photon vision and Limelight image processing
+    - label: 4 Limelight image processing
       icon: fa-crosshairs
-awardsWon: 2
+awardsWon: 4
 hide_hero: true
 Specifications:
 - item: MK4i L3 Swerve Drive with Kraken Drive Motors enables 18.9ft/s speed.
@@ -25,8 +26,7 @@ Specifications:
 - item: Elevator lifts robot at end-of-match in 0.87 seconds.
 - item: Intake uses independent Falcon 500 motors for belt-driven rollers.
 - item: Magnetic encoders and CANCoders measure the swerve module steering position.
-- item: Orange Pi 5+ processors for AprilTag and object detection in conjunction with two Limelight 3G’s.
-- item: Photon vision is used for faster and fluid Note detection, while the Limelight 3G’s are used for accurate Apriltag detection.
+- item: Two Limelight 3G’s and two Limelight 3's for April Tag detection and global distance calculations.
 Capabilities:
 - item: Shoots through the elevator with low launch height for consistency.
 - item: Feeder holds Note prepared to shoot, allowing Trap scoring.
@@ -40,18 +40,27 @@ Capabilities:
 Competitions:
 - item: Central Missouri Regional
 - item: Heartland Regional
-- item: Hosting and Participating in Greater Kansas City Regional
+- item: Hosted and Participated in Greater Kansas City Regional
+- item: Missouri State Championship
+- item: Indiana Robotics Invitational
+- item: CowTown ThrowDown
 Links:
-
-[//]: # (- item: CAD)
-
-[//]: # (  link: https://cad.onshape.com/documents/161f53c7e7c1d5a50fee0d60/w/e3abc8177a33b2a9d11c6c4c/e/e01990c9971fd2c87bd7c4a2?renderMode=0&uiState=64c04c93651fae04d82b37a3)
-
-[//]: # (- item: Code)
-
-[//]: # (  link: https://github.com/FRCTeam1987/Robot2023)
-
-[//]: # (- item: Technical Book)
-
-[//]: # (  link: ../../robots/Technical Books/Technical Book 2023.pdf)
+- item: CAD
+  link: https://cad.onshape.com/documents/8df59a8d8b6445d82ef9d8c3/w/c08d6d12cf7537f834e0fd20/e/5dd521c104417c5c00c9adf6
+- item: IRI Recode
+  link: https://github.com/FRCTeam1987/Robot2024_2
+- item: Code
+  link: https://github.com/FRCTeam1987/Robot2024
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2024.pdf
+- item: gif
+  link: ../../images/robots/DownloadableImages/schockwave2024.gif
+Videos:
+- item: 72AxnVR9yzg
+- item: lliPVuqGlFk
+- item: oIIn2sNtHTQ
+- item: zD3T0I5nMwM
+- item: hwme6ksjEyM
+- item: Q2u3z5pdn40
+- item: jFwftSsUFqE
 ---

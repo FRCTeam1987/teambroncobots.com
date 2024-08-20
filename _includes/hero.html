@@ -1,102 +1,106 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
-    /* Add custom CSS to style the arrow container */
-    .arrow-container {
+    @media screen and (max-width: 770px) {
+        #mobile-darkness {
+            color: #FFFFFF;
+            {% if page.mobile_black_text %}
+                color: #0a0a0a;
+            {% endif %}
+        }
+    }
+    @media screen and (min-width: 771px) {
+        #mobile-darkness {
+            color: #FFFFFF;
+        }
+    }
+
+        .arrow-container {
         position: relative;
     }
 
-    /* Add custom CSS for the semi-transparent grey circle */
     .arrow-container::before {
         content: "";
         position: absolute;
-        bottom: calc(2.5% + 65px);
-        right: calc(7.9% - 9px);
-        width: 40px;
-        height: 40px;
-        background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey color */
+        bottom: calc(2.5% + 4em);
+        right: calc(7.9% - 0.5em);
+        width: 2.3em;
+        height: 2.3em;
+        background-color: rgba(128, 128, 128, 0.5);
         border-radius: 50%;
         animation: bounce 2s infinite;
     }
 
-    /* Add custom CSS to style the arrow */
     .arrow-down {
         position: absolute;
-        bottom: calc(2.5% + 72px);
+        bottom: calc(2.5% + 3em);
         right: 8%;
-        font-size: 24px;
-        color: #fff; /* Change color if needed */
+        font-size: 1.5em;
+        color: #fff;
         animation: bounce 2s infinite;
         cursor: pointer;
     }
 
-    /* Bounce animation same as before */
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
             transform: translateY(0);
         }
         40% {
-            transform: translateY(-20px);
+            transform: translateY(-1.25rem);
         }
         60% {
-            transform: translateY(-10px);
+            transform: translateY(-0.625rem);
         }
     }
 
-    /* Add custom CSS for the "Scroll Down!" text */
     .scroll-down-text {
         position: absolute;
-        bottom: calc(5% + 30px);
+        bottom: calc(5% + 1.4em);
         right: 5.3%;
         color: #fff;
-        font-size: 18px;
+        font-size: 1.125em;
     }
 
-    /* Add custom CSS for the hero section wrapper */
     .hero-wrapper {
-        height: calc(100vh - 52px);
+        height: calc(100vh - 3.25em);
         overflow: hidden;
+
     }
 </style>
 
 {% if page.hero_image %}
 <div class="hero-wrapper">
-{% endif %}
+    {% endif %}
 
-    <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover; height: 100%;" {% endif %}>
+    <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover; height: 100%; " {% endif %}>
         <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
             <div class="container">
-                <h1 class="title is-2">{{ page.title }}</h1>
-                <p class="subtitle is-3">{{ page.subtitle }}</p>
-                {% if page.hero_link %}
-                <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
-                {% endif %}
+                <h1 class="title is-2" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif; {% if page.down_breaks %} padding-top: 5em;{% endif %} " >{{ page.title }}</h1>
+                <p class="subtitle is-3" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif;">{{ page.subtitle }}</p>
+
+
             </div>
         </div>
 
         {% if page.hero_image %}
         <div class="arrow-container">
-            <!-- Use Font Awesome arrow icon -->
             <i class="fa fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
-            <!-- Add the "Scroll Down!" text -->
             <div class="scroll-down-text">Scroll Down!</div>
         </div>
         {% endif %}
     </section>
-{% if page.hero_image %}
-    <!-- Add a target section that you want to scroll to -->
+    {% if page.hero_image %}
     <div id="target-section" style="height: 100vh; background-color: #f5f5f5;"></div>
 </div>
 {% endif %}
 
 <script>
     {% if page.hero_image %}
-        function scrollToNextSection() {
-            const targetSection = document.getElementById("target-section");
-            const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
-        }
+    function scrollToNextSection() {
+        const targetSection = document.getElementById("target-section");
+        const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: scrollOffset, behavior: "smooth" });
+    }
 
-
-        document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
+    document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
     {% endif %}
 </script>

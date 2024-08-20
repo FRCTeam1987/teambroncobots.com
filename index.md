@@ -3,49 +3,50 @@ title: Broncobots
 subtitle: FRC Team 1987
 layout: page
 callouts: home_callouts
-show_sidebar: true
+show_sidebar: false
+[//]: # (If true, then post page appears)
 hero_image: images/Homeimg.jpg
 hero_height: is-large
+mobile_black_text: true
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
 
- <style>
-.zoom {
-/*  padding: 50px;*/
-/*  background-color: green;*/
-  transition: transform .2s; /* Animation */
-/*  width: 200px;*/
-/*  height: 200px;*/
-  margin: 0 auto;
-}
-@import "TextAnimationEffect.scss";
-
-.zoom:hover {
-  backface-visibility: hidden; 
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  
-}
-
+<style>
+    .zoom {
+        /*  padding: 3.125em;*/
+        /*  background-color: green;*/
+          transition: transform .2s; /* Animation */
+        /*  width: 200px;*/
+        /*  height: 200px;*/
+          margin: 0 auto;
+    }
+    @import "TextAnimationEffect.scss";
+    
+    .zoom:hover {
+      backface-visibility: hidden; 
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      
+    }
 </style>
 
-<p><h1><center>
+<p><h1 style="text-align:center">
     Welcome!
-</center></h1></p>
+</h1></p>
 
  We are the Broncobots, Team 1987, based out of Lee's Summit, Missouri. The team is made up of many students attending [Lee's Summit North High School](https://lsnhs.lsr7.org/), 5 coaches, several amazing mentors, and multiple gracious corporate sponsors! Our team is dedicated to [FIRST](https://www.firstinspires.org/) (For Inspiration and Recognition of Science and Technology), our community, and working hard to encourage [STEM](https://www.kcstem.org/) (Science, Technology, Engineering, and Math) topics within our community. The Broncobots are looking forward to competing in each and every FRC Season. To learn more about our team, check out the About Us section of our website!
 
-We are building our 2024 robot and updating our website with current content.
+[//]: # (We are building our 2024 robot and updating our website with current content.)
 
 **Check back here often for events, competitions, and general team information!**
 
 <div class="descriptors">
-<h1 style="font-size:64px;"><center>
+<h1 style="font-size:64px;font-family:Rockwell, Roboto, sans-serif; text-align:center">
     Broncobots are
   <span
      class="txt-rotate"
      data-period="2000"
      data-rotate='["innovators.", "inspirational.", "engineers.", "designers.", "accepting.", "listeners.", "thinkers.", "a family." ]'></span>
-</center></h1>
+</h1>
 <script src="{{ site.baseurl }}/assets/js/TextAnimation.js"></script>
 </div>
 
@@ -57,9 +58,9 @@ We are building our 2024 robot and updating our website with current content.
 
 <div class="zoom"></div> 
 
-<h2 style="color:maroon;text-align:center">About us</h2>
+<h2 style="color:maroon; text-align:center; font-family:Rockwell, Roboto, sans-serif;">About us</h2>
 
-<div style="text-align: center">
+<div style="text-align: center;font-family:Rockwell, Roboto, sans-serif;">
 <buttonhover class="noWrap full-rounded" onclick="teamFocus()"><span class="noWrap">Team Focus</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="missionStatement()"><span class="noWrap">Mission Statement</span><div class="border full-rounded"></div></buttonhover>
 <buttonhover class="noWrap full-rounded" onclick="teamHistory()"><span class="noWrap">Team History</span><div class="border full-rounded"></div></buttonhover>
@@ -86,7 +87,7 @@ We are building our 2024 robot and updating our website with current content.
 <div id="teamHist" style="display:none">
 <br>
   <p>
-     Over the years, the Broncobots have had many significant achievements. We've attended over 16 regionals over the years, going to the Greater Kansas City Regional and an out-of-state regional each year. Team 1987 has also competed in summer competitions such as Ozark Mountain Brawl and Lee's Summit's CowTown ThrowDown. We haven't kept quiet about what we do either. We've had over 60 presentations at schools and businesses. This number does not include our countless booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, and Kansas City Maker Faire. The team has been featured in countless newspaper articles, been on TV, and is even mentioned in a book. We've also initiated letter campaigns, media broadcasts, toilet paper drives, and much more. Team 1987 The Broncobots has accomplished much since our founding year. 
+     Over the years, the Broncobots have had many significant achievements. We've attended over {{ site.data.home_callouts.items[1].title }} competitions over the years, from Regionals to World Championship. Team 1987 has also competed in Off-Season competitions such as Ozark Mountain Brawl, Lee's Summit's CowTown ThrowDown and Indiana Robotics Invitational (IRI). We haven't kept quiet about what we do either. You can find the Broncobots spreading the message of FIRST within our community by hosting booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, Kansas City Maker Faire, School Registration day, Freshmen Transition Day and You Belong Club event. The team has been featured in countless newspaper articles, been on TV, and have had two robots written about and published in two books. We've also initiated letter campaigns, media broadcasts, toiletry drives for a Domestic Abuse shelter, and much more. Team 1987, The Broncobots has accomplished much since our founding year.
   </p>
 </div>
 

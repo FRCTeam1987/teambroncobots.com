@@ -5,7 +5,7 @@ subtitle: First Through Sixth Grade
 description: Broncobots Summer Camps
 show_sidebar: false
 hero_image: ../images/camps.png
-
+down_breaks: true
 [//]: # (hero_darken: true)
 hero_height: is-medium
 ---
@@ -34,7 +34,7 @@ hero_height: is-medium
     <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - incoming 2nd, 3rd, and 4th graders.
             <br>
-            Dates - June 3-6
+            Dates - TBD
             <br>
             Time - 1:00pm - 4:00pm
             <br>
@@ -58,7 +58,7 @@ hero_height: is-medium
             <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - 4th, 5th, and 6th graders.
             <br>
-            Dates - June 17-21 & June 24-28
+            Dates - TBD
             <br>
             Times - 9:00am - 3:00 pm
             <br>

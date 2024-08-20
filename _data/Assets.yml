@@ -8,6 +8,12 @@
       description: The Official Broncobots logo
     - image: ../images/Assets/Branding/colors.png
       description: The Official Team colors
+    - image: ../images/Assets/Branding/Buttons/2024Specific.png
+      description: 2024 Buttons
+      altdownload: ../images/Assets/Branding/Buttons/2024Buttons.zip
+    - image: ../images/Assets/Branding/Buttons/2023WhiteClassic.png
+      description: 2023 Buttons
+      altdownload: ../images/Assets/Branding/Buttons/2023Buttons.zip
 
 - title: Summer Camps Gallery
   images:
@@ -57,6 +63,8 @@
 
 - title: Robot Gallery
   images:
+    - image: ../images/robots/2024robot.png
+      description: The Broncobots 2024 Robot!
     - image: ../images/robots/2023robot.png
       description: The Broncobots 2023 Robot!
     - image: ../images/robots/2022robot.png

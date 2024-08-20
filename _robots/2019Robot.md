@@ -7,6 +7,7 @@ layout: robot
 imageicon: "../images/robots/2019robot.png"
 image: "../../images/robots/2019robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2019_Destination_Deep_Space.svg"
+GameVideo: Mew6G_og-PI
 features:
     - label: Team 1987's 2019 robot
       icon: fa-robot
@@ -17,15 +18,22 @@ features:
 awardsWon: 4
 hide_hero: true
 Specifications:
-- item: 8 wheel West Coast Drive
-- item: Floor Cargo intake
-- item: Claw to collect & place game pieces
-- item: Suction Cup climber
+- item: West coast drive, 3 mini CIM motors, high 18.42 ft/s, low 6.3 ft/s
+- item: 8 custom 4.5" drop center wheels
+- item: Cargo intake has 2 775pro motors (5 to 1) and pneumatic cylinders
+- item: Pneumatic arm raises/lowers cargo manipulator
+- item: Cascading elevator with amsteel rope, climbing hooks
+- item: Cargo collector has 10 to 1 versa planetary drive, pivot motion
+- item: Climber has swing arm, 11" suction cups, ratcheting winch
 Capabilities:
-- item: Collects Cargo from floor, depot or loading station
-- item: Collects Hatch from loading station
-- item: Scores Cargo on Cargo Ship, Level 1 & 2 of Rocket Ship
-- item: Climbs Level 1 & 3
+- item: Positioning control with SRX encoders and NavX IMU
+- item: Spline/trajectory path driving for autonomous
+- item: Multiple autonomous modes for scale, switch, dual targets
+- item: Elevator PID height control with Hall effect sensors
+- item: Automated cube collect confirmation from sensors
+- item: Automated aiming and shooting sequences
+- item: Efficient floor cargo collection
+- item: Rough surface climbing ability
 Competitions:
 - item: Heartland Regional
 - item: Central Missouri Regional
@@ -35,5 +43,9 @@ Competitions:
 Links:
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2019
+- item: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2019.pdf
+Videos:
+- item: ffqoO8EyDMM
 ---
 
