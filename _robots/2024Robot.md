@@ -55,6 +55,14 @@ Links:
   link: ../../robots/Technical Books/Technical Book 2024.pdf
 - item: gif
   link: ../../images/robots/DownloadableImages/schockwave2024.gif
+- item: Evergreen Chassis
+  link: https://cad.onshape.com/documents/21405454a98dec8037f087ac/w/7b480bc606d8df397808798a/e/51eba9d735fc349bf50784f9
+- item: Evergreen Elevator
+  link: https://cad.onshape.com/documents/5c58653e21cf307a5b959f7d/w/66303c6500ca886e9657c88c/e/cba08d02972a8578367a9ba4
+- item: Evergreen Hardware
+  link: https://cad.onshape.com/documents/842217a5857867831a41f8ef/w/c5488f56fd07eec1ec6f74e8/e/bc7a55b38608e1654e507a75
+- item: Evergreen Rollers
+  link: https://cad.onshape.com/documents/6716b101224c044a440b77ec/w/a0e89f64dfae3574f1dffb0b/e/e5d0628fe9e7c9dd854c5534
 Videos:
 - item: 72AxnVR9yzg
 - item: lliPVuqGlFk
