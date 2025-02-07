@@ -35,12 +35,12 @@
 <meta property="og:site_name" content="Broncobots FRC Team 1987" />
 <meta property="og:image" content="https://teambroncobots.com//images/robots/2010robot.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-04T03:05:41+00:00" />
+<meta property="article:published_time" content="2025-02-07T05:39:19+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://teambroncobots.com//images/robots/2010robot.png" />
 <meta property="twitter:title" content="2010 Robot" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-04T03:05:41+00:00","datePublished":"2025-01-04T03:05:41+00:00","description":"Breakaway Robot 2007","headline":"2010 Robot","image":"https://teambroncobots.com//images/robots/2010robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2010Robot/"},"url":"https://teambroncobots.com//robots/2010Robot/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-07T05:39:19+00:00","datePublished":"2025-02-07T05:39:19+00:00","description":"Breakaway Robot 2007","headline":"2010 Robot","image":"https://teambroncobots.com//images/robots/2010robot.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://teambroncobots.com//robots/2010Robot/"},"url":"https://teambroncobots.com//robots/2010Robot/"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -357,12 +357,13 @@
             <h2>Links</h2>
             <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
                 
-                    <a href="../../robots/Code/Robot2010.zip" target="_blank">
-                        <div style="text-decoration: underline; font-size: 1.5em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">
-                            Code
-                        </div>
-                    </a>
+                <a href="../../robots/Code/Robot2010.zip" target="_blank" style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
+                    <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
+                        Code
+                    </div>
+                </a>
                 
+
             </div>
         </div>
         
@@ -375,176 +376,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
     $( document ).ready(function() {
-        scoreData(2010);
+        scoreData(2010, true);
         createChart(2010);
     });
 
-
-    async function scoreData(year) {
-        let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
-        if (scoreData === null) {
-            scoreData = await TeamInfoPerYear(year);
-            sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
-        }
-        const { wins, losses, epa_end, winrate, total_epa_rank, country_epa_rank, state_epa_rank, state_team_count, total_team_count, country_team_count, total_epa_percentile } = scoreData;
-
-        const percentileFormatted = (total_epa_percentile * 100).toFixed(0);
-        const ordinalSuffix = getOrdinalSuffix(Math.floor(total_epa_percentile * 100));
-
-        let html;
-
-        if (year === 2021) {
-            html = '';
-        } else {
-            html =
-                '<div style="font-size: 1.5em; display: flex; flex-wrap: wrap;">' +
-                '<div style="flex: 1; min-width: 250px; margin-right: 1rem;">' +
-                wins + ' wins - ' + losses + ' losses<br/>' +
-                epa_end + ' EPA<br/>' +
-                (winrate * 100).toFixed(2) + '% Win Rate<br/>' +
-                percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
-                '</div>' +
-                '<div style="display: flex; flex-wrap: wrap;">' +
-                '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
-                '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
-                '<div style="font-size: 1em; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
-                '</div>' +
-                '</div>';
-        }
-
-        $("#scoreData").html(html);
-    }
-
-    async function pointsPerMatchPerYear(year) {
-        let matchesPerYear = await getMatchesPerYear(year);
-        return matchesPerYear;
-    }
-
-    async function createChart(year) {
-        const data = await pointsPerMatchPerYear(year);
-
-        if (year === 2021 || data.length === 0) {
-            $("#chart-wrapper").html("");
-            return
-        }
-        data.sort((a, b) => a.time - b.time);
-
-        const ctx = document.getElementById('myChart').getContext('2d');
-
-        const redColor = '#FF0000';
-        const blueColor = '#0000FF';
-
-        const chart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: data?.map(match => match.key), // use the match keys as the labels
-                datasets: [{
-                    label: 'Auto',
-                    data: data?.map(match => {
-                        // find the auto score for the red alliance in the match
-                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
-                            return match.red_auto !== undefined ? match.red_auto : null;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#FF6666', // Light red color for auto segment
-                    stack: 'composite',
-                }, {
-                    label: 'Teleop',
-                    data: data?.map(match => {
-                        // find the teleop score for the red alliance in the match
-                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
-                            return match.red_teleop !== null ? match.red_teleop : match.red_score;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#FF0000', // Red color for teleop segment
-                    stack: 'composite',
-                }, {
-                    label: 'Endgame',
-                    data: data?.map(match => {
-                        // find the endgame score for the red alliance in the match
-                        if (match.red_1 === 1987 || match.red_2 === 1987 || match.red_3 === 1987) {
-                            return match.red_endgame !== undefined ? match.red_endgame : null;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#CC0000', // Dark red color for endgame segment
-                    stack: 'composite',
-                }, {
-                    label: 'Auto',
-                    data: data?.map(match => {
-                        // find the auto score for the blue alliance in the match
-                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
-                            return match.blue_auto !== undefined ? match.blue_auto : null;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#6666FF', // Light blue color for blue auto segment
-                    stack: 'composite',
-                }, {
-                    label: 'Teleop',
-                    data: data?.map(match => {
-                        // find the teleop score for the blue alliance in the match
-                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
-                            return match.blue_teleop !== null ? match.blue_teleop : match.blue_score;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#0000FF', // Blue color for blue teleop segment
-                    stack: 'composite',
-                }, {
-                    label: 'Endgame',
-                    data: data?.map(match => {
-                        // find the endgame score for the blue alliance in the match
-                        if (match.blue_1 === 1987 || match.blue_2 === 1987 || match.blue_3 === 1987) {
-                            return match.blue_endgame !== undefined ? match.blue_endgame : null;
-                        }
-                        return null;
-                    }),
-                    backgroundColor: '#0000CC', // Dark blue color for blue endgame segment
-                    stack: 'composite',
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        stacked: true, // Stacked bars
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }],
-                    xAxes: [{
-                        stacked: true, // Stacked bars
-                        ticks: {
-                            display: false //this will remove only the label
-                        }
-                    }]
-                },
-                legend: {
-                    display: false // Hide the color labels from the legend
-                },
-                tooltips: {
-                    callbacks: {
-                        // Show the label name in the tooltip when hovering over the bar
-                        label: function (tooltipItem, data) {
-                            return data.datasets[tooltipItem.datasetIndex].label + ': ' + tooltipItem.yLabel;
-                        }
-                    }
-                }
-            }
-        });
-    }
 </script>
 
 
     <div class="column is-12">
         <p class="title is-3">Score Data</p>
-        <div id="scoreData" class="content">
+        <div id="scoreData2010" class="content">
                 loading...
         </div>
         <div id="chart-wrapper">
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart2010"></canvas>
         </div>
     </div>
 
@@ -829,6 +674,8 @@
 <script>
     const countdowns = [
         { date: new Date("January 4, 2025 11:00:00"), text: "Countdown to the 2025 FRC Season!" },
+        { date: new Date("March 5, 2025 8:00:00"), text: "Countdown to the Central Missouri Regional!" },
+        { date: new Date("March 26, 2025 8:00:00"), text: "Countdown to the Greater Kansas City Regional!" },
         { date: new Date("April 16, 2025 17:00:00"), text: "Countdown to the 2025 FIRST Championship!" },
         { date: new Date("April 19, 2025 18:00:00"), text: "Countdown to the End of the 2025 FIRST Championship!" },
         { date: new Date("April 29, 2026 17:00:00"), text: "Countdown to the 2026 FIRST Championship!" },
