@@ -18,13 +18,13 @@ features:
 awardsWon: 7
 hide_hero: true
 Specifications:
-- item: West coast drive with 10 wheels - 6 outer 8" pneumatics, 4 inner 5" BaneBots
+- item: West coast drive with eight 4in Colson wheels
 - item: Wheels chain driven from gearboxes
 - item: Drive has encoder sensors for position tracking
 - item: Fuel collector uses chain-driven roller at end of manipulator arm
 - item: Manipulator arm uses 2 pneumatic cylinders for positioning
 - item: Line break sensor stops intake roller when target position reached
-- item: Shooter uses 2 BaneBot wheels, aluminum flywheel, 3:1 planetary 775 Pro
+- item: Shooter uses a Fairlane wheel, brass flywheel, 3:1 planetary 775 Pro
 - item: Main programming in C++ with autonomous sequences
 Capabilities:
 - item: Can breach all defenses
@@ -40,6 +40,7 @@ Competitions:
     - item: Missouri State Championship
     - item: Indiana Robotics Invitational
     - item: CowTown ThrowDown
+    - item: Kansas Cup
 Links:
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2017
