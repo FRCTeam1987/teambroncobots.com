@@ -30,7 +30,7 @@ Competitions:
 - item: CowTown ThrowDown
 Links:
 - item: CAD
-  link: pending...
+  link: https://cad.onshape.com/documents/9372ff70e951ea281b724d50/w/bc0892382c09e9b2dfcc67a3/e/2406733a9ca8b432097167ae?configuration=include_battery%3Dfalse%3Binclude_bumpers%3Dfalse%3Bshow_ll_fov%3Dfalse&renderMode=0&uiState=68571ce8857c5a6bca2ef561
 - item: Code
   link: https://github.com/FRCTeam1987/Robot2025_2
 - item: Technical Book
