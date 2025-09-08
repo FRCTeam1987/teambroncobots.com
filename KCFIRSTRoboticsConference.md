@@ -16,5 +16,6 @@ show_sidebar: false
 </div>
 <div style="text-align: center;">
   <a href="https://docs.google.com/document/d/1jelquaOQKcfWOMz9lfRB0CYazLT06d_GE2dEvwJTht8/edit?usp=sharing" target="_blank">Booklet</a>
-  <iframe style="width: 100%; height: 675px; display: inline-block;" src="https://docs.google.com/document/d/e/2PACX-1vRt8EGQAqorA8H3GkPxyFWG7Rbub5OHzwU34pBDzuu3IW8_2GWXLKmLmWukn2bBuZVPIPHvuLn5Yk96/pub?embedded=true"></iframe>
+  <br/>
+  <iframe style="width: 100%; max-width:950px; height: 675px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTm9EsbK42GlSYvK6h2ruIa_32aEPybs_p2qffBRrdBMxs5hjm4uHci5xY5E8vK29s1sEQOOeyMVSaT/pubhtml?gid=629658563&amp;single=true&amp;widget=false&amp;headers=false&amp;range=A1:G14"></iframe>
 </div>
