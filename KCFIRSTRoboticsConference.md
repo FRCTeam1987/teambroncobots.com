@@ -15,6 +15,6 @@ show_sidebar: false
   </h3>
 </div>
 <div style="text-align: center;">
-  <a href="https://docs.google.com/document/d/1qqtihAFGNU4tPREsJCbhg_gDbuw83Genj0CTL9yh5dY/edit?usp=sharing">Booklet</a>
+  <a href="https://docs.google.com/document/d/1qqtihAFGNU4tPREsJCbhg_gDbuw83Genj0CTL9yh5dY/edit?usp=sharing" target="_blank">Booklet</a>
   <iframe style="width: 100%; height: 675px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTm9EsbK42GlSYvK6h2ruIa_32aEPybs_p2qffBRrdBMxs5hjm4uHci5xY5E8vK29s1sEQOOeyMVSaT/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </div>
