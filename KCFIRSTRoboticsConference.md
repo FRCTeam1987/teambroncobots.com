@@ -7,7 +7,7 @@ show_sidebar: false
 
 <div style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">
   <h1 style="font-size:3rem">KC FIRST Robotics Conference</h1>
-  <h2>September 20th</h2>
+  <h2>September 20, 2025</h2>
   <h3>
   Lee's Summit North High School<br/>
   901 NE Douglas<br/>
