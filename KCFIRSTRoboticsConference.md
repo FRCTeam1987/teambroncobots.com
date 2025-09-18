@@ -20,6 +20,9 @@ show_sidebar: false
   <br/>
   <iframe style="width: 100%; max-width:1075px; height: 550px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTm9EsbK42GlSYvK6h2ruIa_32aEPybs_p2qffBRrdBMxs5hjm4uHci5xY5E8vK29s1sEQOOeyMVSaT/pubhtml?gid=629658563&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:G14"></iframe>
 </div>
+<br/>
+<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sponsored By</h2>
+<br/>
 <div class="columns is-multiline is-centered">
   {% for sponsor in site.data.conference_sponsors %}
     <div class="column is-3-desktop is-6-tablet">
