@@ -23,27 +23,24 @@ show_sidebar: false
 <div class="columns is-multiline is-centered">
   {% for sponsor in site.data.conference_sponsors %}
     <div class="column is-3-desktop is-6-tablet">
-      <div class="card">
+      <div class="box has-text-centered">
         <div class="card-image">
           {% if sponsor.image %}
-            <img src="{{ sponsor.image }}" alt=" ">
+            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
           {% endif %}
         </div>
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-5 has-text-centered">{{ sponsor.name }}</p>
-              {% if sponsor.description %}
-                <p class="has-text-black has-text-centered">{{ sponsor.description }}</p>
-              {% endif %}
-              <div class="cta">
-                <a href="{{ sponsor.link }}" target="_blank" style="color:#830506; font-size: smaller">
-                  <span class="hover-underline-animation">Go There Now</span>
-                </a>
-                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                  <path transform="translate(30,0)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10" />
-                </svg>
-              </div>
-            </div>
+        <div class="content">
+          {% if sponsor.description %}
+            <p class="has-text-black has-text-centered">{{ sponsor.description }}</p>
+          {% endif %}
+          <div class="cta">
+            <a href="{{ sponsor.link }}" target="_blank" style="color:#830506; font-size: smaller">
+              <span class="hover-underline-animation">Go There Now</span>
+            </a>
+            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+              <path transform="translate(30,0)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
