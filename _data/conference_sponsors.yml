@@ -1,0 +1,8 @@
+- name: AndyMark
+  image: ../images/conference_sponsors/andymark.png
+  description: AndyMark, Inc strives to develop innovative products and outstanding service while inspiring our customers and making a positive impact in our community.
+  link: https://andymark.com/
+- name: Plummer Industries
+  image: ../images/conference_sponsors/plummer_industries.png
+  description: Plummer Industries is a U.S.-based engineering and manufacturing company specializing in robotics components, maritime assemblies, automation systems, and precision solutions for industrial applications. We are driven by quality, innovation, and technical excellence.
+  link: https://plummerindustries.com/
