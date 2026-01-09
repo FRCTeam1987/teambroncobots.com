@@ -34,7 +34,7 @@ Specifications:
 Capabilities:
 - item: Springloaded algae end effector to allow early control of Algae off the Reef
 - item: Can automatically align and score coral on all four levels
-- item: Large, expanding intake with allows easy collecting from the human player station under defense
+- item: Large, expanding intake which allows easy collecting from the human player station under defense
 - item: Extensive controls allow one-driver operation
 - item: 2910-style one bar climber provides efficient and rapid control of the Cage
 - item: Damage from collisions is reduced by aluminum-backed, one-piece bumpers
