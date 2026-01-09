@@ -19,7 +19,6 @@ awardsWon: 4
 hide_hero: true
 Specifications:
 - item: West coast drive, 3 mini CIM motors, high 18.42 ft/s, low 6.3 ft/s
-- item: 8 custom 4.5" drop center wheels
 - item: Cargo intake has 2 775pro motors (5 to 1) and pneumatic cylinders
 - item: Pneumatic arm raises/lowers cargo manipulator
 - item: Cascading elevator with amsteel rope, climbing hooks
@@ -28,10 +27,7 @@ Specifications:
 Capabilities:
 - item: Positioning control with SRX encoders and NavX IMU
 - item: Spline/trajectory path driving for autonomous
-- item: Multiple autonomous modes for scale, switch, dual targets
 - item: Elevator PID height control with Hall effect sensors
-- item: Automated cube collect confirmation from sensors
-- item: Automated aiming and shooting sequences
 - item: Efficient floor cargo collection
 - item: Rough surface climbing ability
 Competitions:

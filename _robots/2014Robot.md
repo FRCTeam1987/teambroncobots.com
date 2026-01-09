@@ -40,6 +40,7 @@ Capabilities:
 Competitions:
 - item: Greater Kansas City Regional
 - item: Colorado Regional
+- item: Ozark Mountain Brawl
 - item: CowTown ThrowDown
 Links:
 - item: Code
