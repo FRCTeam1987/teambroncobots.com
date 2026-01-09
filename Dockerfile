@@ -1,7 +1,11 @@
-FROM ruby:3.1
+# Multi-stage build for Jekyll site
+# Stage 1: Build the site
+FROM ruby:3.1 as builder
 
-RUN apt-get update && apt-get install -y --no-install-recommends git curl nodejs && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git curl nodejs npm \
+    && rm -rf /var/lib/apt/lists/* \
+    ;
 
 WORKDIR /site
 
@@ -17,6 +21,13 @@ COPY . .
 
 ENV SASS_PATH /usr/local/lib/node_modules
 
-EXPOSE 4000
+RUN bundle exec jekyll build
 
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--watch"]
+# Stage 2: Runtime image
+FROM nginx:mainline-alpine-slim
+
+COPY --from=builder --exclude=**git --exclude=**.lock --exclude=package*.json /site/_site /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
