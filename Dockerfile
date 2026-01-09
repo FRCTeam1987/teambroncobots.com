@@ -1,8 +1,7 @@
 FROM ruby:3.1
 
-RUN apt-get update && apt-get install -y git curl && \
-    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
-    apt-get install -y nodejs
+RUN apt-get update && apt-get install -y --no-install-recommends git curl nodejs && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /site
 
