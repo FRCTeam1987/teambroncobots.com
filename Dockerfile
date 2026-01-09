@@ -8,13 +8,15 @@ WORKDIR /site
 
 COPY package.json package-lock.json* ./
 
-RUN npm install
+RUN npm install -g bulma bulma-block-list
 
 COPY Gemfile Gemfile.lock ./
 
-RUN bundle install
+RUN bundle install --system
 
 COPY . .
+
+ENV SASS_PATH /usr/local/lib/node_modules
 
 EXPOSE 4000
 
