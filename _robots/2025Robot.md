@@ -20,7 +20,7 @@ hide_hero: true
 Specifications:
 - item: WCP Swerve X2i and X2t with X2 gearing and Kraken drive motors for acceleration and speed on short cycle distances.
 - item: Hinged electronics shelf above PDH for improved packaging and accessibility
-- item: Belt-in-Tube 3 Stage continuous Elevator with kevlar-reinforced belt, powered by two Kraken X60s
+- item: Belt-in-Tube 3-stage continuous Elevator with kevlar-reinforced belt, powered by two Kraken X60s
 - item: Elevator achieves 51 inches of extension and reaches 79 inches of height
 - item: Powered star wheel hopper to quickly intake Coral
 - item: The Intake’s 1/16” Polycarbonate minimizes weight and allows compliance for rapid Coral collection
@@ -32,9 +32,9 @@ Specifications:
 - item: Absolute encoder measures the arm position
 
 Capabilities:
-- item: Springloaded algae end effector to allow early control of Algae off the Reef
+- item: Spring-loaded Algae End Effector to allow early control of Algae off the Reef
 - item: Can automatically align and score coral on all four levels
-- item: Large, expanding intake with allows easy collecting from the human player station under defense
+- item: Large, expanding intake which allows easy collecting from the human player station under defense
 - item: Extensive controls allow one-driver operation
 - item: 2910-style one bar climber provides efficient and rapid control of the Cage
 - item: Damage from collisions is reduced by aluminum-backed, one-piece bumpers
