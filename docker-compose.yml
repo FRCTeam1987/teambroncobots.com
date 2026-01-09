@@ -7,4 +7,4 @@ services:
       - "4000:4000"
     volumes:
       - .:/site
-    command: sh -c "bundle exec jekyll serve --host 0.0.0.0 --watch"
+    command: sh -c "npm install && bundle install && bundle exec jekyll serve --host 0.0.0.0 --watch"
