@@ -11,3 +11,9 @@ group :jekyll_plugins do
 end
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 4.0"
