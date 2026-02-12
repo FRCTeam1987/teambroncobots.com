@@ -43,8 +43,11 @@ Capabilities:
 Competitions:
 - item: Central Missouri Regional
 - item: Greater Kansas City Regional
+- item: World Championship
 - item: MoKan State Championship
 - item: Indiana Robotics Invitational
+- item: Gateway Robotics Challenge
+- item: Clash in the Corn
 - item: CowTown ThrowDown
 Links:
 - item: CAD
