@@ -30,6 +30,11 @@
       image: ../images/sponsors/VFW.png
       description: The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
       profile: https://www.vfw.org/
+    - name: Polymaker
+      image: ../images/sponsors/Polymaker.svg
+      description: Global leader driving the transformation of the 3D printing industry.
+      profile: https://polymaker.com/
+
 
 - tier_name: In-Kind Sponsors
   size: small
