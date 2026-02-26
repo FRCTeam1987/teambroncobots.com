@@ -34,6 +34,11 @@
       image: ../images/sponsors/Polymaker.svg
       description: Global leader driving the transformation of the 3D printing industry.
       profile: https://polymaker.com/
+    - name: Limelight
+      image: ../images/sponsors/limelight.png
+      description: Limelight Vision is a robotics technology company specializing in high-quality, zero-code computer vision solutions — such as plug-and-play smart cameras — for FRC and FTC teams.
+      profile: https://limelightvision.io/
+
 
 
 - tier_name: In-Kind Sponsors
