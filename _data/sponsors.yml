@@ -4,7 +4,7 @@
   sponsors:
     - name: Hallmark
       image: ../images/sponsors/Hallmark.png
-      description: Hallmark Cards, Inc. believes in bringing positivity, comfort and connection into your life. That's why they are dedicated to creating a more emotionally connected world and making a difference in the lives of others. 
+      description: Hallmark Cards, Inc. believes in bringing positivity, comfort and connection into your life. That's why they are dedicated to creating a more emotionally connected world and making a difference in the lives of others.
       profile: https://www.hallmark.com/
     - name: Charles, Melanie, and Scott Hasek
       description: Personal Sponsor
@@ -14,7 +14,7 @@
       profile: https://gcplastics.com/
     - name: RTX
       image: ../images/sponsors/RTX.png
-      description: At RTX, we're a team of explorers united in our goal to push the boundaries of known science – and solve the world's most complex problems.
+      description: At RTX, we're a team of explorers united in our goal to push the boundaries of known science - and solve the world's most complex problems.
       profile: https://www.rtx.com/
     - name: Talley Family
       description: Personal Sponsor
@@ -46,8 +46,11 @@
   size: small
   description: $250-$750
   sponsors:
-   -  name: Veterans of Foreign Wars
+    - name: Polymaker
+      description: Global leader driving the transformation of the 3D printing industry.
+      profile: https://polymaker.com/
+    - name: Veterans of Foreign Wars
       description: The Veterans of Foreign Wars is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
       profile: https://www.vfw.org/
-   -  name: Quilters Guild
+    - name: Quilters Guild
       description: The Quilters guild of Lee's Summit
