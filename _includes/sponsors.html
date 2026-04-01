@@ -7,8 +7,8 @@
                 <span>{{ tier.tier_name }}</span>
             </p>
             <div class="columns is-centered">
-                <div class="column is-6 content has-text-centered">
-                    <p>{{ tier.description | markdownify }}</p>
+                <div class="column is-6 content has-text-centered small-pad">
+                    {{ tier.description | markdownify }}
                 </div>
             </div>
             <p class="subtitle has-text-centered">
@@ -42,7 +42,7 @@
                         {% if sponsor.image %}
                             <img src= {{ sponsor.image }} alt=" ">
                             {% else %}
-                            &nbsp;
+                            <hr />
                             {% endif %}
                         <p class="subtitle is-6">
                             <p>{{ sponsor.description }}</p>
