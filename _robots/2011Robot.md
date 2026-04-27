@@ -15,7 +15,6 @@ features:
       icon: fa-key 
     - label: Won the Website Award at the Midwest Regional
       icon: fa-laptop 
-awardsWon: 2
 hide_hero: true
 Specifications:
 - item: Robot uses mecanum wheels for omnidirectional drive

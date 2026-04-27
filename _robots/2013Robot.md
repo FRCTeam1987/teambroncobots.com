@@ -15,7 +15,6 @@ features:
       icon: fa-compass 
     - label: Won the Regional Chairman's Award at the Alamo Regional
       icon: fa-leaf 
-awardsWon: 1
 hide_hero: true
 Specifications:
 - item: 6-wheel drop center drive, custom 2" aluminum C-channel frame

@@ -15,7 +15,6 @@ features:
       icon: fa-flask 
     - label: Won the Quality Award sponsored by Motorola  at the Colorado Regional
       icon: fa-battery-full 
-awardsWon: 3
 hide_hero: true
 Specifications:
 - item: 4-wheel drop center drive, VEX Pro 2014 kit chassis

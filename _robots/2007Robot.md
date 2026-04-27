@@ -15,7 +15,6 @@ features:
       icon: fa-leaf 
     - label: Competed in Colorado Regional despite being based in Missouri
       icon: fa-plane 
-awardsWon: 3
 hide_hero: true
 Specifications:
 - item: Kit-of-parts chassis with lightening holes

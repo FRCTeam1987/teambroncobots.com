@@ -15,7 +15,6 @@ features:
       icon: fa-bolt 
     - label: Won the Regional Chairman's Award at the Oklahoma Regional
       icon: fa-smile
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: Robot uses mecanum wheels for omnidirectional drive

@@ -15,7 +15,6 @@ features:
       icon: fa-volume-up
     - label: Ranked third in the Oklahoma Regional
       icon: fa-wrench 
-awardsWon: 3
 hide_hero: true
 Specifications:
 - item: 8 custom 4.5" wheels with 1/8" drop centers

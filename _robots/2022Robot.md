@@ -15,7 +15,6 @@ features:
       icon: fa-robot
     - label: ~95% high goal shooting accuracy
       icon: fa-crosshairs
-awardsWon: 4 
 hide_hero: true
 Specifications:
 - item: Swerve drive with 4 Swerve Drive Specialties MK4i modules

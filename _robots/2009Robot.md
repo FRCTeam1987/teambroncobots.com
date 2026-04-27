@@ -15,7 +15,6 @@ features:
       icon: fa-bullseye
     - label: Won the Woodie Flowers Award at the Colorado Regional
       icon: fa-sun
-awardsWon: 2
 hide_hero: true
 Specifications:
 - item: 3 PVC tubes wrapped with latex rubber tubing acting as a herding module, driven by a high torque RS 545 motor and gearbox

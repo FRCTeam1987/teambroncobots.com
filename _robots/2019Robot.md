@@ -15,7 +15,6 @@ features:
       icon: fa-rocket
     - label: Winner of the Central Missouri Regional
       icon: fa-trophy
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: West coast drive, 3 mini CIM motors, high 18.42 ft/s, low 6.3 ft/s

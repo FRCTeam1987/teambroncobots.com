@@ -16,7 +16,6 @@ features:
       icon: fa-robot
     - label: Behavior changes relative to localization
       icon: fa-crosshairs
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: WCP Swerve X2i and X2t with X2 gearing and Kraken drive motors for acceleration and speed on short cycle distances.

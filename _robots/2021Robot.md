@@ -15,7 +15,6 @@ features:
       icon: fa-plane 
     - label: Was 2-2-0 during the 2021 offseason
       icon: fa-space-shuttle
-awardsWon: 2
 hide_hero: true
 Specifications:
 - item: Drivetrain - West coast drive, 4 Falcon 500 motors, 16.35 ft/s top speed

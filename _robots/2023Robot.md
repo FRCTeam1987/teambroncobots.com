@@ -16,7 +16,6 @@ features:
       icon: fa-robot
     - label: Used a 3 stage telescoping arm
       icon: fa-crosshairs
-awardsWon: 6
 hide_hero: true
 Specifications:
 - item: 4 MK4i Swerve Drive Modules

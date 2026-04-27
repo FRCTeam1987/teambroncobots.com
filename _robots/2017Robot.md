@@ -15,7 +15,6 @@ features:
       icon: fa-cogs 
     - label: Broncobot won the FIRST Dean's List Finalist Award (Levi Madden)
       icon: fa-child 
-awardsWon: 7
 hide_hero: true
 Specifications:
 - item: West coast drive with eight 4in Colson wheels

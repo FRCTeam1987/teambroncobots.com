@@ -15,7 +15,6 @@ features:
       icon: fa-puzzle-piece
     - label: Won the Judges' Award at the Greater Kansas City Regional
       icon: fa-gavel 
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: 6-wheel dropped center drive with 8" Andymark Plaction wheels

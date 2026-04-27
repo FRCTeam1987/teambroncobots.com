@@ -16,7 +16,6 @@ features:
       icon: fa-robot
     - label: 4 Limelight image processing
       icon: fa-crosshairs
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: MK4i L3 Swerve Drive with Kraken Drive Motors enables 18.9ft/s speed.

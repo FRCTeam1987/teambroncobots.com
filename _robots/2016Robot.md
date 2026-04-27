@@ -15,7 +15,6 @@ features:
       icon: fa-rocket 
     - label: Won the Regional Engineering Inspiration Award at the Hub City Regional
       icon: fa-unlock-alt
-awardsWon: 4
 hide_hero: true
 Specifications:
 - item: West coast drive with 10 wheels - 6 outer 8" pneumatics, 4 inner 5" BaneBots
