@@ -29,7 +29,7 @@ Capabilities:
 - item: Collect, handle, and score Cones and Cubes.
 - item: Arm rotates 240° and extends up to 42 inches.
 - item: Claw detects game piece collection with NEO 550 current sensing and remembers if it's a cone or cube.
-- item: Two outward-facing Limelight™ 4's find Game Pieces and Scoring locations during Autonomous for Auto Aligning.
+- item: Two outward-facing Limelight™ 3's find Game Pieces and Scoring locations during Autonomous for Auto Aligning.
 - item: Co-driver can set scoring height with three buttons for single-button scoring.
 - item: Driver can reset gyro while driving for easy field orientation with single button press.
 Competitions:
