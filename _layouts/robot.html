@@ -54,6 +54,9 @@ layout: default
     <div class="column is-6">
         <figure class="image is-1by1">
             <img src="{{ page.image }}" />
+            {% if page.robotLogo %}
+                <img src="{{ page.robotLogo }}" />
+            {% endif %}
         </figure>
     </div>
 
