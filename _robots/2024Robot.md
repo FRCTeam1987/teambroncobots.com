@@ -6,6 +6,7 @@ robot_code: 2024
 layout: robot
 imageicon: "../images/robots/2024robot.png"
 image: "../../images/robots/2024robot.png"
+robotLogo: ../../images/robots/2024robotLogo.png
 CompetitionLogo : "../../images/robots/Competition Logos/2024_Crescendo.svg"
 GameVideo: 9keeDyFxzY4
 features:

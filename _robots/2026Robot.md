@@ -6,8 +6,8 @@ robot_code: 2026
 layout: robot
 imageicon: "../images/robots/2026robot.png"
 image: "../../images/robots/2026robot.png"
-robotLogo: "../images/robots/2026robotLogo.png"
-CompetitionLogo : "../../images/robots/Competition Logos/2026_Rebuilt.svg"
+robotLogo: "../../images/robots/2026robotLogo.png"
+CompetitionLogo : "../../images/robots/Competition Logos/2026_Rebuilt.png"
 GameVideo: _fybREErgyM
 features:
     - label: Championship Archimedes Division captain

@@ -6,6 +6,7 @@ robot_code: 2023
 layout: robot
 imageicon: "../images/robots/2023robot.png"
 image: "../../images/robots/2023robot.png"
+robotLogo: ../../images/robots/2023robotLogo.png
 CompetitionLogo : "../../images/robots/Competition Logos/2023_Charged_Up.svg"
 GameVideo: 0zpflsYc4PA
 features:

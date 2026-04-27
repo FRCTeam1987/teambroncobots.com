@@ -6,6 +6,7 @@ robot_code: 2025
 layout: robot
 imageicon: "../images/robots/2025robot.png"
 image: "../../images/robots/2025robot.png"
+robotLogo: ../../images/robots/2025robotLogo.png
 CompetitionLogo : "../../images/robots/Competition Logos/2025_Reefscape.svg"
 GameVideo: YWbxcjlY9JY
 features:

@@ -5,7 +5,8 @@ layout: default
 <style>
     .responsive-video-wrapper {
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
         height: 0;
         overflow: hidden;
         max-width: 100%;
@@ -44,7 +45,8 @@ layout: default
 
     @media (max-width: 600px) {
         .responsive-video-wrapper {
-            padding-bottom: 75%; /* 4:3 aspect ratio for smaller screens */
+            padding-bottom: 75%;
+            /* 4:3 aspect ratio for smaller screens */
         }
     }
 </style>
@@ -54,10 +56,13 @@ layout: default
     <div class="column is-6">
         <figure class="image is-1by1">
             <img src="{{ page.image }}" />
-            {% if page.robotLogo %}
-                <img src="{{ page.robotLogo }}" />
-            {% endif %}
+
         </figure>
+        {% if page.robotLogo %}
+        <figure class="image">
+            <img src="{{ page.robotLogo }}" />
+        </figure>
+        {% endif %}
     </div>
 
     <div class="column is-6">
@@ -75,20 +80,22 @@ layout: default
         <div class="content">
             {% for feature in page.features %}
             <p>
-               <span class="icon">
-                   {% if feature.icon %}
-                   <i class="fas {{ feature.icon }}"></i>
-                   {% else %}
-                   <i class="fas fa-circle fa-xs"></i>
-                   {% endif %}
-               </span>
-                <span>{{ feature.label }}</span></p>
+                <span class="icon">
+                    {% if feature.icon %}
+                    <i class="fas {{ feature.icon }}"></i>
+                    {% else %}
+                    <i class="fas fa-circle fa-xs"></i>
+                    {% endif %}
+                </span>
+                <span>{{ feature.label }}</span>
+            </p>
             {% endfor %}
         </div>
         {% endif %}
 
         {% if page.CompetitionLogo %}
-        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;"/>
+        <img src="{{ page.CompetitionLogo }}"
+            style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;" />
         {% endif %}
     </div>
 
@@ -148,8 +155,10 @@ layout: default
             <h2>Links</h2>
             <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
                 {% for Item in page.Links %}
-                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
-                    <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
+                <a href="{{ Item.link }}" target="_blank"
+                    style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
+                    <div
+                        style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
                         {{ Item.item }}
                     </div>
                 </a>
@@ -166,25 +175,25 @@ layout: default
 <script src="../../../assets/js/StatBoticsRESTApi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
-    $( document ).ready(function() {
+    $(document).ready(function () {
         scoreData({{ page.robot_code }}, true);
-        createChart({{ page.robot_code }});
+    createChart({{ page.robot_code }});
     });
 
 </script>
 
 {% if page.robot_code == 2021 %}
-    <div style='text-align: left; font-size: 1.5em;'>No Stat Data Available</div>
+<div style='text-align: left; font-size: 1.5em;'>No Stat Data Available</div>
 {% else %}
-    <div class="column is-12">
-        <p class="title is-3">Score Data</p>
-        <div id="scoreData{{ page.robot_code }}" class="content">
-                loading...
-        </div>
-        <div id="chart-wrapper">
-            <canvas id="myChart{{ page.robot_code }}"></canvas>
-        </div>
+<div class="column is-12">
+    <p class="title is-3">Score Data</p>
+    <div id="scoreData{{ page.robot_code }}" class="content">
+        loading...
     </div>
+    <div id="chart-wrapper">
+        <canvas id="myChart{{ page.robot_code }}"></canvas>
+    </div>
+</div>
 {% endif %}
 
 
@@ -195,13 +204,13 @@ layout: default
     </a>
     Page!
 </div>
-<br/>
-<br/>
+<br />
+<br />
 
 
 <div style="text-align:center">
     Powered by Statbotics REST API
-    <br/>
+    <br />
     <a href="https://www.statbotics.io/">statbotics.io</a>
 
 </div>
@@ -210,7 +219,9 @@ layout: default
 <div class="content">
     <h2>Game Animation</h2>
     <div class="responsive-video-wrapper game-video">
-        <iframe src="https://www.youtube.com/embed/{{page.GameVideo}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{page.GameVideo}}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
 </div>
 {% endif %}
@@ -221,7 +232,9 @@ layout: default
     <div class="videos-grid">
         {% for item in page.Videos %}
         <div class="responsive-video-wrapper">
-            <iframe src="https://www.youtube.com/embed/{{item.item}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/{{item.item}}"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         {% endfor %}
     </div>
