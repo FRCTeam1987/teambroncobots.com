@@ -56,21 +56,22 @@ layout: default
     <div class="column is-6">
         <figure class="image is-1by1">
             <img src="{{ page.image }}" />
-
         </figure>
-        {% if page.robotLogo %}
-        <figure class="image">
-            <img src="{{ page.robotLogo }}" />
-        </figure>
+        {% if page.CompetitionLogo %}
+        <img src="{{ page.CompetitionLogo }}"
+            style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;" />
         {% endif %}
     </div>
 
     <div class="column is-6">
         <p class="title is-3">{{ page.title }}</p>
+        {% if page.robotLogo %}
+        <figure class="image">
+            <img src="{{ page.robotLogo }}" />
+        </figure>
+        {% elsif page.subtitle %}
         <p class="subtitle is-3">{{ page.subtitle }}</p>
-        <!--        {% if page.description %}-->
-        <!--        <p class="subtitle is-5 has-text-right">{{ page.description }}</p>-->
-        <!--        {% endif %}-->
+        {% endif %}
 
         {% if page.features %}
         <div class="content">
@@ -87,11 +88,6 @@ layout: default
             </p>
             {% endfor %}
         </div>
-        {% endif %}
-
-        {% if page.CompetitionLogo %}
-        <img src="{{ page.CompetitionLogo }}"
-            style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;" />
         {% endif %}
     </div>
 
@@ -159,7 +155,6 @@ layout: default
                     </div>
                 </a>
                 {% endfor %}
-
             </div>
         </div>
         {% endif %}
