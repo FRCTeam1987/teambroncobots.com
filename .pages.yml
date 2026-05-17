@@ -85,6 +85,7 @@ content:
   type: file
   path: content/awards.yml
   list: true
+  summary: "{fields.year}"
   fields:
   - name: year
     label: Year
@@ -93,6 +94,7 @@ content:
     label: Awards
     type: object
     list: true
+    summary: "{fields.award}"
     fields:
       - name: award
         label: Award
