@@ -86,9 +86,6 @@ content:
   path: content/awards.yml
   format: yaml
   list: true
-    collapsible: true
-      collapsed: false
-      summary: {fields.year}
   fields: 
     - name: year
       type: number
