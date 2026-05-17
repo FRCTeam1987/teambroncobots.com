@@ -39,28 +39,16 @@ content:
         type: string
   - name: specifications
     label: Specifications
-    type: object
+    type: string
     list: true
-    fields:
-      - name: item
-        label: Item
-        type: string
   - name: capabilities
     label: Capabilities
-    type: object
+    type: string
     list: true
-    fields:
-      - name: item
-        label: Item
-        type: string
   - name: competitions
     label: Competitions
-    type: object
+    type: string
     list: true
-    fields:
-      - name: item
-        label: Item
-        type: string
   - name: links
     label: Links
     type: object
@@ -74,9 +62,5 @@ content:
         type: string
   - name: videos
     label: Videos
-    type: object
+    type: string
     list: true
-    fields:
-      - name: item
-        label: Item
-        type: string
