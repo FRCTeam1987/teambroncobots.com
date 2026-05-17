@@ -29,10 +29,7 @@ content:
   - name: features
     label: Features
     type: object
-    list:
-      collapseable:
-        collapsed: true
-        summary: "{fields.item}"
+    list: true
     fields:
       - name: feature
         label: Feature
@@ -55,10 +52,7 @@ content:
   - name: links
     label: Links
     type: object
-    list:
-      collapseable:
-        collapsed: true
-        summary: "{fields.link_type}"
+    list: true
     fields:
       - name: link_type
         label: Link Type
