@@ -85,17 +85,16 @@ content:
   type: file
   path: content/awards.yml
   list: true
-  summary: "{fields.year}"
+    summary: "{fields.year}"
   fields:
   - name: year
     label: Year
     type: number
+    list: true
   - name: awards
     label: Awards
-    type: object
+    type: string
     list: true
-    summary: "{fields.award}"
-    fields:
-      - name: award
-        label: Award
-        type: string
+      collapsible: true
+        collapsed: true
+        summary: "{fields.award}"
