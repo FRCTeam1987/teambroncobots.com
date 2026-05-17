@@ -1,16 +1,60 @@
+media: media
 content:
-- name: team_stats
-  label: Team Stats
-  type: file
-  path: _data/team_stats.yml
-  list: true
+- name: robots
+  label: Robots
+  type: collection
+  path: content/robots
+  filename:
+    template: "{<year>}Robot.md"
+    field: false
   fields:
-  - name: title
-    label: Title
-    type: string
-  - name: count
-    label: Count
+  - name: year
+    label: Year
     type: number
-  - name: icon
-    label: Icon
+  - name: robot_name
+    label: Robot Name
     type: string
+  - name: robot_image
+    label: Robot Image
+    type: image
+  - name: game_logo
+    label: Game Logo
+    type: image
+  - name: game_name
+    label: Game Name
+    type: string
+  - name: specifications
+    label: Specifications
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
+  - name: competitions
+    label: Competitions
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
+  - name: links
+    label: Links
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
+      - name: link
+        label: Link
+        type: string
+  - name: videos
+    label: Videos
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
