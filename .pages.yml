@@ -84,17 +84,14 @@ content:
   label: Awards
   type: file
   path: content/awards.yml
+  format: yaml
   list: true
-    summary: "{fields.year}"
-  fields:
-  - name: year
-    label: Year
-    type: number
-    list: true
-  - name: awards
-    label: Awards
-    type: string
-    list: true
-      collapsible: true
-        collapsed: true
-        summary: "{fields.award}"
+  fields: 
+    - name: year
+      type: string
+    - name: awards
+      type: string
+      list: true
+        
+        
+  
