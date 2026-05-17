@@ -4,6 +4,15 @@ robot_name: The Broncobot
 robot_image: /media/robots/2007robot.png
 game_logo: /media/robots/Competition Logos/2007_Rack_n_Roll.jpeg
 game_name: Rack N Roll
+game_video: khTGSKvDyS4
+features:
+  - item: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado
+      Regional
+    icon: fa-tree
+  - item: Won the Autodesk Visualization Award at the Colorado Regional
+    icon: fa-leaf
+  - item: Competed in Colorado Regional despite being based in Missouri
+    icon: fa-plane
 specifications:
   - item: Kit-of-parts chassis with lightening holes
   - item: IFI Robotics 2" traction wheels and AndyMark 6" omni wheels
@@ -19,6 +28,13 @@ specifications:
   - item: Ramp accommodates robots 13-27" wide with 1" side walls
   - item: 17 degree entry ramp incline
   - item: Pneumatic actuator for locking pins, spring-loaded hinges/ramp support
+capabilities:
+  - item: Places rings at all heights
+  - item: Elevates two maximum sized robots
+  - item: Accommodates various widths of alliance robots
+  - item: U-shaped ramps with side support rails
+  - item: Gradual entry ramp incline
+  - item: Drives up steep and various ramp styles
 competitions:
   - item: Colorado Regional
 links:
