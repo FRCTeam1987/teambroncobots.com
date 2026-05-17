@@ -80,3 +80,20 @@ content:
       - name: item
         label: Item
         type: string
+- name: awards
+  label: Awards
+  type: file
+  path: content/awards.yml
+  list: true
+  fields:
+  - name: year
+    label: Year
+    type: number
+  - name: awards
+    label: Awards
+    type: object
+    list: true
+    fields:
+      - name: award
+        label: Award
+        type: string
