@@ -88,7 +88,7 @@ content:
   list: true
   fields: 
     - name: year
-      type: string
+      type: number
     - name: awards
       type: string
       list: true
