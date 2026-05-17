@@ -3,7 +3,7 @@ content:
 - name: robots
   label: Robots
   type: collection
-  folder: content/robots
+  path: content/robots
   filename:
     template: "{<year>}Robot.md"
     field: false
