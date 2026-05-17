@@ -5,7 +5,7 @@ content:
   type: collection
   path: content/robots
   filename:
-    template: "{<year>}Robot.md"
+    template: "{fields.year}Robot.md"
     field: false
   fields:
   - name: year
@@ -23,8 +23,30 @@ content:
   - name: game_name
     label: Game Name
     type: string
+  - name: game_video
+    label: Game Video
+    type: string
+  - name: features
+    label: Features
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
+      - name: icon
+        label: Icon
+        type: string
   - name: specifications
     label: Specifications
+    type: object
+    list: true
+    fields:
+      - name: item
+        label: Item
+        type: string
+  - name: capabilities
+    label: Capabilities
     type: object
     list: true
     fields:

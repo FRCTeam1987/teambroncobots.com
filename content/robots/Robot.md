@@ -3,7 +3,7 @@ year: 2017
 robot_name: The Broncobot
 robot_image: /media/robots/2007robot.png
 game_logo: /media/robots/Competition Logos/2007_Rack_n_Roll.jpeg
-game_name: Rack N Roll Robot
+game_name: Rack N Roll
 specifications:
   - item: Kit-of-parts chassis with lightening holes
   - item: IFI Robotics 2" traction wheels and AndyMark 6" omni wheels
