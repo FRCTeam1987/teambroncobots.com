@@ -6,12 +6,12 @@ game_logo: /media/robots/Competition Logos/2007_Rack_n_Roll.jpeg
 game_name: Rack N Roll
 game_video: khTGSKvDyS4
 features:
-  - item: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado
+  - feature: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado
       Regional
     icon: fa-tree
-  - item: Won the Autodesk Visualization Award at the Colorado Regional
+  - feature: Won the Autodesk Visualization Award at the Colorado Regional
     icon: fa-leaf
-  - item: Competed in Colorado Regional despite being based in Missouri
+  - feature: Competed in Colorado Regional despite being based in Missouri
     icon: fa-plane
 specifications:
   - Kit-of-parts chassis with lightening holes
@@ -38,6 +38,6 @@ capabilities:
 competitions:
   - Colorado Regional
 links:
-  - item: Technical Book
+  - link_type: Technical Book
     link: ../../robots/Technical Books/Technical Book 2007.pdf
 ---

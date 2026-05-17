@@ -29,10 +29,13 @@ content:
   - name: features
     label: Features
     type: object
-    list: true
+    list:
+      collapseable:
+        collapsed: true
+        summary: "{fields.item}"
     fields:
-      - name: item
-        label: Item
+      - name: feature
+        label: Feature
         type: string
       - name: icon
         label: Icon
@@ -52,10 +55,13 @@ content:
   - name: links
     label: Links
     type: object
-    list: true
+    list:
+      collapseable:
+        collapsed: true
+        summary: "{fields.link_type}"
     fields:
-      - name: item
-        label: Item
+      - name: link_type
+        label: Link Type
         type: string
       - name: link
         label: Link
