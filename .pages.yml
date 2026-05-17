@@ -87,7 +87,7 @@ content:
   format: yaml
   list:
     collapsible:
-      collapsed: true
+      collapsed: false
       summary: "{fields.year}"
   fields: 
     - name: year
