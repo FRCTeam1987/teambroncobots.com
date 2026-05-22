@@ -1,4 +1,5 @@
 Dockerfile
+Dockerfile.dev
 _site/
 
 # Version control
@@ -17,4 +18,4 @@ vendor
 .sass-cache
 
 # Documentation
-*.md
+# Keep documentation in the build context so Jekyll can process top-level pages (e.g. sponsors.md, SponsorUs.md)

@@ -1,0 +1,21 @@
+# Dev image for Jekyll with live-reload
+FROM ruby:3.1
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git curl nodejs npm \
+    && rm -rf /var/lib/apt/lists/* \
+    ;
+
+WORKDIR /site
+
+COPY package.json package-lock.json* ./
+RUN npm ci --silent
+
+COPY Gemfile Gemfile.lock ./
+RUN bundle install --system
+
+COPY . .
+
+ENV SASS_PATH /site/node_modules
+
+CMD ["sh", "-c", "npm ci --silent && bundle exec jekyll serve --livereload --force_polling --incremental --host 0.0.0.0"]

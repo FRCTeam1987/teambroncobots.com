@@ -29,7 +29,8 @@ plugins:
 
 exclude:
   - Gemfile
-  - clean-theme.gemspec
+  - bulma-clean-theme.gemspec
+  - docker-compose.yml
   - Gemfile.lock
   - node_modules
   - vendor/bundle/

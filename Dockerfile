@@ -11,7 +11,9 @@ WORKDIR /site
 
 COPY package.json package-lock.json* ./
 
-RUN npm install -g bulma bulma-block-list
+# Install local npm dependencies so node_modules is available under /site
+# (the SCSS imports expect ../node_modules relative to /site/_sass/_main.scss)
+RUN npm ci --silent
 
 COPY Gemfile Gemfile.lock ./
 
@@ -19,7 +21,7 @@ RUN bundle install --system
 
 COPY . .
 
-ENV SASS_PATH /usr/local/lib/node_modules
+ENV SASS_PATH /site/node_modules
 
 RUN bundle exec jekyll build
 
