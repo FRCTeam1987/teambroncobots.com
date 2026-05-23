@@ -13,5 +13,8 @@
     "dependencies": {
         "bulma": "^0.9.4",
         "bulma-block-list": "^0.7"
+    },
+    "volta": {
+        "node": "24.13.0"
     }
 }

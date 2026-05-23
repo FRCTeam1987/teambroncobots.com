@@ -20,7 +20,7 @@ hero_height: is-medium
 
 [//]: # (    <p style="text-decoration: bold; font-size: 1.25em; color:black;">)
 
-[//]: # (        2025 Summer Camp sign-ups will open in the Spring!)
+[//]: # (        2026 Summer Camp sign-ups are open now!)
 
 [//]: # (    </p>)
 
@@ -34,13 +34,13 @@ hero_height: is-medium
     <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - incoming 2nd, 3rd, and 4th graders.
             <br>
-            Dates - TBD
+            Dates - June 8th - 11th
             <br>
             Time - 1:00pm - 4:00pm
             <br>
             Prerequisites - None
             <br>
-            Price - $125
+            Price - $120 + $3 fee
             <br><br>
             Engineering Camp is for incoming 2nd - 4th graders who have an interest in all things STEM. <br>
             Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
@@ -58,13 +58,13 @@ hero_height: is-medium
             <p style="color:grey; display: inline-block; text-align: center;">
             Age Group - 4th, 5th, and 6th graders.
             <br>
-            Dates - TBD
+            Dates - June 15th - 19th & June 22nd - 26th
             <br>
             Times - 9:00am - 3:00 pm
             <br>
             Prerequisites - None
             <br>
-            Price - $250
+            Price - $250 + $3 fee
             <br><br>
             Robotics Camp is an introductory level camp for incoming 5th - 7th graders.
             <br>It allows students to build a VEX robot to compete in a game and achieve certain tasks. 
@@ -80,7 +80,7 @@ hero_height: is-medium
 {: style="font-size: 45px; text-align: center; color:#830506;"}
 ***
 
-[Register online](https://www.lsnbroncoscamps.com/robotics-and-engineering-camps.cfm) for summer camps before spots fill.
+[Register online](https://www.lsnbroncoscamps.com/robotics.cfm) for summer camps before spots fill.
 {: style="text-align: center; color:grey;"}
 
 ## Questions?

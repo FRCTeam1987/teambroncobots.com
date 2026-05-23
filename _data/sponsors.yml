@@ -1,121 +1,59 @@
-- tier_name: Company Sponsors
+- tier_name: Crimson Sponsors
   size: small
-  description: |-
+  description: $1500+
   sponsors:
-    - name: Gene Haas Foundation
-      image: ../images/sponsors/GeneHassFoundation.svg
-      description: The Gene Haas Foundation donates millions of dollars every year to manufacturing education and the community. In 2020, the Gene Haas Foundation provided more than $20 million in grants, bringing the total since inception to more than to $120 million.
-      profile: https://ghaasfoundation.org/
-    - name: SoundWorks
-      image: ../images/sponsors/SoundWorks.png
-      description: Home of Kansas City's leading musical and entertainment professionals. Encompassing all your professional recording and robotion needs.
-      profile: https://soundworksrec.com/index.html
-    - name: JE Dunn
-      image: ../images/sponsors/JEDunn.svg
-      description: Founded in 1924, JE Dunn is the 8th largest domestic general building contractor in the United States with offices in 26 locations and hundreds of project sites across the country. Our work touches nearly every facet of the industry, and our portfolio of projects spans dozens of industries, including healthcare, aviation, corporate environments, Federal and military, industrial, education, mission critical, science and technology, and more.
-      profile: https://www.jedunn.com/
-    - name: FrontStream
-      image: ../images/sponsors/FrontStream.png
-      description: FrontStream helps charities and socially-responsible corporations raise and process funds. Simply put, we help our customers raise more for their causes, and do more good in their communities.
-      profile: https://www.frontstream.com/
+    - name: Hallmark
+      image: ../images/sponsors/Hallmark.png
+      description: Hallmark Cards, Inc. believes in bringing positivity, comfort and connection into your life. That's why they are dedicated to creating a more emotionally connected world and making a difference in the lives of others.
+      profile: https://www.hallmark.com/
+    - name: Charles, Melanie, and Scott Hasek
+      description: Personal Sponsor
+    - name: Garden City Plastics Equipment
+      image: ../images/sponsors/GardenCity.png
+      description: We specialize in buying, selling, and brokering premium, pre-owned plastic processing equipment, including blow molding and injection molding machines.
+      profile: https://gcplastics.com/
+    - name: RTX
+      image: ../images/sponsors/RTX.png
+      description: At RTX, we're a team of explorers united in our goal to push the boundaries of known science - and solve the world's most complex problems.
+      profile: https://www.rtx.com/
+    - name: Talley Family
+      description: Personal Sponsor
+    - name: Venture Industrial Products
+      image: ../images/sponsors/Venture.png
+      description: When opened as a precision sheet metal shop in 1972, our objectives were simple. If your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
+      profile: https://www.ventureindustrial.com/
+    - name: Schreiber Family
+      description: Personal Sponsor
+    - name: Limelight
+      image: ../images/sponsors/limelight.png
+      description: Limelight Vision is a robotics technology company specializing in high-quality, zero-code computer vision solutions — such as plug-and-play smart cameras — for FRC and FTC teams.
+      profile: https://limelightvision.io/
     - name: Grider Orthodontics
       image: ../images/sponsors/grider.jpg
       description: The Grider Orthodontics' team is comprised of well qualified, experienced and skilled professionals. We enjoy the relationships we develop with our patients, and our rewards are their smiles that will last a lifetime.
       profile: https://griderorthodontics.com/
-    - name: HCA Corporate
-      image: ../images/sponsors/HCACorporate.png
-      description: At HCA Healthcare, we are driven by a single mission. Above all else, we are committed to the care and improvement of human life.
-      profile: https://hcahealthcare.com/
-    - name: Veterans of Foreign Wars
-      image: ../images/sponsors/VFW.png
-      description: The Veterans of Foreign Wars, formally the Veterans of Foreign Wars of the United States, is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
-      profile: https://www.vfw.org/
 
-- tier_name: In-Kind Sponsors
+- tier_name: Silver Sponsors
   size: small
-  description: |-
+  description: $750-$1500
   sponsors:
-    - name: Brunson
-      image: ../images/sponsors/brunson.png
-      description: Brunson Instruments live in a specialized world of industrial measurement. They deal with measurement problems faced by people who build, inspect, or maintain fairly large machines – machines like aircraft, paper mills, satellites, ships, machine tools, particle accelerators, and automobiles, to name a very few.
-      profile: http://www.brunson.us/
-    - name: R&D Leverage
-      image: ../images/sponsors/leverage.jpg
-      description: R & D Leverage is recognized as the world's leading suppliers of tooling for the food, beverage, home, personal care and healthcare industries. With offices in the Kansas City, Missouri metro area and in the United Kingdom, R&D is a full-service plastic robot solutions company. From idea, to tooling, to manufacturing, the company's packaging solutions support the branded robot. Services include full mold manufacturing for PET tooling, IBM tooling, injection molds, custom medical injection, silicone services, and a full range of support functions that include sampling analysis, mold maintenance, contract molding and processing assistance.
-      profile: http://www.rdleverage.com/
-    - name: Northland Tool
-      image: ../images/sponsors/NorthlandTool.png
-      description: Northland Tool & Electronics provides over 30 years of comprehensive experience and over one hundred years of combined technician knowledge. We have rebuilt machine tool spindles of every type including machining centers, grinders, printed circuit board, and woodworking. This solid foundation of service, coupled with a new management that is dedicated to integrity and a rigid adherence to a well-defined code of ethics, is used as the base to provide to you the most professional and comprehensive repairs, thereby minimizing your machine downtime, enhancing machine performance, and increasing your profitability.
-      profile: https://www.northlandtool.com/
-    - name: Brown Industries INC.
-      image: ../images/sponsors/BrownIndustriesINC.png
-      description: Brown Industries provides a turnkey service from ordering the materials to shipment of the finished robot. With over 35 years of experience, they offer the ability to efficiently produce your robot while helping to reduce your overall costs and maximize your profits without adding unnecessary overhead.
-      profile: https://www.brownindustries.com/
-    - name: Orange Vise Company
-      image: ../images/sponsors/OrangeViseCompany.png
-      description: They committed themselves to continually creating innovative products and proving that American ingenuity could not only compete, but raise the bar of performance, quality, and value in the modern global marketplace for industrial tooling. Each of our CNC vises meet our exceedingly high standards of quality, performance, and value, and are 100% MADE IN THE USA.
-      profile: https://www.orangevise.com/
-    - name: Ken Tinkering
-      image: ../images/sponsors/kenTinkering.jpg
-      description: Home CNC Woodworker! Let me custom design something for you; Signs, Plaques, Wood Toys, Puzzles, Home Decor, Picture Frames, Wood Boxes, Trays, and Furniture.
-      profile:
-    - name: Venture Industrial Products
-      image: ../images/sponsors/Venture.png
-      description: iPlanTables is the nation’s leading supplier of wide-format touchscreen display workstations for plan reviewers, plans examiners, and managers. We design different touch screen monitor models to help view and markup construction plans, specs, spreadsheets, and images for clients wanting to move from a paper-based workflow to a digital one. They are ideal for desktops, sit-stand workstations, conference rooms, and job trailers.
-      profile: https://www.ventureindustrial.com/
-    - name: iPlanTables
-      image: ../images/sponsors/iPlanTables.svg
-      description: When we opened as a precision sheet metal shop in 1972, our objectives were simple, to provide our customers with all the design ideas possible, and make quality metal products on time and at a reasonable price. Our dedication to design ideas and quality products are the same today - of course, with the use of much more computer technology and production capabilities.  So, if your ideas are sketched on the back of an envelope, are a cardboard mock up, or are perfect 3-D modeled drawings, we are here to make your project happen!
-      profile: https://www.iplantables.com/
-    - name: Bledsoe's Equipment
-      image: ../images/sponsors/Bledsoes.png
-      description: Your number one Source for Quality Equipment Rental and Sales in the Kansas City Metro
-      profile: https://bledsoerentals.com/
-    - name: Earle M. Jorgensen Company
-      image: ../images/sponsors/EMJ.png
-      description: EMJ is a leading supplier of Steel and Aluminum Bar, Tubing, and Plate to manufacturing companies in North America and around the world. Our broad network of facilities, superior inventories, extensive value-added processing capabilities, and world-class technology enables EMJ to provide unsurpassed service to our customers.
-      profile: https://www.emjmetals.com/
-    - name: Harbor Freight
-      image: ../images/sponsors/Harbor_Freight.jpg
-      description: We have invested millions of dollars in our own test labs and factories. So our tools will go toe-to-toe with the top professional brands. And we can sell them for a fraction of the price because we cut out the middleman and pass the savings on to you. It's just that simple!
-      profile: https://www.harborfreight.com//
-    - name: GitHub
-      image: ../images/sponsors/github.png
-      description: Github is a web-based Git or version control repository and Internet hosting service. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
-      profile: https://github.com/
-    - name: Lee's Summit North High School
-      image: ../images/sponsors/lsn.jpg
-      description: Lee's Summit North is a high school that serves grades 9-12 and it is located in the north central part of Lee's Summit, Missouri. It is the second of three high schools to open in Lee's Summit, Missouri.
-      profile: http://lsnhs.lsr7.org/
-
-- tier_name: Personal Sponsors
-  size: medium
-  description: |-
-  sponsors:
-    - name: Jonathan Smith
-      description: Personal Sponsor
-      Confetti: true
-    - name: Diana Clem
-      description: Personal Sponsor
-    - name: Talley Family
-      description: Personal Sponsor
+    - name: JE Dunn
+      image: ../images/sponsors/JEDunn.svg
+      description: Founded in 1924, JE Dunn is the 8th largest domestic general building contractor in the United States with offices in 26 locations and hundreds of project sites across the country.
+      profile: https://www.jedunn.com/
     - name: Levi Madden
       description: Personal Sponsor
-    - name: Michelle and Zane Dautenhahn
-      description: Personal Sponsor
-    - name: Charles, Melanie, and Scott Hasek
-      description: Personal Sponsor
-    - name: Vega Family
-      description: Personal Sponsor
-    - name: Sean Ahern
-      description: Personal Sponsor
-    - name: Joshua Wentworth
-      description: Personal Sponsor
-    - name: Edwina Smith
-      description: Personal Sponsor
-    - name: Jared Saxon
-      description: Personal Sponsor
-    - name: Harvey and Karen Oxman
-      description: Personal Sponsor
-    - name: Team 1987 Mentors
-      description: Personal Sponsors
+
+- tier_name: Slate Sponsors
+  size: small
+  description: $250-$750
+  sponsors:
+    - name: Polymaker
+      description: Global leader driving the transformation of the 3D printing industry.
+      profile: https://polymaker.com/
+    - name: Veterans of Foreign Wars
+      description: The Veterans of Foreign Wars is an organization of US war veterans, who, as military service members fought in wars, campaigns, and expeditions on foreign land, waters, or airspace.
+      profile: https://www.vfw.org/
+    - name: Lee's Summit Quilters' Guild
+      description: Founded in 1983, the guild offers programs and activities to promote the art of quilting, encourage fellowship among quilters, and provide outreach to the community.
+      profile: https://lsqg.blogspot.com/
