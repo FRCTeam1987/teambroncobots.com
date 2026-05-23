@@ -3,7 +3,7 @@
 FROM ruby:3.1 as builder
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git curl nodejs npm \
+    && apt-get install -y --no-install-recommends git curl nodejs npm libsass-dev \
     && rm -rf /var/lib/apt/lists/* \
     ;
 
@@ -17,7 +17,7 @@ RUN npm ci --silent
 
 COPY Gemfile Gemfile.lock ./
 
-RUN bundle install --system
+RUN bundle config set --local path vendor/bundle && bundle install
 
 COPY . .
 
