@@ -1,0 +1,49 @@
+
+
+year: 2017
+robot_name: Perseus
+game_name: STEAMWORKS Robot 2017
+robot_image: /media/robots/2017robot.png
+game_video: EMiNmJW7enI
+features:
+  - feature: Won the Greater Kansas City Regional
+    icon: fa-cog
+  - feature: Ranked 21 in the Indiana Robotics Invitational
+    icon: fa-cogs
+  - feature: Broncobot won the FIRST Dean's List Finalist Award (Levi Madden)
+    icon: fa-child
+specifications:
+  - West coast drive with eight 4in Colson wheels
+  - Wheels chain driven from gearboxes
+  - Drive has encoder sensors for position tracking
+  - Fuel collector uses chain-driven roller at end of manipulator arm
+  - Manipulator arm uses 2 pneumatic cylinders for positioning
+  - Line break sensor stops intake roller when target position reached
+  - Shooter uses a Fairlane wheel, brass flywheel, 3:1 planetary 775 Pro
+  - Main programming in C++ with autonomous sequences
+capabilities:
+  - Can breach all defenses
+  - Scores in high goal
+  - Intakes and shoots fuel efficiently
+  - Autonomous defense crossing and shooting sequences
+  - Sensor-based decision making and positioning
+  - Repositions fuel into shooter with intake roller
+competitions:
+  - Greater Kansas City Regional
+  - Iowa Regional
+  - World Championship
+  - Missouri State Championship
+  - Indiana Robotics Invitational
+  - CowTown ThrowDown
+  - Kansas Cup
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2017
+videos:
+  - gsGJqDo8Un8
+  - EKsAmQms9Bg
+  - btdnwlDAYsM
+  - Hj5vvt3VYLg
+  - 5pUis31aw8s
+  - kecLxF2HrzQ
+  - YHNSak9zQVQ

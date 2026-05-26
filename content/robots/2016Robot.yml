@@ -1,0 +1,47 @@
+
+
+year: 2016
+robot_name: Knight Mare
+game_name: STRONGHOLD Robot 2016
+robot_image: /media/robots/2016robot.png
+game_video: VqOKzoHJDjA
+features:
+  - feature: Broncobots won the FIRST Dean's List Finalist Award (Connie Wentworth)
+    icon: fa-user
+  - feature: Made it to the FRC World Championship and competed in the Carson Division
+    icon: fa-rocket
+  - feature: Won the Regional Engineering Inspiration Award at the Hub City Regional
+    icon: fa-unlock-alt
+specifications:
+  - West coast drive with 10 wheels - 6 outer 8" pneumatics, 4 inner 5" BaneBots
+  - Wheels are chain driven from gearboxes
+  - Drive has encoder sensors for position tracking
+  - Shooter uses 2 BaneBot wheels, aluminum flywheel, 3 to 1 planetary 775 Pro motor
+  - Intake roller driven by chain at end of manipulator arm
+  - Manipulator arm uses 2 pneumatic cylinders for positioning
+  - Main programming in C++ with autonomous sequences
+capabilities:
+  - Can breach all defenses
+  - Scores in high and low goals
+  - Efficient boulder intake
+  - Autonomous defense crossing and shooting in 15 seconds
+  - Sensor-based decision making and positioning
+  - Repositions boulder into shooter with intake roller
+competitions:
+  - Greater Kansas City Regional
+  - Hub City Regional
+  - World Championship
+  - Missouri State Championship
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2016
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2016.pdf
+videos:
+  - EJK5-eDIEcE
+  - q3xILAXGnSo
+  - T9Hlws8VAeQ
+  - W-1qV5Sl-RA
+  - Wa0Ttv1DCUY
+  - 1uicI_nyIfI

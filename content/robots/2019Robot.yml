@@ -1,0 +1,40 @@
+
+
+year: 2019
+robot_name: Orion
+game_name: DESTINATION DEEP SPACE Robot 2019
+robot_image: /media/robots/2019robot.png
+game_video: Mew6G_og-PI
+features:
+  - feature: Team 1987's 2019 robot
+    icon: fa-robot
+  - feature: 14 feet per second moving speed
+    icon: fa-rocket
+  - feature: Winner of the Central Missouri Regional
+    icon: fa-trophy
+specifications:
+  - West coast drive, 3 mini CIM motors, high 18.42 ft/s, low 6.3 ft/s
+  - Cargo intake has 2 775pro motors (5 to 1) and pneumatic cylinders
+  - Pneumatic arm raises/lowers cargo manipulator
+  - Cascading elevator with amsteel rope, climbing hooks
+  - Cargo collector has 10 to 1 versa planetary drive, pivot motion
+  - Climber has swing arm, 11" suction cups, ratcheting winch
+capabilities:
+  - Positioning control with SRX encoders and NavX IMU
+  - Spline/trajectory path driving for autonomous
+  - Elevator PID height control with Hall effect sensors
+  - Efficient floor cargo collection
+  - Rough surface climbing ability
+competitions:
+  - Heartland Regional
+  - Central Missouri Regional
+  - World Championship
+  - Missouri State Championship
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2019
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2019.pdf
+videos:
+  - ffqoO8EyDMM

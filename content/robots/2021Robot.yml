@@ -1,0 +1,40 @@
+
+
+year: 2021
+robot_name: Anubis
+game_name: INFINITE RECHARGE Robot 2021
+robot_image: /media/robots/2021robot.png
+game_video: gmiYWTmFRVE
+features:
+  - feature: Won the Excellence in Engineering Award at the at home challenge
+    icon: fa-rocket
+  - feature: Mentor won the Woodie Flowers Finalist Award (Hillary Griffith)
+    icon: fa-plane
+  - feature: Was 2-2-0 during the 2021 offseason
+    icon: fa-space-shuttle
+specifications:
+  - Drivetrain - West coast drive, 4 Falcon 500 motors, 16.35 ft/s top speed
+  - Wheels - 2 6" performance wheels, 4 6" omni-directional wheels
+  - Collector - 2 Neo 550 motors, 3 VEX pro roller tubes, 2 pneumatic cylinders
+  - Spindexer - 1 bag motor (16 to 1 gearbox), 1 bag motor (4 to 1 gearbox) with omni wheel, 1 motor (180 gearbox) with compliant wheels
+  - Shooter - 2 Falcon 500 motors (1 to 1 ratio), 2 5" Fairlane wheels, custom CNC side plates, 3D printed Limelight mount, Limelight camera
+  - Robot Control - RoboRIO located centrally, motor control via intricate CANBus wiring, Falcon 500 integrated encoders
+capabilities:
+  - Collects balls using a roller intake system with compression against the bumper
+  - Pneumatic cylinders expel and retract rollers to stimulate ball intake
+  - Instant command enables continuous autonomous ball pickup
+  - Spindexer system organizes and feeds balls to the shooter
+  - Shooter uses a Limelight camera for fast and accurate aiming during auto and teleop modes
+  - Shooter only fires when flywheel reaches target RPM for consistent shots
+  - West coast drive base with 4 Falcon 500 motors enables high speed of 16.35 ft/s
+  - Autonomous commands use spline driving for precise motion profiled paths
+  - Upside-down electronics board doubles as the spindexer floor
+competitions:
+  - INFINITE RECHARGE at Home Challenge
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2021
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2021.pdf
+  - link_type: gif
+    link: ../../images/robots/DownloadableImages/2021RobotGif.gif

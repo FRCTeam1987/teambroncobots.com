@@ -1,0 +1,39 @@
+year: 2007
+robot_name: The Broncobot
+game_name: Rack N Roll Robot 2007
+robot_image: /media/robots/2007robot.png
+game_video: khTGSKvDyS4
+features:
+- feature: Won the Delphi "Driving Tomorrow's Technology" Award at the Colorado Regional
+  icon: fa-tree
+- feature: Won the Autodesk Visualization Award at the Colorado Regional
+  icon: fa-leaf
+- feature: Competed in Colorado Regional despite being based in Missouri
+  icon: fa-plane
+specifications:
+- Kit-of-parts chassis with lightening holes
+- IFI Robotics 2" traction wheels and AndyMark 6" omni wheels
+- BaneBots Dual CIM kit with 4 CIM motors and 12 to 1 transmission
+- Polycarbonate sides and top
+- Herders actuated with Bimba cylinders
+- Ring lifting arm made of carbon fiber tubes and aluminum pivot
+- Inner arm tube extends 32" via 36 to 1 BaneBots motor and leadscrew
+- Arm elevation by 125 to 1 BaneBots motor with 4 to 1 chain reduction
+- Counterbalanced pivot, supported by 4130 chrome moly tube
+- 45 degree angled PIAB vacuum cup with screen
+- Robot lifting ramp with 4 aluminum rails, 12.125" height
+- Ramp accommodates robots 13-27" wide with 1" side walls
+- 17 degree entry ramp incline
+- Pneumatic actuator for locking pins, spring-loaded hinges/ramp support
+capabilities:
+- Places rings at all heights
+- Elevates two maximum sized robots
+- Accommodates various widths of alliance robots
+- U-shaped ramps with side support rails
+- Gradual entry ramp incline
+- Drives up steep and various ramp styles
+competitions:
+- Colorado Regional
+links:
+- link_type: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2007.pdf

@@ -5,7 +5,7 @@ content:
   type: collection
   path: content/robots
   filename:
-    template: "{fields.year}Robot.md"
+    template: "{fields.year}Robot.yml"
     field: false
   fields:
   - name: year
@@ -31,12 +31,12 @@ content:
     type: object
     list: true
     fields:
-      - name: feature
-        label: Feature
-        type: string
-      - name: icon
-        label: Icon
-        type: string
+    - name: feature
+      label: Feature
+      type: string
+    - name: icon
+      label: Icon
+      type: string
   - name: specifications
     label: Specifications
     type: string
@@ -54,12 +54,12 @@ content:
     type: object
     list: true
     fields:
-      - name: link_type
-        label: Link Type
-        type: string
-      - name: link
-        label: Link
-        type: string
+    - name: link_type
+      label: Link Type
+      type: string
+    - name: link
+      label: Link
+      type: string
   - name: videos
     label: Videos
     type: string
