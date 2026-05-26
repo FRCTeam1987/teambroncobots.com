@@ -58,8 +58,8 @@ content:
       label: Link Name
       type: string
     - name: linked_media
-      label: Linked Media
-      type: media
+      label: Linked File
+      type: file
     - name: link
       label: Link URI
       type: string
