@@ -55,10 +55,13 @@ content:
     list: true
     fields:
     - name: link_type
-      label: Link Type
+      label: Link Name
       type: string
+    - name: linked_media
+      label: Linked Media
+      type: media
     - name: link
-      label: Link
+      label: Link URI
       type: string
   - name: videos
     label: Videos
