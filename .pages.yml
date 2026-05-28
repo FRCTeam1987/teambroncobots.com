@@ -2,8 +2,7 @@ content:
 - name: team_stats
   label: Team Stats
   type: file
-  path: "content/team_stats.yml"
-  list: true
+  path: content/team_stats.yml
   fields:
   - name: title
     label: Title
