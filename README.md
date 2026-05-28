@@ -41,12 +41,17 @@ npm start
 
 Development with live-reload:
 ```powershell
-docker-compose up dev
+docker compose up dev
 ```
 
 Production build (Jekyll + nginx):
 ```powershell
-docker build -t broncobots-site .
+docker compose build jekyll
+```
+
+Run the production container with published ports:
+```powershell
+docker compose up jekyll
 ```
 
 Site runs on `http://localhost:4000` for dev and port `80` for the production image.
