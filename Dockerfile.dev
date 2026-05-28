@@ -9,6 +9,7 @@ RUN apt-get update \
 WORKDIR /site
 
 COPY package.json package-lock.json* ./
+RUN npm ci --silent
 
 COPY Gemfile Gemfile.lock bulma-clean-theme.gemspec ./
 RUN bundle install --system

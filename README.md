@@ -54,7 +54,7 @@ Run the production container with published ports:
 docker compose up jekyll
 ```
 
-Site runs on `http://localhost:4000` for dev and port `80` for the production image.
+Site runs on `http://localhost:4000` for dev and `http://localhost:4000` for the production image (`jekyll` service is mapped as `4000:80` in docker-compose).
 
 ### Dev Container (VS Code)
 
