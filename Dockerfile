@@ -15,7 +15,7 @@ COPY package.json package-lock.json* ./
 # (the SCSS imports expect ../node_modules relative to /site/_sass/_main.scss)
 RUN npm ci --silent
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile Gemfile.lock bulma-clean-theme.gemspec ./
 
 RUN bundle config set --local path vendor/bundle && bundle install
 
@@ -28,7 +28,7 @@ RUN bundle exec jekyll build
 # Stage 2: Runtime image
 FROM nginx:mainline-alpine-slim
 
-COPY --from=builder --exclude=**git --exclude=**.lock --exclude=package*.json /site/_site /usr/share/nginx/html
+COPY --from=builder /site/_site /usr/share/nginx/html
 
 EXPOSE 80
 

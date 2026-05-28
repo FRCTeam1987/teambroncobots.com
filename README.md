@@ -20,7 +20,7 @@ Static site built with [Jekyll](https://jekyllrb.com/) using the [bulma-clean-th
 
 ### Prerequisites
 
-- Ruby \< 3.0 with Bundler
+- Ruby 3.1+ with Bundler
 - Node.js (managed by Volta: node 24.13.0)
 
 ### Quick Start

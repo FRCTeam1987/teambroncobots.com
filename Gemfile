@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem "bulma-clean-theme", path: "."
+
 gem "jekyll", ">= 3.9", "< 5.0"
 gem "jekyll-feed", "~> 0.15"
 gem "jekyll-sitemap", "~> 1.4"
@@ -17,4 +19,3 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem "csv", "~> 3.3"
 gem "base64", "~> 0.3.0"
 gem "bigdecimal", "~> 4.0"
-gem "jekyll-sass-converter", "~> 2.0"
