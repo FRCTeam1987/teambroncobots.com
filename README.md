@@ -56,6 +56,24 @@ docker compose up jekyll
 
 Site runs on `http://localhost:4000` for dev and port `80` for the production image.
 
+### Docker Verification (Same As CI PR Checks)
+
+These are the same checks run in GitHub Actions on pull requests.
+
+Build the `dev` service image:
+```powershell
+docker compose build dev
+```
+
+Build and smoke-test the `jekyll` service image with Playwright:
+```powershell
+docker compose build jekyll
+docker compose up -d jekyll
+npm install --no-save playwright
+node -e "const { chromium } = require('playwright'); (async () => { const browser = await chromium.launch({ headless: true }); const page = await browser.newPage(); const response = await page.goto('http://localhost:4000', { waitUntil: 'domcontentloaded', timeout: 30000 }); await browser.close(); if (!response || !response.ok()) { process.exit(1); } })();"
+docker compose down
+```
+
 ## Deployment
 
 GitHub Actions builds and deploys automatically:

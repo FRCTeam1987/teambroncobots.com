@@ -12,6 +12,40 @@ on:
       - qa
 
 jobs:
+  docker-dev-build:
+    name: Docker Compose dev build
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build dev service image
+      run: docker compose build dev
+
+  docker-jekyll-smoke:
+    name: Docker Compose jekyll smoke test
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build jekyll service image
+      run: docker compose build jekyll
+
+    - name: Start jekyll service
+      run: docker compose up -d jekyll
+
+    - name: Install Playwright
+      run: npm install --no-save playwright
+
+    - name: Verify site responds with Playwright
+      run: |
+        node -e "const { chromium } = require('playwright'); (async () => { const browser = await chromium.launch({ headless: true }); const page = await browser.newPage(); let lastError; for (let i = 0; i < 10; i++) { try { const response = await page.goto('http://localhost:4000', { waitUntil: 'domcontentloaded', timeout: 10000 }); if (response && response.ok()) { await browser.close(); process.exit(0); } lastError = new Error('Non-OK response from site'); } catch (error) { lastError = error; } await new Promise(resolve => setTimeout(resolve, 3000)); } await browser.close(); throw lastError || new Error('Site did not respond in time'); })();"
+
+    - name: Stop jekyll service
+      if: always()
+      run: docker compose down
+
   jekyll:
     runs-on: ubuntu-latest
     steps:
