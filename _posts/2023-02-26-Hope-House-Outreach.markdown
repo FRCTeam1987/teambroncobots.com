@@ -4,7 +4,7 @@ title: "Student Interviews"
 date:  2023-02-26
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week7.jpg
-hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png
+hero_image: ../../../../../../../../media/Posts/weeklyNewsletter/top2023.png
 ---
 
 

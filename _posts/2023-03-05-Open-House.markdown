@@ -4,7 +4,7 @@ title: "Open House"
 date:  2023-03-05
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/week8.jpg
-hero_image: ../../../../../../../../images/Posts/weeklyNewsletter/top2023.png
+hero_image: ../../../../../../../../media/Posts/weeklyNewsletter/top2023.png
 ---
 
 

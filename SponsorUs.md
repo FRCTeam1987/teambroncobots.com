@@ -3,7 +3,7 @@ title: Sponsor us
 subtitle: We apreciate any and every donation torwards our team!
 layout: default
 show_sidebar: false
-hero_image: ../images/SponsorUs.jpg
+hero_image: ../media/SponsorUs.jpg
 hero_darken: false
 mobile_black_text: true
 down_breaks: false
@@ -70,10 +70,10 @@ down_breaks: false
             <p>- Select if you would like LSEF to cover the processing costs or not.</p>
             <p>- Fill in all payment and Credit Card Information</p>
             <p>- Thank you so much! If you would like to see if you are eligible now to become an official sponsor then fill out the contact form below.</p>
-            
+
         </div>
         <div class="column" style="background-color:white;"><center>
-            <embed type="text/html" src="https://interland3.donorperfect.net/weblink/weblink.aspx?id=1&name=E332169"  width="650" height="700"> 
+            <embed type="text/html" src="https://interland3.donorperfect.net/weblink/weblink.aspx?id=1&name=E332169"  width="650" height="700">
             </center>
         </div>
     </div>

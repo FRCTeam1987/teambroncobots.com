@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  R7 Alliance 
+title:  R7 Alliance
 subtitle: Lee's Summit Robotics
 description: The LSR7 robototics alliance!
 show_sidebar: false
-hero_image: ../images/r7alliance2022.jpg
+hero_image: ../media/r7alliance2022.jpg
 hero_darken: false
 hero_height: is-large
 ---

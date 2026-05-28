@@ -3,10 +3,10 @@ layout: page
 title: Branding
 subtitle: Our Team Identity
 show_sidebar: false
-hero_image: ../images/Assets/Branding/HighResBroncobotLogo.png
-hero_darken: true 
+hero_image: ../media/Assets/Branding/HighResBroncobotLogo.png
+hero_darken: true
 hero_height: is-large
---- 
+---
 <div class="full" style="text-align: center">
 <p>Branding is a vital and crucial part of Team 1987. Below you can find our standards in branding.</p>
 
@@ -16,23 +16,23 @@ hero_height: is-large
 
 <p>We offer a scalable svg file, used when possible.</p>
 
-<a href="../images/Assets/Branding/broncobots.svg" download>
-    <img width="300px" src="../images/Assets/Branding/broncobots.svg" alt="../images/NoImage.png">
+<a href="../media/Assets/Branding/broncobots.svg" download>
+    <img width="300px" src="../media/Assets/Branding/broncobots.svg" alt="../media/NoImage.png">
 </a>
-                                               
+
 <p>In addition we provide a high resolution logo. Used whenever svg is not a viable option and it is expected to be enlarged or seen at a large scale.</p>
-<a href="../images/Assets/Branding/HighResBroncobotLogo.png" download>
-    <img width="300px" src="../images/Assets/Branding/HighResBroncobotLogo.png" alt="../images/NoImage.png">
+<a href="../media/Assets/Branding/HighResBroncobotLogo.png" download>
+    <img width="300px" src="../media/Assets/Branding/HighResBroncobotLogo.png" alt="../media/NoImage.png">
 </a>
 <p>Completing the set we have the original Broncobots logo. In its original quality, to be used when the logo is smaller scaled or when the only feasable option.</p>
-<a href="../images/Assets/Branding/OfficialBroncobotLogo.png" download>
-    <img width="300px" src="../images/Assets/Branding/OfficialBroncobotLogo.png" alt="../images/NoImage.png">
+<a href="../media/Assets/Branding/OfficialBroncobotLogo.png" download>
+    <img width="300px" src="../media/Assets/Branding/OfficialBroncobotLogo.png" alt="../media/NoImage.png">
 </a>
 <h2>Colors</h2>
 <p> Our team colors are Maroon, Black, and Gray. We determine which color is used based off of availability and choice of the creator.</p>
 
-<a href="../images/Assets/Branding/colors.png" download>
-    <img src="../images/Assets/Branding/colors.png" alt="../images/NoImage.png">
+<a href="../media/Assets/Branding/colors.png" download>
+    <img src="../media/Assets/Branding/colors.png" alt="../media/NoImage.png">
 </a>
 
 <h2>Fonts</h2>
@@ -62,13 +62,13 @@ hero_height: is-large
         var fallbackWidth = context.measureText(text).width;
         return originalWidth !== fallbackWidth;
     }
-    
+
     // Check if Rockwell font is loaded
     window.onload = function() {
         if (!isFontLoaded("Rockwell")) {
             var messageElement = document.getElementById("font-message");
             messageElement.innerHTML = "It appears that you're using a browser that is not compatible with the Rockwell font. This can be caused by an unexpected MIME type and/or an outdated browser. For the best viewing experience please use a different browser.";
-            
+
             // Hide the lines that should only be displayed when Rockwell font is rendered correctly
             var hiddenElements = document.getElementsByClassName("hidden-when-failed");
             for (var i = 0; i < hiddenElements.length; i++) {

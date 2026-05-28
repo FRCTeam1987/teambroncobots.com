@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Summer Camps 
+title: Summer Camps
 subtitle: First Through Sixth Grade
 description: Broncobots Summer Camps
 show_sidebar: false
-hero_image: ../images/camps.png
+hero_image: ../media/camps.png
 down_breaks: true
 [//]: # (hero_darken: true)
 hero_height: is-medium
@@ -43,7 +43,7 @@ hero_height: is-medium
             Price - $120 + $3 fee
             <br><br>
             Engineering Camp is for incoming 2nd - 4th graders who have an interest in all things STEM. <br>
-            Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering. 
+            Throughout the week, campers will participate in Engineering Design Challenges as well as activities and experiments that introduce different types of engineering.
             <br>Campers will learn about Safety, Architectural, Software, Chemical, Mechanical, and Aerospace Engineering throughout the week.
         </p>
 </div>
@@ -67,10 +67,10 @@ hero_height: is-medium
             Price - $250 + $3 fee
             <br><br>
             Robotics Camp is an introductory level camp for incoming 5th - 7th graders.
-            <br>It allows students to build a VEX robot to compete in a game and achieve certain tasks. 
-            <br>Campers work closely with high school members of the robotics team to build robots and develop game strategy. 
-            <br>They also have the opportunity to design websites and flyers for their team. 
-            <br>At the end of the week, teams will compete to be the Grand Champion of the Robotics Camp. 
+            <br>It allows students to build a VEX robot to compete in a game and achieve certain tasks.
+            <br>Campers work closely with high school members of the robotics team to build robots and develop game strategy.
+            <br>They also have the opportunity to design websites and flyers for their team.
+            <br>At the end of the week, teams will compete to be the Grand Champion of the Robotics Camp.
         </p>
 </div>
 
