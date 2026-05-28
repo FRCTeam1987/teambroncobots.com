@@ -2,7 +2,7 @@ content:
 - name: team_stats
   label: Team Stats
   type: file
-  path: content/team_stats.yml
+  path: _data/team_stats.yml
   list: true
   fields:
   - name: title
