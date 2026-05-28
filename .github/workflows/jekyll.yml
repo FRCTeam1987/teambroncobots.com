@@ -36,7 +36,9 @@ jobs:
       run: docker compose up -d jekyll
 
     - name: Install Playwright
-      run: npm install --no-save playwright
+      run: |
+        npm install --no-save playwright
+        npx playwright install --with-deps chromium
 
     - name: Verify site responds with Playwright
       run: |
