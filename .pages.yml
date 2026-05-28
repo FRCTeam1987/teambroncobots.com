@@ -3,7 +3,8 @@ content:
     label: Team Stats
     type: file
     path: content/team_stats.yml
-    list: true
+    list:
+      collapsible: true
     fields:
       - name: title
         label: Title
