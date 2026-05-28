@@ -56,6 +56,25 @@ docker compose up jekyll
 
 Site runs on `http://localhost:4000` for dev and port `80` for the production image.
 
+### Dev Container (VS Code)
+
+Quick one-click Jekyll development with automatic reload in VS Code.
+
+Prerequisites:
+- Docker Desktop
+- Dev Containers extension for VS Code (`ms-vscode-remote.remote-containers`)
+
+Usage:
+1. Open this repository in VS Code.
+2. Run `Dev Containers: Reopen in Container` from the Command Palette.
+3. Wait for the container build/start to complete.
+4. Open `http://localhost:4000` in your browser.
+
+Expected behavior:
+- Jekyll starts automatically in the container (same as `docker compose up dev`).
+- Changes to Markdown, layouts, includes, and Sass trigger rebuilds automatically.
+- Browser refresh is automatic through LiveReload on port `35729`.
+
 ### Docker Verification (Same As CI PR Checks)
 
 These are the same checks run in GitHub Actions on pull requests.

@@ -1,0 +1,6 @@
+services:
+  dev:
+    ports: !reset []
+    expose:
+      - "4000"
+      - "35729"

@@ -1,0 +1,27 @@
+{
+  "dockerComposeFile": ["../docker-compose.yml", "./docker-compose.devcontainer.yml"],
+  "service": "dev",
+  "runServices": ["dev"],
+  "workspaceFolder": "/site",
+  "forwardPorts": [4000, 35729],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby",
+        "shopify.theme-check-vscode",
+        "yzhang.markdown-all-in-one",
+        "redhat.vscode-yaml",
+        "DavidAnson.vscode-markdownlint"
+      ],
+      "settings": {
+        "files.watcherExclude": {
+          "**/node_modules/**": true,
+          "**/_site/**": true,
+          "**/.jekyll-cache/**": true,
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true
+        }
+      }
+    }
+  }
+}
