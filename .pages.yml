@@ -3,6 +3,10 @@ content:
   label: Team Stats
   type: file
   path: content/team_stats.yml
+  list:
+    collapsible:
+      collapsed: true
+      summary: "{title}: {count}"
   fields:
   - name: title
     label: Title
