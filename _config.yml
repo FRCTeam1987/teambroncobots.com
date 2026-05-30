@@ -8,6 +8,9 @@ description: >
 baseurl: ""
 url: "https://teambroncobots.com/"
 permalink: pretty
+
+remote_theme: chrisrhymes/bulma-clean-theme@v1.0.0
+
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
@@ -21,6 +24,7 @@ disqus:
 
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
