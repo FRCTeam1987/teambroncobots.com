@@ -28,8 +28,13 @@ plugins:
   - jekyll-redirect-from
 
 exclude:
+  - .dockerignore
+  - Dockerfile
+  - Dockerfile.dev
   - Gemfile
-  - clean-theme.gemspec
+  - README.md
+  - bulma-clean-theme.gemspec
+  - docker-compose.yml
   - Gemfile.lock
   - node_modules
   - vendor/bundle/

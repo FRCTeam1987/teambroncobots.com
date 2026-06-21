@@ -1,0 +1,21 @@
+Dockerfile
+Dockerfile.dev
+_site/
+
+# Version control
+.git
+.github
+.gitignore
+
+# Editor / configuration
+.editorconfig
+
+# Build and dependency caches
+.jekyll-cache
+node_modules
+vendor
+.bundle
+.sass-cache
+
+# Documentation
+# Keep documentation in the build context so Jekyll can process top-level pages (e.g. sponsors.md, SponsorUs.md)

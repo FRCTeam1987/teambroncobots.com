@@ -1,0 +1,23 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:80"
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/site
+      - dev-node-modules:/site/node_modules
+      - dev-jekyll-cache:/site/.jekyll-cache
+    ports:
+      - 4000:4000
+      - 4001:4001
+      - 35729:35729
+    environment:
+      SASS_PATH: /site/node_modules
+
+volumes:
+  dev-node-modules:
+  dev-jekyll-cache:
