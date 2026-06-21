@@ -2,7 +2,7 @@
 title: Broncobots
 subtitle: FRC Team 1987
 layout: page
-callouts: home_callouts
+callouts: team_stats
 show_sidebar: false
 [//]: # (If true, then post page appears)
 hero_image: images/Homeimg.jpg
@@ -21,11 +21,11 @@ mobile_black_text: true
           margin: 0 auto;
     }
     @import "TextAnimationEffect.scss";
-    
+
     .zoom:hover {
-      backface-visibility: hidden; 
+      backface-visibility: hidden;
       transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-      
+
     }
 </style>
 
@@ -56,7 +56,7 @@ mobile_black_text: true
 </div>
 ---
 
-<div class="zoom"></div> 
+<div class="zoom"></div>
 
 <h2 style="color:maroon; text-align:center; font-family:Rockwell, Roboto, sans-serif;">About us</h2>
 
@@ -68,7 +68,7 @@ mobile_black_text: true
 
 <div id="missStat" style="display:none">
 <br>
-      The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success.  
+      The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success.
 </div>
 
 <div id="teamFoc" style="display:none">
@@ -80,14 +80,14 @@ mobile_black_text: true
     <br><br>
         We've made our name known throughout the community in various ways. We have presented at numerous Lee's Summit elementary schools, in addition to Lee's Summit middle schools, and a private Catholic school in a neighboring city. We have attended and presented at meetings for the Rotary Club, the Optimist Club, the National Tool and Machining Association, the Lee's Summit Economic Development Council, and the Kauffman Foundation. We also were excited to give presentations at Gail's Harley Davidson, Honeywell, the Engineering and Science Summit Institute at Kansas State University, and the Lee's Summit Chalk Walk. Together with the other two Lee's Summit robotics teams our team rotated staffing a booth at Downtown Days to reach out to all Lee's Summit citizens.
     <br><br>
-        Over four years, we have sent over 1,500 letters to government officials. In 2008, there was a "Lee's Summit Robotics Day" proclamation from the mayor, and Governor Matt Blunt officially recognized and commended the FIRST Robotics Competition in the state of Missouri. Along with starting a mail campaign to government officials (fifteen different officials and federal offices), took the classic Flat Stanley and combined it with the spirit of FIRST to start our Flat Creation Campaign. This was designed to reach people outside our direct area of influence, like families and friends from other states and countries. During its time traveling, Flat Mammoth (from our 2008 Flat Creation Campaign) has visited a second grade classroom, attended a robot-themed movie night, enjoyed the warm weather in Honduras, and sat in the Missouri House of Representatives! 
+        Over four years, we have sent over 1,500 letters to government officials. In 2008, there was a "Lee's Summit Robotics Day" proclamation from the mayor, and Governor Matt Blunt officially recognized and commended the FIRST Robotics Competition in the state of Missouri. Along with starting a mail campaign to government officials (fifteen different officials and federal offices), took the classic Flat Stanley and combined it with the spirit of FIRST to start our Flat Creation Campaign. This was designed to reach people outside our direct area of influence, like families and friends from other states and countries. During its time traveling, Flat Mammoth (from our 2008 Flat Creation Campaign) has visited a second grade classroom, attended a robot-themed movie night, enjoyed the warm weather in Honduras, and sat in the Missouri House of Representatives!
     </p>
 </div>
 
 <div id="teamHist" style="display:none">
 <br>
   <p>
-     Over the years, the Broncobots have had many significant achievements. We've attended over {{ site.data.home_callouts.items[1].title }} competitions over the years, from Regionals to World Championship. Team 1987 has also competed in Off-Season competitions such as Ozark Mountain Brawl, Lee's Summit's CowTown ThrowDown and Indiana Robotics Invitational (IRI). We haven't kept quiet about what we do either. You can find the Broncobots spreading the message of FIRST within our community by hosting booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, Kansas City Maker Faire, School Registration day, Freshmen Transition Day and You Belong Club event. The team has been featured in countless newspaper articles, been on TV, and have had two robots written about and published in two books. We've also initiated letter campaigns, media broadcasts, toiletry drives for a Domestic Abuse shelter, and much more. Team 1987, The Broncobots has accomplished much since our founding year.
+     Over the years, the Broncobots have had many significant achievements. We've attended over {{ site.data.team_stats[1].count }} competitions over the years, from Regionals to World Championship. Team 1987 has also competed in Off-Season competitions such as Ozark Mountain Brawl, Lee's Summit's CowTown ThrowDown and Indiana Robotics Invitational (IRI). We haven't kept quiet about what we do either. You can find the Broncobots spreading the message of FIRST within our community by hosting booths at Missouri State Fair, Lee's Summit's Downtown Days, Oktoberfest, Kansas City Maker Faire, School Registration day, Freshmen Transition Day and You Belong Club event. The team has been featured in countless newspaper articles, been on TV, and have had two robots written about and published in two books. We've also initiated letter campaigns, media broadcasts, toiletry drives for a Domestic Abuse shelter, and much more. Team 1987, The Broncobots has accomplished much since our founding year.
   </p>
 </div>
 
@@ -103,7 +103,7 @@ function missionStatement() {
     } else {
         m.style.display = "none";
     }
-} 
+}
 function teamFocus() {
     let m = document.getElementById("missStat");
     let f = document.getElementById("teamFoc");
