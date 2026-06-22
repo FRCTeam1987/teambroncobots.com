@@ -1,4 +1,37 @@
+media: images
 content:
+- name: sponsors
+  label: Sponsors
+  type: file
+  path: _data/sponsors.yml
+  list: true
+  fields:
+  - name: tier_name
+    label: Tier Name
+    type: string
+  - name: size
+    label: Size
+    type: string
+  - name: amount
+    label: Amount
+    type: string
+  - name: sponsors
+    label: Sponsors
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: image
+      label: Image
+      type: image
+    - name: description
+      label: Description
+      type: text
+    - name: url
+      label: URL
+      type: string
 - name: team_stats
   label: Team Stats
   type: file
