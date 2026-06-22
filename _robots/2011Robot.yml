@@ -1,0 +1,46 @@
+
+
+year: 2011
+robot_name: Dr. Claw
+game_name: Logo Motion Robot 2011
+game_logo: /images/robots/Competition Logos/2011_Logo_Motion.png
+robot_image: /images/robots/2011robot.png
+game_video: aH_9QHZpsfs
+features:
+  - feature: Ranked third in the Midwest Regional
+    icon: fa-lemon
+  - feature: Won the Quality Award sponsored by Motorola at the Midwest Regional
+    icon: fa-key
+  - feature: Won the Website Award at the Midwest Regional
+    icon: fa-laptop
+specifications:
+  - Robot uses mecanum wheels for omnidirectional drive
+  - Elevator constructed from 1.5" T-slots, 53" bottom and 43" top sections
+  - Elevator raised by winch with two window motors and polymer pulleys
+  - Tube gripper uses pneumatics and rubber bands for gripping
+  - Gripper has polymer/rubber rollers to prevent snagging
+  - Minibot deployed from aluminum drawer slides with pneumatic cylinders/latches
+capabilities:
+  - Can drive forward, backward, left, right, and strafe sideways
+  - Picks up tubes from ground or feeder slot
+  - Scores on top two rows autonomously
+  - Deploys custom minibot
+  - Tracks lines on field during autonomous
+competitions:
+  - Midwest Regional
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2011.zip
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2011.pdf
+videos:
+  - hXpKCQoYcvw
+  - e1xuGX7l4j8
+  - 8FSYWm3tei4
+  - zTGAh1N2zWM
+  - LmIryo8dKZM
+  - hPfqhSUwdvA
+  - K2Bb9BqQnkM
+  - xNGronkp8-4
+  - b_ToyIQRLxw

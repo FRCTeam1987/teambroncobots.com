@@ -1,0 +1,53 @@
+
+
+year: 2014
+robot_name: Apollo
+game_name: Aerial Assist 2014
+game_logo: /images/robots/Competition Logos/2014_Aerial_Assist.svg
+robot_image: /images/robots/2014robot.png
+game_video: oxp4dkMQ1Vo
+features:
+  - feature: Won the Industrial Design Award sponsored by General Motors at the GKC Regional
+    icon: fa-desktop
+  - feature: Won the Industrial Safety Award at the Colorado Regional
+    icon: fa-flask
+  - feature: Won the Quality Award sponsored by Motorola  at the Colorado Regional
+    icon: fa-battery-full
+specifications:
+  - 4-wheel drop center drive, VEX Pro 2014 kit chassis
+  - Wheels are 4" diamond tread (outer), 4" W-tread (inner)
+  - Wheel drive is Chain driven from BaneBots Ball Shifters
+  - Collector has BaneBots 550 motor (16 to 1 planetary, 15 to 54 open gearbox), VersaWheels, Mecanum wheels
+  - Catapult includes Aluminum tube launcher frame, surgical tubing, torsion bar, pneumatic latch
+  - Winch has CIM motor, 3-stage GEM gearbox, spool with tether, disc brake
+  - Pneumatic cylinders for collector deployment, winch braking
+capabilities:
+  - Can shoot over the truss into the high goal
+  - Detects the "hot goal" during autonomous mode
+  - Has mobility during autonomous mode
+  - Can shoot into the "hot goal"
+  - Can pass and receive balls
+  - Collector uses wheels to intake balls from the floor
+  - Collector uses overhead wheels with pressure against floor/bumper for control
+  - Collector deploys via pneumatic cylinders
+  - Catapult launches balls using surgical tubing tension
+  - Catapult uses a torsion bar latch to store energy for launch
+  - Winch system winds back catapult assembly after launching
+competitions:
+  - Greater Kansas City Regional
+  - Colorado Regional
+  - Ozark Mountain Brawl
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2014.zip
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2014.pdf
+videos:
+  - u4VTzCjN880
+  - p_3uX1kUN7Q
+  - xxFYj5jS4hA
+  - bpWBV3UXldI
+  - lE3nSYTLAj8
+  - ZwI5CVOxeYw
+  - jH1JiGfxMyM

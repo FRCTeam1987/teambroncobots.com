@@ -1,0 +1,67 @@
+year: 2024
+robot_name: Shockwave
+game_name: Crescendo Robot 2024
+game_logo: /images/robots/Competition Logos/2024_Crescendo.svg
+robot_image: /images/robots/2024robot.png
+game_video: 9keeDyFxzY4
+features:
+- feature: Two-time Innovation in Control winners
+  icon: fa-certificate
+- feature: Shooter wrist 120-degree herringbone rack motion
+  icon: fa-robot
+- feature: 4 Limelight image processing
+  icon: fa-crosshairs
+specifications:
+- MK4i L3 Swerve Drive with Kraken Drive Motors enables 18.9ft/s speed.
+- Differential shooter speeds cause Note spin for improved shooting stability.
+- 120-degree wrist range with herringbone rack and pinion prevents backlash.
+- Two-stage belt-in-tube elevator with Kevlar-reinforced belt.
+- Elevator carriage reaches a max height in 0.5 seconds.
+- Elevator lifts robot at end-of-match in 0.87 seconds.
+- Intake uses independent Falcon 500 motors for belt-driven rollers.
+- Magnetic encoders and CANCoders measure the swerve module steering position.
+- Two Limelight 3G’s and two Limelight 3's for April Tag detection and global distance calculations.
+capabilities:
+- Shoots through the elevator with low launch height for consistency.
+- Feeder holds Note prepared to shoot, allowing Trap scoring.
+- The elevator's constant force spring ensures the carriage rises first.
+- Climber hooks extend for driving into the chain directly.
+- Stabilizer wheels align the Trap scoring location and prevent tipping.
+- Under-bumper intake prevents damage during collisions.
+- Closed-loop control for swerve velocity and position using TalonFX.
+- Autonomous uses Path Planner for motion profiling and odometry fusion.
+- Extensive driver controls for simplified automation and efficient scoring.
+competitions:
+- Central Missouri Regional
+- Heartland Regional
+- Hosted and Participated in Greater Kansas City Regional
+- Missouri State Championship
+- Indiana Robotics Invitational
+- CowTown ThrowDown
+links:
+- link_type: CAD
+  link: https://cad.onshape.com/documents/8df59a8d8b6445d82ef9d8c3/w/c08d6d12cf7537f834e0fd20/e/5dd521c104417c5c00c9adf6
+- link_type: IRI Recode
+  link: https://github.com/FRCTeam1987/Robot2024_2
+- link_type: Code
+  link: https://github.com/FRCTeam1987/Robot2024
+- link_type: Technical Book
+  link: ../../robots/Technical Books/Technical Book 2024.pdf
+- link_type: gif
+  link: ../../images/robots/DownloadableImages/schockwave2024.gif
+- link_type: Evergreen Chassis
+  link: https://cad.onshape.com/documents/21405454a98dec8037f087ac/w/7b480bc606d8df397808798a/e/51eba9d735fc349bf50784f9
+- link_type: Evergreen Elevator
+  link: https://cad.onshape.com/documents/5c58653e21cf307a5b959f7d/w/66303c6500ca886e9657c88c/e/cba08d02972a8578367a9ba4
+- link_type: Evergreen Hardware
+  link: https://cad.onshape.com/documents/842217a5857867831a41f8ef/w/c5488f56fd07eec1ec6f74e8/e/bc7a55b38608e1654e507a75
+- link_type: Evergreen Rollers
+  link: https://cad.onshape.com/documents/6716b101224c044a440b77ec/w/a0e89f64dfae3574f1dffb0b/e/e5d0628fe9e7c9dd854c5534
+videos:
+- 72AxnVR9yzg
+- lliPVuqGlFk
+- oIIn2sNtHTQ
+- zD3T0I5nMwM
+- hwme6ksjEyM
+- Q2u3z5pdn40
+- jFwftSsUFqE

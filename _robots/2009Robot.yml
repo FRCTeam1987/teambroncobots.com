@@ -1,0 +1,57 @@
+
+
+year: 2009
+robot_name: Lunar Launcher
+game_name: Lunacy Robot 2009
+game_logo: /images/robots/Competition Logos/2009_Lunacy.png
+robot_image: /images/robots/2009robot.png
+game_video: nEh3Wzd1jDI
+features:
+  - feature: Made it to the FRC World Championship and competed in the Archimedes Division
+    icon: fa-moon
+  - feature: Ranked third in the Archimedes Division
+    icon: fa-bullseye
+  - feature: Won the Woodie Flowers Award at the Colorado Regional
+    icon: fa-sun
+specifications:
+  - 3 PVC tubes wrapped with latex rubber tubing acting as a herding module, driven by a high torque RS 545 motor and gearbox
+  - Curved aluminum rail conveyor system to transport game pieces, driven by a Globe motor through a jackshaft and #25 chain with 2.0" wide traction wheels (top wheel overdriven by 20%)
+  - Baseball shooter scoring module with 4 counter-rotating wheels to compress and shoot game pieces, made of waterjet-cut aluminum plates and driven by direct-drive CIM motors with adjustable wheels for close and long range scoring
+  - Polycarbonate panels to protect mechanisms and electronics, secured with Velcro
+  - Camera used to locate and track opposing alliance trailer
+  - Careful wiring management with labeled and terminated cables
+capabilities:
+  - Can start the game possessing six game pieces
+  - Score game pieces from close and long range using adjustable baseball shooter
+  - Herd additional game pieces using the herding module
+  - Can convey game pieces from the herding module to the scoring module via the curved rail conveyor
+  - Uses sensors to provide traction control and time movement of game pieces through the robot
+  - Robust and easily serviceable design
+  - Community outreach efforts like sending letters, food drives, summer camps, school presentations
+competitions:
+  - Colorado Regional
+  - World Championship
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2009.zip
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2009.pdf
+videos:
+  - rXI1SaBKkJ0
+  - 7Vfrw8HfFXY
+  - YCIS-0eWLxc
+  - NXT-nSuM8pw
+  - NMRoSk2a_JM
+  - pq37aSKUQ7Q
+  - IFX17PUKHWA
+  - 4isF61TgvQc
+  - f_QZQ1qksvM
+  - tLgY33lTjlc
+  - 3x1Iqp0YOLI
+  - f3P0-urfQU8
+  - Ul7Cg1E9BRU
+  - i0RzTMMu5U8
+  - BKeRPzoef7Y
+  - ok0vlr885wk
+  - vUO-i_LtkxM

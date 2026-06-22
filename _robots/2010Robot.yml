@@ -1,0 +1,53 @@
+
+
+year: 2010
+robot_name: Lance-A-Lot
+game_name: Breakaway Robot 2007
+game_logo: /images/robots/Competition Logos/2010_Breakaway.svg
+robot_image: /images/robots/2010robot.png
+game_video: Bb1P43OSfOU
+features:
+  - feature: Made it to the FRC World Championship and competed in the Archimedes Division
+    icon: fa-arrow-right
+  - feature: Won the Oklahoma Regional
+    icon: fa-bolt
+  - feature: Won the Regional Chairman's Award at the Oklahoma Regional
+    icon: fa-smile
+specifications:
+  - Robot uses mecanum wheels for omnidirectional drive
+  - Elevator constructed from 1.5" T-slots, 53" bottom and 43" top sections
+  - Elevator raised by winch with two window motors and polymer pulleys
+  - Tube gripper uses pneumatics and rubber bands for gripping
+  - Gripper has polymer/rubber rollers to prevent snagging
+  - Minibot deployed from drawer slides with pneumatic cylinders/latches
+capabilities:
+  - Can drive forward, backward, left, right, and strafe sideways
+  - Picks up tubes from ground or feeder slot
+  - Scores on top two rows autonomously
+  - Deploys custom minibot
+  - Tracks lines on field during autonomous
+competitions:
+  - Oklahoma City Regional
+  - World Championship
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2010.zip
+videos:
+  - 2xmL1nPlgRc
+  - aZZQKyUZN-s
+  - pHrItbUhdsY
+  - 7T4RBG3pTNg
+  - RiPchtwG5uc
+  - oM8TpMng89Y
+  - PkOKauIpx5U
+  - Z4bUOwZvBfg
+  - EtsvOyF-QeQ
+  - Zg_AfM6HiSI
+  - L2QpMKpgBu8
+  - H1F_vmLdPT8
+  - m69_zLNZesM
+  - 50gi2QprqcE
+  - DvvuIuaoKLE
+  - 8mbH0jigf24
+  - lZROdO7zdcI

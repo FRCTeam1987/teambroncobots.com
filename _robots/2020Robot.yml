@@ -1,0 +1,43 @@
+
+
+year: 2020
+robot_name: Infinite Recharge FRC Robot
+game_name: Infinite Recharge Robot 2020
+game_logo: /images/robots/Competition Logos/2020_Infinite_Recharge.png
+robot_image: /images/robots/2020robot.png
+game_video: gmiYWTmFRVE
+features:
+  - feature: Ranked 4 in the Greater Kansas City Regional
+    icon: fa-thumbs-up
+  - feature: Won the Quality Award sponsored by Motorola Solutions Foundation in the GKC Regional
+    icon: fa-camera
+  - feature: Was 12-5-0 in official play in 2020
+    icon: fa-thumbs-up
+specifications:
+  - West coast drive, 4 Falcon 500 motors, 16.35 ft/s
+  - 2 6" performance wheels, 4 6" omni wheels
+  - Falcon 500 integrated encoders for drive distance
+  - Collector has Neo 550, compliant wheels, pneumatic pivot
+  - Hopper uses poly belt, NeveRest motor, agitator wheel
+  - Elevator has 2 pneumatics, timing belts, Andymark 9015 motor
+  - Shooter has 2 Falcon 500s (2 to 3), 5" Fairlane wheels, Limelight
+  - Control panel has motor (30 to 1), LED ring, pneumatic vertical motion
+  - Climber has extending arms, winch motors, constant force springs
+capabilities:
+  - Automated hopper/elevator loading and ball counting
+  - Automated control panel rotation/positioning
+  - Autonomous uses spline driving paths
+  - Fast/accurate shooter aiming with Limelight
+  - Shooter PID RPM control with feedforward
+  - State machine integration of hopper, elevator, shooter
+competitions:
+  - Attended & Hosted Greater Kansas City Regional
+  - Planned to attend Heartland Regional
+  - Planned to attend Central Missouri Regional
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2020
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2020.pdf
+  - link_type: CAD
+    link: ../../robots/CAD/2020.zip
