@@ -1,7 +1,7 @@
 year: 2021
 robot_name: Anubis
 game_name: INFINITE RECHARGE Robot 2021
-robot_image: /media/robots/2021robot.png
+robot_image: /images/robots/2021robot.png
 game_video: gmiYWTmFRVE
 features:
 - feature: Won the Excellence in Engineering Award at the at home challenge
@@ -35,4 +35,4 @@ links:
 - link_type: Technical Book
   link: ../../robots/Technical Books/Technical Book 2021.pdf
 - link_type: gif
-  link: ../../media/robots/DownloadableImages/2021RobotGif.gif
+  link: ../../images/robots/DownloadableImages/2021RobotGif.gif

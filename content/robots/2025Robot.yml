@@ -2,7 +2,7 @@
 year: 2025
 robot_name: Riptide
 game_name: Reefscape Robot 2025
-robot_image: /media/robots/2025robot.png
+robot_image: /images/robots/2025robot.png
 game_video: YWbxcjlY9JY
 features:
   - feature: Championship Archimedes Division captain

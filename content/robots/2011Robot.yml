@@ -3,7 +3,7 @@
 year: 2011
 robot_name: Dr. Claw
 game_name: Logo Motion Robot 2011
-robot_image: /media/robots/2011robot.png
+robot_image: /images/robots/2011robot.png
 game_video: aH_9QHZpsfs
 features:
   - feature: Ranked third in the Midwest Regional

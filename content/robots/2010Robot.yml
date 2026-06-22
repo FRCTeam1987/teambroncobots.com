@@ -3,7 +3,7 @@
 year: 2010
 robot_name: Lance-A-Lot
 game_name: Breakaway Robot 2007
-robot_image: /media/robots/2010robot.png
+robot_image: /images/robots/2010robot.png
 game_video: Bb1P43OSfOU
 features:
   - feature: Made it to the FRC World Championship and competed in the Archimedes Division

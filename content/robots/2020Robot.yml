@@ -3,7 +3,7 @@
 year: 2020
 robot_name: Infinite Recharge FRC Robot
 game_name: Infinite Recharge Robot 2020
-robot_image: /media/robots/2020robot.png
+robot_image: /images/robots/2020robot.png
 game_video: gmiYWTmFRVE
 features:
   - feature: Ranked 4 in the Greater Kansas City Regional

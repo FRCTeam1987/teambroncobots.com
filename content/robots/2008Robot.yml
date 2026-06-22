@@ -3,7 +3,7 @@
 year: 2008
 robot_name: The Mammoth
 game_name: Overdrive Robot 2008
-robot_image: /media/robots/2008robot.png
+robot_image: /images/robots/2008robot.png
 game_video: D5oL7aLH0T4
 features:
   - feature: Won the Regional Engineering Inspiration Award at the Minnesota Regional

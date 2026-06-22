@@ -3,7 +3,7 @@
 year: 2023
 robot_name: FlipSide
 game_name: Energize Robot 2023
-robot_image: /media/robots/2023robot.png
+robot_image: /images/robots/2023robot.png
 game_video: 0zpflsYc4PA
 features:
   - feature: Used object detection to automatically collect and score game pieces

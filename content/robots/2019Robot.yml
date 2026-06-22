@@ -3,7 +3,7 @@
 year: 2019
 robot_name: Orion
 game_name: DESTINATION DEEP SPACE Robot 2019
-robot_image: /media/robots/2019robot.png
+robot_image: /images/robots/2019robot.png
 game_video: Mew6G_og-PI
 features:
   - feature: Team 1987's 2019 robot

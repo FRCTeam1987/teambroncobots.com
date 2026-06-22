@@ -3,7 +3,7 @@
 year: 2013
 robot_name: Dennis The Menace
 game_name: Ultimate Ascent Robot 2013
-robot_image: /media/robots/2013robot.png
+robot_image: /images/robots/2013robot.png
 game_video: itHNW2OFr4Y
 features:
   - feature: Made it to the FRC World Championship and competed in the Galileo Division

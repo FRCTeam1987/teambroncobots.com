@@ -1,7 +1,7 @@
 year: 2024
 robot_name: Shockwave
 game_name: Crescendo Robot 2024
-robot_image: /media/robots/2024robot.png
+robot_image: /images/robots/2024robot.png
 game_video: 9keeDyFxzY4
 features:
 - feature: Two-time Innovation in Control winners
@@ -47,7 +47,7 @@ links:
 - link_type: Technical Book
   link: ../../robots/Technical Books/Technical Book 2024.pdf
 - link_type: gif
-  link: ../../media/robots/DownloadableImages/schockwave2024.gif
+  link: ../../images/robots/DownloadableImages/schockwave2024.gif
 - link_type: Evergreen Chassis
   link: https://cad.onshape.com/documents/21405454a98dec8037f087ac/w/7b480bc606d8df397808798a/e/51eba9d735fc349bf50784f9
 - link_type: Evergreen Elevator

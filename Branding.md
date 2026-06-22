@@ -3,7 +3,7 @@ layout: page
 title: Branding
 subtitle: Our Team Identity
 show_sidebar: false
-hero_image: ../media/Assets/Branding/HighResBroncobotLogo.png
+hero_image: ../images/Assets/Branding/HighResBroncobotLogo.png
 hero_darken: true
 hero_height: is-large
 ---
@@ -16,23 +16,23 @@ hero_height: is-large
 
 <p>We offer a scalable svg file, used when possible.</p>
 
-<a href="../media/Assets/Branding/broncobots.svg" download>
-    <img width="300px" src="../media/Assets/Branding/broncobots.svg" alt="../media/NoImage.png">
+<a href="../images/Assets/Branding/broncobots.svg" download>
+    <img width="300px" src="../images/Assets/Branding/broncobots.svg" alt="../images/NoImage.png">
 </a>
 
 <p>In addition we provide a high resolution logo. Used whenever svg is not a viable option and it is expected to be enlarged or seen at a large scale.</p>
-<a href="../media/Assets/Branding/HighResBroncobotLogo.png" download>
-    <img width="300px" src="../media/Assets/Branding/HighResBroncobotLogo.png" alt="../media/NoImage.png">
+<a href="../images/Assets/Branding/HighResBroncobotLogo.png" download>
+    <img width="300px" src="../images/Assets/Branding/HighResBroncobotLogo.png" alt="../images/NoImage.png">
 </a>
 <p>Completing the set we have the original Broncobots logo. In its original quality, to be used when the logo is smaller scaled or when the only feasable option.</p>
-<a href="../media/Assets/Branding/OfficialBroncobotLogo.png" download>
-    <img width="300px" src="../media/Assets/Branding/OfficialBroncobotLogo.png" alt="../media/NoImage.png">
+<a href="../images/Assets/Branding/OfficialBroncobotLogo.png" download>
+    <img width="300px" src="../images/Assets/Branding/OfficialBroncobotLogo.png" alt="../images/NoImage.png">
 </a>
 <h2>Colors</h2>
 <p> Our team colors are Maroon, Black, and Gray. We determine which color is used based off of availability and choice of the creator.</p>
 
-<a href="../media/Assets/Branding/colors.png" download>
-    <img src="../media/Assets/Branding/colors.png" alt="../media/NoImage.png">
+<a href="../images/Assets/Branding/colors.png" download>
+    <img src="../images/Assets/Branding/colors.png" alt="../images/NoImage.png">
 </a>
 
 <h2>Fonts</h2>

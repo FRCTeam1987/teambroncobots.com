@@ -1,7 +1,7 @@
 year: 2007
 robot_name: The Broncobot
-robot_image: /media/robots/2007robot.png
-game_logo: /media/robots/Competition Logos/2007_Rack_n_Roll.jpeg
+robot_image: /images/robots/2007robot.png
+game_logo: /images/robots/Competition Logos/2007_Rack_n_Roll.jpeg
 game_name: Rack N Roll
 game_video: khTGSKvDyS4
 features:
@@ -38,4 +38,4 @@ competitions:
   - Colorado Regional
 links:
   - link_type: Technical Book
-    linked_media: /media/robots/Technical Books/Technical Book 2007.pdf
+    linked_media: /images/robots/Technical Books/Technical Book 2007.pdf

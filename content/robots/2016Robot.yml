@@ -3,7 +3,7 @@
 year: 2016
 robot_name: Knight Mare
 game_name: STRONGHOLD Robot 2016
-robot_image: /media/robots/2016robot.png
+robot_image: /images/robots/2016robot.png
 game_video: VqOKzoHJDjA
 features:
   - feature: Broncobots won the FIRST Dean's List Finalist Award (Connie Wentworth)
