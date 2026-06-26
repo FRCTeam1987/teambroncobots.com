@@ -96,7 +96,7 @@ docker compose down
 ## Deployment
 
 GitHub Actions builds and deploys automatically:
-- **master** branch → teambroncobots.com (GitHub Pages)
+- **main** branch → teambroncobots.com (GitHub Pages)
 - **qa** branch → dev.teambroncobots.com (SFTP)
 
 ## Project Structure
