@@ -1,0 +1,46 @@
+robot_name: Mystery Machine
+game_name: RAPID REACT
+year: 2022
+robot_image: "../images/robots/2022robot.png"
+game_logo: "../../images/robots/Competition Logos/2022_Rapid_React.svg"
+game_video: LgniEjI9cCM
+awards:
+  - award: Two time regional winners
+    icon: fa-certificate
+  - award: First Broncobots swerve drive robot
+    icon: fa-robot
+  - award: ~95% high goal shooting accuracy
+    icon: fa-crosshairs4
+specifications:
+  - Swerve drive with 4 Swerve Drive Specialties MK4i modules
+  - 8 Falcon 500 motors powering/steering swerve modules
+  - Swerve modules inverted for protection and space saving
+  - Collector has 3 roller sets, Falcon 500 drive, pneumatic actuation
+  - Storage has 2 Neo 500s, compliant/mecanum rollers, 5:1 reduction
+  - Shooter has 2 Falcon 500s, 1 to 1.2 reduction, 4" Vex flywheels
+  - Adjustable shooter hood with linear actuators, rear anti-backspin wheels
+  - Climber uses 2 Climber-in-a-Box modules, pneumatic pistons, 3D printed hooks
+capabilities:
+  - Closed-loop swerve with Falcon encoders, CANcoders, NavX for positioning
+  - Motion profiled autonomous paths using Path Planner
+  - Automated collector deployment based on driver controls
+  - Line sensors monitor storage capacity, control intake/shooting
+  - Limelight vision tracking for shooter distance/RPM determination
+  - Automated cargo release sequence based on target shooter RPM
+  - Onboard camera vision for collector positioning
+  - Safeguarded climber automation with sequential controls
+  - Driver feedback like rumble, cargo count adjustment, arm position tweaks
+competitions:
+  - Heartland Regional
+  - Central Missouri Regional
+  - Hosted Greater Kansas City Regional
+  - 2022 World Championships
+  - Indiana Robotics Invitational
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2022
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2022.pdf
+videos:
+  - WErLk-A_kgw

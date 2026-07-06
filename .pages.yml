@@ -27,13 +27,13 @@ content:
   - name: game_video
     label: Game Video
     type: string
-  - name: features
-    label: Features
+  - name: awards
+    label: Awards
     type: object
     list: true
     fields:
-    - name: feature
-      label: Feature
+    - name: award
+      label: Award
       type: string
     - name: icon
       label: Icon

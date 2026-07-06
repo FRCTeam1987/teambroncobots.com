@@ -1,0 +1,42 @@
+robot_name: Sidious
+game_name: POWER UP
+year: 2018
+robot_image: "../images/robots/2018robot.png"
+game_logo: "../../images/robots/Competition Logos/2018_FIRST_Power_Up.svg"
+game_video: HZbdwYiCY74
+awards:
+  - award: Broncobots won the FIRST Dean's List Finalist Award (Sarah Ahern)
+    icon: fa-user-circle
+  - award: Won the Quality Award sponsored by Motorola Solutions Foundation at the GKC Regional
+    icon: fa-volume-up
+  - award: Ranked third in the Oklahoma Regional
+    icon: fa-wrench 3
+specifications:
+  - 8 custom 4.5" wheels with 1/8" drop centers
+  - West coast drive with 3 mini CIM motors and dual speed transmission
+  - High speed 18.42 ft/s, low speed 6.3 ft/s
+  - Cube manipulator has 2 775pro motors (5 to 1), pneumatic cylinders
+  - Limit switches detect cube position in manipulator
+  - Carriage uses pneumatic cylinder to raise/lower manipulator
+  - Cascading elevator with amsteel rope, climbing hooks
+  - Custom winch gearboxes with mini CIM, ratchet, PTO input
+capabilities:
+  - SRX encoders and NavX for position/heading control
+  - Trajectory and spline path driving for autonomous
+  - Multiple autonomous modes for scale, switch, dual targets
+  - Elevator uses encoder PID and hall effect sensors
+  - Automated cube collect confirmation from sensors
+  - Co-driver sets elevator height, rumble feedback on collect
+  - Able to climb at end of match
+competitions:
+  - Greater Kansas City Regional
+  - Oklahoma City Regional
+  - Missouri State Championship
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2018
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2018.pdf
+videos:
+  - uI5w6rwAvxg

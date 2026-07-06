@@ -1,0 +1,47 @@
+robot_name: Dennis The Menace
+game_name: Ultimate Ascent
+year: 2013
+robot_image: "../images/robots/2013robot.png"
+game_logo: "../../images/robots/Competition Logos/2013_Ultimate_Ascent.png"
+game_video: itHNW2OFr4Y
+awards:
+  - award: Made it to the FRC World Championship and competed in the Galileo Division
+    icon: fa-exclamation
+  - award: Was a regional finalist at the Greater Kansas City Regional
+    icon: fa-compass
+  - award: Won the Regional Chairman's Award at the Alamo Regional
+    icon: fa-leaf 1
+specifications:
+  - 6-wheel drop center drive, custom 2" aluminum C-channel frame
+  - Frame is 26"x30" for maneuverability and construction space
+  - Linear 2-wheel shooter with pneumatic Frisbee feed
+  - Adjustable shooter angle with 2 pneumatic cylinders
+  - Hopper holds 4 discs, feeds directly to indexer
+  - Hopper made from welded sheet metal and polycarbonate extension
+  - Climbers use actuators with hooks, string pots, and limit switches
+  - LED light strips, RGB decorative lights, high power aiming light
+capabilities:
+  - Accurate 3-point shooting from behind pyramids
+  - Stores 4 discs in hopper
+  - Collects discs from center feed slot
+  - Climbs to first pyramid level
+  - Shoots 3 discs autonomously into 3-point goal
+  - Quick release hopper/shooter for maintenance
+competitions:
+  - Greater Kansas City Regional
+  - Alamo Regional
+  - World Championship
+  - Ozark Mountain Brawl
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2013.zip
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2013.pdf
+videos:
+  - Yt9-GNx9fYs
+  - KnNF6sWPPgE
+  - M-_hN2FIa3U
+  - I0gHTlJbYuQ
+  - jbTVF6L5qzI
+  - PDh-6yRC95c

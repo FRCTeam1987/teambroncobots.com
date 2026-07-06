@@ -1,0 +1,57 @@
+robot_name: The Mammoth
+game_name: Overdrive
+year: 2008
+robot_image: "../images/robots/2008robot.png"
+game_logo: "../../images/robots/Competition Logos/2008_FIRST_Overdrive.jpeg"
+game_video: D5oL7aLH0T4
+awards:
+  - award: Won the Regional Engineering Inspiration Award at the Minnesota Regional
+    icon: fa-road
+  - award: Made it to the FRC World Championship and competed in the Archimedes Division
+    icon: fa-trophy
+  - award: Won the Autodesk Visualization Award at the Minnesota Regional
+    icon: fa-star3
+specifications:
+  - Kit-of-parts chassis with aluminum fasteners for low weight
+  - 4 CIM motors with 2 AndyMark Toughbox transmissions
+  - 13.4 to 1 combined gear ratio to wheels
+  - Front 2" IFI Traction wheels, rear AndyMark omni wheels
+  - Trackball removal arm with telescoping fiberglass beams
+  - 36" leadscrew and 48 to 1 Banebots gearbox extends inner arm beam
+  - Herder arms use Globe motor, chain drive, position transducer
+  - Launcher uses latex tubes, winch, pneumatic differential/gearing
+  - Pneumatic cylinder latches/releases launcher arms
+capabilities:
+  - Removes trackballs from overpass with paddle arm
+  - Telescoping arm can extend to heights in 4 seconds
+  - Herder arms can scoop and lift trackballs
+  - Launcher can fire trackballs approximately 12' high, 8' away
+  - Launcher can arm in 7 seconds, fire while driving
+competitions:
+  - Minnesota Regional
+  - World Championship
+links:
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2008.pdf
+videos:
+  - pTePEmhGfbk
+  - _11R3or58vQ
+  - 7GdZ44IJ81w
+  - zYKj6yHFAKo
+  - Sexxun2KBBw
+  - q2oXOGdbhp4
+  - 4BDNuKJTC7E
+  - _nTob7i6Njc
+  - 8PmO9uIRekI
+  - VTEaeDWfYbo
+  - TE6mcjSrloM
+  - 2muNiXFGoR8
+  - pIV7yEc4xD0
+  - 4KYLA40wWPA
+  - 1P83c8cnsB8
+  - Gq6VUYjpojM
+  - btvMRxuBXVo
+  - l0P0LXmE8bI
+  - zc5y_mAc6YE
+  - 61a21JdaIvE
+  - y_UTtb3v_H4

@@ -1,0 +1,47 @@
+robot_name: Drill Sargent
+game_name: Rebound Rumble
+year: 2012
+robot_image: "../images/robots/2012robot.png"
+game_logo: "../../images/robots/Competition Logos/2012_Rebound_Rumble.png"
+game_video: nOXsdhZZSdM
+awards:
+  - award: Won the Engineering Inspiration Award at the St. Louis Regional
+    icon: fa-search
+  - award: Made it to the FRC World Championship and competed in the Archimedes Division
+    icon: fa-puzzle-piece
+  - award: Won the Judges' Award at the Greater Kansas City Regional
+    icon: fa-gavel 4
+specifications:
+  - 6-wheel dropped center drive with 8" Andymark Plaction wheels
+  - Andymark Super Shifters provide two drive speeds
+  - Spaced wheels prevent chain damage traversing defenses
+  - Vertical 2-wheel shooter with telescoping uptake rollers
+  - Combined intake system with belts/rollers from floor
+  - Shooter angle adjusts from 30-60 degrees
+  - Pneumatic arm provides over 19 lbs downforce for balancing
+  - Custom polycarbonate electronics plate with integrated wire management
+capabilities:
+  - Overcomes The Bump defense
+  - Tips and balances on The Bridge
+  - Picks up and shoots basketballs
+  - Variable shooter wheel speeds for distance/arc control
+competitions:
+  - Greater Kansas City Regional
+  - St. Louis Regional
+  - World Championship
+  - Ozark Mountain Brawl
+  - CowTown ThrowDown
+links:
+  - link_type: Code
+    link: ../../robots/Code/Robot2012.zip
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2012.pdf
+videos:
+  - JbfFi6QA-Yk
+  - C0LjAFFm5VE
+  - _dkBH2rjTKo
+  - 3wtWiFIZ_UI
+  - RtPB62MmVZQ
+  - OzZSuaFA1PQ
+  - 9fqozA-nXK4
+  - qDOjI15Xxzk
