@@ -1,5 +1,75 @@
 media: images
 content:
+
+- name: robots
+  label: Robots
+  type: collection
+  path: _data/robots
+  filename:
+    template: "{fields.year}Robot.yml"
+    field: false
+  fields:
+  - name: year
+    label: Year
+    type: number
+  - name: robot_name
+    label: Robot Name
+    type: string
+  - name: robot_image
+    label: Robot Image
+    type: image
+  - name: game_logo
+    label: Game Logo
+    type: image
+  - name: game_name
+    label: Game Name
+    type: string
+  - name: game_video
+    label: Game Video
+    type: string
+  - name: features
+    label: Features
+    type: object
+    list: true
+    fields:
+    - name: feature
+      label: Feature
+      type: string
+    - name: icon
+      label: Icon
+      type: string
+  - name: specifications
+    label: Specifications
+    type: string
+    list: true
+  - name: capabilities
+    label: Capabilities
+    type: string
+    list: true
+  - name: competitions
+    label: Competitions
+    type: string
+    list: true
+  - name: links
+    label: Links
+    type: object
+    list: true
+    fields:
+    - name: link_type
+      label: Link Name
+      type: string
+    - name: linked_media
+      label: Linked File
+      type: file
+    - name: link
+      label: Link URI
+      description: "If the link is an external URL, enter it here. If it's a file in the media library, use the Linked File field instead."
+      type: string
+  - name: videos
+    label: Videos
+    type: string
+    list: true
+
 - name: sponsors
   label: Sponsors
   type: file
@@ -32,6 +102,7 @@ content:
     - name: url
       label: URL
       type: string
+
 - name: team_stats
   label: Team Stats
   type: file
