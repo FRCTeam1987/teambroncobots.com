@@ -99,6 +99,35 @@ GitHub Actions builds and deploys automatically:
 - **master** branch → teambroncobots.com (GitHub Pages)
 - **qa** branch → dev.teambroncobots.com (SFTP)
 
+## Events System
+
+The site uses a Jekyll collection (`events`) to manage upcoming and past team events. Adding an event automatically populates the Events page and the homepage countdown timer.
+
+### Adding an Event
+
+Create a Markdown file in `_events/` with the following front matter:
+
+```yaml
+---
+title: "Event Name"
+datetime: "2026-01-01T09:00:00"
+location: "Venue Name"
+address: "Full Address"
+layout: event
+hide_hero: true
+---
+```
+
+Add body content below the front matter for event-specific details.
+
+### Events Page
+
+The `events.md` page lists all events in two tables: upcoming (future) and past. Events are sorted by date.
+
+### Dynamic Countdown
+
+The homepage countdown (`_includes/countdown.html`) is generated dynamically from the `site.events` collection. It filters for future events and builds the countdown entries automatically — no manual updates needed when dates change.
+
 ## Project Structure
 
 ```
@@ -107,6 +136,7 @@ _data/               # YAML data sources (team info, sponsors, etc.)
 _includes/           # Reusable HTML partials
 _layouts/            # Page layouts
 *.md in root         # Standalone Markdown pages
+_events/             # Event pages
 _posts/              # Blog posts
 _sass/               # SASS styles (extends Bulma)
 assets/              # Static files and images

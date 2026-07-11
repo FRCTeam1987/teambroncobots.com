@@ -1,6 +1,6 @@
 ---
-title: "2025 Greater Kansas City Regional"
-datetime: "2025-03-26T09:00:00"
+title: "2026 City of Fountains Regional"
+datetime: "2026-04-01T09:00:00"
 location: "Park Hill South High School"
 address: "4500 River Pk Dr, Riverside, MO 64150"
 layout: event

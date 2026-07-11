@@ -47,7 +47,7 @@ hide_hero: true # temporary hide for banquet visibility
     {% if site.data.anniversary_banquet.address %}
     <p class="subtitle is-6">
         <span class="icon"><i class="fas fa-location-dot"></i></span>
-        <a href="https://www.google.com/maps/search/?api=1&query={{ page.address | url_encode }}" target="_blank">{{ site.data.anniversary_banquet.address }}</a>
+        <a href="https://www.google.com/maps/search/?api=1&query={{ site.data.address | url_encode }}" target="_blank">{{ site.data.anniversary_banquet.address }}</a>
     </p>
     {% endif %}
   </div>
