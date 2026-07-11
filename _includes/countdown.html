@@ -103,7 +103,7 @@
         {% for event in sorted_events %}
         {% assign event_time = event.datetime | date: '%s' %}
         {% if event_time > now %}
-        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.name }}!" }{% if forloop.rindex == 1 %}{% else %},{% endif %}
+        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.title }}!" }{% if forloop.rindex == 1 %}{% else %},{% endif %}
         {% endif %}
         {% endfor %}
     ];
