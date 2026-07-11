@@ -1,8 +1,8 @@
 robot_name: Mystery Machine
 game_name: RAPID REACT
 year: 2022
-robot_image: "../images/robots/2022robot.png"
-game_logo: "../../images/robots/Competition Logos/2022_Rapid_React.svg"
+robot_image: images/robots/2022robot.png
+game_logo: images/robots/Competition Logos/2022_Rapid_React.svg
 game_video: LgniEjI9cCM
 awards:
   - award: Two time regional winners

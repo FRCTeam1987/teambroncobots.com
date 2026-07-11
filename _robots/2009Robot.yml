@@ -1,8 +1,8 @@
 robot_name: Lunar Launcher
 game_name: Lunacy
 year: 2009
-robot_image: "../images/robots/2009robot.png"
-game_logo: "../../images/robots/Competition Logos/2009_Lunacy.png"
+robot_image: images/robots/2009robot.png
+game_logo: images/robots/Competition Logos/2009_Lunacy.png
 game_video: nEh3Wzd1jDI
 awards:
   - award: Made it to the FRC World Championship and competed in the Archimedes Division

@@ -1,8 +1,8 @@
 robot_name: Shockwave
 game_name: Crescendo
 year: 2024
-robot_image: "../images/robots/2024robot.png"
-game_logo: "../../images/robots/Competition Logos/2024_Crescendo.svg"
+robot_image: images/robots/2024robot.png
+game_logo: images/robots/Competition Logos/2024_Crescendo.svg
 game_video: 9keeDyFxzY4
 awards:
   - award: Two-time Innovation in Control winners

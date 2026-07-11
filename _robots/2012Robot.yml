@@ -1,8 +1,8 @@
 robot_name: Drill Sargent
 game_name: Rebound Rumble
 year: 2012
-robot_image: "../images/robots/2012robot.png"
-game_logo: "../../images/robots/Competition Logos/2012_Rebound_Rumble.png"
+robot_image: images/robots/2012robot.png
+game_logo: images/robots/Competition Logos/2012_Rebound_Rumble.png
 game_video: nOXsdhZZSdM
 awards:
   - award: Won the Engineering Inspiration Award at the St. Louis Regional

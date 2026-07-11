@@ -1,8 +1,8 @@
 robot_name: Anubis
 game_name: INFINITE RECHARGE
 year: 2021
-robot_image: "../images/robots/2021robot.png"
-game_logo: "../../images/robots/Competition Logos/2021_Infinite_Recharge.png"
+robot_image: images/robots/2021robot.png
+game_logo: images/robots/Competition Logos/2021_Infinite_Recharge.png
 game_video: gmiYWTmFRVE
 awards:
   - award: Won the Excellence in Engineering Award at the at home challenge
