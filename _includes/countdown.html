@@ -98,17 +98,14 @@
 
 <script>
     const countdowns = [
-        { date: new Date("January 4, 2025 11:00:00"), text: "Countdown to the 2025 FRC Season!" },
-        { date: new Date("March 5, 2025 8:00:00"), text: "Countdown to the Central Missouri Regional!" },
-        { date: new Date("March 26, 2025 8:00:00"), text: "Countdown to the Greater Kansas City Regional!" },
-        { date: new Date("April 16, 2025 17:00:00"), text: "Countdown to the 2025 FIRST Championship!" },
-        { date: new Date("April 19, 2025 18:00:00"), text: "Countdown to the End of the 2025 FIRST Championship!" },
-        { date: new Date("January 10, 2026 11:00:00"), text: "Countdown to the 2026 FIRST Kickoff!" },
-        { date: new Date("April 29, 2026 17:00:00"), text: "Countdown to the 2026 FIRST Championship!" },
-        { date: new Date("May 2, 2026 18:00:00"), text: "Countdown to the End of the 2026 FIRST Championship!" },
-        { date: new Date("January 9, 2027 11:00:00"), text: "Countdown to the 2027 FIRST Kickoff!" },
-        { date: new Date("April 28, 2027 17:00:00"), text: "Countdown to the 2027 FIRST Championship!" },
-        { date: new Date("May 1, 2027 18:00:00"), text: "Countdown to the End of the 2027 FIRST Championship!" },
+        {% assign now = site.time | date: '%s' %}
+        {% assign sorted_events = site.events | sort: 'datetime' %}
+        {% for event in sorted_events %}
+        {% assign event_time = event.datetime | date: '%s' %}
+        {% if event_time > now %}
+        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.name }}!" }{% if forloop.rindex == 1 %}{% else %},{% endif %}
+        {% endif %}
+        {% endfor %}
     ];
 
     function updateCountdown() {
