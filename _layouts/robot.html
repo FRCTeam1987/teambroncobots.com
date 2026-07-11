@@ -68,24 +68,24 @@ layout: default
         {% include awardsWon.html awards=page.awardsWon %}
         {% endif %}
 
-        {% if page.features %}
+        {% if page.awards %}
         <div class="content">
-            {% for feature in page.features %}
+            {% for award in page.awards %}
             <p>
                <span class="icon">
-                   {% if feature.icon %}
-                   <i class="fas {{ feature.icon }}"></i>
+                   {% if award.icon %}
+                   <i class="fas {{ award.icon }}"></i>
                    {% else %}
                    <i class="fas fa-circle fa-xs"></i>
                    {% endif %}
                </span>
-                <span>{{ feature.label }}</span></p>
+                <span>{{ award.label }}</span></p>
             {% endfor %}
         </div>
         {% endif %}
 
-        {% if page.CompetitionLogo %}
-        <img src="{{ page.CompetitionLogo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;"/>
+        {% if page.game_logo %}
+        <img src="{{ page.game_logo }}" style="display: block; margin-left: auto; margin-right: auto; flex-shrink: 0; max-height: 20em; min-height: 10em; max-width: 30em;"/>
         {% endif %}
     </div>
 
@@ -96,31 +96,31 @@ layout: default
         </div>
     </div>
 
-    {% if site.data.reviews[page.robot_code] %}
+    {% if site.data.reviews[page.year] %}
     <div class="column is-12">
         <p class="title is-4">Reviews</p>
-        {% for review in site.data.reviews[page.robot_code] %}
+        {% for review in site.data.reviews[page.year] %}
         {% include review.html %}
         {% endfor %}
     </div>
     {% endif %}
 
     <div class="column is-6">
-        {% if page.Specifications %}
+        {% if page.specifications %}
         <div class="content">
-            <h2>Specifications</h2>
+            <h2>specifications</h2>
             <ul>
-                {% for Specification in page.Specifications %}
+                {% for Specification in page.specifications %}
                 <li>{{ Specification.item }}</li>
                 {% endfor %}
             </ul>
         </div>
         {% endif %}
-        {% if page.Capabilities %}
+        {% if page.capabilities %}
         <div class="content">
-            <h2>Capabilities</h2>
+            <h2>capabilities</h2>
             <ul>
-                {% for Capability in page.Capabilities %}
+                {% for Capability in page.capabilities %}
                 <li>{{ Capability.item }}</li>
                 {% endfor %}
             </ul>
@@ -130,24 +130,28 @@ layout: default
 
     <div class="column is-6">
 
-        {% if page.Competitions %}
+        {% if page.competitions %}
         <div class="content">
-            <h2>Competitions</h2>
+            <h2>competitions</h2>
             <ul>
-                {% for Competition in page.Competitions %}
+                {% for Competition in page.competitions %}
                 <li>{{ Competition.item }}</li>
                 {% endfor %}
             </ul>
         </div>
         {% endif %}
-        {% if page.Links %}
+        {% if page.links %}
         <div class="content">
-            <h2>Links</h2>
+            <h2>links</h2>
             <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
-                {% for Item in page.Links %}
-                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
+                {% for link_type in page.links %}
+                <a href="{{ link_type.link }}" target="_blank" style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
                     <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
-                        {{ Item.item }}
+                        {% if defined?(link_type.linked_media) %}
+                            {{ link_type.linked_media }}
+                        {% else %}
+                            {{ link_type.link }}
+                        {% endif %}
                     </div>
                 </a>
                 {% endfor %}
@@ -164,22 +168,22 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
     $( document ).ready(function() {
-        scoreData({{ page.robot_code }}, true);
-        createChart({{ page.robot_code }});
+        scoreData({{ page.year }}, true);
+        createChart({{ page.year }});
     });
 
 </script>
 
-{% if page.robot_code == 2021 %}
+{% if page.year == 2021 %}
     <div style='text-align: left; font-size: 1.5em;'>No Stat Data Available</div>
 {% else %}
     <div class="column is-12">
         <p class="title is-3">Score Data</p>
-        <div id="scoreData{{ page.robot_code }}" class="content">
+        <div id="scoreData{{ page.year }}" class="content">
                 loading...
         </div>
         <div id="chart-wrapper">
-            <canvas id="myChart{{ page.robot_code }}"></canvas>
+            <canvas id="myChart{{ page.year }}"></canvas>
         </div>
     </div>
 {% endif %}
@@ -187,7 +191,7 @@ layout: default
 
 <div style="text-align:center">
     Want more? Check out this year's
-    <a href="https://www.thebluealliance.com/team/1987/{{ page.robot_code }}" target="_blank">
+    <a href="https://www.thebluealliance.com/team/1987/{{ page.year }}" target="_blank">
         Blue Alliance
     </a>
     Page!
@@ -203,20 +207,20 @@ layout: default
 
 </div>
 
-{% if page.GameVideo %}
+{% if page.game_video %}
 <div class="content">
     <h2>Game Animation</h2>
     <div class="responsive-video-wrapper game-video">
-        <iframe src="https://www.youtube.com/embed/{{page.GameVideo}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/{{page.game_video}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 {% endif %}
 
-{% if page.Videos %}
+{% if page.videos %}
 <div class="content">
     <h2>Videos</h2>
     <div class="videos-grid">
-        {% for item in page.Videos %}
+        {% for item in page.videos %}
         <div class="responsive-video-wrapper">
             <iframe src="https://www.youtube.com/embed/{{item.item}}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

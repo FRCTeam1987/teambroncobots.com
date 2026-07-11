@@ -3,8 +3,8 @@ layout: default
 show_sidebar: false
 ---
 
-<div class="columns is-multiline"> 
- 
+<div class="columns is-multiline">
+
   <div class="column is-12">
     {{ page.content }}
   </div>
@@ -18,18 +18,18 @@ show_sidebar: false
 
       <div class="card">
 
-        {% if robot.image %}
+        {% if robot.robot_image %}
         <div class="card-image">
           <figure class="image is-1by1">
-              
-            <img src="{{ robot.imageicon }}" alt="{{ robot.title }}" />
+
+            <img src="{{ robot.robot_image }}" alt="{{ robot.year }} Robot" />
           </figure>
         </div>
         {% endif %}
         <div class="card-content">
 
-          <p class="title is-4">{{ robot.title }}</h2>
-          <p class="subtitle is-4">{{ robot.subtitle }}</p>
+          <p class="title is-4">{{ robot.year }} Robot</h2>
+          <p class="subtitle is-4">{{ robot.robot_name }}</p>
         </div>
       </div>
 
@@ -38,4 +38,3 @@ show_sidebar: false
   </div>
 {% endfor %}
 </div>
-

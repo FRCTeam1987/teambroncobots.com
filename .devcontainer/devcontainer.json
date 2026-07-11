@@ -7,11 +7,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "rebornix.Ruby",
-        "shopify.theme-check-vscode",
         "yzhang.markdown-all-in-one",
         "redhat.vscode-yaml",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "tomoki1207.pdf",
+        "ms-azuretools.vscode-containers"
       ],
       "settings": {
         "files.watcherExclude": {

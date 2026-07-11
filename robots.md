@@ -6,6 +6,6 @@ hero_image: ../images/robots.jpg
 layout: robot-category
 hero_darken: true
 show_sidebar: false
-sort: robot_code
+sort: year
 mobile_black_text: false
 ---
