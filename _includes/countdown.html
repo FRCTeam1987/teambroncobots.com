@@ -100,11 +100,15 @@
     const countdowns = [
         {% assign now = site.time | date: '%s' %}
         {% assign sorted_events = site.events | sort: 'datetime' %}
+        {% assign future_events = "" | split: "" %}
         {% for event in sorted_events %}
         {% assign event_time = event.datetime | date: '%s' %}
         {% if event_time > now %}
-        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.title }}!" }{% if forloop.rindex == 1 %}{% else %},{% endif %}
+        {% assign future_events = future_events | push: event %}
         {% endif %}
+        {% endfor %}
+        {% for event in future_events %}
+        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.title }}!" }{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     ];
 
