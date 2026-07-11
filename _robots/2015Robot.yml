@@ -1,8 +1,8 @@
 robot_name: Darth Conveydor
 game_name: RECYCLE RUSH Robot
 year: 2015
-robot_image: images/robots/2015robot.png
-game_logo: images/robots/Competition Logos/2015_Recycle_Rush.svg
+robot_image: /images/robots/2015robot.png
+game_logo: /images/robots/Competition Logos/2015_Recycle_Rush.svg
 game_video: W6UYFKNGHJ8
 awards:
   - award: Broncobots won the FIRST Dean's List Finalist Award (Austin Ahern)
