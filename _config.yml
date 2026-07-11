@@ -6,7 +6,7 @@ email: broncobots@gmail.com
 description: >
   Broncobots webste FRC Team 1987
 baseurl: ""
-url: "https://teambroncobots.com/"
+url: "https://teambroncobots.com"
 permalink: pretty
 #theme_color: '#eeeeee'
 #fixed_navbar: top
@@ -64,6 +64,12 @@ defaults:
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      hide_hero: true
 
 markdown: kramdown
 highlighter: rouge
@@ -75,4 +81,8 @@ collections:
     output: true
     layout: robot
     image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  events:
+    output: true
+    layout: event
     show_sidebar: false

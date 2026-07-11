@@ -8,6 +8,7 @@ show_sidebar: false
 hero_image: images/Homeimg.jpg
 hero_height: is-large
 mobile_black_text: true
+hide_hero: true # temporary hide for banquet visibility
 ---
 <link rel="stylesheet" href="/assets/css/buttonHover.css">
 
@@ -28,7 +29,38 @@ mobile_black_text: true
 
     }
 </style>
-
+<!-- Remove after this once the banquet is over. -->
+<div style="margin: auto; font-family:Rockwell, Roboto, sans-serif;">
+  <div style="text-align:center">
+    <p class="title is-3">{{ site.data.anniversary_banquet.name }}</p>
+    <p class="subtitle is-5">
+      <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+      {{ site.data.anniversary_banquet.datetime | date_to_long_string }}
+      &nbsp;|&nbsp;
+      <span class="icon"><i class="fas fa-clock"></i></span>
+      {{ site.data.anniversary_banquet.datetime | date: "%I:%M %p" }}
+      {% if site.data.anniversary_banquet.location %}
+      &nbsp;|&nbsp;
+      {{ site.data.anniversary_banquet.location }}
+      {% endif %}
+    </p>
+    {% if site.data.anniversary_banquet.address %}
+    <p class="subtitle is-6">
+        <span class="icon"><i class="fas fa-location-dot"></i></span>
+        <a href="https://www.google.com/maps/search/?api=1&query={{ site.data.address | url_encode }}" target="_blank">{{ site.data.anniversary_banquet.address }}</a>
+    </p>
+    {% endif %}
+  </div>
+  <hr />
+  <p>Join us as we celebrate 20 years of the Broncobots! For two decades FRC Team 1987 has been inspiring future generations of innovators and STEM leaders. We will reminisce the fun moments, reflect on the impact made, and celebrate the many successes. We'll also recognize our gracious partners and supporters and showcase the future the team is chasing. We look forward to seeing you there to kick off the next 20 years of impact!</p>
+  <ul>
+      <li>Get tickets: <a href="https://givebutter.com/broncobots-20th-anniversary-banquet-pvxyh0">Givebutter</a></li>
+      <li>Venue: <a href="https://cityofls.net/green-street">Green Street</a></li>
+      <li>Lees Summit Robotics Education And Development Inc</li>
+  </ul>
+</div>
+<hr />
+<!-- Remove before this after the banquet is over. -->
 <p><h1 style="text-align:center">
     Welcome!
 </h1></p>

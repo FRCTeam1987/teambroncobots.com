@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="content" style="margin: auto; font-family:Rockwell, Roboto, sans-serif;">
+    <p class="title is-3">{{ page.title }}</p>
+
+    {% assign now = site.time | date: '%s' %}
+
+    <p class="title is-5">Upcoming</p>
+    <table class="table is-fullwidth is-hoverable">
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign sorted_events = site.events | sort: 'datetime' %}
+            {% for event in sorted_events %}
+            {% assign event_time = event.datetime | date: '%s' %}
+            {% if event_time > now %}
+            <tr>
+                <td><a href="{{ event.url | relative_url }}">{{ event.title }}</a></td>
+                <td>{{ event.datetime | date_to_long_string }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.address }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p class="title is-5">Past</p>
+    <table class="table is-fullwidth is-hoverable">
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign sorted_events = site.events | sort: 'datetime' | reverse %}
+            {% for event in sorted_events %}
+            {% assign event_time = event.datetime | date: '%s' %}
+            {% if event_time < now %}
+            <tr>
+                <td><a href="{{ event.url | relative_url }}">{{ event.title }}</a></td>
+                <td>{{ event.datetime | date_to_long_string }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.address }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
