@@ -4,7 +4,6 @@ datetime: "2025-09-20T08:40:00"
 location: "Lee's Summit North High School"
 address: "901 NE Douglas St, Lee's Summit, Missouri 64086"
 layout: event
-hide_hero: true
 ---
 
 <link rel="stylesheet" href="/assets/css/animatedLink.css">
