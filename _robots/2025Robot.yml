@@ -1,55 +1,62 @@
-robot_name: Riptide 
-game_name: Reefscape
 year: 2025
-robot_image: "../images/robots/2025robot.png"
-game_logo : "../../images/robots/Competition Logos/2025_Reefscape.svg"
+robot_name: Riptide
+robot_image: /images/robots/2025robot.png
+game_logo: /images/robots/Competition Logos/2025_Reefscape.svg
+game_name: Reefscape
 game_video: YWbxcjlY9JY
 awards:
-    - award: Championship Archimedes Division captain
-      icon: fa-certificate
-    - award: Coaxially driven dead axle arm
-      icon: fa-robot
-    - award: Behavior changes relative to localization
-      icon: fa-crosshairs4
+  - award: Championship Archimedes Division captain
+    icon: fa-certificate
+  - award: Coaxially driven dead axle arm
+    icon: fa-robot
+  - award: Behavior changes relative to localization
+    icon: fa-crosshairs4
 specifications:
-- WCP Swerve X2i and X2t with X2 gearing and Kraken drive motors for acceleration and speed on short cycle distances.
-- Hinged electronics shelf above PDH for improved packaging and accessibility
-- Belt-in-Tube 3-stage continuous Elevator with kevlar-reinforced belt, powered by two Kraken X60s
-- Elevator achieves 51 inches of extension and reaches 79 inches of height
-- Powered star wheel hopper to quickly intake Coral
-- The Intake's 1/16” Polycarbonate minimizes weight and allows compliance for rapid Coral collection
-- Coaxial gearbox on the elevator carriage that removes weight from the arm
-- Coral End Effector incorporates 2.25” rollers with passive interior support minimizes overall footprint
-- Algae End Effector has 2.25” Wheels integrated on Coral End Effector and 3” wheel position on Algae arm.
-- Climber is deployed through a 15lb gas shock.
-- Limelight 4 placed on scoring side of robot allows for highly accurate pose estimation
-- Absolute encoder measures the arm position
+  - WCP Swerve X2i and X2t with X2 gearing and Kraken drive motors for
+    acceleration and speed on short cycle distances.
+  - Hinged electronics shelf above PDH for improved packaging and accessibility
+  - Belt-in-Tube 3-stage continuous Elevator with kevlar-reinforced belt,
+    powered by two Kraken X60s
+  - Elevator achieves 51 inches of extension and reaches 79 inches of height
+  - Powered star wheel hopper to quickly intake Coral
+  - The Intake's 1/16” Polycarbonate minimizes weight and allows compliance for
+    rapid Coral collection
+  - Coaxial gearbox on the elevator carriage that removes weight from the arm
+  - Coral End Effector incorporates 2.25” rollers with passive interior support
+    minimizes overall footprint
+  - Algae End Effector has 2.25” Wheels integrated on Coral End Effector and 3”
+    wheel position on Algae arm.
+  - Climber is deployed through a 15lb gas shock.
+  - Limelight 4 placed on scoring side of robot allows for highly accurate pose
+    estimation
+  - Absolute encoder measures the arm position
 capabilities:
-- Spring-loaded Algae End Effector to allow early control of Algae off the Reef
-- Can automatically align and score coral on all four levels
-- Large, expanding intake which allows easy collecting from the human player station under defense
-- Extensive controls allow one-driver operation
-- 2910-style one bar climber provides efficient and rapid control of the Cage
-- Damage from collisions is reduced by aluminum-backed, one-piece bumpers
-- Fast, automated climbing with compliant wheels that grab the climber
+  - Spring-loaded Algae End Effector to allow early control of Algae off the Reef
+  - Can automatically align and score coral on all four levels
+  - Large, expanding intake which allows easy collecting from the human player
+    station under defense
+  - Extensive controls allow one-driver operation
+  - 2910-style one bar climber provides efficient and rapid control of the Cage
+  - Damage from collisions is reduced by aluminum-backed, one-piece bumpers
+  - Fast, automated climbing with compliant wheels that grab the climber
 competitions:
-- Central Missouri Regional
-- Greater Kansas City Regional
-- World Championship
-- MoKan State Championship
-- Indiana Robotics Invitational
-- Gateway Robotics Challenge
-- Clash in the Corn
-- CowTown ThrowDown
+  - Central Missouri Regional
+  - Greater Kansas City Regional
+  - World Championship
+  - MoKan State Championship
+  - Indiana Robotics Invitational
+  - Gateway Robotics Challenge
+  - Clash in the Corn
+  - CowTown ThrowDown
 links:
-- link_type: CAD
-  link: https://cad.onshape.com/documents/9372ff70e951ea281b724d50/w/bc0892382c09e9b2dfcc67a3/e/2406733a9ca8b432097167ae?configuration=include_battery%3Dfalse%3Binclude_bumpers%3Dfalse%3Bshow_ll_fov%3Dfalse&renderMode=0&uiState=68571ce8857c5a6bca2ef561
-- link_type: Code
-  link: https://github.com/FRCTeam1987/Robot2025_2
-- link_type: Technical Book
-  link: ../../robots/Technical Books/Technical Book 2025.pdf
+  - link_type: CAD
+    link: https://cad.onshape.com/documents/9372ff70e951ea281b724d50/w/bc0892382c09e9b2dfcc67a3/e/2406733a9ca8b432097167ae?configuration=include_battery%3Dfalse%3Binclude_bumpers%3Dfalse%3Bshow_ll_fov%3Dfalse&renderMode=0&uiState=68571ce8857c5a6bca2ef561
+  - link_type: Code
+    link: https://github.com/FRCTeam1987/Robot2025_2
+  - link_type: Technical Book
+    link: ../../robots/Technical Books/Technical Book 2025.pdf
 videos:
-- E-qT8lDm7cc
-- MKYcCtLD5Ms
-- i2S7KQRmMwI
-- Y6pFQ3TiiDU
+  - E-qT8lDm7cc
+  - MKYcCtLD5Ms
+  - i2S7KQRmMwI
+  - Y6pFQ3TiiDU
