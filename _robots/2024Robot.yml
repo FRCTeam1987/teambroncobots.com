@@ -46,7 +46,7 @@ links:
   - link_type: Code
     link: https://github.com/FRCTeam1987/Robot2024
   - link_type: Technical Book
-    link: ../../robots/Technical Books/Technical Book 2024.pdf
+    linked_media: /images/technical_books/Technical Book 2024.pdf
   - link_type: GIF
     link: ../../images/robots/DownloadableImages/schockwave2024.gif
   - link_type: Evergreen Chassis

@@ -40,7 +40,7 @@ links:
   - link_type: Code
     link: ../../robots/Code/Robot2014.zip
   - link_type: Technical Book
-    link: ../../robots/Technical Books/Technical Book 2014.pdf
+    linked_media: /images/technical_books/Technical Book 2014.pdf
 videos:
   - u4VTzCjN880
   - p_3uX1kUN7Q

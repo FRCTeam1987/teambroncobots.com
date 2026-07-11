@@ -31,7 +31,7 @@ links:
   - link_type: Code
     link: ../../robots/Code/Robot2011.zip
   - link_type: Technical Book
-    link: ../../robots/Technical Books/Technical Book 2011.pdf
+    linked_media: /images/technical_books/Technical Book 2011.pdf
 videos:
   - hXpKCQoYcvw
   - e1xuGX7l4j8

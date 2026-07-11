@@ -36,6 +36,6 @@ links:
   - link_type: Code
     link: https://github.com/FRCTeam1987/Robot2020
   - link_type: Technical Book
-    link: ../../robots/Technical Books/Technical Book 2020.pdf
+    linked_media: /images/technical_books/Technical Book 2020.pdf
   - link_type: CAD
     link: ../../robots/CAD/2020.zip

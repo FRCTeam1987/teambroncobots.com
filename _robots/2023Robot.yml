@@ -38,7 +38,7 @@ links:
   - link_type: Code
     link: https://github.com/FRCTeam1987/Robot2023
   - link_type: Technical Book
-    link: ../../robots/Technical Books/Technical Book 2023.pdf
+    linked_media: /images/technical_books/Technical Book 2023.pdf
 videos:
   - acPyU8cmutY
   - 8FxVwQNSVMg
