@@ -1,13 +1,14 @@
-robot_name: The Mammoth
-game_name: Overdrive
 year: 2008
-robot_image: images/robots/2008robot.png
-game_logo: images/robots/Competition Logos/2008_FIRST_Overdrive.jpeg"
+robot_name: The Mammoth
+robot_image: /images/robots/2008robot.png
+game_logo: /images/robots/Competition Logos/2008_FIRST_Overdrive.jpeg
+game_name: Overdrive
 game_video: D5oL7aLH0T4
 awards:
   - award: Won the Regional Engineering Inspiration Award at the Minnesota Regional
     icon: fa-road
-  - award: Made it to the FRC World Championship and competed in the Archimedes Division
+  - award: Made it to the FRC World Championship and competed in the Archimedes
+      Division
     icon: fa-trophy
   - award: Won the Autodesk Visualization Award at the Minnesota Regional
     icon: fa-star3
