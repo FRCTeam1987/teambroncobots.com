@@ -56,24 +56,16 @@ down_breaks: false
             <br>
             <p>This can also be done online at <a href="https://www.lsedfoundation.org/">https://www.lsedfoundation.org/</a>. Again, be sure to choose the Lee’s Summit North Robotics Team as the location of your donation.</p>
             <br>
-            <p>Online donations are additionally available to the right, simply follow the instructions below.</p>
+            <p>Online donations are available to the right.</p>
             <br>
-            <h2><center>Make an online donation!</center></h2>
-            <p>- Start by scrolling down to "One-Time Donation" and enter a dollar amount or click on one of the preset defaults.</p>
-            <p>- Click on the drop down to select Donation Designation and select "LSN Robotics Fund".</p>
-            <p>- Ensure that you did not accidently select a different Lee's Summit School, ensure that the Donation Designation is going to "LSN".</p>
-            <p>- If you would like to dedicate the donation then click on the check box labeled "I would like to dedicate this donation" and fill in the information.</p>
-            <p>- Click Next.</p>
-            <p>- Accurately fill in all Contact Information</p>
-            <p>- Click Next.</p>
-            <p>- Confirm the donation amount and click Next again.</p>
-            <p>- Select if you would like LSEF to cover the processing costs or not.</p>
-            <p>- Fill in all payment and Credit Card Information</p>
-            <p>- Thank you so much! If you would like to see if you are eligible now to become an official sponsor then fill out the contact form below.</p>
-            
+            <p>Be sure to select "LSN Robotics Fund" in the "My donation is for" field.</p>
+            <br>
+            <br>
+            <br>
+            <p>If you are interested in partnering with us or want to sponsor with an in-kind donation, then please <a href="mailto:broncobots@gmail.com">contact us</a>!</p>
         </div>
         <div class="column" style="background-color:white;"><center>
-            <embed type="text/html" src="https://interland3.donorperfect.net/weblink/weblink.aspx?id=1&name=E332169"  width="650" height="700"> 
+            <embed type="text/html" src="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_e3e3ce00-5741-11f0-9fbb-06179723032d&WidgetId=903169"  width="650" height="700"> 
             </center>
         </div>
     </div>
