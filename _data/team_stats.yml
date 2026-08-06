@@ -1,18 +1,18 @@
 - title: Seasons Competed
-  count: 17
+  count: 20
   icon: fab fa-superpowers
 - title: Competitions
-  count: 66
+  count: 54
   icon: fas fa-arrows-alt
 - title: Blue Banners
-  count: 12
+  count: 17
   icon: fas fa-flag
-- title: Students Inspired
-  count: 780
+- title: Broncobots Inspired
+  count: 290
   icon: fas fa-bullseye
 - title: Awards Won
-  count: 65
+  count: 68
   icon: fas fa-bolt
 - title: Sponsors
-  count: 33
+  count: 14
   icon: fas fa-user-plus
