@@ -16,10 +16,11 @@ Expects `include.event.start` (required) and `include.event.end` (optional, defa
 {% assign end_time = ev_end | date: "%I:%M %p" %}
 
 {% if start_day == end_day %}
-    {{ ev_start | date_to_long_string }}
+    {{ ev_start | date_to_long_string }}{% if include.show_time %}, {% if start_time == end_time %}{{ start_time }}{% else %}{{ start_time }} &ndash; {{ end_time }}{% endif %}{% endif %}
 {% else %}
-    {{ ev_start | date_to_long_string }} &ndash; {{ ev_end | date_to_long_string }}
-{% endif %}
-{% if include.show_time %}
-, {% if start_time == end_time %}{{ start_time }}{% else %}{{ start_time }} &ndash; {{ end_time }}{% endif %}
+    {% if include.show_time %}
+        {{ ev_start | date_to_long_string }}, {{ start_time }} &ndash; {{ ev_end | date_to_long_string }}, {{ end_time }}
+    {% else %}
+        {{ ev_start | date_to_long_string }} &ndash; {{ ev_end | date_to_long_string }}
+    {% endif %}
 {% endif %}
