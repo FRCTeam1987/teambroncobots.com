@@ -110,7 +110,8 @@ Create a Markdown file in `_events/` with the following front matter:
 ```yaml
 ---
 title: "Event Name"
-datetime: "2026-01-01T09:00:00"
+start: "2026-01-01T09:00:00"
+end: "2026-01-01T17:00:00"
 location: "Venue Name"
 address: "Full Address"
 layout: event
@@ -122,11 +123,11 @@ Add body content below the front matter for event-specific details.
 
 ### Events Page
 
-The `events.md` page lists all events in two tables: upcoming (future) and past. Events are sorted by date.
+The `events.md` page lists all events in three tables: happening now, upcoming, and past. Events are sorted by date.
 
 ### Dynamic Countdown
 
-The homepage countdown (`_includes/countdown.html`) is generated dynamically from the `site.events` collection. It filters for future events and builds the countdown entries automatically — no manual updates needed when dates change.
+The homepage countdown (`_includes/countdown.html`) is generated dynamically from the `site.events` collection. It selects the next upcoming event or an event happening now and builds the countdown entries automatically — no manual updates needed when dates change.
 
 ## Project Structure
 
