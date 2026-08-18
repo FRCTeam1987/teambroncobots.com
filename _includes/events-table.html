@@ -1,0 +1,37 @@
+{% comment %}
+Renders an events table (header + rows).
+
+Usage:
+  {% include events-table.html events=upcoming tbody_id="upcoming-tbody" %}
+  {% include events-table.html events=active tbody_id="active-tbody" badge=true %}
+
+Rows carry data-start / data-end (ISO 8601) so assets/js/events.js can
+re-bucket them client-side against the visitor's current time.
+{% endcomment %}
+
+{% assign events = include.events %}
+{% assign tbody_id = include.tbody_id %}
+{% assign show_badge = include.badge %}
+
+<table class="table is-fullwidth is-hoverable">
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody id="{{ tbody_id }}">
+        {% for event in events %}
+        <tr data-start="{{ event.start | date_to_iso8601 }}" data-end="{{ event.end | default: event.start | date_to_iso8601 }}">
+            <td>
+                <a href="{{ event.url | relative_url }}">{{ event.title }}</a>
+            </td>
+            <td>{% include event-date.html event=event %}</td>
+            <td>{{ event.location }}</td>
+            <td>{{ event.address }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

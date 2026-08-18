@@ -75,7 +75,7 @@
 </style>
 
 <h1 style="font-size:3rem;font-family:Rockwell, Roboto, sans-serif; text-align:center" class="text hidden">
-    Countdown to the Next Event!
+    <span class="countdown-prefix"></span><a class="event-link" href="#"></a><span class="countdown-suffix"></span>
 </h1>
 <div class="countdown hidden">
     <div class="countdown-element">
@@ -99,37 +99,62 @@
 <script>
     const countdowns = [
         {% assign now = site.time | date: '%s' %}
-        {% assign sorted_events = site.events | sort: 'datetime' %}
-        {% assign future_events = "" | split: "" %}
+        {% assign sorted_events = site.events | sort: 'start' %}
+        {% assign current_events = "" | split: "" %}
         {% for event in sorted_events %}
-        {% assign event_time = event.datetime | date: '%s' %}
-        {% if event_time > now %}
-        {% assign future_events = future_events | push: event %}
+        {% assign event_start = event.start | date: '%s' %}
+        {% assign event_end = event.end | default: event.start | date: '%s' %}
+        {% if event_end >= now %}
+        {% assign current_events = current_events | push: event %}
         {% endif %}
         {% endfor %}
-        {% for event in future_events %}
-        { date: new Date("{{ event.datetime | date_to_xmlschema }}"), text: "Countdown to the {{ event.title }}!" }{% if forloop.last %}{% else %},{% endif %}
+        {% for event in current_events %}
+        { start: new Date("{{ event.start | date_to_xmlschema }}"), end: new Date("{{ event.end | default: event.start | date_to_xmlschema }}"), text: {{ event.title | jsonify }}, url: {{ event.url | relative_url | jsonify }} }{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     ];
 
     function updateCountdown() {
         const now = new Date().getTime();
+        let activeCountdown = null;
         let closestCountdown = null;
 
         for (const countdown of countdowns) {
-            if (countdown.date.getTime() > now) {
-                if (!closestCountdown || countdown.date < closestCountdown.date) {
+            const start = countdown.start.getTime();
+            const end = countdown.end.getTime();
+
+            if (start <= now && end >= now) {
+                if (!activeCountdown || end < activeCountdown.end.getTime()) {
+                    activeCountdown = countdown;
+                }
+            } else if (start > now) {
+                if (!closestCountdown || start < closestCountdown.start.getTime()) {
                     closestCountdown = countdown;
                 }
             }
         }
 
-        if (closestCountdown) {
-            document.querySelector(".text").textContent = closestCountdown.text;
-            document.querySelector(".text").classList.remove('hidden');
-            document.querySelector(".countdown").classList.remove('hidden');
+        const selectedCountdown = activeCountdown || closestCountdown;
+        const text = document.querySelector(".text");
+        const countdownPrefix = document.querySelector(".countdown-prefix");
+        const eventLink = document.querySelector(".event-link");
+        const countdownSuffix = document.querySelector(".countdown-suffix");
+        const countdownElement = document.querySelector(".countdown");
 
-            const timeDifference = closestCountdown.date.getTime() - now;
+        if (selectedCountdown) {
+            countdownPrefix.textContent = activeCountdown ? "Happening now: " : "Countdown to the ";
+            eventLink.textContent = activeCountdown
+                ? activeCountdown.text
+                : closestCountdown.text;
+            countdownSuffix.textContent = activeCountdown ? "" : "!";
+            eventLink.href = selectedCountdown.url;
+            text.classList.remove('hidden');
+            countdownElement.classList.toggle('hidden', Boolean(activeCountdown));
+
+            if (activeCountdown) {
+                return;
+            }
+
+            const timeDifference = closestCountdown.start.getTime() - now;
 
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -141,8 +166,9 @@
             document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
             document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
         } else {
-            document.querySelector(".text").classList.add('hidden');
-            document.querySelector(".countdown").classList.add('hidden');
+            text.classList.add('hidden');
+            eventLink.removeAttribute('href');
+            countdownElement.classList.add('hidden');
         }
     }
 

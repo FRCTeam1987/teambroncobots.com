@@ -7,55 +7,37 @@ layout: default
 
     {% assign now = site.time | date: '%s' %}
 
-    <p class="title is-5">Upcoming</p>
-    <table class="table is-fullwidth is-hoverable">
-        <thead>
-            <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% assign sorted_events = site.events | sort: 'datetime' %}
-            {% for event in sorted_events %}
-            {% assign event_time = event.datetime | date: '%s' %}
-            {% if event_time > now %}
-            <tr>
-                <td><a href="{{ event.url | relative_url }}">{{ event.title }}</a></td>
-                <td>{{ event.datetime | date_to_long_string }}</td>
-                <td>{{ event.location }}</td>
-                <td>{{ event.address }}</td>
-            </tr>
-            {% endif %}
-            {% endfor %}
-        </tbody>
-    </table>
+    {% assign upcoming = "" | split: "" %}
+    {% assign active = "" | split: "" %}
+    {% assign past = "" | split: "" %}
 
-    <p class="title is-5">Past</p>
-    <table class="table is-fullwidth is-hoverable">
-        <thead>
-            <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% assign sorted_events = site.events | sort: 'datetime' | reverse %}
-            {% for event in sorted_events %}
-            {% assign event_time = event.datetime | date: '%s' %}
-            {% if event_time < now %}
-            <tr>
-                <td><a href="{{ event.url | relative_url }}">{{ event.title }}</a></td>
-                <td>{{ event.datetime | date_to_long_string }}</td>
-                <td>{{ event.location }}</td>
-                <td>{{ event.address }}</td>
-            </tr>
-            {% endif %}
-            {% endfor %}
-        </tbody>
-    </table>
+    {% assign sorted_events = site.events | sort: 'start' %}
+    {% for event in sorted_events %}
+        {% assign event_start = event.start | date: '%s' %}
+        {% assign event_end = event.end | default: event.start | date: '%s' %}
+        {% if event_start > now %}
+            {% assign upcoming = upcoming | push: event %}
+        {% elsif event_end >= now %}
+            {% assign active = active | push: event %}
+        {% else %}
+            {% assign past = past | push: event %}
+        {% endif %}
+    {% endfor %}
+
+    <div id="active-section" {% if active.size == 0 %}style="display:none"{% endif %}>
+        <p class="title is-5">Happening Now</p>
+        {% include events-table.html events=active tbody_id="active-tbody" %}
+    </div>
+
+    <div id="upcoming-section">
+        <p class="title is-5">Upcoming</p>
+        {% include events-table.html events=upcoming tbody_id="upcoming-tbody" %}
+    </div>
+
+    <div id="past-section">
+        <p class="title is-5">Past</p>
+        {% include events-table.html events=past tbody_id="past-tbody" %}
+    </div>
+
+    <script src="{{ site.baseurl }}/assets/js/events.js"></script>
 </div>

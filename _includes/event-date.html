@@ -1,0 +1,25 @@
+{% comment %}
+Renders the date (and optionally time) range for an event.
+
+Usage:
+  {% include event-date.html event=page %}                    -> "26 March 2025" or "26 March 2025 – 29 March 2025"
+  {% include event-date.html event=page show_time=true %}      -> appends ", 9:00 AM" or ", 9:00 AM – 6:00 PM"
+
+Expects `include.event.start` (required) and `include.event.end` (optional, defaults to start).
+{% endcomment %}
+
+{% assign ev_start = include.event.start %}
+{% assign ev_end = include.event.end | default: include.event.start %}
+{% assign start_day = ev_start | date: "%Y-%m-%d" %}
+{% assign end_day = ev_end | date: "%Y-%m-%d" %}
+{% assign start_time = ev_start | date: "%I:%M %p" %}
+{% assign end_time = ev_end | date: "%I:%M %p" %}
+
+{% if start_day == end_day %}
+    {{ ev_start | date_to_long_string }}
+{% else %}
+    {{ ev_start | date_to_long_string }} &ndash; {{ ev_end | date_to_long_string }}
+{% endif %}
+{% if include.show_time %}
+, {% if start_time == end_time %}{{ start_time }}{% else %}{{ start_time }} &ndash; {{ end_time }}{% endif %}
+{% endif %}
