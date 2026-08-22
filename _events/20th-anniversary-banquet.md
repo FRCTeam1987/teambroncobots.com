@@ -1,6 +1,7 @@
 ---
 title: "20th Anniversary Banquet"
-datetime: "2026-08-08T18:00:00"
+start: "2026-08-08T18:00:00"
+end: "2026-08-08T18:00:00"
 location: "Green Street"
 address: "209 SE Green Street, Lee's Summit, MO 64063"
 layout: event
