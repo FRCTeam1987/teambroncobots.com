@@ -576,7 +576,7 @@
 </style>
 
 <h1 style="font-size:3rem;font-family:Rockwell, Roboto, sans-serif; text-align:center" class="text hidden">
-    Countdown to the Next Event!
+    <span class="countdown-prefix"></span><a class="event-link" href="#"></a><span class="countdown-suffix"></span>
 </h1>
 <div class="countdown hidden">
     <div class="countdown-element">
@@ -604,34 +604,72 @@
         
         
         
-        { date: new Date("2026-08-08T18:00:00+00:00"), text: "Countdown to the 20th Anniversary Banquet!" },
+        { start: new Date("2026-09-19T08:40:00+00:00"), end: new Date("2026-09-19T08:40:00+00:00"), text: "2026 KC FIRST Robotics Conference", url: "/events/2026-kc-first-robotics-conference/" },
         
-        { date: new Date("2026-09-19T08:40:00+00:00"), text: "Countdown to the 2026 KC FIRST Robotics Conference!" },
+        { start: new Date("2026-09-25T08:00:00+00:00"), end: new Date("2026-09-26T14:00:00+00:00"), text: "2026 Team Garage Sale", url: "/events/2026-fundraiser-garage-sale/" },
         
-        { date: new Date("2027-01-09T11:00:00+00:00"), text: "Countdown to the 2027 FRC Kickoff!" },
+        { start: new Date("2026-10-23T14:00:00+00:00"), end: new Date("2026-10-24T17:00:00+00:00"), text: "2026 Cow Town ThrowDown", url: "/events/2026-offseason-cttd/" },
         
-        { date: new Date("2027-04-28T09:00:00+00:00"), text: "Countdown to the 2027 FIRST Championship!" }
+        { start: new Date("2026-11-07T10:00:00+00:00"), end: new Date("2026-11-07T13:00:00+00:00"), text: "2026 Veterans Day Parade", url: "/events/2026-outreach-veterans-day/" },
+        
+        { start: new Date("2026-11-12T16:00:00+00:00"), end: new Date("2026-11-12T21:00:00+00:00"), text: "2026 Family Engineering Night", url: "/events/2026-outreach-family-engineering-night/" },
+        
+        { start: new Date("2026-12-04T15:00:00+00:00"), end: new Date("2026-12-04T22:00:00+00:00"), text: "2026 Young Engineers Night", url: "/events/2026-outreach-young-engineers-night/" },
+        
+        { start: new Date("2027-01-09T11:00:00+00:00"), end: new Date("2027-01-09T11:00:00+00:00"), text: "2027 FRC Kickoff", url: "/events/2027-frc-kickoff/" },
+        
+        { start: new Date("2027-03-18T09:00:00+00:00"), end: new Date("2027-03-20T18:00:00+00:00"), text: "2027 Heartland Regional", url: "/events/2027-frc-regional-heartland/" },
+        
+        { start: new Date("2027-04-01T09:00:00+00:00"), end: new Date("2027-04-03T18:00:00+00:00"), text: "2027 City of Fountains Regional", url: "/events/2027-frc-regional-cof/" },
+        
+        { start: new Date("2027-04-08T09:00:00+00:00"), end: new Date("2027-04-10T18:00:00+00:00"), text: "2027 Greater Kansas City Regional", url: "/events/2027-frc-regional-gkc/" },
+        
+        { start: new Date("2027-04-28T09:00:00+00:00"), end: new Date("2027-05-01T18:00:00+00:00"), text: "2027 FIRST Championship", url: "/events/2027-first-championship/" }
         
     ];
 
     function updateCountdown() {
         const now = new Date().getTime();
+        let activeCountdown = null;
         let closestCountdown = null;
 
         for (const countdown of countdowns) {
-            if (countdown.date.getTime() > now) {
-                if (!closestCountdown || countdown.date < closestCountdown.date) {
+            const start = countdown.start.getTime();
+            const end = countdown.end.getTime();
+
+            if (start <= now && end >= now) {
+                if (!activeCountdown || end < activeCountdown.end.getTime()) {
+                    activeCountdown = countdown;
+                }
+            } else if (start > now) {
+                if (!closestCountdown || start < closestCountdown.start.getTime()) {
                     closestCountdown = countdown;
                 }
             }
         }
 
-        if (closestCountdown) {
-            document.querySelector(".text").textContent = closestCountdown.text;
-            document.querySelector(".text").classList.remove('hidden');
-            document.querySelector(".countdown").classList.remove('hidden');
+        const selectedCountdown = activeCountdown || closestCountdown;
+        const text = document.querySelector(".text");
+        const countdownPrefix = document.querySelector(".countdown-prefix");
+        const eventLink = document.querySelector(".event-link");
+        const countdownSuffix = document.querySelector(".countdown-suffix");
+        const countdownElement = document.querySelector(".countdown");
 
-            const timeDifference = closestCountdown.date.getTime() - now;
+        if (selectedCountdown) {
+            countdownPrefix.textContent = activeCountdown ? "Happening now: " : "Countdown to the ";
+            eventLink.textContent = activeCountdown
+                ? activeCountdown.text
+                : closestCountdown.text;
+            countdownSuffix.textContent = activeCountdown ? "" : "!";
+            eventLink.href = selectedCountdown.url;
+            text.classList.remove('hidden');
+            countdownElement.classList.toggle('hidden', Boolean(activeCountdown));
+
+            if (activeCountdown) {
+                return;
+            }
+
+            const timeDifference = closestCountdown.start.getTime() - now;
 
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -643,8 +681,9 @@
             document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
             document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
         } else {
-            document.querySelector(".text").classList.add('hidden');
-            document.querySelector(".countdown").classList.add('hidden');
+            text.classList.add('hidden');
+            eventLink.removeAttribute('href');
+            countdownElement.classList.add('hidden');
         }
     }
 
