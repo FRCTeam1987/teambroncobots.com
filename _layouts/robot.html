@@ -156,7 +156,7 @@ layout: default
             <h2>Links</h2>
             <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
                 {% for Item in page.Links %}
-                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none; margin-right: 2.5rem; margin-bottom: 1rem;">
+                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none; {% unless forloop.last %}margin-right: 2.5rem;{% endunless %} margin-bottom: 1rem;">
                     <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
                         {{ Item.item }}
                     </div>
@@ -168,22 +168,22 @@ layout: default
         {% endif %}
     </div>
 
-</div>
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../../../assets/js/StatBoticsRESTApi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            scoreData({{ page.robot_code }}, true);
+            createChart({{ page.robot_code }});
+        });
 
-<script src="../../assets/js/jquery-3.6.1.min.js"></script>
-<script src="../../../assets/js/StatBoticsRESTApi.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script>
-    $( document ).ready(function() {
-        scoreData({{ page.robot_code }}, true);
-        createChart({{ page.robot_code }});
-    });
+    </script>
 
-</script>
-
-{% if page.robot_code == 2021 %}
-    <div style='text-align: left; font-size: 1.5em;'>No Stat Data Available</div>
-{% else %}
+    {% if page.robot_code == 2021 %}
+    <div class="column is-12">
+        <div style='text-align: left; font-size: 1.5em;'>No Stat Data Available</div>
+    </div>
+    {% else %}
     <div class="column is-12">
         <p class="title is-3">Score Data</p>
         <div id="scoreData{{ page.robot_code }}" class="content">
@@ -193,7 +193,9 @@ layout: default
             <canvas id="myChart{{ page.robot_code }}"></canvas>
         </div>
     </div>
-{% endif %}
+    {% endif %}
+
+</div>
 
 
 <div style="text-align:center">

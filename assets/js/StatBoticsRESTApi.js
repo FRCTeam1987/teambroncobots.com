@@ -334,17 +334,17 @@ async function scoreData(year, isRobotsPage) {
     let html = "";
     if (isRobotsPage) {
         html =
-            '<div style="font-size: 1.5em; display: flex; flex-wrap: wrap;">' +
-            '<div style="flex: 1; min-width: 250px; margin-right: 1rem;">' +
+            '<div class="columns is-multiline" style="font-size: 1.5em;">' +
+            '<div class="column is-6">' +
             wins + ' wins - ' + losses + ' losses<br/>' +
             epa_end + ' EPA<br/>' +
             (winrate * 100).toFixed(2) + '% Win Rate<br/>' +
             percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
             '</div>' +
-            '<div style="display: flex; flex-wrap: wrap;">' +
-            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
-            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 7em; height: 6em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
-            '<div style="font-size: 1em; width: 7em; height: 6em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
+            '<div class="column is-6" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">' +
+            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
+            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
+            '<div style="font-size: 1em; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
             '</div>' +
             '</div>';
     } else {
