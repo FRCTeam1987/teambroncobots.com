@@ -173,9 +173,15 @@ async function pointsPerMatchPerYear(year) {
 
 
 async function createChart(year) {
-    const data = await pointsPerMatchPerYear(year);
+    let data;
+    try {
+        data = await pointsPerMatchPerYear(year);
+    } catch (err) {
+        $("#chart-wrapper").hide();
+        return;
+    }
     if (year === 2021 || data.length === 0) {
-        $("#chart-wrapper").html("No Data Available");
+        $("#chart-wrapper").hide();
         return;
     }
     data.sort((a, b) => a.time - b.time);
@@ -250,6 +256,14 @@ async function createChart(year) {
         );
     }
 
+    const hasRenderableData = chartData.datasets.some(dataset =>
+        dataset.data.some(value => value !== null && value !== undefined)
+    );
+    if (!hasRenderableData) {
+        $("#chart-wrapper").hide();
+        return;
+    }
+
     new Chart(ctx, {
         type: 'bar',
         data: chartData,
@@ -306,7 +320,12 @@ async function eventsPerYear(year) {
 async function scoreData(year, isRobotsPage) {
     let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
     if (scoreData === null) {
-        scoreData = await TeamInfoPerYear(year);
+        try {
+            scoreData = await TeamInfoPerYear(year);
+        } catch (err) {
+            $("#scoreData" + year).html("No Data Available");
+            return;
+        }
         sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
     }
 
