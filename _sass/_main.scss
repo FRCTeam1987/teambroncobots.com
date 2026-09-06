@@ -34,3 +34,18 @@ $hero-darken: #202020 !default;
   color: #ea4aaa;
 }
 
+// Bulma's fixed-ratio images (is-1by1, etc.) stretch non-matching source
+// images to fill the box. Crop instead of distorting.
+.image {
+  img {
+    object-fit: cover;
+  }
+}
+
+// Robot grid card thumbnails need a uniform box for the grid to line up,
+// but cropping cuts off the sides of non-square robot photos. Show the
+// full photo letterboxed instead.
+.card-image .image img {
+  object-fit: contain;
+}
+

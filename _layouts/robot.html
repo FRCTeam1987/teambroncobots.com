@@ -52,7 +52,7 @@ layout: default
 <div class="columns is-multiline">
 
     <div class="column is-6">
-        <figure class="image is-1by1">
+        <figure class="image">
             <img src="{{ page.image }}" />
         </figure>
     </div>
@@ -136,6 +136,17 @@ layout: default
             <ul>
                 {% for Competition in page.Competitions %}
                 <li>{{ Competition.item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% assign year_awards = site.data.awards | where: "Year", page.robot_code | first %}
+        {% if year_awards.Awards %}
+        <div class="content">
+            <h2>Awards</h2>
+            <ul>
+                {% for Award in year_awards.Awards %}
+                <li>{{ Award.award }}</li>
                 {% endfor %}
             </ul>
         </div>
