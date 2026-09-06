@@ -140,6 +140,17 @@ layout: default
             </ul>
         </div>
         {% endif %}
+        {% assign year_awards = site.data.awards | where: "Year", page.robot_code | first %}
+        {% if year_awards.Awards %}
+        <div class="content">
+            <h2>Awards</h2>
+            <ul>
+                {% for Award in year_awards.Awards %}
+                <li>{{ Award.award }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
         {% if page.Links %}
         <div class="content">
             <h2>Links</h2>
