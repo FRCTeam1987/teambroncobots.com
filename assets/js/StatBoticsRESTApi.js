@@ -173,9 +173,15 @@ async function pointsPerMatchPerYear(year) {
 
 
 async function createChart(year) {
-    const data = await pointsPerMatchPerYear(year);
+    let data;
+    try {
+        data = await pointsPerMatchPerYear(year);
+    } catch (err) {
+        $("#chart-wrapper").hide();
+        return;
+    }
     if (year === 2021 || data.length === 0) {
-        $("#chart-wrapper").html("No Data Available");
+        $("#chart-wrapper").hide();
         return;
     }
     data.sort((a, b) => a.time - b.time);
@@ -250,6 +256,14 @@ async function createChart(year) {
         );
     }
 
+    const hasRenderableData = chartData.datasets.some(dataset =>
+        dataset.data.some(value => value !== null && value !== undefined)
+    );
+    if (!hasRenderableData) {
+        $("#chart-wrapper").hide();
+        return;
+    }
+
     new Chart(ctx, {
         type: 'bar',
         data: chartData,
@@ -306,7 +320,12 @@ async function eventsPerYear(year) {
 async function scoreData(year, isRobotsPage) {
     let scoreData = JSON.parse(sessionStorage.getItem("scoreData" + year));
     if (scoreData === null) {
-        scoreData = await TeamInfoPerYear(year);
+        try {
+            scoreData = await TeamInfoPerYear(year);
+        } catch (err) {
+            $("#scoreData" + year).html("No Data Available");
+            return;
+        }
         sessionStorage.setItem("scoreData" + year, JSON.stringify(scoreData));
     }
 
@@ -341,10 +360,10 @@ async function scoreData(year, isRobotsPage) {
             (winrate * 100).toFixed(2) + '% Win Rate<br/>' +
             percentileFormatted + ordinalSuffix + " percentile<br/><br/>" +
             '</div>' +
-            '<div class="column is-6" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">' +
-            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
-            '<div style="font-size: 1em; margin-right: 2.5rem; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
-            '<div style="font-size: 1em; margin-bottom: 1rem; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
+            '<div class="column is-6" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem 2.5rem;">' +
+            '<div style="font-size: 1em; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + state_epa_rank + '/' + state_team_count + '<br/>in Missouri</div>' +
+            '<div style="font-size: 1em; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + country_epa_rank + '/' + country_team_count + '<br/>in the USA</div>' +
+            '<div style="font-size: 1em; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center;">Ranked<br/>' + total_epa_rank + '/' + total_team_count + '<br/>in the world</div>' +
             '</div>' +
             '</div>';
     } else {

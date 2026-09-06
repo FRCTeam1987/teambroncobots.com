@@ -154,10 +154,10 @@ layout: default
         {% if page.Links %}
         <div class="content">
             <h2>Links</h2>
-            <div style="display: flex; flex-wrap: wrap;justify-content: center; align-items: center;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem 2.5rem;">
                 {% for Item in page.Links %}
-                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none; {% unless forloop.last %}margin-right: 2.5rem;{% endunless %} margin-bottom: 1rem;">
-                    <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #990202; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
+                <a href="{{ Item.link }}" target="_blank" style="display: inline-block; text-decoration: none;">
+                    <div style="text-decoration: underline; font-size: 1.5em; width: 6.5em; height: 6.5em; background-color: #830506; border-radius: 24%; color: #F2F2F2; display: flex; justify-content: center; align-items: center; padding: 1rem; text-align: center; white-space: normal; word-wrap: break-word;">
                         {{ Item.item }}
                     </div>
                 </a>
