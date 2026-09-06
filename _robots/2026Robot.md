@@ -13,7 +13,7 @@ features:
       icon: fa-certificate
     - label: Coaxially driven dye rotor
       icon: fa-robot
-    - label: Scores from anywhere in the alliance zone
+    - label: Scores on the move
       icon: fa-crosshairs
 awardsWon: 6
 hide_hero: true
