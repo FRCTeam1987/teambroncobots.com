@@ -3,7 +3,7 @@ Renders an events table (header + rows).
 
 Usage:
   {% include events-table.html events=upcoming tbody_id="upcoming-tbody" %}
-  {% include events-table.html events=active tbody_id="active-tbody" badge=true %}
+  {% include events-table.html events=active tbody_id="active-tbody" %}
 
 Rows carry data-start / data-end (ISO 8601) so assets/js/events.js can
 re-bucket them client-side against the visitor's current time.
@@ -11,8 +11,6 @@ re-bucket them client-side against the visitor's current time.
 
 {% assign events = include.events %}
 {% assign tbody_id = include.tbody_id %}
-{% assign show_badge = include.badge %}
-
 <table class="table is-fullwidth is-hoverable">
     <thead>
         <tr>
@@ -24,7 +22,7 @@ re-bucket them client-side against the visitor's current time.
     </thead>
     <tbody id="{{ tbody_id }}">
         {% for event in events %}
-        <tr data-start="{{ event.start | date_to_iso8601 }}" data-end="{{ event.end | default: event.start | date_to_iso8601 }}">
+        <tr data-start="{{ event.start | date_to_xmlschema }}" data-end="{{ event.end | default: event.start | date_to_xmlschema }}">
             <td>
                 <a href="{{ event.url | relative_url }}">{{ event.title }}</a>
             </td>
