@@ -46,8 +46,7 @@
 <body>
 <div id="hero-container">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style>
+    <style>
     @media screen and (max-width: 770px) {
         #mobile-darkness {
             color: #FFFFFF;
@@ -64,24 +63,26 @@
         position: relative;
     }
 
-    .arrow-container::before {
-        content: "";
+    .scroll-down-widget {
         position: absolute;
-        bottom: calc(2.5% + 4em);
-        right: calc(7.9% - 0.5em);
-        width: 2.3em;
-        height: 2.3em;
-        background-color: rgba(128, 128, 128, 0.5);
-        border-radius: 50%;
-        animation: bounce 2s infinite;
+        bottom: 2.5%;
+        right: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
     }
 
     .arrow-down {
-        position: absolute;
-        bottom: calc(2.5% + 3em);
-        right: 8%;
+        width: 2.5em;
+        height: 2.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1.5em;
         color: #fff;
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 50%;
         animation: bounce 2s infinite;
         cursor: pointer;
     }
@@ -99,9 +100,6 @@
     }
 
     .scroll-down-text {
-        position: absolute;
-        bottom: calc(5% + 1.4em);
-        right: 5.3%;
         color: #fff;
         font-size: 1.125em;
     }
@@ -129,8 +127,10 @@
 
         
         <div class="arrow-container">
-            <i class="fa fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
-            <div class="scroll-down-text">Scroll Down!</div>
+            <div class="scroll-down-widget">
+                <i class="fas fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
+                <div class="scroll-down-text">Scroll Down!</div>
+            </div>
         </div>
         
     </section>
@@ -284,6 +284,30 @@
   
   <div class="column is-4-desktop is-6-tablet">
 
+    <a href="/robots/2026Robot/">
+
+      <div class="card">
+
+        
+        <div class="card-image">
+          <figure class="image is-1by1">
+            <img src="../images/robots/2026robot.jpg" alt="2026 Robot" />
+          </figure>
+        </div>
+        
+        <div class="card-content">
+
+          <p class="title is-4">2026 Robot</h2>
+          <p class="subtitle is-4">Cyclone</p>
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+
+  <div class="column is-4-desktop is-6-tablet">
+
     <a href="/robots/2025Robot/">
 
       <div class="card">
@@ -291,7 +315,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2025robot.png" alt="2025 Robot" />
           </figure>
         </div>
@@ -316,7 +339,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2024robot.png" alt="2024 Robot" />
           </figure>
         </div>
@@ -341,7 +363,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2023robot.png" alt="2023 Robot" />
           </figure>
         </div>
@@ -366,7 +387,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2022robot.png" alt="2022 Robot" />
           </figure>
         </div>
@@ -391,7 +411,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2021robot.png" alt="2021 Robot" />
           </figure>
         </div>
@@ -416,7 +435,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2020robot.png" alt="2020 Robot" />
           </figure>
         </div>
@@ -441,7 +459,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2019robot.png" alt="2019 Robot" />
           </figure>
         </div>
@@ -466,7 +483,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2018robot.png" alt="2018 Robot" />
           </figure>
         </div>
@@ -491,7 +507,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2017robot.png" alt="2017 Robot" />
           </figure>
         </div>
@@ -516,7 +531,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2016robot.png" alt="2016 Robot" />
           </figure>
         </div>
@@ -541,7 +555,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2015robot.png" alt="2015 Robot" />
           </figure>
         </div>
@@ -566,7 +579,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2014robot.png" alt="2014 Robot" />
           </figure>
         </div>
@@ -591,7 +603,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2013robot.png" alt="2013 Robot" />
           </figure>
         </div>
@@ -616,7 +627,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2012robot.png" alt="2012 Robot" />
           </figure>
         </div>
@@ -641,7 +651,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2011robot.png" alt="2011 Robot" />
           </figure>
         </div>
@@ -666,7 +675,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2010robot.png" alt="2010 Robot" />
           </figure>
         </div>
@@ -691,7 +699,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2009robot.png" alt="2009 Robot" />
           </figure>
         </div>
@@ -716,7 +723,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2008robot.png" alt="2008 Robot" />
           </figure>
         </div>
@@ -741,7 +747,6 @@
         
         <div class="card-image">
           <figure class="image is-1by1">
-              
             <img src="../images/robots/2007robot.png" alt="2007 Robot" />
           </figure>
         </div>
@@ -1076,28 +1081,22 @@
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 <style>
     .scroll-to-top {
         display: none;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         bottom: 5%;
         right: 4%;
         z-index: 9998;
         color: #f8f8f8;
         cursor: pointer;
-        padding-left: 0.8em;
         width: 2.5em;
         height: 2.5em;
-        line-height: 2.5em;
         background-color: rgba(17, 16, 16, 0.75); /* Semi-transparent grey color */
         border-radius: 50%;
         animation: bounce 2s infinite;
-    }
-
-    .scroll-to-top i {
-        line-height: 2.5em;
     }
 
     .scroll-to-top:hover {
@@ -1106,7 +1105,7 @@
     }
 
     .scroll-to-top--show {
-        display: inline-block;
+        display: flex;
     }
 
     .scroll-to-top--hide {
