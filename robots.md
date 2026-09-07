@@ -8,4 +8,5 @@ hero_darken: true
 show_sidebar: false
 sort: robot_code
 mobile_black_text: false
+hide_hero: true
 ---

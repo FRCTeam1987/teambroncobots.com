@@ -4,8 +4,8 @@ subtitle: Cyclone
 description: Rebuilt Robot 2026
 robot_code: 2026
 layout: robot
-imageicon: "../images/robots/2026robot.jpg"
-image: "../../images/robots/2026robot.jpg"
+imageicon: "../images/robots/2026robot.png"
+image: "../../images/robots/2026robot.png"
 CompetitionLogo : "../../images/robots/Competition Logos/2026_Rebuilt.svg"
 GameVideo: _fybREErgyM
 features:
