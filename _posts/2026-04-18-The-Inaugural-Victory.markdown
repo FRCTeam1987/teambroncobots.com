@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Inaugrual Victory"
+title: "The Inaugural Victory"
 date: 2026-04-18
 categories: weeklyNewsletter
 image: images/Posts/weeklyNewsletter/bulletin-40.jpg
