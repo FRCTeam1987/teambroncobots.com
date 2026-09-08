@@ -195,7 +195,7 @@ layout: event
     return '<div class="column is-4-desktop is-6-tablet">' +
       '<div class="box">' +
       '<p class="tag ' + (CATEGORY_TAGS[s.category] || 'is-light') + '">' + s.category + '</p>' +
-      '<p><strong>' + s.title + '</strong><br/>' + s.presenters + ' &middot; ' + formatTeams(s.teams) + '</p>' +
+      '<p><strong>' + s.title + '</strong><br/>' + s.presenters + ' &mdash; ' + formatTeams(s.teams) + '</p>' +
       '<p>' + s.blurb + '</p>' +
       '</div></div>';
   }
