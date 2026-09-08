@@ -112,6 +112,13 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
+      <p class="tag is-primary">Technical</p>
+      <p><strong>Pit Perfect: Building a Pit That Works for You</strong><br/>Joshua Wentworth &middot; Team 1987</p>
+      <p>How to identify what your pit actually needs, weigh common FRC pit architectures, and tailor your setup&mdash;robot cart included&mdash;to supercharge productivity in the shop and at competition.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
       <p class="tag is-black">Event Logistics</p>
       <p><strong>Fireside Chat with an FTA, Head Ref, and Lead Robot Inspector</strong><br/>Ken Schenke, Cameron Talley, &amp; Andy Shimamoto &middot; Teams 1987 &amp; 1939</p>
       <p>Ask anything: three veteran volunteers with a combined 30 years of experience answer your inspection and on-field questions.</p>
