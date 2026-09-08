@@ -119,6 +119,20 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
+      <p class="tag is-success">Team Organization</p>
+      <p><strong>Built to Last: Engineering a Sustainable Team</strong><br/>Lynn Griffith &amp; Hillary Griffith &middot; Team 1987</p>
+      <p>How to move your team from reactive survival to sustainable operations, with the documentation, systems, and succession plans that keep it resilient beyond graduation.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
+      <p class="tag is-danger">Culture</p>
+      <p><strong>Beyond the Robot: Cultivating a Culture of Transformation</strong><br/>Hillary Griffith &amp; Lynn Griffith &middot; Team 1987</p>
+      <p>How to shift your team's focus from technical output to genuine student development, aligning daily actions with your mission so the robot becomes a vehicle for transformative growth.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
       <p class="tag is-black">Event Logistics</p>
       <p><strong>Fireside Chat with an FTA, Head Ref, and Lead Robot Inspector</strong><br/>Ken Schenke, Cameron Talley, &amp; Andy Shimamoto &middot; Teams 1987 &amp; 1939</p>
       <p>Ask anything: three veteran volunteers with a combined 30 years of experience answer your inspection and on-field questions.</p>
@@ -140,7 +154,7 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
-      <p class="tag is-danger">GP</p>
+      <p class="tag is-danger">Culture</p>
       <p><strong>More Than Robots</strong><br/>Ruth Adams &middot; Team 6424</p>
       <p>How Gracious Professionalism shapes team culture, competition, and the relationships that outlast the season.</p>
     </div>
