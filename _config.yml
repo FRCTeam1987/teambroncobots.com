@@ -62,8 +62,8 @@ defaults:
     values:
       author: "FRC Team 1987 The Broncobots"
       layout: post
-      image: https://via.placeholder.com/1200x800
       show_sidebar: true
+      hide_hero: true
   -
     scope:
       path: ""
@@ -80,7 +80,6 @@ collections:
   robots:
     output: true
     layout: robot
-    image: https://via.placeholder.com/800x600
     show_sidebar: false
   events:
     output: true

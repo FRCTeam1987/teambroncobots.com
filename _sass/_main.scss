@@ -49,3 +49,16 @@ $hero-darken: #202020 !default;
   object-fit: contain;
 }
 
+// Post/resource/gallery cards drop a plain <img> straight into .card-image
+// with no Bulma .image ratio wrapper, so the browser renders it at its
+// natural size — a portrait photo ends up small and off-center in a wide
+// card instead of matching its neighbors. Scale it to the card's width and
+// let height follow proportionally, same as a normal responsive image.
+// (More specific than this, .card-image .image img above still wins for the
+// robot grid's ratio-boxed thumbnails, so this only affects the plain case.)
+.card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
