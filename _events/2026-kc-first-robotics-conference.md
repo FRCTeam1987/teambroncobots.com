@@ -19,6 +19,8 @@ layout: event
 <p style="text-align:center">Here's a preview of talks submitted so far. Full agenda coming soon!</p>
 <br/>
 
+<style>.tag.is-purple { background-color: #6b21a8; color: #fff; }</style>
+
 <div id="session-filters" class="field is-grouped is-grouped-multiline" role="group" aria-label="Filter sessions by category" style="justify-content:center; margin-bottom:1rem;"></div>
 <div class="field" style="text-align:center; margin-bottom:1.5rem;">
   <div class="control">
@@ -41,12 +43,19 @@ layout: event
     'Technical': 'is-primary',
     'Scouting and Strategy': 'is-info',
     'Awards': 'is-warning',
-    'Team Organization': 'is-success',
+    'Team Organization': 'is-purple',
     'Event Logistics': 'is-black',
-    'Culture': 'is-danger'
+    'Culture': 'is-danger',
+    'Fundraising': 'is-success'
   };
 
   var SESSIONS = [{
+    teams: [1710],
+    category: `Fundraising`,
+    title: `Fueling Your Team: Fundraising and Grant Tips for Robotics Teams`,
+    presenters: `Rhonda Swails`,
+    blurb: `A practical look at diversifying revenue, finding funding opportunities in your community, and navigating the grant-seeking process from application to demonstrating impact.`
+  }, {
     teams: [1730, 1710],
     category: `Team Organization`,
     title: `Rookieing 101`,
@@ -58,6 +67,12 @@ layout: event
     title: `Drive Team Panel`,
     presenters: `Spencer Werremeyer, Jon Smith, &amp; Chad Lee`,
     blurb: `Drive coaches from three teams share how to select, prepare, and run a drive team at competition, with lessons learned and time for your questions.`
+  }, {
+    teams: [1730],
+    category: `Team Organization`,
+    title: `Effective Kickoff Strategy`,
+    presenters: `Spencer Werremeyer`,
+    blurb: `How Team 1730 revamped its approach to kickoff in 2026&mdash;what worked, and ideas to improve your own kickoff experience.`
   }, {
     teams: [1939],
     category: `Scouting and Strategy`,
@@ -148,6 +163,12 @@ layout: event
     title: `Fireside Chat with an FTA, Head Ref, and Lead Robot Inspector`,
     presenters: `Ken Schenke, Cameron Talley, &amp; Andy Shimamoto`,
     blurb: `Ask anything: three veteran volunteers with a combined 30 years of experience answer your inspection and on-field questions.`
+  }, {
+    teams: [1989],
+    category: `Awards`,
+    title: `Impact Panel`,
+    presenters: `Victoria Cook &amp; Andy Shimamoto`,
+    blurb: `A panel of veteran mentors on the criteria and strategies behind winning Impact submissions, crafting your team's story, and demonstrating community impact&mdash;plus time for your questions.`
   }, {
     teams: [5126],
     category: `Event Logistics`,
