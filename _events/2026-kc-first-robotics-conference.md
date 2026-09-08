@@ -22,7 +22,7 @@ layout: event
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
       <p class="tag is-success">Team Organization</p>
-      <p><strong>Rookieing 101</strong><br/>Ava Palmer &amp; panelists &middot; Teams 1730 &amp; 1710</p>
+      <p><strong>Rookieing 101</strong><br/>Ava P. &amp; panelists &middot; Teams 1730 &amp; 1710</p>
       <p>A student panel covering everything from getting involved on your team to balancing life, school, and robotics as a rookie.</p>
     </div>
   </div>
@@ -50,7 +50,7 @@ layout: event
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
       <p class="tag is-info">Scouting and Strategy</p>
-      <p><strong>Scout-a-lot: How We Built a Scouting App (and how you can, too!)</strong><br/>Alec Seidel, James B., &amp; Eric X. &middot; Team 1939</p>
+      <p><strong>Scout-a-lot: How We Built a Scouting App (and how you can, too!)</strong><br/>Alec S., James B., &amp; Eric X. &middot; Team 1939</p>
       <p>Three students walk through building team 1939's own scouting app&mdash;the practical considerations, tools, and tradeoffs along the way.</p>
     </div>
   </div>
