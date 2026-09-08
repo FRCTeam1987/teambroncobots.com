@@ -28,6 +28,13 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
+      <p class="tag is-black">Event Logistics</p>
+      <p><strong>Drive Team Panel</strong><br/>Spencer Werremeyer, Jon Smith, &amp; Chad Lee &middot; Teams 1730, 1987, &amp; 9410</p>
+      <p>Drive coaches from three teams share how to select, prepare, and run a drive team at competition, with lessons learned and time for your questions.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
       <p class="tag is-info">Scouting and Strategy</p>
       <p><strong>How Do I Get to Houston?: Championship Advancement 2027</strong><br/>Victoria Cook &amp; Andy Shimamoto &middot; Team 1939</p>
       <p>A breakdown of how Regional Points and Championship advancement work for 2027, with real examples from the 2026 season.</p>
@@ -70,7 +77,7 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
-      <p class="tag is-link">Event Logistics</p>
+      <p class="tag is-black">Event Logistics</p>
       <p><strong>Managing the Pit and Pit Crew &ndash; During Competition</strong><br/>Ken Kleffner &middot; Team 1987</p>
       <p>Running a calm, organized pit under competition pressure, with a look at the Broncobots' own modular road-case pit.</p>
     </div>
@@ -84,14 +91,35 @@ layout: event
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
-      <p class="tag is-link">Event Logistics</p>
+      <p class="tag is-primary">Technical</p>
+      <p><strong>2027 Systemcore + WPILib</strong><br/>Jon Smith &middot; Team 1987</p>
+      <p>A hands-on look at Systemcore and the big changes coming in 2027 WPILib, with walkthroughs, demos, and time for your questions as you prep for next season.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
+      <p class="tag is-primary">Technical</p>
+      <p><strong>Design For Electrical &amp; Automation</strong><br/>Jon Smith &middot; Team 1987</p>
+      <p>Tips, tricks, and best practices for designing a robot that sets your electrical and programming sub-teams up for success and reduces the risk of costly failures.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
+      <p class="tag is-danger">Culture</p>
+      <p><strong>Gather Around the Campfire</strong><br/>Jon Smith &middot; Team 1987</p>
+      <p>The robot isn't the point, it's the excuse&mdash;a look at how that idea should reshape the way we coach, recruit, handle failure, and measure a season's success.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
+      <p class="tag is-black">Event Logistics</p>
       <p><strong>Fireside Chat with an FTA, Head Ref, and Lead Robot Inspector</strong><br/>Ken Schenke, Cameron Talley, &amp; Andy Shimamoto &middot; Teams 1987 &amp; 1939</p>
       <p>Ask anything: three veteran volunteers with a combined 30 years of experience answer your inspection and on-field questions.</p>
     </div>
   </div>
   <div class="column is-4-desktop is-6-tablet">
     <div class="box">
-      <p class="tag is-link">Event Logistics</p>
+      <p class="tag is-black">Event Logistics</p>
       <p><strong>Volunteer for FIRST</strong><br/>Melinda Mongar &middot; Team 5126</p>
       <p>Why volunteering with FIRST is one of the most rewarding ways to give back&mdash;and how a few hours can open doors to a STEM career.</p>
     </div>
