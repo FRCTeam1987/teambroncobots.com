@@ -68,7 +68,13 @@ def cmd_list_images(args):
         xref = img[0]
         base = doc.extract_image(xref)
         rects = page.get_image_rects(xref)
-        rect = tuple(round(v, 1) for v in rects[0]) if rects else None
+        # An xref can be placed more than once on a page (a reused logo or
+        # banner asset); rects[0] is whichever placement comes first in the
+        # content stream, not necessarily the topmost one the banner
+        # heuristic and top-to-bottom sort below depend on. Pick the
+        # smallest y0 (topmost) placement instead.
+        rect_obj = min(rects, key=lambda r: r.y0) if rects else None
+        rect = tuple(round(v, 1) for v in rect_obj) if rect_obj else None
         rows.append({
             "xref": xref,
             "width": base["width"],
