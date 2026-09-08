@@ -50,112 +50,6 @@
 <body>
 <div id="hero-container">
     
-    <style>
-    @media screen and (max-width: 770px) {
-        #mobile-darkness {
-            color: #FFFFFF;
-            
-        }
-    }
-    @media screen and (min-width: 771px) {
-        #mobile-darkness {
-            color: #FFFFFF;
-        }
-    }
-
-        .arrow-container {
-        position: relative;
-    }
-
-    .scroll-down-widget {
-        position: absolute;
-        bottom: 2.5%;
-        right: 4%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-    }
-
-    .arrow-down {
-        width: 2.5em;
-        height: 2.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5em;
-        color: #fff;
-        background-color: rgba(128, 128, 128, 0.5);
-        border-radius: 50%;
-        animation: bounce 2s infinite;
-        cursor: pointer;
-    }
-
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-1.25rem);
-        }
-        60% {
-            transform: translateY(-0.625rem);
-        }
-    }
-
-    .scroll-down-text {
-        color: #fff;
-        font-size: 1.125em;
-    }
-
-    .hero-wrapper {
-        height: calc(100vh - 3.25em);
-        overflow: hidden;
-
-    }
-</style>
-
-
-<div class="hero-wrapper">
-    
-
-    <section class="hero  is-medium  is-bold is-primary"  style="background: url('../../../../../../../../images/Posts/weeklyNewsletter/top2023.png') no-repeat center center; background-size: cover; height: 100%; " >
-        <div class="hero-body ">
-            <div class="container">
-                <h1 class="title is-2" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif;  " >Open House</h1>
-                <p class="subtitle is-3" id="mobile-darkness" style="font-family:Rockwell, Roboto, sans-serif;"></p>
-
-
-            </div>
-        </div>
-
-        
-        <div class="arrow-container">
-            <div class="scroll-down-widget">
-                <i class="fas fa-arrow-down arrow-down" aria-hidden="true" onclick="scrollToNextSection()"></i>
-                <div class="scroll-down-text">Scroll Down!</div>
-            </div>
-        </div>
-        
-    </section>
-    
-    <div id="target-section" style="height: 100vh; background-color: #f5f5f5;"></div>
-</div>
-
-
-<script>
-    
-    function scrollToNextSection() {
-        const targetSection = document.getElementById("target-section");
-        const scrollOffset = targetSection.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({ top: scrollOffset, behavior: "smooth" });
-    }
-
-    document.querySelector('.arrow-down').addEventListener('click', scrollToNextSection);
-    
-</script>
-
-    
 </div>
 <style>
     .sticky {
@@ -250,6 +144,12 @@
                 
                 
                 
+                
+                <a href="/allPosts/" class="navbar-item ">Bronco Bulletin</a>
+                
+                
+                
+                
             </div>
 
             <div class="navbar-end">
@@ -314,22 +214,22 @@
     
     <link rel="stylesheet" href="/assets/css/buttonHover.css" />
     <div class="card-image">
-        <img src="/https://via.placeholder.com/1200x800" alt="One For The Books">
+        <img src="/images/Posts/weeklyNewsletter/bulletin-41.jpg" alt="The MoKan Trifecta">
     </div>
     
     <div class="card-content">
         <div class="content">
             
-            <a class="title is-4" href="/weeklynewsletter/2025/06/06/One-For-The-Books/">One For The Books</a>
+            <a class="title is-4" href="/weeklynewsletter/2026/04/20/The-MoKan-Trifecta/">The MoKan Trifecta</a>
             
             
-            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 30 - CMPTX Special.pdf" width="100%" height="1300em">
+            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 41 (Greater Kansas City Special).pdf" width="100%" height="1300em">
     </iframe>
 </p> -->
             
         </div>
         <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2025/06/06/One-For-The-Books/">
+            <a href="/weeklynewsletter/2026/04/20/The-MoKan-Trifecta/">
                 <buttonhover class="full-rounded-mobile">
                     <span>Read more</span>
                     <div class="border full-rounded-mobile"></div>
@@ -338,7 +238,7 @@
         </div>
     </div>
     <footer class="card-footer">
-        <p class="card-footer-item">Published: Jun 6, 2025</p>
+        <p class="card-footer-item">Published: Apr 20, 2026</p>
     </footer>
 </div>
 
@@ -361,22 +261,22 @@
     
     <link rel="stylesheet" href="/assets/css/buttonHover.css" />
     <div class="card-image">
-        <img src="/https://via.placeholder.com/1200x800" alt="They've Done It">
+        <img src="/images/Posts/weeklyNewsletter/bulletin-40.jpg" alt="The Inaugural Victory">
     </div>
     
     <div class="card-content">
         <div class="content">
             
-            <a class="title is-4" href="/weeklynewsletter/2025/04/17/Theyve-Done-It/">They've Done It</a>
+            <a class="title is-4" href="/weeklynewsletter/2026/04/18/The-Inaugural-Victory/">The Inaugural Victory</a>
             
             
-            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 29 - GKC Special.pdf" width="100%" height="1300em">
+            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 40 (City of Fountains Special).pdf" width="100%" height="1300em">
     </iframe>
 </p> -->
             
         </div>
         <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2025/04/17/Theyve-Done-It/">
+            <a href="/weeklynewsletter/2026/04/18/The-Inaugural-Victory/">
                 <buttonhover class="full-rounded-mobile">
                     <span>Read more</span>
                     <div class="border full-rounded-mobile"></div>
@@ -385,7 +285,7 @@
         </div>
     </div>
     <footer class="card-footer">
-        <p class="card-footer-item">Published: Apr 17, 2025</p>
+        <p class="card-footer-item">Published: Apr 18, 2026</p>
     </footer>
 </div>
 
@@ -408,22 +308,22 @@
     
     <link rel="stylesheet" href="/assets/css/buttonHover.css" />
     <div class="card-image">
-        <img src="/https://via.placeholder.com/1200x800" alt="1 Down 1 To Go">
+        <img src="/images/Posts/weeklyNewsletter/bulletin-39.jpg" alt="All Gas No Brakes">
     </div>
     
     <div class="card-content">
         <div class="content">
             
-            <a class="title is-4" href="/weeklynewsletter/2025/03/22/One-Down-One-To-Go/">1 Down 1 To Go</a>
+            <a class="title is-4" href="/weeklynewsletter/2026/03/28/All-Gas-No-Brakes/">All Gas No Brakes</a>
             
             
-            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 28 - CMO Special.pdf" width="100%" height="1300em">
+            <!-- <p><iframe src="/BroncoBulletin/The Broncobots Bulletin 39 (Heartland Special).pdf" width="100%" height="1300em">
     </iframe>
 </p> -->
             
         </div>
         <div class="has-text-centered-mobile">
-            <a href="/weeklynewsletter/2025/03/22/One-Down-One-To-Go/">
+            <a href="/weeklynewsletter/2026/03/28/All-Gas-No-Brakes/">
                 <buttonhover class="full-rounded-mobile">
                     <span>Read more</span>
                     <div class="border full-rounded-mobile"></div>
@@ -432,7 +332,7 @@
         </div>
     </div>
     <footer class="card-footer">
-        <p class="card-footer-item">Published: Mar 22, 2025</p>
+        <p class="card-footer-item">Published: Mar 28, 2026</p>
     </footer>
 </div>
 
