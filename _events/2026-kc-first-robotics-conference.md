@@ -1,7 +1,7 @@
 ---
 title: "2026 KC FIRST Robotics Conference"
 start: "2026-09-19T08:40:00"
-end: "2026-09-19T015:20:00"
+end: "2026-09-19T15:20:00"
 location: "Lee's Summit High School"
 address: "400 SE Blue Pkwy, Lee's Summit, Missouri 64063"
 layout: event
@@ -108,6 +108,13 @@ layout: event
       <p class="tag is-danger">Culture</p>
       <p><strong>Gather Around the Campfire</strong><br/>Jon Smith &middot; Team 1987</p>
       <p>The robot isn't the point, it's the excuse&mdash;a look at how that idea should reshape the way we coach, recruit, handle failure, and measure a season's success.</p>
+    </div>
+  </div>
+  <div class="column is-4-desktop is-6-tablet">
+    <div class="box">
+      <p class="tag is-primary">Technical</p>
+      <p><strong>Pit Perfect: Building a Pit That Works for You</strong><br/>Joshua Wentworth &middot; Team 1987</p>
+      <p>How to identify what your pit actually needs, weigh common FRC pit architectures, and tailor your setup&mdash;robot cart included&mdash;to supercharge productivity in the shop and at competition.</p>
     </div>
   </div>
   <div class="column is-4-desktop is-6-tablet">
