@@ -68,7 +68,7 @@ hide_hero: true # temporary hide for banquet visibility
 
 <div id="missStat" style="display:none">
 <br>
-      The Broncobots are dedicated to helping the future through the recognition and advocacy of science, technology, engineering, and math. As FIRST participants, we strive to build a community devoted to education, innovation, and inspiration. By creating strong partnerships with mentors, teachers, and sponsors, we encourage communication and leadership as crucial parts of team success.
+      Build Great Robots. Empower Tomorrow's Innovators. Uplift Our Community.
 </div>
 
 <div id="teamFoc" style="display:none">
