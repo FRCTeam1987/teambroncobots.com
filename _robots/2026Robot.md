@@ -45,7 +45,10 @@ Links:
   link: https://github.com/FRCTeam1987/Robot2026
 - item: Technical Book
   link: ../../robots/Technical Books/Technical Book 2026.pdf
+- item: Impact Slides
+  link: ../../robots/Technical Books/2026 Champs Impact Presentation.pdf
 Videos:
 - item: eh8F67gx7wM
 - item: FbkE2kAgKQE
+- item: pR2XXnl7FsE
 ---
