@@ -7,17 +7,12 @@ address: "400 SE Blue Pkwy, Lee's Summit, Missouri 64063"
 layout: event
 ---
 
-<p>Join us for the 2026 KC FIRST Robotics Conference!</p>
-
-<p>If you would like to give a presentation, then please submit your talk(s): <a href="https://forms.gle/YcCGjmsmxKE6qB4GA">here</a></p>
-
-<p>If there is a topic you'd like to hear about at the conferences, then please <a href="mailto:broncobots@gmail.com">tell us</a>! We'll work to find someone who can present on it!</p>
-
 <p>Note: we’re back at LSHS this year, home of <a href="https://cttd.teamdriven.us/">Cow Town ThrowDown</a> and the Learning Staircase!</p>
 
-<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sneak Peek: Sessions</h2>
-<p style="text-align:center">Here's a preview of talks submitted so far. Full agenda coming soon!</p>
-<br/>
+<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sessions</h2>
+<div style="text-align: center;">
+  <iframe style="width: 100%; max-width:950px; height: 600px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBFBYbddAz9qa0LV9E3i88f14baSRbzX96NcBk8hC2rhHLTXEEWZwKynTzLz7LfLBZx6c0jGhRny_z/pubhtml?gid=1027296998&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:F15"></iframe>
+</div>
 
 <style>.tag.is-purple { background-color: #6b21a8; color: #fff; }</style>
 
