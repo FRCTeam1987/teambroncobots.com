@@ -14,6 +14,7 @@ layout: event
 <p>Thank you to our wonderful sponsors</p>
 <img src="/images/sponsors/CTRE.avif" style="height: 80px"/>
 <img src="/images/sponsors/PlummerIndustries.png" style="height: 80px">
+<img src="/images/sponsors/WestCoastProducts.avif" style="height: 80px">
 </div>
 <h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sessions</h2>
 <div style="text-align: center;">
