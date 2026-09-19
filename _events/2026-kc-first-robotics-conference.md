@@ -6,8 +6,14 @@ location: "Lee's Summit High School"
 address: "400 SE Blue Pkwy, Lee's Summit, Missouri 64063"
 layout: event
 ---
-
+<div style="text-align: center">
 <p>Note: we’re back at LSHS this year, home of <a href="https://cttd.teamdriven.us/">Cow Town ThrowDown</a> and the Learning Staircase!</p>
+
+<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Conference Sponsors</h2>
+
+<p>Thank you to our wonderful sponsors</p>
+<img src="/images/sponsors/CTRE.avif" style="height: 80px"/>
+<img src="/images/sponsors/PlummerIndustries.png" style="height: 80px">
 
 <h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sessions</h2>
 <div style="text-align: center;">
