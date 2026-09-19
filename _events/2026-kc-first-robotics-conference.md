@@ -14,7 +14,7 @@ layout: event
 <p>Thank you to our wonderful sponsors</p>
 <img src="/images/sponsors/CTRE.avif" style="height: 80px"/>
 <img src="/images/sponsors/PlummerIndustries.png" style="height: 80px">
-
+</div>
 <h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sessions</h2>
 <div style="text-align: center;">
   <iframe style="width: 100%; max-width:950px; height: 600px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBFBYbddAz9qa0LV9E3i88f14baSRbzX96NcBk8hC2rhHLTXEEWZwKynTzLz7LfLBZx6c0jGhRny_z/pubhtml?gid=1027296998&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:F15"></iframe>
