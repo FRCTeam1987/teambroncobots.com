@@ -6,18 +6,22 @@ location: "Lee's Summit High School"
 address: "400 SE Blue Pkwy, Lee's Summit, Missouri 64063"
 layout: event
 ---
-
-<p>Join us for the 2026 KC FIRST Robotics Conference!</p>
-
-<p>If you would like to give a presentation, then please submit your talk(s): <a href="https://forms.gle/YcCGjmsmxKE6qB4GA">here</a></p>
-
-<p>If there is a topic you'd like to hear about at the conferences, then please <a href="mailto:broncobots@gmail.com">tell us</a>! We'll work to find someone who can present on it!</p>
-
+<div style="text-align: center">
 <p>Note: we’re back at LSHS this year, home of <a href="https://cttd.teamdriven.us/">Cow Town ThrowDown</a> and the Learning Staircase!</p>
 
-<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sneak Peek: Sessions</h2>
-<p style="text-align:center">Here's a preview of talks submitted so far. Full agenda coming soon!</p>
-<br/>
+<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Conference Sponsors</h2>
+
+<p>Thank you to our wonderful sponsors</p>
+<img src="/images/sponsors/CTRE.avif" style="height: 80px"/>
+<img src="/images/sponsors/PlummerIndustries.png" style="height: 80px">
+<img src="/images/sponsors/WestCoastProducts.avif" style="height: 80px">
+</div>
+<h2 style="margin: auto; font-family:Rockwell, Roboto, sans-serif; text-align:center">Sessions</h2>
+<div style="text-align: center;">
+  <iframe style="width: 100%; max-width:950px; height: 600px; display: inline-block;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBFBYbddAz9qa0LV9E3i88f14baSRbzX96NcBk8hC2rhHLTXEEWZwKynTzLz7LfLBZx6c0jGhRny_z/pubhtml?gid=1027296998&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:F15"></iframe>
+</div>
+
+<style>.tag.is-purple { background-color: #6b21a8; color: #fff; }</style>
 
 <div id="session-filters" class="field is-grouped is-grouped-multiline" role="group" aria-label="Filter sessions by category" style="justify-content:center; margin-bottom:1rem;"></div>
 <div class="field" style="text-align:center; margin-bottom:1.5rem;">
@@ -41,12 +45,19 @@ layout: event
     'Technical': 'is-primary',
     'Scouting and Strategy': 'is-info',
     'Awards': 'is-warning',
-    'Team Organization': 'is-success',
+    'Team Organization': 'is-purple',
     'Event Logistics': 'is-black',
-    'Culture': 'is-danger'
+    'Culture': 'is-danger',
+    'Fundraising': 'is-success'
   };
 
   var SESSIONS = [{
+    teams: [1710],
+    category: `Fundraising`,
+    title: `Fueling Your Team: Fundraising and Grant Tips for Robotics Teams`,
+    presenters: `Rhonda Swails`,
+    blurb: `A practical look at diversifying revenue, finding funding opportunities in your community, and navigating the grant-seeking process from application to demonstrating impact.`
+  }, {
     teams: [1730, 1710],
     category: `Team Organization`,
     title: `Rookieing 101`,
@@ -58,6 +69,12 @@ layout: event
     title: `Drive Team Panel`,
     presenters: `Spencer Werremeyer, Jon Smith, &amp; Chad Lee`,
     blurb: `Drive coaches from three teams share how to select, prepare, and run a drive team at competition, with lessons learned and time for your questions.`
+  }, {
+    teams: [1730],
+    category: `Team Organization`,
+    title: `Effective Kickoff Strategy`,
+    presenters: `Spencer Werremeyer`,
+    blurb: `How Team 1730 revamped its approach to kickoff in 2026&mdash;what worked, and ideas to improve your own kickoff experience.`
   }, {
     teams: [1939],
     category: `Scouting and Strategy`,
@@ -148,6 +165,12 @@ layout: event
     title: `Fireside Chat with an FTA, Head Ref, and Lead Robot Inspector`,
     presenters: `Ken Schenke, Cameron Talley, &amp; Andy Shimamoto`,
     blurb: `Ask anything: three veteran volunteers with a combined 30 years of experience answer your inspection and on-field questions.`
+  }, {
+    teams: [1989],
+    category: `Awards`,
+    title: `Impact Panel`,
+    presenters: `Victoria Cook &amp; Andy Shimamoto`,
+    blurb: `A panel of veteran mentors on the criteria and strategies behind winning Impact submissions, crafting your team's story, and demonstrating community impact&mdash;plus time for your questions.`
   }, {
     teams: [5126],
     category: `Event Logistics`,
